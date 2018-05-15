@@ -1,15 +1,32 @@
-Titulo : Como funciona o this em Javascript
-
-Content :
-
-Resposta Rápida : O "this", na maioria dos casos, é determinado de acordo com a função em que ele é chamado. Em um contexto global, isso é, fora de alguma função específica,
-ele refere-se ao "window".
-
-Contexto Global 
-
-Em um contexto global, isso é, quando o "this" é chamado fora de alguma função específica, ele assume a forma do window.
-Para conferir, você pode abrir o console do seu navegador e fazer o teste, como pode ser visto na imagem abaixo.
-
-This dentro de uma função
-
-Dentro de uma função, o this depende de como foi chamado pela função.
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://backefront.com.br/tipos-imutaveis/</loc>
+    
+    <lastmod>2018-05-13T19:29:33.738Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://backefront.com.br/z-index/</loc>
+    
+    <lastmod>2018-05-10T17:20:40.464Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://backefront.com.br/strict-mode/</loc>
+    
+    <lastmod>2018-04-16T13:14:36.470Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://backefront.com.br/template-string/</loc>
+    
+    <lastmod>2018-04-14T23:42:14.874Z</lastmod>
+    
+  </url>
+  
+</urlset>
