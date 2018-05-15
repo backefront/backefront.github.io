@@ -1,122 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-<!-- Google Analytics -->
-<script type="text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-117244554-1', 'auto');
-ga('send', 'pageview');
-
-</script>
-<!-- End Google Analytics -->
-
-
-  <!-- Google Adsense -->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-4429081934118390",
-    enable_page_level_ads: true
-  });
-</script>
-<!-- End Google Adsense -->
-  
-  <title>Tipos imutáveis | Dicas de desenvolvimento e programação</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Se você já programa em Java há algum tempo, provavelmente deve ter se deparado com a frase: Strings são imutáveis.Beleza, mas o que isso significa? Um tipo imutável não permite a alteração do estado d">
-<meta name="keywords" content="Java,Back-end">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Tipos imutáveis">
-<meta property="og:url" content="https://backefront.com.br/12/05/2018/tipos-imutaveis/index.html">
-<meta property="og:site_name" content="Dicas de desenvolvimento e programação">
-<meta property="og:description" content="Se você já programa em Java há algum tempo, provavelmente deve ter se deparado com a frase: Strings são imutáveis.Beleza, mas o que isso significa? Um tipo imutável não permite a alteração do estado d">
-<meta property="og:locale" content="pt">
-<meta property="og:updated_time" content="2018-05-13T19:29:33.738Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tipos imutáveis">
-<meta name="twitter:description" content="Se você já programa em Java há algum tempo, provavelmente deve ter se deparado com a frase: Strings são imutáveis.Beleza, mas o que isso significa? Um tipo imutável não permite a alteração do estado d">
-  
-    <link rel="alternate" href="/atom.xml" title="Dicas de desenvolvimento e programação" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/arquivos">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Feed RSS"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Buscar"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://backefront.com.br"></form>
-      </div>
-    </div>
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Dicas de desenvolvimento e programação</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">Do front-end ao back-end com dicas para você!</a>
-        </h2>
-      
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-tipos-imutaveis" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/12/05/2018/tipos-imutaveis/" class="article-date">
-  <time datetime="2018-05-12T22:46:09.000Z" itemprop="datePublished">12-05-2018</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Tipos imutáveis
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Se você já programa em Java há algum tempo, provavelmente deve ter se deparado com a frase: <em>Strings são imutáveis</em>.<br>Beleza, mas o que isso significa?</p>
-<p>Um tipo imutável não permite a alteração do estado de um objeto criado a partir dele de forma <em>desautorizada</em>.</p>
-<p>Vamos ver um tipo “normal” (mutável):<br><a id="more"></a><br>    public class Pessoa {</p>
-<pre><code>    private String nome;
+<!DOCTYPE html><html><head><meta charset="utf-8"><script type="text/javascript">!function(e,a,t,n,g,c,o){e.GoogleAnalyticsObject=g,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),o=a.getElementsByTagName(t)[0],c.async=1,c.src="//www.google-analytics.com/analytics.js",o.parentNode.insertBefore(c,o)}(window,document,"script",0,"ga"),ga("create","UA-117244554-1","auto"),ga("send","pageview")</script><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle=window.adsbygoogle||[]).push({google_ad_client:"ca-pub-4429081934118390",enable_page_level_ads:!0})</script><title>Tipos imutáveis | Dicas de desenvolvimento e programação</title><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="description" content="Se você já programa em Java há algum tempo, provavelmente deve ter se deparado com a frase: Strings são imutáveis.Beleza, mas o que isso significa? Um tipo imutável não permite a alteração do estado d"><meta name="keywords" content="Java,Back-end"><meta property="og:type" content="article"><meta property="og:title" content="Tipos imutáveis"><meta property="og:url" content="https://backefront.com.br/12/05/2018/tipos-imutaveis/index.html"><meta property="og:site_name" content="Dicas de desenvolvimento e programação"><meta property="og:description" content="Se você já programa em Java há algum tempo, provavelmente deve ter se deparado com a frase: Strings são imutáveis.Beleza, mas o que isso significa? Um tipo imutável não permite a alteração do estado d"><meta property="og:locale" content="pt"><meta property="og:updated_time" content="2018-05-13T19:29:33.738Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Tipos imutáveis"><meta name="twitter:description" content="Se você já programa em Java há algum tempo, provavelmente deve ter se deparado com a frase: Strings são imutáveis.Beleza, mas o que isso significa? Um tipo imutável não permite a alteração do estado d"><link rel="alternate" href="/atom.xml" title="Dicas de desenvolvimento e programação" type="application/atom+xml"><link rel="icon" href="/favicon.png"><link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css"><link rel="stylesheet" href="/css/style.css"></head><body><div id="container"><div id="wrap"><header id="header"><div id="banner"></div><div id="header-outer" class="outer"><div id="header-inner" class="inner"><nav id="main-nav"><a id="main-nav-toggle" class="nav-icon"></a> <a class="main-nav-link" href="/">Home</a> <a class="main-nav-link" href="/arquivos">Archives</a></nav><nav id="sub-nav"><a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Feed RSS"></a><a id="nav-search-btn" class="nav-icon" title="Buscar"></a></nav><div id="search-form-wrap"><form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://backefront.com.br"></form></div></div><div id="header-title" class="inner"><h1 id="logo-wrap"> <a href="/" id="logo">Dicas de desenvolvimento e programação</a></h1><h2 id="subtitle-wrap"> <a href="/" id="subtitle">Do front-end ao back-end com dicas para você!</a></h2></div></div></header><div class="outer"><section id="main"><article id="post-tipos-imutaveis" class="article article-type-post" itemscope itemprop="blogPost"><div class="article-meta"> <a href="/12/05/2018/tipos-imutaveis/" class="article-date"><time datetime="2018-05-12T22:46:09.000Z" itemprop="datePublished">12-05-2018</time></a></div><div class="article-inner"><header class="article-header"><h1 class="article-title" itemprop="name"> Tipos imutáveis</h1></header><div class="article-entry" itemprop="articleBody"><p>Se você já programa em Java há algum tempo, provavelmente deve ter se deparado com a frase: <em>Strings são imutáveis</em>.<br>Beleza, mas o que isso significa?</p><p>Um tipo imutável não permite a alteração do estado de um objeto criado a partir dele de forma <em>desautorizada</em>.</p><p>Vamos ver um tipo “normal” (mutável):<br><a id="more"></a><br> public class Pessoa {</p><pre><code>    private String nome;
 
     public Pessoa() { }
 
@@ -132,8 +14,7 @@ ga('send', 'pageview');
         this.nome = nome;
     }
 }
-</code></pre><p>Até aqui nada demais.<br>Agora vamos trabalhar com essa clsse:</p>
-<pre><code>public static void main(String[] args) {
+</code></pre><p>Até aqui nada demais.<br>Agora vamos trabalhar com essa clsse:</p><pre><code>public static void main(String[] args) {
     Pessoa p1 = new Pessoa();
     Pessoa p2 = new Pessoa(&quot;Igor&quot;);
 
@@ -142,52 +23,22 @@ ga('send', 'pageview');
 
     System.out.println(p1.getNome() + &quot;, &quot; + p2.getNome());
 }
-</code></pre><blockquote>
-<p>Saída:<br><code>Victor, João</code></p>
-</blockquote>
-<p>Podemos perceber que o objeto <code>p1</code> foi criado sem informar o nome da pessoa, dessa forma, o atributo <code>nome</code> deveria ser nulo, mas é <code>Victor</code>.<br>Já o objeto <code>p2</code> foi criado com o nome Igor, mas seu nome atual é <code>João</code>.<br>Bom, até onde sei, são extremamente raros os casos onde uma pessoa muda de nome… Então por que permitir uma alteração desse tipo?</p>
-<p>Nesse caso, não faz sentido permitir que o tipo <code>Pessoa</code> seja mutável.<br>Pois então, como torná-lo <strong>imutável</strong>? Vamos lá:</p>
-<p>Primeiramente, precisamos declarar seu atributo como <code>final</code>.<br>A palavra reservada <code>final</code> diz que essa variável/atributo receberá uma atribuição apenas uma única vez. Normalmente essa atribuição acontece na declaração. Ex:</p>
-<pre><code>final String nome = &quot;Igor&quot;;
-</code></pre><p>Isso funciona, mas não faz sentido no nosso caso, pois não queremos que todas as instâncias de <code>Pessoa</code> se chamem Igor.<br>Então? Como fazemos?<br>Podemos declarar o atributo como <code>final</code>, sem inicializá-lo como o exemplo acima, mas inicializá-lo pelo construtor:</p>
-<pre><code>private final String nome;
+</code></pre><blockquote><p>Saída:<br><code>Victor, João</code></p></blockquote><p>Podemos perceber que o objeto <code>p1</code> foi criado sem informar o nome da pessoa, dessa forma, o atributo <code>nome</code> deveria ser nulo, mas é <code>Victor</code>.<br>Já o objeto <code>p2</code> foi criado com o nome Igor, mas seu nome atual é <code>João</code>.<br>Bom, até onde sei, são extremamente raros os casos onde uma pessoa muda de nome… Então por que permitir uma alteração desse tipo?</p><p>Nesse caso, não faz sentido permitir que o tipo <code>Pessoa</code> seja mutável.<br>Pois então, como torná-lo <strong>imutável</strong>? Vamos lá:</p><p>Primeiramente, precisamos declarar seu atributo como <code>final</code>.<br>A palavra reservada <code>final</code> diz que essa variável/atributo receberá uma atribuição apenas uma única vez. Normalmente essa atribuição acontece na declaração. Ex:</p><pre><code>final String nome = &quot;Igor&quot;;
+</code></pre><p>Isso funciona, mas não faz sentido no nosso caso, pois não queremos que todas as instâncias de <code>Pessoa</code> se chamem Igor.<br>Então? Como fazemos?<br>Podemos declarar o atributo como <code>final</code>, sem inicializá-lo como o exemplo acima, mas inicializá-lo pelo construtor:</p><pre><code>private final String nome;
 
 public Pessoa(String nome) {
     this.nome = nome;
 }
-</code></pre><p>Pronto. Assim bloqueamos qualquer outra atribuição que o atributo <code>nome</code> poderia sofrer.<br>Mas e o construtor sem argumentos, como fica? Bom, nesse caso, não tem muito o que fazer:</p>
-<pre><code>private final String nome;
+</code></pre><p>Pronto. Assim bloqueamos qualquer outra atribuição que o atributo <code>nome</code> poderia sofrer.<br>Mas e o construtor sem argumentos, como fica? Bom, nesse caso, não tem muito o que fazer:</p><pre><code>private final String nome;
 
 public Pessoa() {
     nome = null;
 }
-</code></pre><p>Não importa se o construtor tem ou não argumentos. O importante aqui é que todos os atributos marcados como <code>final</code> sejam inicializados em todos os construtores.</p>
-<p>Ótimo! Temos um atributo final e depois de criada uma instância sabemos que o nome nunca será alterado, mas tem coisa errada aí.<br>O método setter de <code>nome</code>.</p>
-<p>Nessa altura do campeonato ele já não compila mais jutamente pelo fato de fazer:</p>
-<pre><code>this.nome = nome;
-</code></pre><p>Uma vez que o atributo <code>nome</code> é <code>final</code>, qualquer tentativa de atribuição gera um erro de compilação.</p>
-<p>E agora? Devemos remover o método? Sim!<br>Essa é uma outra característica de tipos imutáveis: não possuir métodos setter.</p>
-<hr>
-<p>Aqui estamos exemplificando um tipo onde queremos que seja 100% imutável, mas é bem comum encontrarmos situaçãoes onde só alguns atributos queremos que sejam imutáveis e os demais não.<br>Não tem nenhum problema com isso, basta colocar os atributos que deseja ser imutável como <code>final</code>, inicialiá-los pelos construtores (todos) e remover seu método setter.</p>
-<p>Podemos citar como exemplo caso o tipo <code>Pessoa</code> tivesse um atributo <code>idade</code>.<br>Não faria nenhum sentido deixar esse atributo como <code>final</code>, justamente por que nós envelhecemos e nossa idade muda.</p>
-<p>Eu, particularmente, ao invés de criar um método setter para esse atributo, criaria algo como:</p>
-<pre><code>public void fazAniversario() {
+</code></pre><p>Não importa se o construtor tem ou não argumentos. O importante aqui é que todos os atributos marcados como <code>final</code> sejam inicializados em todos os construtores.</p><p>Ótimo! Temos um atributo final e depois de criada uma instância sabemos que o nome nunca será alterado, mas tem coisa errada aí.<br>O método setter de <code>nome</code>.</p><p>Nessa altura do campeonato ele já não compila mais jutamente pelo fato de fazer:</p><pre><code>this.nome = nome;
+</code></pre><p>Uma vez que o atributo <code>nome</code> é <code>final</code>, qualquer tentativa de atribuição gera um erro de compilação.</p><p>E agora? Devemos remover o método? Sim!<br>Essa é uma outra característica de tipos imutáveis: não possuir métodos setter.</p><hr><p>Aqui estamos exemplificando um tipo onde queremos que seja 100% imutável, mas é bem comum encontrarmos situaçãoes onde só alguns atributos queremos que sejam imutáveis e os demais não.<br>Não tem nenhum problema com isso, basta colocar os atributos que deseja ser imutável como <code>final</code>, inicialiá-los pelos construtores (todos) e remover seu método setter.</p><p>Podemos citar como exemplo caso o tipo <code>Pessoa</code> tivesse um atributo <code>idade</code>.<br>Não faria nenhum sentido deixar esse atributo como <code>final</code>, justamente por que nós envelhecemos e nossa idade muda.</p><p>Eu, particularmente, ao invés de criar um método setter para esse atributo, criaria algo como:</p><pre><code>public void fazAniversario() {
     idade++;
 }
-</code></pre><p>Pois num método setter, alugém poderia <em>setar</em> uma idade que antes era <code>15</code> para <code>25</code> e isso não faz sentido.</p>
-<p>Mas estamos fugindo um pouco do foco… Voltando:  </p>
-<p>Afinal, quais são as vantagens de usar um tipo imutável?</p>
-<p>De cabeça lembro de duas principais:</p>
-<ul>
-<li><p>Concorrência:<br>  Nada pior do que um cenário com múltiplas threads mexendo num mesmo objeto :(. Com um tipo imutável você garante que o seu objeto estará sempre <em>bonitinho</em>.</p>
-</li>
-<li><p>Segurança:<br>  Você sabe exatamente o que tem no seu objeto!</p>
-</li>
-</ul>
-<hr>
-<p>Show, mas até agora exemplificamos um tipo imutável com atributos de tipos imutáveis também.<br>Como fazemos com atributos de tipos não imutáveis?</p>
-<p>Vamos supôr que a classe <code>Pessoa</code> tenha um atirbuto do tipo <code>Endereco</code>, que é mutável:</p>
-<pre><code>public class Endereco {
+</code></pre><p>Pois num método setter, alugém poderia <em>setar</em> uma idade que antes era <code>15</code> para <code>25</code> e isso não faz sentido.</p><p>Mas estamos fugindo um pouco do foco… Voltando:</p><p>Afinal, quais são as vantagens de usar um tipo imutável?</p><p>De cabeça lembro de duas principais:</p><ul><li><p>Concorrência:<br> Nada pior do que um cenário com múltiplas threads mexendo num mesmo objeto :(. Com um tipo imutável você garante que o seu objeto estará sempre <em>bonitinho</em>.</p></li><li><p>Segurança:<br> Você sabe exatamente o que tem no seu objeto!</p></li></ul><hr><p>Show, mas até agora exemplificamos um tipo imutável com atributos de tipos imutáveis também.<br>Como fazemos com atributos de tipos não imutáveis?</p><p>Vamos supôr que a classe <code>Pessoa</code> tenha um atirbuto do tipo <code>Endereco</code>, que é mutável:</p><pre><code>public class Endereco {
 
     private String rua;
     private Integer numero;
@@ -237,8 +88,7 @@ public class Pessoa {
         return endereco;
     }
 }
-</code></pre><p>Legal, o atributo <code>endereco</code> está <code>final</code>, mas isso não garante nada pois <code>Endereco</code> não é imutável. Vejamos:<br>Caso alguém invoque o método getter de <code>endereco</code>, essa pessoa pode alterar tanto a rua quanto o número:</p>
-<pre><code>public static void main(String[] args) {
+</code></pre><p>Legal, o atributo <code>endereco</code> está <code>final</code>, mas isso não garante nada pois <code>Endereco</code> não é imutável. Vejamos:<br>Caso alguém invoque o método getter de <code>endereco</code>, essa pessoa pode alterar tanto a rua quanto o número:</p><pre><code>public static void main(String[] args) {
     Endereco e = new Endereco(&quot;Av. Paulista&quot;, 10);
     Pessoa p = new Pessoa(&quot;Igor&quot;, e);
 
@@ -248,16 +98,10 @@ public class Pessoa {
 
     System.out.println(p.getEndereco().getRua());
 }
-</code></pre><blockquote>
-<p>Saída:<br><code>Av. Liberdade</code></p>
-</blockquote>
-<p>Nesse caso, devemos criar uma cópia do objeto que queremos retornar, para que seja devolvida uma nova referência, deiferente da referência ao objeto original:</p>
-<pre><code>public Endereco getEndereco() {
+</code></pre><blockquote><p>Saída:<br><code>Av. Liberdade</code></p></blockquote><p>Nesse caso, devemos criar uma cópia do objeto que queremos retornar, para que seja devolvida uma nova referência, deiferente da referência ao objeto original:</p><pre><code>public Endereco getEndereco() {
     return new Endereco(endereco.getRua(), endereco.getNumero());
 }
-</code></pre><p>Ao implementarmos o getter dessa forma, temos o mesmo exemplo de execução que retornou <code>Av. Liberdade</code> agora retornando <code>Av. Paulista</code>.</p>
-<p>Por último, temos os casos de listas.<br>Escrever métodos de cópias de listas é algo <em>bixeira</em>. Para isso devemos usar o método estático <code>Collections.unmodifiableList(list)</code>:</p>
-<pre><code>import java.util.Collections;   
+</code></pre><p>Ao implementarmos o getter dessa forma, temos o mesmo exemplo de execução que retornou <code>Av. Liberdade</code> agora retornando <code>Av. Paulista</code>.</p><p>Por último, temos os casos de listas.<br>Escrever métodos de cópias de listas é algo <em>bixeira</em>. Para isso devemos usar o método estático <code>Collections.unmodifiableList(list)</code>:</p><pre><code>import java.util.Collections;   
 import java.util.List; 
 import java.util.ArrayList;   
 
@@ -284,8 +128,7 @@ public class Pessoa {
         return Collections.unmodifiableList(enderecos);
     }
 }
-</code></pre><p>Ao tentarmos executar o código abaixo:</p>
-<pre><code>public static void main(String[] args) {
+</code></pre><p>Ao tentarmos executar o código abaixo:</p><pre><code>public static void main(String[] args) {
     List&lt;Endereco&gt; es = new ArrayList&lt;&gt;();
     es.add(new Endereco(&quot;Rua 1&quot;, 10));
     es.add(new Endereco(&quot;Rua 2&quot;, 20));
@@ -295,175 +138,4 @@ public class Pessoa {
     List&lt;Endereco&gt; listNaoModif = p.getEnderecos();
     listNaoModif.add(new Endereco(&quot;Rua 3&quot;, 30));
 }
-</code></pre><p>Recebemos a Exception <code>java.lang.UnsupportedOperationException</code>, pois a lista retornada pelo <code>unmodifiableList(list)</code>, como o nome já diz, não pode ser modificada.</p>
-<p>Dessa forma conseguimos garantir o estado dos nossos objetos!</p>
-
-      
-    </div>
-	
-		<div class="article-author">
-			<figure>
-				<img src="/author/igor.png" alt="Foto do Igor Venturelli" class="author-figure">
-			</figure>
-			<div class="about-author">
-				<p class="author-name">Igor Venturelli</p>
-				<p class="author-description">Desenvolvedor back-end na Mult-e Engenharia Digital e admirador de Java, Python, Go e DevOps!</p>
-				
-					
-						<a href="https://linkedin.com/in/igorventurelli" alt="Link para o Linkedin de Igor Venturelli">
-							LinkedIn
-						</a>
-					
-					
-						<a href="https://github.com/igorventurelli" alt="Link para o Github de Igor Venturelli">
-							Github
-						</a>
-					
-				
-			</div>
-		</div>
-    
-    <footer class="article-footer">
-      <a data-url="https://backefront.com.br/12/05/2018/tipos-imutaveis/" data-id="cjh5802ca0004twdmcmzfvhq9" class="article-share-link">Compartilhar</a>
-      
-        <a href="https://backefront.com.br/12/05/2018/tipos-imutaveis/#disqus_thread" class="article-comment-link">Comentários</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Back-end/">Back-end</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
-
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-  
-    <a href="/10/05/2018/z-index/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Mais Antigo</strong>
-      <div class="article-nav-title">Entendendo o z-index</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Back-end/">Back-end</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Front-end/">Front-end</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/">Javascript</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Nuvem de Tags</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/Back-end/" style="font-size: 10px;">Back-end</a> <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/Front-end/" style="font-size: 20px;">Front-end</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/Javascript/" style="font-size: 15px;">Javascript</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Arquivos</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/Arquivos/2018/05/">maio 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Arquivos/2018/04/">abril 2018</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Postagens Recentes</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/12/05/2018/tipos-imutaveis/">Tipos imutáveis</a>
-          </li>
-        
-          <li>
-            <a href="/10/05/2018/z-index/">Entendendo o z-index</a>
-          </li>
-        
-          <li>
-            <a href="/11/04/2018/template-string/">Template Strings, o que é?</a>
-          </li>
-        
-          <li>
-            <a href="/10/04/2018/strict-mode/">Como funciona o Strict Mode</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2018 Igor Venturelli e Victor Jordan<br>
-      Desenvolvido por <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/arquivos" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-<script>
-  var disqus_shortname = 'backefront';
-  
-  var disqus_url = 'https://backefront.com.br/12/05/2018/tipos-imutaveis/';
-  
-  (function(){
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
-
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-
-
-  </div>
-</body>
-</html>
+</code></pre><p>Recebemos a Exception <code>java.lang.UnsupportedOperationException</code>, pois a lista retornada pelo <code>unmodifiableList(list)</code>, como o nome já diz, não pode ser modificada.</p><p>Dessa forma conseguimos garantir o estado dos nossos objetos!</p></div><div class="article-author"><figure> <img src="/author/igor.png" alt="Foto do Igor Venturelli" class="author-figure"></figure><div class="about-author"><p class="author-name">Igor Venturelli</p><p class="author-description">Desenvolvedor back-end na Mult-e Engenharia Digital e admirador de Java, Python, Go e DevOps!</p> <a href="https://linkedin.com/in/igorventurelli" alt="Link para o Linkedin de Igor Venturelli">LinkedIn</a> <a href="https://github.com/igorventurelli" alt="Link para o Github de Igor Venturelli">Github</a></div></div><footer class="article-footer"> <a data-url="https://backefront.com.br/12/05/2018/tipos-imutaveis/" data-id="cjh8026u70001icdm6aywncya" class="article-share-link">Compartilhar</a> <a href="https://backefront.com.br/12/05/2018/tipos-imutaveis/#disqus_thread" class="article-comment-link">Comentários</a><ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Back-end/">Back-end</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul></footer></div><nav id="article-nav"> <a href="/10/05/2018/z-index/" id="article-nav-older" class="article-nav-link-wrap"><strong class="article-nav-caption">Mais Antigo</strong><div class="article-nav-title">Entendendo o z-index</div></a></nav></article><section id="comments"><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div></section></section><aside id="sidebar"><div class="widget-wrap"><h3 class="widget-title">Tags</h3><div class="widget"><ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Back-end/">Back-end</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Front-end/">Front-end</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/">Javascript</a></li></ul></div></div><div class="widget-wrap"><h3 class="widget-title">Nuvem de Tags</h3><div class="widget tagcloud"> <a href="/tags/Back-end/" style="font-size:10px">Back-end</a> <a href="/tags/CSS/" style="font-size:10px">CSS</a> <a href="/tags/Front-end/" style="font-size:20px">Front-end</a> <a href="/tags/Java/" style="font-size:10px">Java</a> <a href="/tags/Javascript/" style="font-size:15px">Javascript</a></div></div><div class="widget-wrap"><h3 class="widget-title">Arquivos</h3><div class="widget"><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/Arquivos/2018/05/">maio 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Arquivos/2018/04/">abril 2018</a></li></ul></div></div><div class="widget-wrap"><h3 class="widget-title">Postagens Recentes</h3><div class="widget"><ul><li> <a href="/12/05/2018/tipos-imutaveis/">Tipos imutáveis</a></li><li> <a href="/10/05/2018/z-index/">Entendendo o z-index</a></li><li> <a href="/11/04/2018/template-string/">Template Strings, o que é?</a></li><li> <a href="/10/04/2018/strict-mode/">Como funciona o Strict Mode</a></li></ul></div></div></aside></div><footer id="footer"><div class="outer"><div id="footer-info" class="inner"> &copy; 2018 Igor Venturelli e Victor Jordan<br> Desenvolvido por <a href="http://hexo.io/" target="_blank">Hexo</a></div></div></footer></div><nav id="mobile-nav"> <a href="/" class="mobile-nav-link">Home</a> <a href="/arquivos" class="mobile-nav-link">Archives</a></nav><script>var disqus_shortname="backefront",disqus_url="https://backefront.com.br/12/05/2018/tipos-imutaveis/";!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//"+disqus_shortname+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}()</script><script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><link rel="stylesheet" href="/fancybox/jquery.fancybox.css"><script src="/fancybox/jquery.fancybox.pack.js"></script><script src="/js/script.js"></script></div></body></html>
