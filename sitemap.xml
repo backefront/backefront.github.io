@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://backefront.com.br/find-index/</loc>
+    
+    <lastmod>2018-08-27T15:16:08.086Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://backefront.com.br/tipos-imutaveis/</loc>
+    
+    <lastmod>2018-06-11T16:07:09.062Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://backefront.com.br/git-basico/</loc>
     
     <lastmod>2018-05-18T13:25:21.844Z</lastmod>
@@ -26,13 +40,6 @@
     <loc>https://backefront.com.br/z-index/</loc>
     
     <lastmod>2018-05-16T17:28:33.908Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://backefront.com.br/tipos-imutaveis/</loc>
-    
-    <lastmod>2018-05-13T19:29:33.738Z</lastmod>
     
   </url>
   
