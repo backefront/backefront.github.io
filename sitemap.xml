@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://backefront.com.br/template-string/</loc>
+    
+    <lastmod>2018-09-01T15:37:02.584Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://backefront.com.br/find-index/</loc>
     
     <lastmod>2018-08-31T13:02:09.600Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://backefront.com.br/git-basico/</loc>
     
     <lastmod>2018-05-18T13:25:21.844Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://backefront.com.br/template-string/</loc>
-    
-    <lastmod>2018-05-16T17:31:53.824Z</lastmod>
     
   </url>
   
