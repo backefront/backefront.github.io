@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://backefront.com.br/"/>
-  <updated>2018-09-03T18:09:59.954Z</updated>
+  <updated>2018-09-07T15:41:07.068Z</updated>
   <id>https://backefront.com.br/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Como Centralizar Uma Div No Meio Da Página</title>
+    <link href="https://backefront.com.br/centralizar-div-css/"/>
+    <id>https://backefront.com.br/centralizar-div-css/</id>
+    <published>2018-09-07T13:23:08.000Z</published>
+    <updated>2018-09-07T15:41:07.068Z</updated>
+    
+    <content type="html"><![CDATA[<p>Centralizar um conteúdo no centro de um elemento é uma situação comum de acontecer. Existem diversas formas de fazer isso, mas nesta publicação, mostrarei como centralizar uma div utilizando o <code>flexbox</code>!</p><p>Flexbox é uma propriedade introduzida no CSS3 que tem como objetivo organizar os elementos de uma forma ágil. Esta propriedade trabalha com uma dimensão por vez, isto é, a propriedade atua como <strong>linha</strong> ou como <strong>coluna</strong></p><a id="more"></a> <h2 id="Aplicacao"><a href="#Aplicacao" class="headerlink" title="Aplicação"></a>Aplicação</h2><p>Para centralizar uma div ao meio de uma página usando flexbox, você precisa basicamente de dois elementos: um elemento <strong>pai</strong> e um elemento <strong>filho</strong>. Isso significa que o conteúdo que você deseja centralizar no meio, deve estar dentro de outro elemento. Vamos mostrar um exemplo na prática</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">main</span> <span class="attr">class</span>=<span class="string">"pai"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"filho"</span>&gt;</span></span><br><span class="line">      Olá! Tudo bem?</span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">main</span>&gt;</span></span><br></pre></td></tr></table></figure><p>A classe <strong>pai</strong> recebe as propriedades do <code>flexbox</code>, onde é configurado que o display em questão será do tipo <strong>flex</strong> e que queremos que este elemento seja tratado como uma linha, na propriedade <code>flex-flow</code> e alinhamos ao centro com <code>justify-content: center;</code></p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.pai</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex-flow</span>: row wrap;</span><br><span class="line">  <span class="attribute">justify-content</span>: center;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.filho</span> &#123;</span><br><span class="line">  <span class="attribute">align-self</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>A mágica de alinhar no centro verticalmente, está na propriedade <strong>align-self: center</strong> pois é uma propriedade usada em elementos que são filhos de outro elemento que seja flex. Com o <code>align-self</code> conseguimos alinhar o filho da forma desejada. Poderiamos usar <strong>align-self: flex-end;</strong> ou <strong>align-self: flex-start;</strong> em conjunto a esta propriedade!</p><p>Caso queira brincar um pouco, <a href="https://codepen.io/victorjordan95/pen/EebmOV" target="_blank" rel="noopener">neste link</a> eu criei um Codepen com o conteúdo alinhado ao meio, para demonstrar melhor!</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Centralizar um conteúdo no centro de um elemento é uma situação comum de acontecer. Existem diversas formas de fazer isso, mas nesta publicação, mostrarei como centralizar uma div utilizando o &lt;code&gt;flexbox&lt;/code&gt;!&lt;/p&gt;
+&lt;p&gt;Flexbox é uma propriedade introduzida no CSS3 que tem como objetivo organizar os elementos de uma forma ágil. Esta propriedade trabalha com uma dimensão por vez, isto é, a propriedade atua como &lt;strong&gt;linha&lt;/strong&gt; ou como &lt;strong&gt;coluna&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="CSS3, Front-end" scheme="https://backefront.com.br/tags/CSS3-Front-end/"/>
+    
+  </entry>
   
   <entry>
     <title>Como Adicionar Diferentes SSH Key No Github No Mesmo Computador</title>
