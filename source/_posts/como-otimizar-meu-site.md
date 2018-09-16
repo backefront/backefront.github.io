@@ -1,10 +1,10 @@
 ---
-title: post
+title: 6 Técnicas para otimizar seu site
 date: 2018-09-16 16:13:07
 tags: 
 - Front-end
-postKeywords: 
-postDescription: 
+postKeywords: otimizacao de site, como otimizar meu site, dicas de otimizacao, performance, como melhorar performance
+postDescription: 6 técnicas para você otimizar seu site e melhorar ainda mais a usabilidade!
 author: Victor Jordan
 authorImg: victor.png
 authorDesc: Desenvolvedor front-end na FITec e formando em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
@@ -18,7 +18,7 @@ Com o passar do tempo, começamos a desenvolver sites e aplicações mais ricas 
 ## Performance te ajuda a manter um usuário
 
 De acordo com uma pesquisa realizada pelo Google, sites que demoraram **até** 5 segundos para carregar, possuiram sessões mais duradouras e rentáveis. Afinal, performance também diz muito sobre melhorar suas conversões!
-Afinal, quem nunca desistiu de entrar em um site que demorava muito para carregar? É pensando nisso que será demonstrado nest post **N Técnicas para otimizar seu site**
+Afinal, quem nunca desistiu de entrar em um site que demorava muito para carregar? É pensando nisso que será demonstrado neste post **6 Técnicas para otimizar seu site**
 
 ## 1 - Encontre o principal causador da demora
 
