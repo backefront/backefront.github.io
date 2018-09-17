@@ -20,6 +20,8 @@ Com o passar do tempo, começamos a desenvolver sites e aplicações mais ricas 
 De acordo com uma pesquisa realizada pelo Google, sites que demoraram **até** 5 segundos para carregar, possuiram sessões mais duradouras e rentáveis. Afinal, performance também diz muito sobre melhorar suas conversões!
 Afinal, quem nunca desistiu de entrar em um site que demorava muito para carregar? É pensando nisso que será demonstrado neste post **6 Técnicas para otimizar seu site**
 
+<!-- more --> 
+
 ## 1 - Encontre o principal causador da demora
 
 Através do **devtools** do seu navegador, na aba **network**, você consegue visualizar o que seu site está carregando e quanto tempo demora para que seja concluído. Isso é, todos os seus arquivos (CSS, JS, HTML) são necessários serem baixados quando alguém entra em seu site, então o tamanho que eles pesam, impacta diretamente na usabilidade! Quanto menor o tamanho dos arquivos, consequentemente mais rápido será o carregamento da sua página, além de que pode ter algum arquivo que não está sendo encontrado e está impactando no tempo de demora para carregar e graças ao devtools, você consegue identificar o que está acontecendo!
