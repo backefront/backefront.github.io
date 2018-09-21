@@ -1,5 +1,5 @@
 ---
-title: Como otimizar processos com o Gulp
+title: Como otimizar tarefas com o Gulp
 date: 2018-09-18 08:04:18
 tags: 
 - Javascript
