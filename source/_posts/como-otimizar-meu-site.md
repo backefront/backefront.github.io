@@ -40,7 +40,7 @@ Requisição é aquilo em que seu site faz para buscar os arquivos dependentes, 
 
 ![Quantidade de requests realizadas](/posts/otimizar-site-requests.png)
 
-Para diminuir, você pode combinar/juntar arquivos CSS e JS em arquivos únicos! Desta forma, você fará apenas uma requisição ao invés de várias para buscar todos os recursos. Com o Gulp e Grunt, você consegue criar uma forma automatizada de juntar seus arquivos desta forma!
+Para diminuir, você pode combinar/juntar arquivos CSS e JS em arquivos únicos! Desta forma, você fará apenas uma requisição ao invés de várias para buscar todos os recursos. Com o Gulp e Grunt, você consegue criar uma forma automatizada de juntar seus arquivos desta forma! Caso se interesse, [neste post](https://backefront.com.br/melhorando-sua-performance-com-gulp/) falei sobre como usar o Gulp para automatizar esses processos!
 
 ## 4 - Use compressão no servidor
 
