@@ -35,7 +35,6 @@ Sem realmente saber a qualidade dos testes, não é possível tirar conclusões 
 
 **A qualidade custa menos!**
 
-Figura 2 - Custa menos
 ![Custa menos](/posts/Figura2_CustaMenos.jpg)
 
 A partir do momento em que realizamos as atividades com mais qualidade, reduzimos drasticamente o retrabalho, o custo de manutenção e chamados de suporte e obtemos um software bem estruturado que facilita novos projetos.
