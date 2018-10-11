@@ -24,7 +24,7 @@ SPDY (pronuncia speedy, acho que isso já diz muita coisa né?) foi um protocolo
 ## O que tinha de errado com HTTP/1?
 O HTTP/1 era limitado a processar apenas uma solicitação por conexão TCP, forçando os navegadores a utilizarem multiplas conexões TCP para processar múltiplas requisições simultaneamente. 
 
-However, using too many TCP connections in parallel leads to TCP congestion that causes unfair monopolization of network resources. Web browsers using multiple connections to process additional requests occupy a greater share of the available network resources, hence downgrading network performance for other users.
+Entretanto, usar várias conexões em paralelo causa congestionamento na rede, e para os navegadores trabalharem com múltiplas requisições ocupa uma grande quantidade de recurso da rede, causando uma queda na performance de outros usuários que estão tentado baixar aqueles mesmos recursos que sua aplicação/site requere.
 
 ## Características do HTTP/2
 
