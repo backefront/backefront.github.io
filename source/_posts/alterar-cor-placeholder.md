@@ -1,6 +1,6 @@
 ---
 title: Alterando a cor do texto do placeholder
-date: 2018-09-27 10:33:49
+date: 2018-10-15 8:33:49
 tags:
 - CSS
 - Front-end
