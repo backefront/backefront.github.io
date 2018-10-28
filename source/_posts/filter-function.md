@@ -25,7 +25,7 @@ Você tem uma série de idades e deseja apenas quem é maior de idade.
 
 ## Solução
 
-O método `find()` retorna um novo array com todos os valores que passam na validação implementada na função, caso nenhum número satisfaça essa condição, um array vazio será retornado.
+O método `filter()` retorna um novo array com todos os valores que passam na validação implementada na função, caso nenhum número satisfaça essa condição, um array vazio será retornado.
 
 ```javascript
 	const maioresDeIdade = idades.filter(idade => idade >= 18);
