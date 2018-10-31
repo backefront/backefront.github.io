@@ -13,7 +13,7 @@ authorGithub: victorjordan95
 
 Digamos que você tenha um objeto e que caso dentro desse objeto, contenha um determinado valor, deve retornar imediatamente um novo valor. Para isto, você pode pensar em utilizar um `for` com alguma condição para "quebrar" seu laço de repetição, mas por que não utilizar a declaração `for... of`?
 
-O **for of** cria um loop a qual itera objetos, inclusive: Strings, Array, Map, Set. Assim como o **for**, **forEach**, o `for on` itera cada elemento porém com uma diferença que pode ser o essencial para resolver seu problema: você pode quebrar seu laço com o **break**.
+O **for of** cria um loop a qual itera objetos, inclusive: Strings, Array, Map, Set. Assim como o **for**, **forEach**, o `for of` itera cada elemento porém com uma diferença que pode ser o essencial para resolver seu problema: você pode quebrar seu laço com o **break**.
 
 <!-- more --> 
 
