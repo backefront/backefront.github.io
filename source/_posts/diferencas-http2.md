@@ -2,6 +2,7 @@
 title: Quais as principais diferenças HTTP/1 e HTTP/2 
 date: 2018-10-10 11:06:29
 tags:
+- HTTP
 postKeywords: diferença http/1 x http/2, o que é http2, novidades http2, o que é http2, quais as diferenças entre http/1 e http/2, vantagens do http2
 postDescription: Entenda quais são as principais diferenças entre o HTTP/1 e o HTTP/2!
 author: Victor Jordan
