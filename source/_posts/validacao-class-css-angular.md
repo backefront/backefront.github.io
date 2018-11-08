@@ -26,7 +26,9 @@ Para utilizar, vamos usar o seguinte cenário:
 Com isto em mente, logo pensamos em um `if (nota < 6 ) {...}` e podemos "traduzir" este pequeno trecho, diretamente no componente HTML, ficando da seguinte forma:
 
 ```html
-<p [ngClass]="{{nota < 6 ? red : blue}}"></p>
+<p [ngClass]="{{nota < 6 ? red : blue}}">
+    {{nota}}
+</p>
 ```
 
-Com este operador ternário, ele adiciona uma classe de acordo com a validação!
+Com este operador ternário, ele adiciona uma classe de acordo com a validação, tornando muito mais fácil e rápido a adição de classes de acordo com sua validação!
