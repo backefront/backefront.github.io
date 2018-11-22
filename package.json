@@ -6,6 +6,7 @@
     "version": "3.7.1"
   },
   "scripts": {
+    "update": "git pull origin posts",
     "build": "gulp build",
     "deploy": "git add . && git commit -m 'newVersion' && git push"
   },
