@@ -4,7 +4,7 @@ date: 2018-08-27 11:43:25
 tags: 
 - Javascript
 - Front-end
-postKeywords: JS, findindex, ecmascript, dicas de javascript, retornar indice.
+postKeywords: JS, findindex, ecmascript, dicas de javascript, retornar indice, encontrar indice vetor, indice vetor
 postDescription: Aprenda como encontrar elementos em um array com o findIndex, um método simples e fácil de ser utilizado!
 author: Victor Jordan
 authorImg: victor.png

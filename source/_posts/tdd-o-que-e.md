@@ -4,7 +4,7 @@ date: 2018-09-13 13:51:00
 tags: 
 - Testes
 - SENAC
-postKeywords: TDD, Test Driven Development, teste softwares, tipos de testes, o que é tdd, exemplo tdd, como fazer tdd, tdd na prática
+postKeywords: tdd calculadora, calculator tdd, Test Driven Development, teste softwares, tipos de testes, o que é tdd, exemplo tdd, como fazer tdd
 postDescription: Com certeza você já ouviu (mas nunca tentou!) A ideia é antiga e tomou força em 2003 com o lançamento do famoso livro de TDD de Kent Beck, além de ser um dos pilares do Extreme Programming (XP) também.
 author: Melanie Jordan
 authorImg: melanie.jpg
