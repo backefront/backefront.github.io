@@ -4,13 +4,15 @@ date: 2018-09-13 13:51:00
 tags: 
 - Testes
 - SENAC
-postKeywords: tdd calculadora, calculator tdd, Test Driven Development, teste softwares, tipos de testes, o que é tdd, exemplo tdd, como fazer tdd
+postKeywords: tdd calculadora, calculator tdd, Test Driven Development, teste softwares, tipos de testes, o que é tdd, exemplo tdd, como fazer tdd, qualidade de software
 postDescription: Com certeza você já ouviu (mas nunca tentou!) A ideia é antiga e tomou força em 2003 com o lançamento do famoso livro de TDD de Kent Beck, além de ser um dos pilares do Extreme Programming (XP) também.
 author: Melanie Jordan
 authorImg: melanie.jpg
 authorDesc: Analista de testes senior na Ericsson e pós-graduando em Engenharia da Qualidade de Software pelo Senac
 
 ---
+
+Em nosso dia-a-dia de desenvolvimento, nos deparamos com abreviações, metodologias e diversas informações diferentes e novas, uma delas que é muito falada é o **TDD**. Mas o que é TDD? O desenvolvimento orientado a testes(**T**est-**D**riven **D**evelopment) é um processo de desenvolvimento de software que depende da repetição de um ciclo de desenvolvimento muito curto: os requisitos são transformados em casos de teste muito específicos e, em seguida, o software é aprimorado para passar apenas nos novos testes.
 
 #### Desenvolvimento Guiado por Testes - TDD simples e prático!
 
