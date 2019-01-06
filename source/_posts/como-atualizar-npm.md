@@ -19,6 +19,8 @@ Atualizar o NPM é uma tarefa simples! Porém, como não realizamos esta operaç
 
 Para verificar qual versão está utilizando em seu sistema operacional, digite no terminal o seguinte comando:
 
+<!-- more -->
+
 ```javascript
 npm -v
 ```
