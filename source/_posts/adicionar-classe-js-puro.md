@@ -2,6 +2,8 @@
 title: Como adicionar classes no HTML com Javascript puro
 date: 2018-12-31 07:16:00
 tags:
+- Front-end
+- Javascript
 postKeywords: classe js puro, adicionar classe js, add class pure js, classe js, adicionar pelo js
 postDescription: Você sabia que pode adicionar classe pelo javascript nativamente, de maneira mais eficiente e performática?
 author: Victor Jordan
