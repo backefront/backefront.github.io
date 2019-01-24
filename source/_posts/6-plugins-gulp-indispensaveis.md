@@ -1,6 +1,6 @@
 ---
 title: 6 plugins do Gulp que aumentarão sua produtividade no desenvolvimento front-end
-date: 2019-01-18 10:35:46
+date: 2019-01-24 07:35:46
 tags: 
 - Front-end
 - Javascript
