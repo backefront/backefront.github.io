@@ -1,9 +1,9 @@
 ---
-title: For on - Como fazer uma condição de parada no For no Javascript
+title: For of - Como fazer uma condição de parada no For no Javascript
 date: 2018-10-29 07:36:32
 tags:
 postKeywords: break for, quebrar for, como fazer break em um for, for com condição de parada, break laço, condição for parada, condição de parada for
-postDescription: For.. on, uma maneira elegante de quebrar seu laço de repetição no javascript!
+postDescription: For.. of, uma maneira elegante de quebrar seu laço de repetição no javascript!
 author: Victor Jordan
 authorImg: victor.png
 authorDesc: Desenvolvedor front-end na FITec e formando em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
