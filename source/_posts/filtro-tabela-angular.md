@@ -4,7 +4,7 @@ date: 2018-11-05 07:00:40
 tags: 
 - Front-end
 - Angular
-postKeywords: filtro tabela angular, filter table angular, como fazer filtro angular, filtrar tabela no angular, filtro no grid angular
+postKeywords: filtro tabela angular, filter table angular, como fazer filtro angular, filtrar tabela no angular, filtro no grid angular, filtro, tabela angular
 postDescription: Aprenda como fazer um filtro em uma tabela com o Angular através do ng2-search-filter!
 author: Victor Jordan
 authorImg: victor.png
@@ -58,18 +58,18 @@ export class AppModule { }
 ## Alteração na tabela
 
 Feito isso, podemos agora utilizar as funcionalidades desse módulo de filtro!
-Adicione um **input** que será onde o usuário digitará o texto a ser procurado e no **tr**, onde contém seu `ng-for`, adicione o pipe filter com o mesmo nome que você definiu no **ngModel** do seu input!
+Adicione um `input` que será onde o usuário digitará o texto a ser procurado e no `tr`, onde contém seu **ngFor**, adicione o pipe **filter** com o mesmo nome que você definiu no **ngModel** do seu input!
 
 ```html
 <nav class="navbar">
-    <input class="form-control" type="text" name="search" [(ngModel)]="filter">      
+    <input class="form-control" type="text" name="search" [(ngModel)]="filter">  <!-- Input que deve ser adicionado -->
 </nav>
 
 <!-- ... Código da table ... -->
-<tr *ngFor="let game of games | filter:filter; let i = index">
+<tr *ngFor="let usuario of usuarios | filter:filter; let i = index">
     <td>{{i}}</td>
-    <td>{{game.name}}</td>
-    <td>{{game.genre}}</td>
+    <td>{{usuario.nome}}</td>
+    <td>{{usuario.endereco}}</td>
 </tr>
 ```
 
