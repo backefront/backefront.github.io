@@ -1,6 +1,6 @@
 ---
 title: Como encontrar o maior número de um array javascript
-date: 2019-03-04 07:30:07
+date: 2019-03-11 07:30:07
 tags:
 - Front-end
 - Javascript
