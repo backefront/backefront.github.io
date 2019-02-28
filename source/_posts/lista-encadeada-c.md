@@ -16,7 +16,7 @@ Quem nunca teve aquela aula em estrutura de dados sobre lista encadeada em C, ma
 Foi pensando nisso, que um grande amigo, [Felipe Casseb](https://www.linkedin.com/in/felipe-soares-casseb-dos-santos-b98289aa/), desenvolveu uma vídeo aula explicando como funciona a lista encadeada usando uma analogia com símbolos e exemplificando, usando a sintaxe em C!
 
 {% video 
- <iframe width="300" height="200" src="https://www.youtube.com/watch?v=80roM_jARmI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+ <iframe width="300" height="200" src="https://www.youtube.com/embed/watch?v=80roM_jARmI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 %}
 
 Caso tenha interesse, o arquivo de lista encadeada pode ser encontrado [neste link](https://github.com/casseb/Fatec/blob/master/2%C2%BA%20Semestre/LP1/exListaEncadeada.c). Espero que tenham aproveitado a aula e que possa ajudar em sua matéria de Estrutura de Dados!
