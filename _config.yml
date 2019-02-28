@@ -4,10 +4,10 @@
 
 # Site
 title: Dicas de desenvolvimento e programação
-subtitle: Do front-end ao back-end com dicas para você!
+subtitle: Dicas de desenvolvimento front-end, back-end, testes e muito mais!
 description: No o back e front, você encontra dicas de programação front-end, dicas de javascript, Angular, qualidade de software e muitas outras dicas de desenvolvimento, rápido e gratuito! Aprenda como desenvolver melhor para web
-keywords: back-end, front-end, dicas programação, desenvolvimento de sistemas, algoritmos, usabilidade, UX, websemântico
-author: Igor Venturelli e Victor Jordan
+keywords: back-end, front-end, dicas programação, desenvolvimento de sistemas, algoritmos, usabilidade, UX, tutorial front, front end para iniciantes, front, back, testes
+author: Melanie Jordan e Victor Jordan
 language: pt
 timezone: America/Sao_Paulo
 
@@ -78,6 +78,9 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: landscape
+
+# plugins:
+#   - hexo-tag-video
 
 feed:
   type: atom
