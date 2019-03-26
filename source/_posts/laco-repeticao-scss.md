@@ -20,6 +20,7 @@ Alguma vez você já precisou criar um sistema de grid em seu CSS mas não queri
 ## Laço de Repetição @for
 
 ```css
+$i: 0;
 @for $i from 1 through 4 {
   .classe-#{$i} {
     width: 60px + $i
@@ -33,20 +34,21 @@ Quando compilado, o resultado será o seguinte:
     .classe-1 {
         width: 61px;
     }
-    .classe-1 {
-        width: 61px;
+    .classe-2 {
+        width: 62px;
     }
-    .classe-1 {
-        width: 61px;
+    .classe-3 {
+        width: 63px;
     }
-    .classe-1 {
-        width: 61px;
+    .classe-4 {
+        width: 64px;
     }
 ```
 
 ## Laço de Repetição @while
 
 ```css
+$i: 0;
 @while $i <= 4 {
     .classe-#{$i} {
         width: 60px + $i
@@ -55,7 +57,7 @@ Quando compilado, o resultado será o seguinte:
 }
 ```
 
-O resultado será exatamente ao exemplo superior!
+O resultado será exatamente igual ao exemplo superior!
 
 ## Conclusão
 
