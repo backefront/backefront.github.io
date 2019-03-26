@@ -6,7 +6,7 @@ postKeywords: break for, quebrar for, como fazer break em um for, for com condi�
 postDescription: For.. of, uma maneira elegante de quebrar seu laço de repetição no javascript!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na FITec e formando em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Gauge e formando em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

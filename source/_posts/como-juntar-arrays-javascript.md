@@ -8,7 +8,7 @@ postKeywords: merge arrays js, juntar arrays js, mesclar arrays js, concatenar a
 postDescription: Alguma vez você já precisou juntar, mergear dois arrays no javascript? Você poderia até construir uma lógica relativamente simples, que ocuparia algumas linhas de código para resolver esta situação, sem problema nenhum! Mas e se eu te disser que você consegue resolver esse problema com uma linha de código? Se liga nessa dica então!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na FITec e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Gauge e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

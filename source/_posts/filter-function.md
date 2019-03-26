@@ -8,7 +8,7 @@ postKeywords: JS, filter, ecmascript, dicas de javascript, retornar elementos, E
 postDescription: Entenda como o método filter funciona no javascript e como ele pode melhorar o seu desenvolvimento front-end com essas dicas de javascript.
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na FITec e formando em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Gauge e formando em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

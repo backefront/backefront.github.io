@@ -8,7 +8,7 @@ postKeywords: Update NPM, como atualizar npm, atualizar npm, how to update npm
 postDescription: Atualizar o NPM é uma tarefa simples! Seja no Windows, Mac ou Linux, atualizar seu npm não deve ser um impecilho no seu desenvolvimento! Relembre o comando para atualizar seu NPM neste post!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na FITec e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Gauge e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

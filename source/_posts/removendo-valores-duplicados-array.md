@@ -8,7 +8,7 @@ postKeywords: remover duplicados js, tirar valores iguais js, remover iguais js,
 postDescription: Veja como é fácil remover valores duplicados em um array, no javascript, com o ES6!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na FITec e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Gauge e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

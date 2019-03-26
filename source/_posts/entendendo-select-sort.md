@@ -7,7 +7,7 @@ postKeywords: select sort, como funciona select sort, ordenação sort, metodo s
 postDescription: Você sabe como funciona o método Select Sort? Ele é um algoritmo baseado em passar sempre o menor valor do vetor para a primeira posição, repetindo este passo até que o vetor esteja totalmente organizado. Então, como podemos fazer isso?
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na FITec e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Gauge e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

@@ -7,7 +7,7 @@ postKeywords: portfolio desenvolvedor, boas praticas repositorios github, como c
 postDescription: uando vamos contratar um profissional para realização de algum serviço, como por exemplo, um designer para redesenhar o nosso logo, uma das primeiras coisas que analisamos é o seu portfólio. Mas e no mundo de desenvolvimento? Como podemos construir um portfólio?
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na FITec e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Gauge e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
