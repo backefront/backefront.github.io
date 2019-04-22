@@ -1,5 +1,5 @@
 ---
-title: como-funciona-hierarquia-css
+title: Como funciona a hierarquia do CSS
 date: 2019-04-22 07:10:02
 tags: 
 - CSS
