@@ -13,7 +13,7 @@ authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
 
-Semelhante ao post sobre a [diferença entre as tags <b> e <strong>](https://backefront.com.br/diferenca-entre-b-strong/), neste post irei falar sobre a diferença entre as tags **i** e **em**, que apesar de ambas terem um estilo em itálico, semânticamente elas são diferentes! 
+Semelhante ao post sobre a [diferença entre as tags b e strong](https://backefront.com.br/diferenca-entre-b-strong/), neste post irei falar sobre a diferença entre as tags **i** e **em**, que apesar de ambas terem um estilo em itálico, semânticamente elas são diferentes! 
 
 Como definição dada pela [MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/i), a tag **i** é definida como: 
 
