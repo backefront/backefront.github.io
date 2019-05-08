@@ -74,4 +74,5 @@ Adicione um `input` que será onde o usuário digitará o texto a ser procurado 
 ```
 
 Agora você possui uma tabela com filtro em todas as colunas, de forma rápida! 
-No próximo post da série, irei mostrar como criar uma tabela com paginação no front-end!
+
+Não deixe de conferir os outros posts sobre [como fazer ordenação na tabela do Angular](https://backefront.com.br/ordenacao-tabela-angular/) e [como criar paginação na tabela do Angular](https://backefront.com.br/criando-paginacao-tabela-angular/)!
