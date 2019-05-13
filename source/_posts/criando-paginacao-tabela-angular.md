@@ -95,3 +95,5 @@ Agora temos um componente de paginação totalmente funcional! Mas será que faz
 ```
 
 Existem outros parâmetros no qual você pode adicionar em sua paginação, no [Github do componente](https://github.com/michaelbromley/ngx-pagination) você consegue ver quais outras opções podem ser passadas!
+
+Não deixe de conferir os outros posts sobre [como fazer ordenação na tabela do Angular](https://backefront.com.br/ordenacao-tabela-angular/) e [como fazer filtro na tabela do Angular](https://backefront.com.br/filtro-tabela-angular/)!
