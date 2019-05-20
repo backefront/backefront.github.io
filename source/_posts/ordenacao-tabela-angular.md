@@ -1,6 +1,6 @@
 ---
 title: Como fazer ordenação em uma tabela com Angular
-date: 2019-05-08 08:10:25
+date: 2019-05-13 08:10:25
 tags: 
 - Front-end
 - Angular
