@@ -1,6 +1,6 @@
 ---
 title: Como remover um item do JSON
-date: 2019-05-10 16:04:45
+date: 2019-05-20 16:04:45
 tags:
 - Front-end
 - Javascript
