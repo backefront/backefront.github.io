@@ -104,11 +104,11 @@ Vamos adicionar com um simples caractere, mas você pode alterar para algum íco
         <th>#</th>
         <th (click)="sort('nome')">
             Nome
-            <span *ngIf="key =='nome'">{reverse ? ▲ : ▼}</span>
+            <span *ngIf="key =='nome'">{{reverse ? '▲' : '▼'}}</span>
         </th>
         <th (click)="sort('endereco')">
             Endereço
-            <span *ngIf="key =='endereco'">{reverse ? ▲ : ▼}</span>
+            <span *ngIf="key =='endereco'">{{reverse ? '▲' : '▼'}}</span>
         </th>
     </tr>
 </thead>
