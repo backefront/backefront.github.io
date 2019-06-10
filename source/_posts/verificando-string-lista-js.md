@@ -22,6 +22,8 @@ De acordo com a especificação, o método verifica se um determinado valor est�
 
 Vamos analisar o exemplo abaixo:
 
+<!-- more -->
+
 ```javascript
 let array = [5, 4, 7];
 
