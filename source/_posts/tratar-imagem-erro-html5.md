@@ -1,7 +1,9 @@
 ---
-title: tratar-imagem-erro-html5
+title: Como tratar erro de carregamento de uma imagem HTML
 date: 2019-07-05 08:11:07
 tags:
+- HTML
+- Javascript
 postKeywords: img error html, handle img broken, tratar imagem quebrada html, onerror img html, imagem padrao html, substituir imagem quando quebrar
 postDescription: Neste post, irei mostrar como tratar uma imagem quebrada com o Javascript, substituindo por uma imagem padrão, evitando que seu layout se quebre!
 author: Victor Jordan
