@@ -16,6 +16,7 @@ O processo de desenvolvimento de um site envolve muitas coisas
 Planejamento, desenho de um wireframe, organização dos elementos nas páginas
 Construção do código de forma semântica, acessível e organizado
 E após termos tudo devidamente construído, precisamos colocar esse nosso site em algum lugar
+
 As vezes, não queremos gastar dinheiro nisso
 Pode ser que uma hospedagem gratuita apenas para demonstração para o cliente seja o suficiente.
 Mas existe algo gratuito assim? A resposta é sim!
