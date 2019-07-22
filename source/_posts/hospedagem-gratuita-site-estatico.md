@@ -2,14 +2,14 @@
 title: Como hospedar seu projeto front-end gratuitamente
 date: 2019-07-22 08:24:47
 tags:
-postKeywords:
-postDescription:
-author:
-authorImg:
-authorDesc:
-authorLinkedin:
-authorGithub:
-authorStackoverflow:
+- Front-end
+postKeywords: hospedagem gratuita, front end host free, como hospedar site gratuito, front end hospedar, surge, como usar surge
+postDescription: Você sabia que existe uma forma de subir seus projetos de forma gratuita e sem dores de cabeça, tudo por linha de comando? Aprenda neste post como fazer isso!
+author: Victor Jordan
+authorImg: victor.png
+authorDesc: Desenvolvedor front-end na Gauge e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorLinkedin: victorjordan95
+authorGithub: victorjordan95
 ---
 
 O processo de desenvolvimento de um site envolve muitas coisas
