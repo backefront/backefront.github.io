@@ -30,7 +30,7 @@ div:empty {
 }
 ```
 
-E com esta técnica, conseguimos esconder tags que não possuem conteudo!
+E com esta técnica, conseguimos esconder tags que não possuem conteúdo!
 Fazendo com CSS puro, da seguinte forma:
 
 ```css
