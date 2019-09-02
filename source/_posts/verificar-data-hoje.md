@@ -1,5 +1,5 @@
 ---
-title: verificar-data-hoje
+title: Como verificar se a data é 
 date: 2019-09-02 08:31:13
 tags: 
 - Javascript
@@ -8,7 +8,7 @@ postKeywords: check date is today, verificar data é hoje, é hoje js, javascrip
 postDescription: Aprenda como construir uma função para verificar se o dia que estamos validando é igual ao dia de hoje, com javascript!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e formando em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Gauge e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
