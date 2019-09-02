@@ -1,5 +1,5 @@
 ---
-title: Como verificar se a data é 
+title: Como verificar se a data é hoje
 date: 2019-09-02 08:31:13
 tags: 
 - Javascript
