@@ -8,7 +8,7 @@ postKeywords: Flexbox, alinhar div no meio, centralizar conteudo, alinhar conteu
 postDescription: Centralizar um conteúdo no centro de um elemento é uma situação comum de acontecer. Existem diversas formas de fazer isso, mas nesta publicação, mostrarei como centralizar uma div utilizando o `flexbox`!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e formando em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Gauge e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

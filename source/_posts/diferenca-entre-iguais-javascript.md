@@ -8,7 +8,7 @@ postKeywords: comparacao js, diferenca entre == e ===, == e === js, comparacao j
 postDescription: No começo de nosso aprendizado em javascript, é comum nos depararmos com algumas situações que causam dúvidas e até estramento, principalmente se o estudante estiver estudando alguma outra linguagem em paralelo ou já possui um conhecimento prévio de linguagem de programação, e uma desta dúvida é qual a diferença entre comparar algo com dois iguais ( == ) e com três iguais ( === )? No Javascript, tem uma diferença enorme entre esses dois tipos de comparações! Vamos ver?
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e formando em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Gauge e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

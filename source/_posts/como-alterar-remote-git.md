@@ -7,7 +7,7 @@ postKeywords: repositorio git set url, definir url repositorio git, git url repo
 postDescription: As vezes precisamos alterar a URL de nossos projetos para outros repositórios no git e podemos fazer isso de uma forma rápida e fácil com o comando que o git nos disponibiliza!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e formando em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Gauge e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
