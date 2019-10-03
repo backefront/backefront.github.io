@@ -15,7 +15,7 @@ Existe um ditado popular que diz que: *errar é humano* e em um projeto de desen
 
 No geral, quando estamos analisamos um novo projeto e fazendo as estimativas, acabamos esquecendo de pontos que deviam ser levados em conta, como por exemplo:
 
-more
+<!-- more -->
 
 * As ferramentas de desenvolvimento que usamos as vezes contém erros e podemos não ter familiaridade com elas.
 * Pessoas são pessoas e não máquinas, isso quer dizer que as vezes podem render menos do que esperado.
