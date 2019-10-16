@@ -23,6 +23,8 @@ Esta norma é definida por seis características de qualidade para produtos de s
 - Manutenibilidade;  
 - Portabilidade. 
 
+<!-- more -->
+
 ## Funcionalidade
 
 Descreve a capacidade, um conjunto de funções que um software deve prover para que satisfaça as necessidades de um usuário, 
