@@ -13,9 +13,8 @@ authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
 
-Continuando a nossa série de "coisas que podemos fazer com Javascript puro", [no último post](https://backefront.com.br/adicionar-classe-js-puro/), 
-conversamos sobre como podemos adicioanr uma classe em um elemento HTML com Javascript puro. Hoje vou mostrar como podemos fazer o processo
-reverso, remover uma classe com Javascript puro, sem nenhuma lib!
+Continuando a nossa série de "coisas que podemos fazer com Javascript puro", [no último post](https://backefront.com.br/adicionar-classe-js-puro/), conversamos sobre como podemos adicioanr uma classe em um elemento HTML com Javascript puro. 
+Hoje vou mostrar como podemos fazer o processo reverso, remover uma classe com Javascript puro, sem nenhuma lib!
 
 <!-- more -->
 
@@ -33,5 +32,5 @@ const elemento = document.getElementById('elemento');
 elemento.classList.remove('red');
 ```
 
-O Javascript tem evoluído constantemente e sempre nos trazendo facilidades, fazendo com que, muitas das vezes, não precisemos utilizar bibliotecas que apenas
-sobrecarregariam o nosso sistema, permitindo que façamos tudo nativamente com o Javascript. A remoção de classe com Javascript puro é um exemplo disso!
+O Javascript tem evoluído constantemente e sempre nos trazendo facilidades, fazendo com que, muitas das vezes, não precisemos utilizar bibliotecas que apenas sobrecarregariam o nosso sistema, permitindo que façamos tudo nativamente com o Javascript. 
+A remoção de classe com Javascript puro é um exemplo disso!
