@@ -29,7 +29,7 @@ node.addEventListener('keydown', (e) => {
 });
 ```
 
-Vamos dizer imaginar um cenário onde queremos capturar a tecla __"Enter"__, em um _textarea_
+Vamos imaginar um cenário onde queremos capturar a tecla __"Enter"__, em um _textarea_
 Caso seja enter, deve chamar uma função.
 
 ```javascript
@@ -52,4 +52,4 @@ Com essa pequena quantidade de código, conseguimos reconhecer qual tecla está 
 E através disso, melhoramos a usabilidade, trazendo mais velocidade para o usuário, que agora 
 pode salvar suas informações teclando Enter!
 
-É uma funcionalidade extremamente simples mas que quando bem usada, pode nos agregar muito em nossas aplicações!
+É uma funcionalidade extremamente simples mas que quando bem usada, pode agregar muito em nossas aplicações!
