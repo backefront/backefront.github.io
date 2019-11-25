@@ -14,10 +14,10 @@ authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
 
-Você já precisou criar alguma função no Javascript e no momento em que estava desenvolvendo, tudo funcionava perfeitamente
+Você já precisou criar alguma função no Javascript e no momento em que estava desenvolvendo, tudo funcionava perfeitamente!
 
 Mas em um determinado momento de seu projeto, você reparou que o retorno daquela função, estava diferente do que esperado!
-Você agora precisa corrigir e entender onde quebrou e o porque! 
+Você agora precisa corrigir e entender onde quebrou e o porquê! 
 
 Você conseguiria evitar isso, caso tivesse coberto aquele caso de uso, com um teste!
 
