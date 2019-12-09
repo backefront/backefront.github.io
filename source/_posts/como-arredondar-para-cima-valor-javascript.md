@@ -16,8 +16,7 @@ authorGithub: victorjordan95
 Você já precisou arredondar algum número mas não sabia como fazer isso?
 Ou arredondar para o valor inteiro mais próximo?
 
-No javascript, temos um objeto chamado `Math`, com ele conseguimos realizar diversas operações matemáticas, simplesmente chamando este objeto e passando
-o método que desejamos! 
+No javascript, temos um objeto chamado `Math`, com ele conseguimos realizar diversas operações matemáticas, simplesmente chamando este objeto e passando o método que desejamos! 
 
 Neste post, irei mostrar como podemos arredondar números com nosso Javascript, tudo utilizando o `Math`!
 
