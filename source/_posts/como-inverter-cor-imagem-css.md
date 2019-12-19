@@ -15,7 +15,7 @@ authorGithub: victorjordan95
 
 Esses dias estava desenvolvendo uma aplicação para um de nossos clientes, onde pegamos o protótipo da tela, feito no [Marvel](https://marvelapp.com/) por um de nossos UI Designers (User Interface Designers). 
 
-Todas as imagens e icones já estavam recortados, tudo pronto para serem usados. Porém, em uma determinada página, estava sendo usado um ícone com o símbolo "+", em branco, porém, a versão que eu tinha recortada era em preto, e eu não conseguiria conversar com o UI naquele momento, eu precisava me virar com o que eu tinha em mãos! Como poderia fazer isso? 
+Todas as imagens e icones já estavam recortados e prontos para serem usados. Porém, em uma determinada página, estava sendo usado um ícone com o símbolo "+", em branco, porém, a versão que eu tinha recortada era em preto, e eu não conseguiria conversar com o UI naquele momento, eu precisava me virar com o que eu tinha em mãos! Como poderia fazer isso? 
 
 Graças ao CSS, conseguimos fazer algumas modificações em nossas imagens, sem a necessidade de alterar para uma outra imagem!
 Você conhece a propriedade `filter`?
