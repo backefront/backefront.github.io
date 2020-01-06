@@ -1,5 +1,5 @@
 ---
-title: como-fazer-post-javascript-puro
+title: Como fazer um POST com Javascript puro
 date: 2020-01-06 09:34:45
 tags:
 - Front-end
