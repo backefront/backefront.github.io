@@ -43,4 +43,4 @@ fetch('https://backefront.com.br/api/users', {
 ```
 
 O Fetch nos permite trabalhar com todos os métodos HTTP, sendo eles: GET, POST, PUT, DELETE, etc.
-Ele é bem simples e intuitivo sua implementação, o que facilita muito em nosso desenvolvimento!
+Sua implementação é bem simples e intuitiva, o que facilita muito em nosso desenvolvimento!
