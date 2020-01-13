@@ -1,5 +1,5 @@
 ---
-title: evite-usar-push-javascript
+title: Evite usar push em objetos no Javascript
 date: 2020-01-13 07:21:55
 tags:
 - Front-end
