@@ -17,11 +17,11 @@ Por definição, temos que um número primo é aquele número onde ele é divis�
 Como exemplo, os primeiros números primos são: 2, 3, 5, 7 e assim por diante.
 
 Um exercício de lógica muito comum pedido é verificar se um dado número é primo ou não.
-Você sabe como verificar se um número é primo ou não, utilizando Javascript?
+Você sabe então, como validar, utilizando Javascript?
 
 <!-- more -->
 
-Com o Javascript, conseguimos verificar se o número é primo ou não utilizando um algoritmo bem curto:
+Para verificar, podemos utilizar um algoritmo bem curto:
 
 ```javascript
 const isPrime = (num) => {
@@ -34,5 +34,4 @@ const isPrime = (num) => {
 }
 ```
 
-Com essa função, conseguimos verificar se o número é primo ou não!
-Bem simples, não é mesmo?
+Com essa simples função, conseguimos verificar se o número é primo ou não! Esse tipo de questão é muitas das vezes pedido em testes de entrevistas, provas de faculdades, ou até mesmo, em alguma determinada situação em nossos trabalhos!
