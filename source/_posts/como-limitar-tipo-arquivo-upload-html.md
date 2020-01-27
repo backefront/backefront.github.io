@@ -38,4 +38,4 @@ Para limitarmos o tipo de arquivo que será aceito pela nossa interface, basta a
 ```
 
 Com isso, podemos limitar que o usuário veja apenas um tipo de extensão de arquivo, através de nossa interface!
-O ideal era que, mesmo que limitando isso, ainda verificarmos se é realmente aquele tipo pelo Javascript e se possível, verificar no back-end também!
+O ideal é que mesmo limitando isso, ainda verificarmos se é realmente aquele tipo pelo Javascript e se possível, verificar no back-end também!
