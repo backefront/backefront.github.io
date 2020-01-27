@@ -34,7 +34,7 @@ Para limitarmos o tipo de arquivo que será aceito pela nossa interface, basta a
 
 ### Limitando apenas arquivos de texto
 ```html
-<input type="file" multiple accept='application/pdf'>
+<input type="file" multiple accept='application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document'>
 ```
 
 Com isso, podemos limitar que o usuário veja apenas um tipo de extensão de arquivo, através de nossa interface!
