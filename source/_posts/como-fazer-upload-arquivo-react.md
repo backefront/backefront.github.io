@@ -71,4 +71,4 @@ const addNewCard = async () => {
 
 Dessa forma, conseguimos enviar arquivos pelo nosso front para o back!
 
-Caso você precise validar um tipo de extensão específica, [nest post](https://backefront.com.br/como-limitar-tipo-arquivo-upload-html/) demonstrei como podemos fazer isso também pelo HTML!
+Caso você precise validar um tipo de extensão específica, [neste post](https://backefront.com.br/como-limitar-tipo-arquivo-upload-html/) demonstrei como podemos fazer isso também pelo HTML!
