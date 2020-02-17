@@ -72,4 +72,3 @@ server.listen(4000);
 Com isso, pegamos o ID vindo da URL e buscamos em todos os projetos, retornando apenas o projeto que for igual ao ID enviado!
 Simples não é mesmo?
 
-🏡
