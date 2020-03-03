@@ -26,6 +26,8 @@ arr2[0] = 'x'
 Ao fazer isso, internamente são criados dois arrays completamente diferentes, porém com alguns valores em comum.  
 Não seria mais interessante se fosse possível fazer o que aparentemente fazemos com esse código: criar o `arr2` "baseado" em `arr`, dessa forma otimizando memória?
 
+<!-- more -->
+
 Com certeza.  
 
 Uma forma "simples" de fazer isso é dividindo o nosso array em pequenos arrays e dessa forma, juntar as partes necessárias.
