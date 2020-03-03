@@ -5,10 +5,10 @@ tags:
 postKeywords: imutabilidade js, javascript, front-end, tipos imutaveis javascript
 author: Igor Venturelli
 authorImg: igor.png
-authorDesc: Desenvolvedor back-end, admirador de Java, Python, Go e DevOps!
+authorDesc: Prgroamação, Segurança e Tecnologia em Geral
 authorLinkedin: igorventurelli
-authorGithub: igorventurelli
-authorStackoverflow: 5963/igor-venturelli
+authorGithub: igventurelli
+authorStackoverflow: 5963/igventurelli
 ---
 
 Ao falar sobre imutabilidade o pensamento que nos vem a cabeça é: _simples, é só fazer cópia das variáveis ao invés de manipular a mesma_.  
