@@ -14,13 +14,18 @@ authorGithub: victorjordan95
 ---
 
 Em nosso desenvolvimento diário, saber programar apenas não é o suficiente para sermos de fato um bom programador.
-Existem padrões de projetos, boas práticas e alguns padrões que se seguirmos, nos torna muito melhor bem como o nosso código!
+Existem padrões de projetos, boas práticas e alguns padrões que se seguirmos, nos torna muito melhor, bem como o nosso próprio código!
 
-Uma coisa que devemos ter em mente é que, um código para ser considerado realmente bom é aquele código que fazemos de forma que um outro humano possa entender!
+Uma coisa que devemos ter em mente é que, um código para ser considerado **realmente bom** é aquele código que fazemos de forma que um outro ser humano possa entender!
 
 Pensando nisso, uma boa prática é utilizarmos o `eslint`!
 
 <!-- more -->
+
+ESLint é um plugin desenhado para permitir que desenvolvedores encontrem problemas em seu Javascript sem a necessidade de executar ele.
+Ele é usado para encontrar problemas de padrões de projeto ou algum código que não se encaixe em algum determinado  style guidelines
+
+O ESlint é uma biblioteca open source, escrita originalmente por Nicholas C. Zakas em Junho de 2013.
 
 ### Instalando o ESLint
 
