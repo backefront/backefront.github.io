@@ -151,5 +151,13 @@ module.exports = {
   },
 };
 ```
+Para finalizar, devemos adicionar mais três libs. Elas nos ajudarão a informar onde que estamos errando ou o que estamos esquecendo!
+Vamos então rodar o comando:
+
+```javascript
+yarn add -D babel-eslint eslint-plugin-prettier eslint-config-prettier
+// Ou
+npm install --save-dev babel-eslint eslint-plugin-prettier eslint-config-prettier
+```
 
 Agora com toda essa configuração feita, ao salvarmos nossos arquivos, eles são formatados para se adequar ao melhor padrão bem como também temos agora notificações de Javascript, para tornar os nossos códigos ainda mais legíveis, utilizando as melhores práticas!
