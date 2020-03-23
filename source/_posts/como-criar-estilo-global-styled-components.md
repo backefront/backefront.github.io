@@ -1,5 +1,5 @@
 ---
-title: como-criar-estilo-global-styled-components
+title: Como criar estilo global com styled components - React
 date: 2020-03-23 08:26:45
 tags:
 - Front-end
