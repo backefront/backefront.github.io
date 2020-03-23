@@ -86,3 +86,5 @@ export default App;
 ```
 
 E pronto! Agora temos nosso estilo global funcionando e importado, sem nenhuma dificuldade!
+
+🏡
