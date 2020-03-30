@@ -97,3 +97,5 @@ Abaixo, podemos ver quais são as bibliotecas de ícones contidas em react-icons
 ### Documentação
 
 Para ter acesso a documentação completa e consequentemente, o nome dos ícones, modo de importação correto, você deve acessar a (documentação oficial do react-icons)[https://react-icons.netlify.com/#/]
+
+🏡
