@@ -4,7 +4,7 @@ date: 2019-11-25 07:10:24
 tags:
 - Front-end
 - Javascript
-- Teste
+- Testes
 postKeywords: test jest, jest babel, jest import function, jest export, como importar funcao jest, jest ES6, jest new js, jest react, test jest react
 postDescription: Entenda como criar um teste com o Jest, utilizando Babel e ES6, de uma maneira simples e sem dor de cabeça!
 author: Victor Jordan
