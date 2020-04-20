@@ -48,3 +48,6 @@ console.log(topic);
 
 Bem mais fácil do que imaginávamos!
 Quanto sua aceitação nos navegadores, consultando o [Can I User](https://caniuse.com/#feat=urlsearchparams) vemos que praticamente apenas o IE não suporta essa interface!
+
+
+🏡
