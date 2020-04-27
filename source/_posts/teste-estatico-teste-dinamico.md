@@ -48,6 +48,8 @@ Além disso, é através do dinâmico que podemos verificar:
 - Performance da aplicação
 - Comportamento funcional
 
+Além disso, podemos dividir testes dinâmicos entre **funcionais** e **não-funcionais** 
+
 ### Resumindo
 
 Basicamente, a maior diferença que podemos apontar é que `Teste estático` nós não executamos o código enquanto `Teste dinâmico` executamos.
