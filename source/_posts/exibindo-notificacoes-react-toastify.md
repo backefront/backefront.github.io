@@ -1,7 +1,7 @@
 ---
 title: Exibindo notificações com React Toastify
 date: 2020-05-11 08:22:09
-tags:~
+tags:
 - Front-end
 - Javascript
 postKeywords: react toastify, react notifications, exibir notificação react, react, front-end, javascript, show notification
