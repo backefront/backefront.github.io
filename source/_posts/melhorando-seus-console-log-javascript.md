@@ -37,7 +37,7 @@ Para encerrar o grupo, deve-se usar o groupEnd.
 
 Podemos também exibir erros e avisos de maneira correta, utilizando o `warn` para avisos e `error` para erros!
 
-![Exibição do console.group](/posts/console-error-warn.png)
+![Exibição do console.warn e console.error](/posts/console-error-warn.png)
 
 Existem ainda mais opções que podemos utilizar com o console!
 Você pode ler mais acessando [este link](https://developer.mozilla.org/en-US/docs/Web/API/Console)
