@@ -39,6 +39,7 @@ Feito isso, podemos então adicionar nossas regras genéricas!
 ```javascript
 import { createGlobalStyle } from 'styled-components';
 
+export default createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
@@ -55,6 +56,7 @@ import { createGlobalStyle } from 'styled-components';
   }
 
   // Adicione quais mais regras desejar!
+`
 ```
 
 Legal! Agora temos nosso arquivo feito, mas como usar ele?
