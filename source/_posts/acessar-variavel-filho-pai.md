@@ -34,10 +34,13 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-voto-card',
-  template: `<button
-    type="button"
-    (click)="counter()"
-    >`,
+  template: `
+	<button
+      type="button"
+      (click)="counter()">
+		Votar
+	</button>
+	`,
   styleUrls: ['./voto-card.component.scss'],
 })
 export class VotoCardComponent implements OnInit {
