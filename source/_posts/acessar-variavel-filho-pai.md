@@ -56,6 +56,7 @@ export class VotoCardComponent implements OnInit {
     this.counterEmitter.emit(this.counter);
     this.counter += 1;
   }
+}
 ```
 
 Perfeito, com isso estaremos **emitindo** a variável `counter` para que outros componentes possam "ouvi-la".
@@ -90,6 +91,7 @@ export class ParentComponent implements OnInit {
   onCounter(counter: number): void {
     this.amountCounter += counter;
   }
+}
 ```
 
 Note que no HTML do componente pai declaramos `(counter)`, que é exatamente a função que criamos no filho e em seguida passamos qual função do componente pai irá receber os valores enviados.
