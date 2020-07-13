@@ -48,8 +48,6 @@ Com isso em mente, vamos adicionar ele no nosso arquivo `App.js` pois é nele qu
 ```jsx
 import React, { useState, useEffect } from 'react';
 
-import { BrowserRouter, Switch, Route, Router } from 'react-router-dom';
-
 import Login from './pages/Login/Login.page';
 import Register from './pages/Register/Register.page';
 
