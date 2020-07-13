@@ -20,7 +20,7 @@ O que isto significa? Significa que usando o context, você tem um ponto focal d
 
 Com ele, conseguimos facilitar em muito nosso desenvolvimento!
 
-<-- more -->
+<!-- more -->
 
 Vamos imaginar que queremos criar um context de informação do usuário logado. 
 
