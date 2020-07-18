@@ -7,7 +7,7 @@ tags:
 postKeywords: react toastify, react notifications, exibir notificação react, react, front-end, javascript, show notification
 postDescription: Neste post, irei ensinar como podemos usar o React Toastify, uma biblioteca para exibição de notificações, com o intuito de tornar nossa aplicação mais rica em detalhes e com uma usabilidade melhor!
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

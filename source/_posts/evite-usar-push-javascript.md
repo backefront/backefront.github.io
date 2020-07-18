@@ -8,7 +8,7 @@ postKeywords: avoid push, push com spread, adicionar item lista, objeto, javascr
 postDescription: Neste post, irei comentar um pouco porque não devemos alterar diretamente um objeto no Javascript utilizando a função push e como devemos contornar essa situação!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

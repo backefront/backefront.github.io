@@ -8,7 +8,7 @@ postKeywords: ordenacao tabela angular, ordenar campos angular, tabela ordenacao
 postDescription: Hoje abordarei um item fundamental, que ajuda muito o usuário quando está fazendo uma consulta, a ordenação. A ordenação permite organizar a forma de exibição dos dados de uma determinada tabela, seja em ordem crescente, decrescente, etc.. Para isto, usaremos o ngx-order-pipe.
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

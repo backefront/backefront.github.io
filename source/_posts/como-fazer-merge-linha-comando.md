@@ -7,7 +7,7 @@ postKeywords: git merge, command line git merge, git, merge, comamnd, mergear ma
 postDescription: Neste post, será abordado como fazer merge de uma branch para outra, por linha de comando, no git, sem complicações!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

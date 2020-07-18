@@ -8,7 +8,7 @@ postKeywords: verificar espaco vazio js, white space js, espaco branco, espacame
 postDescription: Veja como é simples verificar se uma string possui espaço branco com Javascript!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 ---
 

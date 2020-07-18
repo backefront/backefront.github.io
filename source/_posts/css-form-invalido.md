@@ -8,7 +8,7 @@ postKeywords: css invalid input, alterar css form, form css, css invalido formul
 postDescription: Neste post, irei mostrar como você pode adicionar nativamente um comportamento em um input inválido, alterando a cor dele, deixando mais intuitivo, de maneira nativa com CSS
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

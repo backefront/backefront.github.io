@@ -8,7 +8,7 @@ postKeywords: async function, esperar resultado, wait resolve, esperar resolver 
 postDescription: Neste post, irei mostrar como podemos converter uma função normal em uma função assíncrona, de forma que o Javascript espere a função se resolver para dar continuidade no código.
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

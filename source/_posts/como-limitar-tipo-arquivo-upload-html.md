@@ -8,7 +8,7 @@ postKeywords: input limit, limitar extensao html, html, permitir apenas um tipo 
 postDescription: Neste post, irei mostrar como podemos limitar a nossa interface para permitir que o usuário possa fazer upload de apenas um tipo de extensão de arquivo, através do input file!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

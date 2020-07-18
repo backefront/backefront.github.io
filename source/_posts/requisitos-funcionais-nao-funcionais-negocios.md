@@ -7,7 +7,7 @@ postKeywords: RNF x RF, requisitos funcionas diferença, requisitos não-funcion
 postDescription: Você conhece e sabe quais são os requisitos existentes em Engenharia de Software? Todo desenvolvimento de algum software necessita de um conjunto de requisitos. Sendo que estes requisitos, quando mal definidos, acabam em sistemas que não são adequados para os clientes. Podemos afirmar então, que todos os requisitos levantados formam a base para o desenvolvimento e também a manutenção futuro.
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

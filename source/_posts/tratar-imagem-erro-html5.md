@@ -8,7 +8,7 @@ postKeywords: img error html, handle img broken, tratar imagem quebrada html, on
 postDescription: Neste post, irei mostrar como tratar uma imagem quebrada com o Javascript, substituindo por uma imagem padrão, evitando que seu layout se quebre!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
