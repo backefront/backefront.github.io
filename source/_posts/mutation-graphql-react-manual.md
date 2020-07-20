@@ -7,7 +7,7 @@ postKeywords: manually mutation grapql, mutation manual, executar ao clique grap
 postDescription: Neste post, irei mostrar como podemos fazer uma mutation ser executada no momento em que desejamos, usando o Apollo com React, para criar uma mutation no GraphQL.
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

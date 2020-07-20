@@ -7,7 +7,7 @@ postKeywords: hospedagem gratuita, front end host free, como hospedar site gratu
 postDescription: Você sabia que existe uma forma de subir seus projetos de forma gratuita e sem dores de cabeça, tudo por linha de comando? Aprenda neste post como fazer isso!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

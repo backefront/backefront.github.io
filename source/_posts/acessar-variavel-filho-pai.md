@@ -8,7 +8,7 @@ postKeywords: variavel pai filho angular, angular compartilhar variavel, compart
 postDescription: Compartilhar variáveis entre componentes é uma atividade que frequentemente realizamos, principalmente quando desenvolvemos componentes com o intuito de serem reaproveitados por toda a aplicação. Compartilhar as variáveis do filho para o pai talvez não seja a coisa mais rápida de ser feita, mas é bem simples também!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

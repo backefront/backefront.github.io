@@ -7,7 +7,7 @@ postKeywords: hierarquia css, importancia css, estilo in-line como funciona, css
 postDescription: Você sabe qual a diferença entre escrever um estilo no CSS usando ID ou Classe? E você sabe o porque falamos que para escrever estilos você deve usar sempre classes? Chega aí pra entender como funciona o CSS! 
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

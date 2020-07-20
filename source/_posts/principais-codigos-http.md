@@ -7,7 +7,7 @@ postKeywords: erros http, o que significa 404, erro 404 o que é, códigos http,
 postDescription: Todo desenvolvedor web com certeza já esbarrou no famoso HTTP, seja implementando uma nova API ou consumindo uma. A necessidade de conhecer, no mínimo, o básico sobre o protocolo HTTP, é obrigatório! Utilizamos praticamente em todo momento algo envolvendo o HTTP, e entender seu funcionamento e como trabalhar da melhor forma, é o que difere profissionais!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

@@ -9,7 +9,7 @@ postKeywords: get all nodejs, get node, get by id node, parametro url node, como
 postDescription: Continuando a série sobre API NodeJS, hoje irei mostrar como podemos construir uma rota GET All projects e também como podemos fazer para retornar um projeto de um id específico
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

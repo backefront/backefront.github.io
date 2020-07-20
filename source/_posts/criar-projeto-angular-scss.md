@@ -8,7 +8,7 @@ postKeywords: angular scss, gerar projeto angular com scss, ng new scss, sass an
 postDescription: Você sabia que podemos passar alguns parâmetros junto ao comando de criação de projeto no Angular para que o projeto já venha com algumas configurações definidas? Um exemplo disso é a criação do projeto já utilizando o Scss!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

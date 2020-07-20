@@ -8,7 +8,7 @@ postKeywords: validar email javascript, como validar email, validate email js, j
 postDescription: Quando estamos desenvolvendo um formulário em uma aplicação web ou em um simples campo de e-mail, desejamos fazer uma validação se o texto que está sendo inserido pelo o usuário está no formato de e-mail realmente. Existem algumas máscaras e até mesmo o input do HTML5 do tipo "email" que nos ajudam a fazer isto. Mas como podemos fazer essa validação via Javascript?
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

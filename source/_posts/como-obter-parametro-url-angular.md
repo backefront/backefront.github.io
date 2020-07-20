@@ -8,7 +8,7 @@ postKeywords: parameter url angular, parametro url angular, como pegar atributo 
 postDescription: Neste post, explicarei como acessar um parâmetro passado pela URL com o Angular, tornando seu desenvolvimento mais ágil e inteligente!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

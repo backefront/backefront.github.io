@@ -8,7 +8,7 @@ postKeywords: capturar tecla javascript, tecla digitada javascript, tecla digita
 postDescription: Através do Javascript, conseguimos reconhecer qual tecla que estamos digitando pelo teclado, conseguimos inclusive, fazer chamadas de funções personalizadas de acordo com a tecla que foi digitada pelo usuário! Veja como é simples e fácil!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

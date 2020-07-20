@@ -7,7 +7,7 @@ postKeywords: repositorio git set remote, definir url repositorio git, git url r
 postDescription: Adicionar um novo projeto a um repositório git que já exista talvez possa parecer ser uma tarefa chatinha, mas é justamente o contrário! É muito mais simples que pensa, com o comando que o git nos disponibiliza!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

@@ -8,7 +8,7 @@ postKeywords: reticencias css, limitar numero linhas css, tres pontinhos css, ov
 postDescription: Neste post, irei demonstrar como podemos limitar a quantidade de linhas a serem exibidas em um parágrafo, adicionando reticências caso seja necessário, através de uma propriedade do próprio CSS!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

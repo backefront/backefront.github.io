@@ -9,7 +9,7 @@ postKeywords: nodejs environment variable, ler variavel node, acessar path node,
 postDescription: Veja como podemos acessar as variáveis de ambiente de nosso computador através do NodeJS, sem complicações!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Gauge e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Desenvolvedor front-end na Accenture e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
