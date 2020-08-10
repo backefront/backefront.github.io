@@ -1,5 +1,5 @@
 ---
-title: Debounce Javascrit - Executando função segundos após digitar
+title: Debounce Javascript - Executando função segundos após digitar
 date: 2020-08-10 08:31:55
 tags:
 - Front-end
