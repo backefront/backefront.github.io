@@ -36,7 +36,7 @@ const Employees = () => {
   const handleRequest = string => {
     history.push({
       pathname: `/funcionario/`,
-      state: { text: 'texto para enviar' }
+      state: { text: string }
     });
   };
 
@@ -46,7 +46,6 @@ const Employees = () => {
     >
     Enviar dado
   </button>
-
 }
 
 export default Employees;
