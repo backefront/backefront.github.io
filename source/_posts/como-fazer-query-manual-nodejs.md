@@ -32,7 +32,7 @@ npm install pg
 Agora instalado, precisamos nos conectar ao banco de dados:
 
 ```js
-const { Pool, Client } = require('pg')
+const { Client } = require('pg')
 
 const client = new Client({
   user: 'dbuser',
