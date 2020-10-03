@@ -2,11 +2,9 @@
 title: Hacktoberfest 2020 - o que é?
 date: 2020-10-04 10:00:04
 tags:
-- Front-end
-- Eventos
-postKeywords: hacktoberfest 2020, como funciona hacktoberfest, como ganhar camiseta, github, digitalocean, tutorial hacktoberfest, premios hacktoberfest,
-hacktoberfest 
-postDescription: Hacktoberfest é um evento a nível global que tem como intuito a comemoração de softwares open-sources! As principais empresas que estão por trás desta edição são DigitalOcean, Intel, entre outras que você pode ver no site oficial! 
+  - Front-end
+  - Eventos
+postKeywords: hacktoberfest 2020, como funciona hacktoberfest, como ganhar camiseta, github, digitalocean, tutorial hacktoberfest, premios hacktoberfest
 author: Victor Jordan
 authorImg: victor.png
 authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
