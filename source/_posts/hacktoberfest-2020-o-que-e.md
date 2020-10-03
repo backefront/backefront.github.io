@@ -25,7 +25,7 @@ Já ouviu falar?
 
 <!-- more -->
 
-Hacktoberfest é um evento a nível **global** que tem como intuito a comemoração de softwares open-sources! A empresa por trás deste evento é nada menos que o [Github](https://github.com/), que é um dos maiores símbolos de softwares open-sources! Juntamente a ela, temos as empresas que entraram como parceiras, que são [DigitalOcean](https://www.digitalocean.com/), [Intel](https://www.intel.com/content/www/us/en/homepage.html).
+Hacktoberfest é um evento a nível **global** que tem como intuito a comemoração de softwares open-sources! As principais empresas que estão por trás desta edição são [DigitalOcean](https://www.digitalocean.com/), [Intel](https://www.intel.com/content/www/us/en/homepage.html), entre outras que você pode ver no site oficial!.
 
 Em 2018, eu fiz um [post falando sobre o evento](https://backefront.com.br/hacktoberfest/), passando as dicas de como você pode ajudar a contribuir!
 
