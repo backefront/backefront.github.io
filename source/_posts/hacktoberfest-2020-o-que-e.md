@@ -1,6 +1,6 @@
 ---
 title: Hacktoberfest 2020 - o que é?
-date: 2020-10-03 10:13:04
+date: 2020-10-03 10:00:04
 tags:
 - Front-end
 - Eventos
