@@ -6,7 +6,7 @@ tags:
 - Eventos
 postKeywords: hacktoberfest 2020, como funciona hacktoberfest, como ganhar camiseta, github, digitalocean, tutorial hacktoberfest, premios hacktoberfest,
 hacktoberfest 
-postDescription: Hacktoberfest é um evento a nível global que tem como intuito a comemoração de softwares open-sources! A empresa por trás deste evento é nada menos que o Github, que é um dos maiores símbolos de softwares open-sources! Juntamente a ela, temos as empresas que entraram como parceiras, que são DigitalOcean.
+postDescription: Hacktoberfest é um evento a nível global que tem como intuito a comemoração de softwares open-sources! As principais empresas que estão por trás desta edição são DigitalOcean, Intel, entre outras que você pode ver no site oficial! 
 author: Victor Jordan
 authorImg: victor.png
 authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
@@ -25,7 +25,7 @@ Já ouviu falar?
 
 <!-- more -->
 
-Hacktoberfest é um evento a nível **global** que tem como intuito a comemoração de softwares open-sources! As principais empresas que estão por trás desta edição são [DigitalOcean](https://www.digitalocean.com/), [Intel](https://www.intel.com/content/www/us/en/homepage.html), entre outras que você pode ver no site oficial!.
+Hacktoberfest é um evento a nível **global** que tem como intuito a comemoração de softwares open-sources! As principais empresas que estão por trás desta edição são [DigitalOcean](https://www.digitalocean.com/), [Intel](https://www.intel.com/content/www/us/en/homepage.html), entre outras que você pode ver no site oficial!
 
 Em 2018, eu fiz um [post falando sobre o evento](https://backefront.com.br/hacktoberfest/), passando as dicas de como você pode ajudar a contribuir!
 
