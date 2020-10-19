@@ -5,7 +5,6 @@ tags:
 - Front-end
 - Angular
 postKeywords: leaflet angular, mapa angular, how to add angular map, adicionar leaflet mapa angular, angular, front-end, leaflet
-postDescription: Neste post, irei ensinar uma maneira fácil de como adicionar o Leaflet em um projeto Angular, sem muitas voltas e sem dor de cabeça!
 author: Victor Jordan
 authorImg: victor.png
 authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
