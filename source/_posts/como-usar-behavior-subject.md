@@ -60,9 +60,7 @@ UserService.getUser.subscribe(user => {
   // Recebemos as informações
   // do usuário dentro do subscribe
 })
-
 ...
-
 // Atualizamos as informações
 // do usuário
 UserService.setUser(newUser);
