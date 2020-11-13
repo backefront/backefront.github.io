@@ -2,8 +2,8 @@
 title: Exibindo notificações com React Toastify
 date: 2020-05-11 08:22:09
 tags:
-- Front-end
-- Javascript
+  - Front-end
+  - Javascript
 postKeywords: react toastify, react notifications, exibir notificação react, react, front-end, javascript, show notification
 postDescription: Neste post, irei ensinar como podemos usar o React Toastify, uma biblioteca para exibição de notificações, com o intuito de tornar nossa aplicação mais rica em detalhes e com uma usabilidade melhor!
 authorImg: victor.png
@@ -31,23 +31,23 @@ yarn add react-toastify
 ```
 
 Após instalarmos, precisamos importar o CSS do Toastify.
-Você pode fazer isso importando em seu `GlobalStyle` ou diretamente em seu `App.js`
+Você pode fazer isso importando em seu `GlobalStyle` ou diretamente em seu `App.js` e adicionaremos a tag do Toast!
 Neste exemplo, iremos importar em **app.js**:
 
-
 ```javascript
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify' // Importamos o Toastify
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import { ToastContainer } from "react-toastify"; // Importamos o Toastify
 
-import Header from './components/Header';
-import Routes from './routes';
+import Header from "./components/Header";
+import Routes from "./routes";
 
-import 'react-toastify/dist/ReactToastify.css'; // O estilo do Toastify
+import "react-toastify/dist/ReactToastify.css"; // O estilo do Toastify
 
 function App() {
   return (
     <BrowserRouter>
+      <ToastContainer autoClose={3000} />
       <Header />
       <Routes />
     </BrowserRouter>
@@ -61,26 +61,25 @@ Agora feito isso, podemos utilizar o notificador de alertas por toda nossa aplic
 Vejamos como podemos exibir então um alerta em um componente qualquer:
 
 ```javascript
-  import React from 'react';
+import React from "react";
 
-  import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 
-  function showAlert(){
-    
-    const notify = (status) => {
-      if (status === 200) {
-        toast.success("Sucesso!")
-      } else {
-        toast.error("Erro!")
-      }
-    };
+function showAlert() {
+  const notify = (status) => {
+    if (status === 200) {
+      toast.success("Sucesso!");
+    } else {
+      toast.error("Erro!");
+    }
+  };
 
-    return (
-      <div>
-        <button onClick={notify(200)}>Notify !</button>
-      </div>
-    );
-  }
+  return (
+    <div>
+      <button onClick={notify(200)}>Notify !</button>
+    </div>
+  );
+}
 ```
 
 Neste simples exemplo, estamos exibindo um alerta de sucesso, já que passamos o valor de status como 200.
