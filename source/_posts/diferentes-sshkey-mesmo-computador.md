@@ -53,7 +53,7 @@ Assim que gerar esse arquivo config, você deve editá-lo, usando seu editor pre
 Host trabalho.github.com
     HostName github.com
     PreferredAuthentications publickey
-    IdentityFile ~/.ssh/id_rsa_trabalho`
+    IdentityFile ~/.ssh/id_rsa_trabalho
 
 Host github.com
     HostName github.com
@@ -68,5 +68,15 @@ Feito isso, basta adicionar essa nova chave ao seu repositório e alterar no rep
 ```
 git remote add origin git@trabalho.github.com:vjordan/projeto2
 ```
+
+ou se quiser clonar:
+
+```
+git clone git@trabalho.github.com:vjordan/projeto2
+```
+
+
+Repare que depois do "@" eu coloquei **trabalho.github.com** que é o nosso HOST que criamos.
+Enão se quisermos adicionar outros, basta alterar o valor que vai depois do **@**
 
 Com isso, você terá N chaves e gerará novas sem perder as antigas, sem problema nenhum!
