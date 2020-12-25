@@ -2,8 +2,8 @@
 title: Como configurar ESLint no React
 date: 2020-03-16 08:00:54
 tags:
-- Front-end
-- React
+  - Front-end
+  - React
 postKeywords: eslint react, configurar eslint, padrao projeto react, javascript eslint, melhores praticas javascript, react, front-end, eslint
 postDescription: Você conhece o ESLint? ESLint é uma poderosa ferramenta que nos permite trabalhar melhor em nossos códigos, de forma que conseguimos codificar seguindo as práticas impostas através de uma style guide! Neste post, irei ensinar como você pode configurar o ESLint em um projeto React, do zero!
 author: Victor Jordan
@@ -23,7 +23,7 @@ Pensando nisso, uma boa prática é utilizarmos o `eslint`!
 <!-- more -->
 
 ESLint é um plugin desenhado para permitir que desenvolvedores encontrem problemas em seu Javascript sem a necessidade de executar ele.
-Ele é usado para encontrar problemas de padrões de projeto ou algum código que não se encaixe em algum determinado  style guidelines
+Ele é usado para encontrar problemas de padrões de projeto ou algum código que não se encaixe em algum determinado style guidelines
 
 O ESlint é uma biblioteca open source, escrita originalmente por Nicholas C. Zakas em Junho de 2013.
 
@@ -59,13 +59,13 @@ E vamos selecionar as próximas escolhas na seguinte ordem:
 - JavaScript modules (import/export)
 - React
 - Does your project use TypeScript? (y/N): N
-- (*) Browser
+- (\*) Browser
 - Use a popular style guide
 - Airbnb
 - Javascript
 - Would you like to install them now with npm? Yes
 
-Por que selecionamos Airbnb? 
+Por que selecionamos Airbnb?
 A style guide do Airbnb é uma das mais completas e cobre praticamente todas as principais práticas para Javascript.
 Caso seja do seu interesse, você pode ver o [repositório no GitHub do Airbnb](https://github.com/airbnb/javascript)
 
@@ -77,31 +77,26 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-  ],
+  extends: ["plugin:react/recommended", "airbnb"],
   globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly",
   },
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
     ecmaVersion: 2018,
-    sourceType: 'module',
+    sourceType: "module",
   },
-  plugins: [
-    'react',
-  ],
-  rules: {
-  },
+  plugins: ["react"],
+  rules: {},
 };
 ```
+
 Para ficar melhor ainda, vamos adicionar mais uma dependência, chamada `prettier`:
 
-```cmd 
+```cmd
 npm install prettier --save-dev
 
 // ou
@@ -117,41 +112,35 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  extends: [
-    'airbnb',
-    'prettier',
-    'prettier/react'
-  ],
+  extends: ["airbnb", "prettier", "prettier/react"],
   globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly",
   },
-  parser: 'babel-eslint',
+  parser: "babel-eslint",
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
     ecmaVersion: 2018,
-    sourceType: 'module',
+    sourceType: "module",
   },
   plugins: [
-    'react',
-    'prettier' // Adicionando prettier como plugin
+    "react",
+    "prettier", // Adicionando prettier como plugin
   ],
   // Modificamos as regras
   // para que o prettier nos avise
   // de erros na formtação
   rules: {
-    'prettier/prettier': 'error',
-    'react/jsx-filename-extension': [
-      'warn',
-      { extensions: ['.jsx', '.js'] }
-    ],
-    'import/prefer-default-export': 'off'
+    "prettier/prettier": "error",
+    "react/jsx-filename-extension": ["warn", { extensions: [".jsx", ".js"] }],
+    "import/prefer-default-export": "off",
   },
 };
 ```
-Para finalizar, devemos adicionar mais três libs. Elas nos ajudarão a informar onde que estamos errando ou o que estamos esquecendo!
+
+Agora devemos adicionar mais três libs. Elas nos ajudarão a informar onde que estamos errando ou o que estamos esquecendo!
 Vamos então rodar o comando:
 
 ```javascript
@@ -159,5 +148,9 @@ yarn add -D babel-eslint eslint-plugin-prettier eslint-config-prettier
 // Ou
 npm install --save-dev babel-eslint eslint-plugin-prettier eslint-config-prettier
 ```
+
+E para finalizar nossa configuração no VS Code, vamos instalar a extensão do ESLint, pode ser acessada através do link:
+
+https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 
 Agora com toda essa configuração feita, ao salvarmos nossos arquivos, eles são formatados para se adequar ao melhor padrão bem como também temos agora notificações de Javascript, para tornar os nossos códigos ainda mais legíveis, utilizando as melhores práticas!
