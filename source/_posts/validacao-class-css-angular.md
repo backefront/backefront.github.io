@@ -1,14 +1,14 @@
 ---
 title: Como adicionar classe através de uma validação no Angular
 date: 2018-11-26 07:20:39
-tags: 
-- Front-end
-- Angular
+tags:
+  - Front-end
+  - Angular
 postKeywords: if classe angular, validacao classe no angular, ngClass Angular
 postDescription: Crie uma validação nas suas classes usando o ngClass do Angular!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -26,9 +26,7 @@ Para utilizar, vamos usar o seguinte cenário:
 Com isto em mente, logo pensamos em um `if (nota < 6 ) {...}` e podemos "traduzir" este pequeno trecho, diretamente no componente HTML, ficando da seguinte forma:
 
 ```html
-<p [ngClass]="{{nota < 6 ? red : blue}}">
-    {{nota}}
-</p>
+<p [ngClass]="{{nota < 6 ? red : blue}}">{{nota}}</p>
 ```
 
 Com este operador ternário, ele adiciona uma classe de acordo com a validação, tornando muito mais fácil e rápido a adição de classes de acordo com sua validação!

@@ -2,13 +2,13 @@
 title: Como fazer deploy de uma aplicação Angular no Heroku
 date: 2019-06-17 07:30:04
 tags:
-- Angular
-- Front-end
+  - Angular
+  - Front-end
 postKeywords: Angular heroku, deploy angular no heroku, deploy, heroku, angular, static file heroku, como subir aplicacao angular online
 postDescription: Veja como subir sua aplicação Angular no Heroku com apenas algumas alterações em seu código, passo a passo!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -58,7 +58,7 @@ Ainda no arquivo `package.json` vamos adicionar dois novos scripts:
 },
 ```
 
-E devemos também adicionar as versões do Node e NPM que queremos que o Heroku utilize. 
+E devemos também adicionar as versões do Node e NPM que queremos que o Heroku utilize.
 Para saber isso, rode o comando `node -v` para saber a versão do Node e `npm -v` para saber a versão do NPM.
 Sabendo essas versões, adicione ainda no package as **engines**:
 
@@ -68,6 +68,7 @@ Sabendo essas versões, adicione ainda no package as **engines**:
     "npm": "6.9.0"
   }
 ```
+
 Você pode adicionar esse trecho logo após suas dependências!
 
 ### Criando nosso arquivo server.js
@@ -87,29 +88,28 @@ E adicione o seguinte código:
 
 ```javascript
 //Importa as dependências que acabamos de instalar
-const express = require('express');
-const path = require('path');
+const express = require("express");
+const path = require("path");
 
 const app = express();
 
 // Serve os arquivos estáticos da pasta dist (gerada pelo ng build)
-app.use(express.static(__dirname + '/dist/NOME_DO_SEU_PROJETO'));
+app.use(express.static(__dirname + "/dist/NOME_DO_SEU_PROJETO"));
 
-app.get('/*', function(req,res) {
-    
-res.sendFile(path.join(__dirname+'/dist/NOME_DO_SEU_PROJETO/index.html'));
+app.get("/*", function (req, res) {
+  res.sendFile(path.join(__dirname + "/dist/NOME_DO_SEU_PROJETO/index.html"));
 });
 
 // Inicia a aplicação pela porta configurada
 app.listen(process.env.PORT || 8080);
 ```
 
-Com isto, toda sua configuração para o Heroku está pronta! 
+Com isto, toda sua configuração para o Heroku está pronta!
 Agora basta você vincular este projeto no github e habilitar a opção de integração!
 
 ### Criando um projeto no Heroku e habilitando Github
 
-Criar um novo projeto no Heroku é muito simples! 
+Criar um novo projeto no Heroku é muito simples!
 Devemos acessar a nossa conta e clicar na opção **New**, no canto superior direito e clicar em **Create new app**
 Feito isto, você deve visualizar uma tela parecida com a seguinte:
 
@@ -118,6 +118,6 @@ Feito isto, você deve visualizar uma tela parecida com a seguinte:
 Para vincular a sua aplicação do Github com o Heroku, basta clicar em Github em **Deployment method** e permitir o acesso do Heroku no seu Git!
 Com tudo configurado, você conseguirá pesquisar pelo seus repositórios e associar a um!
 
-Agora você tem seu projeto vinculado ao Heroku! 
+Agora você tem seu projeto vinculado ao Heroku!
 Basta você acionar **Deploy Automático** caso queira que a aplicação seja executada a cada push em sua branch
 Ou realizar o deploy manual, que fica no final da página, onde está escrito **Manual Deploy**

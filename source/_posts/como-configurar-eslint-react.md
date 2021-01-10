@@ -8,7 +8,7 @@ postKeywords: eslint react, configurar eslint, padrao projeto react, javascript 
 postDescription: Você conhece o ESLint? ESLint é uma poderosa ferramenta que nos permite trabalhar melhor em nossos códigos, de forma que conseguimos codificar seguindo as práticas impostas através de uma style guide! Neste post, irei ensinar como você pode configurar o ESLint em um projeto React, do zero!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

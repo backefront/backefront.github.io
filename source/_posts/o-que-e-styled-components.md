@@ -2,13 +2,13 @@
 title: O que é styled-components
 date: 2019-10-07 08:39:24
 tags:
-- Front-end
-- React
+  - Front-end
+  - React
 postKeywords: styled-components, como usar styled react, react style tutorial, como styled react, component react, react, component, stlyed-component
 postDescription: Styled-components é um tópico que muito tem se visto falar no desenvolvimento front-end com React, você já conhece e já usa? Neste post, mostrarei como usar styled-components no React!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -18,16 +18,16 @@ Styled components são componentes onde criamos o CSS no próprio arquivo do com
 Com isso conseguimos obter algumas vantagens em diversos quesitos, tais como:
 
 - Carregamento automático do CSS crítico, isso é, os componentes são renderizados com a página e são injetados apenas o CSS que realmente
-será utilizado, nada mais! Ajudando em performance, visto que os usuários carregarão apenas o necessário.
+  será utilizado, nada mais! Ajudando em performance, visto que os usuários carregarão apenas o necessário.
 
 - Sem problemas com nomes de classes! Styled-componentes geram nomes de classes automaticamente, sem preocupação em gerar nomes duplicados.
 
 <!-- more -->
 
 - Fácil remoção de CSS, visto que todo o CSS fica, normalmente, no próprio arquivo JS, então você encontra fácil o que precisa remover e também consegue
-facilmente 
+  facilmente
 
-Entre outras facilidades! 
+Entre outras facilidades!
 Mas vamos para a parte prática, como podemos começar utilizar?
 Primeiramente, instale-o em seu projeto:
 
@@ -35,10 +35,10 @@ Primeiramente, instale-o em seu projeto:
 npm install --save styled-components
 ```
 
-O stlyed-component utiliza template literal para estilizar os componentes. 
+O stlyed-component utiliza template literal para estilizar os componentes.
 Caso você não saiba o que é isso, falamos sobre essa funcionalidade há um tempo atrás neste [post aqui](https://backefront.com.br/template-string/)
 
-Então vamos lá, vamos construir nosso primeiro stlyed-component! 
+Então vamos lá, vamos construir nosso primeiro stlyed-component!
 Teremos como base o seguinte componente, bem simples:
 
 ```javascript

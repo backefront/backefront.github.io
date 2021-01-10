@@ -1,14 +1,14 @@
 ---
 title: Como otimizar tarefas com o Gulp
 date: 2018-09-21 08:04:18
-tags: 
-- Javascript
-- Front-end
+tags:
+  - Javascript
+  - Front-end
 postKeywords: gulp, gulp iniciante, como usar gulp, minificar, js, css, como criar um gulp, dicas gulp, otimizar gulp
 postDescription: o Gulp serve para automatizar diversos processos repetitivos que desenvolvedores precisam realizar em seu dia-a-dia, de uma maneira simples e rápida! Mas afinal, como criar um script automatizador de tarefas com Gulp?
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -29,12 +29,12 @@ Para servir como exemplo, vamos pegar a dica dada antes, sobre minificação. O 
 
 ![Estrutura de Arquivos - Gulp](/posts/gulp-estrutura-pasta.png)
 
-<!-- more --> 
+<!-- more -->
 
 ### Passo 1 - Crie seu package.json
 
 Package.json é o arquivo responsável por ser seu ponto de partida, nele contém todas as informações sobre seu projeto, as dependências usadas, suas versões respectivas e até mesmo se o tipo do projeto é open-source e o nome do autor!
-Este arquivo é necessário para que possamos instalar as dependências do Gulp, então para isso, rode em seu terminal, dentro da pasta do projeto o comando ***npm init*** e pode apertar **enter** até terminar!
+Este arquivo é necessário para que possamos instalar as dependências do Gulp, então para isso, rode em seu terminal, dentro da pasta do projeto o comando **_npm init_** e pode apertar **enter** até terminar!
 
 ```javascript
 npm init
@@ -50,20 +50,20 @@ Com tudo pronto, você deve abrir o terminal e informar as dependências que des
 npm install gulp-clean-css gulp-htmlmin gulp-uglify --save
 ```
 
-Atente-se ao *--save* passado junto, é esta opção que usamos para que todas as dependências que estamos instalando seja salva dentro do arquivo **package.json**
+Atente-se ao _--save_ passado junto, é esta opção que usamos para que todas as dependências que estamos instalando seja salva dentro do arquivo **package.json**
 
 ### Passo 3 - Criando o script Gulp
 
 Agora que temos todos os recursos necessários, vamos criar o arquivo **gulpfile.js** na raiz (onde está a pasta app, build, etc) do seu projeto.
 
-Vamos começar a construir nosso script! A primeira coisa que devemos fazer dentro deste arquivo é chamar as dependências que instalamos anteriormente. Para isso, adicione no começo: 
+Vamos começar a construir nosso script! A primeira coisa que devemos fazer dentro deste arquivo é chamar as dependências que instalamos anteriormente. Para isso, adicione no começo:
 
 ```javascript
-var gulp = require('gulp');
-var minifycss = require('gulp-clean-css');
-var uglify = require('gulp-uglify');
-var htmlmin = require('gulp-htmlmin');
-var htmlclean = require('gulp-htmlclean');
+var gulp = require("gulp");
+var minifycss = require("gulp-clean-css");
+var uglify = require("gulp-uglify");
+var htmlmin = require("gulp-htmlmin");
+var htmlclean = require("gulp-htmlclean");
 ```
 
 E agora conseguimos utilizar todas a funcionalidades através dessas variáveis que criamos! Vamos começar construir nossas funções, cada uma tendo um objetivo específico:
@@ -72,37 +72,41 @@ E agora conseguimos utilizar todas a funcionalidades através dessas variáveis 
 // Esta primeira função pegará todos os arquivos do tipo CSS
 // dentro da pasta CSS, dentro da pasta app e colocará a versão
 // minificada dentro da pasta CSS, dentro de build
-gulp.task('minify-css', function() {
-  return gulp.src('./app/css/*.css')
-    .pipe(minifycss({
-	  compatibility: 'ie8'
-  }))
-  .pipe(gulp.dest('./build/css'));
+gulp.task("minify-css", function () {
+  return gulp
+    .src("./app/css/*.css")
+    .pipe(
+      minifycss({
+        compatibility: "ie8",
+      })
+    )
+    .pipe(gulp.dest("./build/css"));
 });
 
 // Esta segunda função pegará todos os arquivos do tipo
 // HTML, removerá todos os comentários,minificará trechos de JS
 // e CSS caso tenha e enviará os arquivos minificados para
 // a pasta JS, dentro de build
-gulp.task('minify-html', function() {
-  return gulp.src('./app/**/*.html')
+gulp.task("minify-html", function () {
+  return gulp
+    .src("./app/**/*.html")
     .pipe(htmlclean())
-    .pipe(htmlmin({
-      removeComments: true,
-      minifyJS: true,
-      minifyCSS: true,
-      minifyURLs: true,
-    }))
-    .pipe(gulp.dest('./build/js'))
+    .pipe(
+      htmlmin({
+        removeComments: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true,
+      })
+    )
+    .pipe(gulp.dest("./build/js"));
 });
 
 // Esta segunda função pegará todos os arquivos do tipo
 // Javascript, removerá todos os comentários, minificará os arquivos
 // e enviará os arquivos minificados para a pasta JS, dentro de build
-gulp.task('minify-js', function() {
-  return gulp.src('./app/**/*.js')
-    .pipe(uglify())
-    .pipe(gulp.dest('./build'));
+gulp.task("minify-js", function () {
+  return gulp.src("./app/**/*.js").pipe(uglify()).pipe(gulp.dest("./build"));
 });
 ```
 
@@ -119,8 +123,8 @@ Nós conseguimos fazer uma função para que o gulp execute um roteiro desejado,
 ```javascript
 // Com esta função, ele irá executar uma sequencia de comandos
 // executando cada função passada como parâmetro
-gulp.task('build', function(cb) {
-  runSequence('minify-html', 'minify-css', 'minify-js', cb)
+gulp.task("build", function (cb) {
+  runSequence("minify-html", "minify-css", "minify-js", cb);
 });
 ```
 
@@ -130,12 +134,12 @@ E agora finalmente, basta rodar:
 gulp build
 ```
 
-Ou apenas `gulp`, pois o gulp entende o build como **default**, então ao digitar apenas gulp você estará fazendo o mesmo que `gulp build`. 
+Ou apenas `gulp`, pois o gulp entende o build como **default**, então ao digitar apenas gulp você estará fazendo o mesmo que `gulp build`.
 
 ```javascript
-gulp
+gulp;
 ```
 
-Este foi uma explicação bem rápida de como o Gulp pode aumentar nosso desempenho em nosso desenvolvimento! Ele possui um leque de possibilidades e scripts que você pode fazer como por exemplo: criar um __livereload__ que sempre que você fizer uma alteração em seu código, o próprio gulp recarregue sua página, minificar todas as imagens do projeto, entre outras diversas coisas! 
+Este foi uma explicação bem rápida de como o Gulp pode aumentar nosso desempenho em nosso desenvolvimento! Ele possui um leque de possibilidades e scripts que você pode fazer como por exemplo: criar um **livereload** que sempre que você fizer uma alteração em seu código, o próprio gulp recarregue sua página, minificar todas as imagens do projeto, entre outras diversas coisas!
 
 Agora fica com você soltar a criatividade em como otimizar processos com o Gulp e sair criando funções para isso!

@@ -1,18 +1,18 @@
 ---
 title: Como funciona a hierarquia do CSS
 date: 2019-04-22 07:10:02
-tags: 
-- CSS
+tags:
+  - CSS
 postKeywords: hierarquia css, importancia css, estilo in-line como funciona, css pontos, id ou classe css, id css, classe css
-postDescription: Você sabe qual a diferença entre escrever um estilo no CSS usando ID ou Classe? E você sabe o porque falamos que para escrever estilos você deve usar sempre classes? Chega aí pra entender como funciona o CSS! 
+postDescription: Você sabe qual a diferença entre escrever um estilo no CSS usando ID ou Classe? E você sabe o porque falamos que para escrever estilos você deve usar sempre classes? Chega aí pra entender como funciona o CSS!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
 
-Você sabe qual a diferença entre escrever um estilo no CSS usando ID ou Classe? E você sabe o porque falamos que para escrever estilos você deve usar sempre classes? Chega aí pra entender como funciona o CSS! 
+Você sabe qual a diferença entre escrever um estilo no CSS usando ID ou Classe? E você sabe o porque falamos que para escrever estilos você deve usar sempre classes? Chega aí pra entender como funciona o CSS!
 
 <!-- more -->
 
@@ -21,7 +21,7 @@ O CSS possui uma hierarquia de estilos, isto é, depenendendo do que você usar 
 Começando pelo a estilização mais específica, onde você define o estilo do seu elemento diretamente no HTML, chamamos de estilo in-line, de forma que sobrescreve todos os outros estilos que podem estar sendo aplicados naquele elemento, usamos ele da seguinte forma:
 
 ```html
-    <p style="color: #ff0000">Parágrafo</p>
+<p style="color: #ff0000">Parágrafo</p>
 ```
 
 Agora falando através de seletores, podemos estilizar com IDs, Classes e próprias tags, vamos analisar cada uma delas!
@@ -30,15 +30,15 @@ ID é o seletor mais específico, por ser exigido que só exista um por página 
 
 ```css
 #footer {
-    background-color: #424242;
+  background-color: #424242;
 }
 ```
 
-Classes é o segundo seletor seguido de ID, mas por poder ser repetido quantas vezes quisermos na nossa página, normalmente construímos nossos estilos usando classe, visando o reaproveitamento de código! 
+Classes é o segundo seletor seguido de ID, mas por poder ser repetido quantas vezes quisermos na nossa página, normalmente construímos nossos estilos usando classe, visando o reaproveitamento de código!
 
 ```css
 .card {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 ```
 
@@ -48,28 +48,28 @@ Para finalizar, temos mais uma forma de adicionar um estilo, que sobrescreve as 
 
 ```css
 .classe {
-    color: #ff0000!important;
+  color: #ff0000 !important;
 }
 ```
 
 Quando utilizamos diversos seletores para estilizar, temos uma fórmula para encontrar qual CSS será utilizado, isto é, que possui maior importância, cada atributo possuí um valor determinado, abaixo está a tabela mostrando o valor de cada:
 
-Elemento                                | Valor
----------                               | ------
-Estilo In-line                          | 1000
-Id                                      | 100
-classes, pseudo-classes e atributos     | 10
-HTML Tags                               | 1
+| Elemento                            | Valor |
+| ----------------------------------- | ----- |
+| Estilo In-line                      | 1000  |
+| Id                                  | 100   |
+| classes, pseudo-classes e atributos | 10    |
+| HTML Tags                           | 1     |
 
 Então com isso, conseguimos definir o valor de cada CSS! Vamos ver um exemplo?
 
 ```css
 #paragrafo p {
-    color: red;
+  color: red;
 }
 
 .paragrafo p {
-    color: blue;
+  color: blue;
 }
 ```
 

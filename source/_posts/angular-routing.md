@@ -2,13 +2,13 @@
 title: Criando projeto Angular com arquivo routing!
 date: 2018-11-12 07:34:08
 tags:
-- Front-end
-- Angular
+  - Front-end
+  - Angular
 postKeywords: criar rota angular 2, gerar aquivo route, generate routing angular 2, como gerar projeto com rota angular, angular, route, generate route
 postDescription: Otimize seu tempo criando um projeto Angular com o arquivo de rota já configurado e importado em seu projeto através do AngularCLI!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

@@ -2,14 +2,14 @@
 title: Como criar um teste com Jest
 date: 2019-11-25 07:10:24
 tags:
-- Front-end
-- Javascript
-- Testes
+  - Front-end
+  - Javascript
+  - Testes
 postKeywords: test jest, jest babel, jest import function, jest export, como importar funcao jest, jest ES6, jest new js, jest react, test jest react
 postDescription: Entenda como criar um teste com o Jest, utilizando Babel e ES6, de uma maneira simples e sem dor de cabeça!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -17,7 +17,7 @@ authorGithub: victorjordan95
 Você já precisou criar alguma função no Javascript e no momento em que estava desenvolvendo, tudo funcionava perfeitamente!
 
 Mas em um determinado momento de seu projeto, você reparou que o retorno daquela função, estava diferente do que esperado!
-Você agora precisa corrigir e entender onde quebrou e o porquê! 
+Você agora precisa corrigir e entender onde quebrou e o porquê!
 
 Você conseguiria evitar isso, caso tivesse coberto aquele caso de uso, com um teste!
 
@@ -51,10 +51,10 @@ Primeiramente, devemos criar o arquivo `babel.config.js`, na raiz do projeto, co
 module.exports = {
   presets: [
     [
-      '@babel/preset-env',
+      "@babel/preset-env",
       {
         targets: {
-          node: 'current',
+          node: "current",
         },
       },
     ],
@@ -79,27 +79,23 @@ Criemos então o arquivo `soma.js`, que é onde está a nossa função que desej
 ```javascript
 const soma = (a, b) => a + b;
 
-export { 
-    soma
-}
+export { soma };
 ```
 
 E agora iremos criar o nosso teste em si mesmo!
-Crie um arquivo chamado `soma.test.js` 
+Crie um arquivo chamado `soma.test.js`
 
 ```javascript
-import {
-    soma
-} from './soma.js'
+import { soma } from "./soma.js";
 
-describe('Cálculo de dois numero', () => {
-    test('1 + 2 igual 3', () => {
-        expect(soma(1, 2)).toBe(3);
-    });
-})
+describe("Cálculo de dois numero", () => {
+  test("1 + 2 igual 3", () => {
+    expect(soma(1, 2)).toBe(3);
+  });
+});
 ```
 
-Pronto! Seu teste está pronto para ser testado! 
+Pronto! Seu teste está pronto para ser testado!
 Vamos testar então o nosso primeiro teste com Jest?
 
 ### Executando o seu teste

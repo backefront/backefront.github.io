@@ -2,13 +2,13 @@
 title: O que é conceito DRY
 date: 2020-05-25 07:41:17
 tags:
-- Front-end
-- Engenharia de Software
+  - Front-end
+  - Engenharia de Software
 postKeywords: dry, o que é dry, dry js, javascript, export funcao, evitar repeticao js, codigo compartilhado js, front-end
 postDescription: Você já ouviu falar sobre um tal de DRY? DRY é uma sigla para Don't Repeat Yourself, que significa Não Se Repita! Este princípio tem como intuito a redução de código repetidos em toda sua aplicação. Mas porque é tão importante evitarmos isso?
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

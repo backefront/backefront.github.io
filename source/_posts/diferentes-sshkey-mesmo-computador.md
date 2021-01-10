@@ -1,13 +1,13 @@
 ---
 title: Multiplas SSH Key no Github no mesmo computador
 date: 2018-09-03 11:48:56
-tags: 
-- Git
+tags:
+  - Git
 postKeywords: Diferentes SSH Key, várias ssh keys, git, ssh key, criar ssh key, git, github, deploy key, Manage Multiple SSH Logins
 postDescription: Como criar diferentes SSH key no mesmo computador para usar em repositórios diferentes, sem precisar excluir nenhuma
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -18,7 +18,7 @@ Digamos que você esteja trabalhando em dois projetos diferentes, com github **d
 
 Para resolver esse problema, você deveria adicionar outra ssh key sem perder a que já está em uso. Mas como?
 
-<!-- more --> 
+<!-- more -->
 
 ## Criando a nova SSH
 
@@ -38,11 +38,13 @@ Como pode ser visto, alterei a opção default de criação de uma SSH, que é *
 Para usar duas ssh keys diferentes, você deve acessar a pasta onde se encontra a atual e criar um arquivo de configuração:
 
 No Windows
+
 ```
 nul>config
 ```
 
 Linux/Mac
+
 ```
 touch config
 ```
@@ -61,7 +63,7 @@ Host github.com
     IdentityFile ~/.ssh/id_rsa
 ```
 
-Observe que alterei o `Host` e o `IdentityFile`, fazendo referência a minha nova chave gerada e mantive a antiga public key como *default*.
+Observe que alterei o `Host` e o `IdentityFile`, fazendo referência a minha nova chave gerada e mantive a antiga public key como _default_.
 
 Feito isso, basta adicionar essa nova chave ao seu repositório e alterar no repositório clonado o **remote**, para fazer isso, deve alterar a url para a que você configurou em `Host`, da seguinte forma:
 
@@ -74,7 +76,6 @@ ou se quiser clonar:
 ```
 git clone git@trabalho.github.com:vjordan/projeto2
 ```
-
 
 Repare que depois do "@" eu coloquei **trabalho.github.com** que é o nosso HOST que criamos.
 Enão se quisermos adicionar outros, basta alterar o valor que vai depois do **@**

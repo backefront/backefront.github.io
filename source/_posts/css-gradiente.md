@@ -1,14 +1,14 @@
 ---
 title: Como criar um fundo com duas cores com CSS
 date: 2020-03-03 08:36:18
-tags: 
-- Front-end
-- CSS
+tags:
+  - Front-end
+  - CSS
 postKeywords: two colors css, duas cores background, css gradient, gradiente, css dividir cores, fundo varias cores, css, frontend, dicas front
 postDescription: Neste post, mostro como podemos criar um background com duas cores, sem a necessidade de usarmos uma imagem como fundo para isso!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -30,12 +30,14 @@ background: linear-gradient(red, yellow);
 Também podemos usar uma variação com ângulo e a porcentagem do background que queremos preencher:
 
 ```css
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+background: linear-gradient(
+  90deg,
+  rgba(2, 0, 36, 1) 0%,
+  rgba(9, 9, 121, 1) 35%,
+  rgba(0, 212, 255, 1) 100%
+);
 ```
 
 Fácil, não é mesmo?
 
 Como exemplo do que podemos fazer, o desenvolvedor [Kedar](https://codepen.io/kedar) criou um codepen com diversos exemplos, que você pode visualizar [neste link](https://codepen.io/kedar/pen/MpXgoR)
-
-
-

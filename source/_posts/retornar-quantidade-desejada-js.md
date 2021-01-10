@@ -2,19 +2,19 @@
 title: JS - Retornando uma quantidade de elementos do array
 date: 2019-08-26 07:14:12
 tags:
-- Front-end
-- Javascript
+  - Front-end
+  - Javascript
 postKeywords: enesimo numero array, retornar quantidade itens, retornar os dez primeiros itens js, slice, lista js alguns itens
 postDescription: Neste post, irei mostrar como podemos retornar apenas uma quantidade desejada de itens de algum outro array, com o javascript, com o método slice!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
 
 Em uma determinada situação, nos deparamos com o seguinte problema:
-*"Precisamos retornar apenas uma quantidade de itens de um determinado array"*
+_"Precisamos retornar apenas uma quantidade de itens de um determinado array"_
 
 Então, como fazemos para retornar, os primeiros N elementos de um array, no Javascript?
 Para isso, podemos utilizar o método `slice`!
@@ -31,14 +31,14 @@ Então, como resolvemos nosso problema?
 Vamos considerar que temos uma lista com os seguintes números:
 
 ```javascript
-const lista = [1,2,3,4,5,6,7,8,9,10,11,12,13,14];
+const lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 ```
 
 E queremos que nos retorne apenas os **10 primeiros** elementos.
 Podemos então, fazer da seguinte forma:
 
 ```javascript
-const lista = [1,2,3,4,5,6,7,8,9,10,11,12,13,14];
+const lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 const listaFiltrada = lista.slice(0, 10);
 console.log(listaFiltrada); // Resultado esperado: (10) [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```

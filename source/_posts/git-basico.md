@@ -4,10 +4,10 @@ date: 2018-05-16 20:33:56
 postKeywords: versionamento de codigo, git basico, funcionamento git, usar git, versionamento
 postDescription: Git é um sistema de controle de versões de arquivos. Ele armazena as mudanças realizadas em algum determinado arquivo ao decorrer de um período e permite que você possa acessar, recuperar essas versões mais antigas.
 tags:
-- Git
+  - Git
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -19,12 +19,12 @@ Saber o conceito de Git já se tornou essencial na área de desenvolvimento mas 
 
 ## O que é git?
 
-Em rápidas palavras, Git é um sistema de controle de versões de arquivos. Ele armazena as mudanças realizadas em algum determinado arquivo ao decorrer de um período e permite que você possa acessar, recuperar essas versões mais antigas. O uso de versionamento de arquivos pode abranger diversas áreas, como por exemplo, se você é um escritor ou até um designer gráfico, você pode armazenar seus textos/ilustrações e você pode acessar suas últimas alterações. 
+Em rápidas palavras, Git é um sistema de controle de versões de arquivos. Ele armazena as mudanças realizadas em algum determinado arquivo ao decorrer de um período e permite que você possa acessar, recuperar essas versões mais antigas. O uso de versionamento de arquivos pode abranger diversas áreas, como por exemplo, se você é um escritor ou até um designer gráfico, você pode armazenar seus textos/ilustrações e você pode acessar suas últimas alterações.
 O Git permite que veja quais e quando foram as últimas alterações realizadas nos arquivos alterados.
 
 ## Conceitos de branch
 
-O git trabalha com um conceito de _branch_, que em inglês significa *ramo* ou *ramificação*, que é justamente a representação do git, onde temos uma árvore principal e as variações, que seriam as alterações que fazemos em arquivos. 
+O git trabalha com um conceito de _branch_, que em inglês significa _ramo_ ou _ramificação_, que é justamente a representação do git, onde temos uma árvore principal e as variações, que seriam as alterações que fazemos em arquivos.
 A imagem abaixo exemplifica este conceito, onde podemos ver que foi criado uma ramificação a partir do galho principal, que é a bolinha verde-água.
 Nas branches, podemos realizar alterações sem que a ramificação principal seja afetado, com isso podemos trabalhar com maior tranquilidade sem medo de perder os arquivos antigos.
 
@@ -33,11 +33,14 @@ Nas branches, podemos realizar alterações sem que a ramificação principal se
 ## Como utilizar Git
 
 #### Download
-Para começar utilizar, primeiramente você precisa ter instalado em seu computador. Você pode baixar diretamente pelo [site Oficial](https://git-scm.com/downloads). 
+
+Para começar utilizar, primeiramente você precisa ter instalado em seu computador. Você pode baixar diretamente pelo [site Oficial](https://git-scm.com/downloads).
 
 #### Iniciando repositório
+
 Após instalar, você poderá criar um novo _repositório_, que nada mais é que o local onde o Git passará a observar alterações.
 Dentro da pasta em que deseja criar o repositório, abra o terminal (prompt de comando) e digite o comando `git init`
+
 ```
 git init
 ```
@@ -59,8 +62,9 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 #### Adicionando e commitando o arquivo
-O arquivo recém adicionado estará em *vermelho*, o que significa que este arquivo ainda não foi confirmado, isto é, que realmente deseja "salvar" ele. Para isto, você precisa adicionar esse arquivo e fazer o `commit`.
-Para adicionar arquivos você pode usar `git add <nomeDoArquivo>` ou `git add *`. Esse ** * ** significa que você está adicionando todos os arquivos alterados.
+
+O arquivo recém adicionado estará em _vermelho_, o que significa que este arquivo ainda não foi confirmado, isto é, que realmente deseja "salvar" ele. Para isto, você precisa adicionar esse arquivo e fazer o `commit`.
+Para adicionar arquivos você pode usar `git add <nomeDoArquivo>` ou `git add *`. Esse ** \* ** significa que você está adicionando todos os arquivos alterados.
 
 ```
 git add * //Para adicionar os arquivos
@@ -70,6 +74,7 @@ git commit -m 'Enviando arquivos' //Commitando os arquivos e adicionando mensage
 #### Enviando alterações
 
 Nesta etapa, você está pronto para enviar suas alterações para o seu repositório remoto, para isso, execute o comando `git push origin master`
+
 ```
 git push origin master
 ```

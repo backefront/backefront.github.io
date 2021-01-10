@@ -2,13 +2,13 @@
 title: Como fazer função async useEffect
 date: 2020-09-14 09:08:25
 tags:
-- Front-end
-- React
+  - Front-end
+  - React
 postKeywords: useeffect async, como usar async useeffect, render, async react, useeffect, buscar ao renderizar, fetch useeffect
 postDescription: Uma das coisas mais comuns enquanto desenvolvemos em React com Hooks é a utilização do `useEffect`. Basicamente, com ele podemos executar alguma função no momento em que estamos carregando a página ou quando ocorre alteração de alguma variável que estamos assistindo. Mas por padrão, o React não aceita que essa função useEffect seja do tipo `async`. Como podemos fazer então para realizar um fetch dentro do useEffect e aguardar o resultado?
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -22,15 +22,16 @@ Como podemos fazer então para realizar um fetch dentro do useEffect e aguardar 
 <!-- more -->
 
 ### IIFE
+
 Uma das maneiras que você pode fazer é usar uma IIFE (Immediately Invoked Function Expression):
 
 ```javascript
-  useEffect(()=> {
-    (async () => {
-        const users = await getUsers();
-        setUsers(users);
-    })();
-  }, []);
+useEffect(() => {
+  (async () => {
+    const users = await getUsers();
+    setUsers(users);
+  })();
+}, []);
 ```
 
 ### Função externa
@@ -52,4 +53,4 @@ function Users() {
 }
 ```
 
-Seguindo uma dessas formas, você evita alguns problemas de looping e o ESLint também não reclama! 
+Seguindo uma dessas formas, você evita alguns problemas de looping e o ESLint também não reclama!

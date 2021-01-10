@@ -2,12 +2,12 @@
 title: Diferença entre teste estático e teste dinâmico
 date: 2020-04-27 08:04:10
 tags:
-- Testes
+  - Testes
 postKeywords: teste estático, teste dinâmico, diferença dinâmico estático, testes, engenharia de teste, tipos de teste, engenharia de software
 postDescription: Você sabe a diferença básica entre testes do tipo estáticos e dinâmicos?
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -43,12 +43,12 @@ Nesta abordagem, seguimos o fluxo "tradicional", isto é, inserindo um dado, exe
 
 Além disso, é através do dinâmico que podemos verificar:
 
-- Tempo de resposta 
-- Capacidade do software se adaptar a diferentes ambientes 
+- Tempo de resposta
+- Capacidade do software se adaptar a diferentes ambientes
 - Performance da aplicação
 - Comportamento funcional
 
-Além disso, podemos dividir testes dinâmicos entre **funcionais** e **não-funcionais** 
+Além disso, podemos dividir testes dinâmicos entre **funcionais** e **não-funcionais**
 
 ### Resumindo
 

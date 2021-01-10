@@ -2,13 +2,13 @@
 title: Como fazer POST no NodeJS
 date: 2020-02-10 09:36:03
 tags:
-- Front-end
-- NodeJS
+  - Front-end
+  - NodeJS
 postKeywords: API Node, Nodejs, POST NodeJS, criar server node, api em node, como fazer node api
 postDescription: Neste post, irei mostrar os primeiros passos para construção de uma API em NodeJS! Usaremos o express para configurar nossa primeira rota POST!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -22,14 +22,16 @@ Neste post, vamos mostrar como criar um POST com NodeJS!
 
 NodeJS é uma tecnologia que podemos utilizar como back-end, que usa o Javascript como síntaxe.
 
-Vamos criar então, a nossa primeira API! 
+Vamos criar então, a nossa primeira API!
 
 Na pasta onde deseja guardar o projeto, vamos iniciar um projeto novo, rodando:
 
 ```cmd
 yarn init -y
 ```
+
 Ou caso esteja usando NPM:
+
 ```cmd
 npm init -y
 ```
@@ -47,7 +49,7 @@ yarn add express
 Agora sim, temos tudo pronto para iniciarmos! Vamos criar um arquivo chamado `index.js` e adicionaremos o seguinte trecho de código:
 
 ```javascript
-const express = require('express');
+const express = require("express");
 
 const server = express();
 server.use(express.json());
@@ -59,7 +61,7 @@ Feito isso, se rodarmos em nosso terminal `node index.js`, já teremos nosso ser
 Vamos deixar um objeto mockado, representando o nosso banco de dados
 
 ```javascript
-const express = require('express');
+const express = require("express");
 
 const server = express();
 server.use(express.json());
@@ -82,19 +84,18 @@ Agora, vamos criar a nossa rota POST!
  * Request body: id, title
  * Cadastra um novo projeto
  */
-server.post('/projects', (req, res) => {
+server.post("/projects", (req, res) => {
   const { id, title } = req.body;
 
   const project = {
     id,
-    title
+    title,
   };
 
   projects.push(project);
 
   return res.json(project);
 });
-
 ```
 
 Nesta rota, devemos passar dentro do body `id` e `title`!
@@ -104,5 +105,5 @@ Para testar nossa rota, devemos criar uma nova requisição do tipo POST, altera
 
 ![POST - Cadastrar projetos](/posts/insomnia.png)
 
-Pronto! Nossa primeira rota POST foi criada com sucesso! 
+Pronto! Nossa primeira rota POST foi criada com sucesso!
 Nos próximos posts, falarei sobre os outros métodos e como podemos criá-los na nossa API!

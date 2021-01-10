@@ -2,21 +2,21 @@
 title: CSS - Como fazer uma barra de progresso de leitura
 date: 2019-08-19 07:30:28
 tags:
-- Front-end
-- CSS
-- Javascript
-- HTML
+  - Front-end
+  - CSS
+  - Javascript
+  - HTML
 postKeywords: barra progresso leitura, porcentagem leitura css, css leitura barra, barra, leitura, progresso, progressbar js, css barra
 postDescription: Uma coisa bem legal que podemos fazer para melhorar a usabilidade é criar uma barra de progresso indicando quanto falta para terminar a leitura de um determinado ou terminar a página! Veja como é fácil criar uma barra de progresso de leitura, usando CSS e Javascript!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
 
 Uma coisa bem legal que podemos fazer para melhorar a usabilidade
-é criar uma barra de progresso, indicando quanto falta para 
+é criar uma barra de progresso, indicando quanto falta para
 terminar a leitura de um determinado texto ou para terminar a página!
 
 Veja como é fácil criar uma barra de progresso de leitura,
@@ -31,7 +31,7 @@ Primeiramente, precisamos adicionar HTML:
     <h2>Leitor</h2>
     <div class="progress-container">
         <div class="progress-bar" id="js-barraDeLeitura"></div>
-    </div> 
+    </div>
 </header>
 
 <div>Conteúdo</div>
@@ -66,21 +66,24 @@ header {
 E agora, adicionamos o Javascript:
 
 ```javascript
-// Quando o usuário fizer scroll na página, 
+// Quando o usuário fizer scroll na página,
 // irá disparar a função showProgressBar
 showProgressBar = () => {
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrolled = (winScroll / height) * 100;
-    document.getElementById("js-barraDeLeitura").style.width = `${scrolled}%`;
-}
+  const winScroll =
+    document.body.scrollTop || document.documentElement.scrollTop;
+  const height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  const scrolled = (winScroll / height) * 100;
+  document.getElementById("js-barraDeLeitura").style.width = `${scrolled}%`;
+};
 window.onscroll = () => {
-    showProgressBar()
+  showProgressBar();
 };
 ```
 
-[Neste link](https://codepen.io/victorjordan95/pen/KORWjy) você pode ver o resultado obtido 
+[Neste link](https://codepen.io/victorjordan95/pen/KORWjy) você pode ver o resultado obtido
 através deste código que fizemos!
 
-Bem legal o efeito e ainda mostra ao usuário quanto ele já 
+Bem legal o efeito e ainda mostra ao usuário quanto ele já
 leu de um determinado post, melhorando a usabilidade!

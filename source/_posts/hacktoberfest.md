@@ -2,12 +2,12 @@
 title: Hacktoberfest - O evento de Open-sources!
 date: 2018-09-25 11:02:08
 tags:
-- Eventos
+  - Eventos
 postKeywords: hacktoberfest, o que é hacktoberfest, como participar hacktoberfest, como ganhar camiseta hacktoberfest, como contribuir hacktoberfest
 postDescription: Hacktoberfest é um evento a nível global que tem como intuito a comemoração de softwares open-sources!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -16,7 +16,7 @@ Você já ouviu falar do Hacktoberfest? Para quem não conhece, Hacktoberfest é
 
 ![Hacktoberfest - 2018](/posts/hacktoberfest-logo.png)
 
-<!-- more --> 
+<!-- more -->
 
 ### Do que se trata?
 
@@ -30,5 +30,4 @@ Caso você nunca tenha contribuido para nenhum projeto e não saiba como fazer, 
 
 Ano passado, mais de **30.000** pessoas, de **119 países** diferentes submeteram certa de 240.000(!!) pull requests, para todos os tipos de projetos, desde correção em documentações e correção de bugs até novas implementações e melhorias de performance!
 
-Ficou interessado? Não deixe de se inscrever através do [site oficial](https://hacktoberfest.digitalocean.com/) e participar deste evento! 
-
+Ficou interessado? Não deixe de se inscrever através do [site oficial](https://hacktoberfest.digitalocean.com/) e participar deste evento!

@@ -2,24 +2,24 @@
 title: O que é teste unitário
 date: 2020-04-06 07:52:00
 tags:
-- Testes
+  - Testes
 postKeywords: teste unitario, teste unidade, o que é teste, teste, unidade, jest, teste front-end, teste de modulo, unit test
 postDescription: Quem nunca ouviu falar sobre teste unitário? Se o seu projeto possui testes de unidades? É uma fala muito comum na vida cotidiana de um desenvolvedor! Mas afinal, que raios é esse tal de teste unitário?
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
 
 Quem nunca ouviu falar sobre teste unitário? Se o seu projeto possui testes de unidades?
-É uma fala muito comum na vida cotidiana de um desenvolvedor! 
+É uma fala muito comum na vida cotidiana de um desenvolvedor!
 Mas afinal, que raios é esse tal de teste unitário?
 
 <!-- more -->
 
 Um teste de unidade basicamente é o **menor** componente **testável** de um software, podendo ser esse componente uma função, procedimento, método, classe, objeto, etc.
-Esse teste também  conhecido como teste de componente, teste de módulo ou teste de programa.
+Esse teste também conhecido como teste de componente, teste de módulo ou teste de programa.
 
 Vamos dizer que você está programando em Javascript e está fazendo seu front-end em React, nesse caso, a menor parte testável do seu código possivelmente será uma função! Caso estivesse usando uma linguagem orientada a objetos, um teste unitário seria um método de um objeto.
 
@@ -29,7 +29,7 @@ Vamos supor que temos a seguinte função:
 const soma = (a, b) => a + b;
 ```
 
-Uma função simples que assim como diz o nome, tem como objetivo somar dois números! 
+Uma função simples que assim como diz o nome, tem como objetivo somar dois números!
 Agora iremos fazer o teste unitário:
 
 ```
@@ -53,8 +53,3 @@ Não basta simplesmente criarmos um teste, temos que ter um planejamento prévio
 - **Projetar** os casos de testes e os procedimentos de teste
 - **Definir** relações entre os testes (algum dele tem dependência de outros testes)
 - **Preparar** o código auxiliar necessário para o teste
-
-
-
-
-

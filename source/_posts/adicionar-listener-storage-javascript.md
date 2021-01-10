@@ -2,11 +2,11 @@
 title: Adicionar event listener no Storage Javascript
 date: 2020-12-02 09:07:16
 tags:
-- Front-end
-- Javascript
+  - Front-end
+  - Javascript
 postKeywords: javascript, localstorage detect change, sessionstorage detect change, js, front-end
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

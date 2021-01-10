@@ -2,13 +2,13 @@
 title: Melhorando o uso do console no Javascript!
 date: 2020-06-15 08:48:00
 tags:
-- Front-end
-- Javascript
+  - Front-end
+  - Javascript
 postKeywords: console error, console log, console warn, console table, como usar console javascript, dicas javascript
 postDescription: Você sabia que há muito mais além do console.log? Há vários outros tipos que você pode usar e melhorar ainda mais seu desenvolvimento!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -41,5 +41,3 @@ Podemos também exibir erros e avisos de maneira correta, utilizando o `warn` pa
 
 Existem ainda mais opções que podemos utilizar com o console!
 Você pode ler mais acessando [este link](https://developer.mozilla.org/en-US/docs/Web/API/Console)
-
-

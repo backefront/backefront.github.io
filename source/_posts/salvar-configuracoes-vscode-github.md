@@ -2,12 +2,12 @@
 title: Importar e exportar extensões do VSCode
 date: 2020-08-03 08:55:14
 tags:
-- Front-end
+  - Front-end
 postKeywords: vscode extensions import, salvar extensão, importar extensão, exportar extensão, salvar, recuperar vscode, dicas vscode
 postDescription: Neste post, irei mostrar como podemos fazer para não perdermos as nossas extensões quando mudamos de ambientes, dessa forma, podemos manter as mesmas extensões em todos os nossos ambientes!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -59,4 +59,3 @@ Nessa tela, você verá seu Github Access Token, mas pode ser que se depare com 
 Cole esses caracteres no seu Gist ID.
 
 Feito isso, você deve abrir de novo sua paleta de comandos e escreva "sync download" e clique enter! Isso baixará suas configurações que você sincronizou!
-

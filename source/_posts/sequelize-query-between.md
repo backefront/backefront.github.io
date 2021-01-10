@@ -1,15 +1,15 @@
 ---
-title: Como fazer between com Sequelize 
+title: Como fazer between com Sequelize
 date: 2020-07-27 08:17:50
 tags:
-- Front-end
-- Javascript
-- Sequelize
+  - Front-end
+  - Javascript
+  - Sequelize
 postKeywords: Sequelize between, sequelize op, como fazer between sequelize, nodejs sequelize, javascript, front-end
 postDescription: Neste post, irei mostrar o quão simples é realizar uma consulta usando o between entre duas datas com o Sequelize!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -29,25 +29,22 @@ No exemplo abaixo, buscaremos registros da coluna start entre duas datas e que o
 
 1- O primeiro dia do mês de Julho;
 2- O último dia do mês de Julho
- 
+
 ```js
-import Appointment from '../models/Appointment';
+import Appointment from "../models/Appointment";
 
 // -- Caso esteja utilizando a síntaxe antiga.
 // const { Op } = require("sequelize");
-import { Op } from 'sequelize';
+import { Op } from "sequelize";
 
-  const appointments = await Appointment.findAll({
-    where: {
-      status: 'AGENDADO',
-      start: {
-        [Op.between]: [
-          new Date('Jul 01 2020'),
-          new Date('Jul 31 2020'),
-        ],
-      },
+const appointments = await Appointment.findAll({
+  where: {
+    status: "AGENDADO",
+    start: {
+      [Op.between]: [new Date("Jul 01 2020"), new Date("Jul 31 2020")],
     },
-  });
+  },
+});
 ```
 
 Dessa forma, retornaremos todos os registros que corresponderem a essa busca!

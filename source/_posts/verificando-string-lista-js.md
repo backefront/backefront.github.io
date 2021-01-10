@@ -2,13 +2,13 @@
 title: Como descobrir se um valor está presente em um array javascript
 date: 2019-06-03 07:00:54
 tags:
-- Front-end
-- Javascript
+  - Front-end
+  - Javascript
 postKeywords: verificar string array, valor em array, achar numero array, array possui valor
 postDescription: Você já precisou verificar se uma determinada palavra está presente em um array? Ou algum número? Em nosso querido ECMAScript 2016, temos um método chamado includes, o qual faz toda a mágica acontecer!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -34,9 +34,9 @@ console.log(array.includes(4));
 E também funciona perfeitamente com strings:
 
 ```javascript
-let array = ['Victor', 'Igor', 'Melanie'];
+let array = ["Victor", "Igor", "Melanie"];
 
-console.log(array.includes('Roberto'));
+console.log(array.includes("Roberto"));
 // Retorno: false
 ```
 
@@ -44,9 +44,9 @@ Este método pode ser de grande ajuda no desenvolvimento de uma autenticação p
 Por exemplo:
 
 ```javascript
-let usuario = { nome: 'Victor', idade: '23', role: ['STUDENT']};
+let usuario = { nome: "Victor", idade: "23", role: ["STUDENT"] };
 
-if(usuario.role.includes('ADMIN')) {
-    // código destinado para usuarios do tipo admin
-} 
+if (usuario.role.includes("ADMIN")) {
+  // código destinado para usuarios do tipo admin
+}
 ```

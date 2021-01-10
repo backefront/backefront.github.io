@@ -1,26 +1,25 @@
 ---
 title: 6 Técnicas para otimizar seu site
 date: 2018-09-16 16:13:07
-tags: 
-- Front-end
+tags:
+  - Front-end
 postKeywords: otimizacao de site, como otimizar meu site, dicas de otimizacao, performance, como melhorar performance
 postDescription: 6 técnicas para você otimizar seu site e melhorar ainda mais a usabilidade!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
 
-Com o passar do tempo, começamos a desenvolver sites e aplicações mais ricas e poderosas, que possuem uma interface cheia de funcionalidades maneiras e lindas! Como todos sabem, __Nada pode ser obtido sem sacrifício. Para se obter algo é preciso oferecer algo em troca de igual valor__. Mas o que quer dizer isso? Significa que cada vez mais utilizamos recursos, importamos novas bibliotecas para auxiliar em nosso desenvolvimento, com intuíto de produzir a melhor aplicação possível e consequentemente deixamos nosso produto um pouco mais pesado. Isso pode transformar em um grave problema de **performance**.
-
+Com o passar do tempo, começamos a desenvolver sites e aplicações mais ricas e poderosas, que possuem uma interface cheia de funcionalidades maneiras e lindas! Como todos sabem, **Nada pode ser obtido sem sacrifício. Para se obter algo é preciso oferecer algo em troca de igual valor**. Mas o que quer dizer isso? Significa que cada vez mais utilizamos recursos, importamos novas bibliotecas para auxiliar em nosso desenvolvimento, com intuíto de produzir a melhor aplicação possível e consequentemente deixamos nosso produto um pouco mais pesado. Isso pode transformar em um grave problema de **performance**.
 
 ## Performance te ajuda a manter um usuário
 
 De acordo com uma pesquisa realizada pelo Google, sites que demoraram **até** 5 segundos para carregar, possuiram sessões mais duradouras e rentáveis. Afinal, performance também diz muito sobre melhorar suas conversões!
 Afinal, quem nunca desistiu de entrar em um site que demorava muito para carregar? É pensando nisso que será demonstrado neste post **6 Técnicas para otimizar seu site**
 
-<!-- more --> 
+<!-- more -->
 
 ## 1 - Encontre o principal causador da demora
 
@@ -34,7 +33,7 @@ Sabe quando você baixa uma lib e tem dois arquivos, um chamado lib.js e outro l
 
 ## 3 - Diminua a quantidade de requisições HTTP
 
->"A melhor requisição é aquela que não existe"
+> "A melhor requisição é aquela que não existe"
 
 Requisição é aquilo em que seu site faz para buscar os arquivos dependentes, como por exemplo: imagens, css, js. Quanto mais requisições você tiver, mais seu site demorará para carregar! Essa informação de quantas requisições existem em sua aplicação aparece também na **network** do Devtools!
 
@@ -57,5 +56,5 @@ Quando o cache está habilitado, o sistema verifica se o usuário quando acessou
 
 Lazyload é uma técnica de carregar as informações que estão abaixo da primeira dobra de renderização, isto é, aquela primeira tela vista quando acessado um site. Está técnica consiste em priorizar as informações que o usuário vai ver primeiramente e carregar depois o restante das informações na medida que o utilizador for descendo a página. Com isso, o site carrega mais rápido e só irá carregar o restante do conteúdo caso seja **necessário**
 
-Estas são só algumas dicas que quando usadas, melhoram o desempenho e consequentemente ajuda no seu SEO! 
+Estas são só algumas dicas que quando usadas, melhoram o desempenho e consequentemente ajuda no seu SEO!
 Sentiu falta de alguma técnica ou você utiliza alguma diferente? Comenta aí para sabermos como podemos otimizar ainda mais nossos sistemas!

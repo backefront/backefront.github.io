@@ -2,13 +2,13 @@
 title: Como verificar se o radio button está checado com Javascript
 date: 2020-06-01 08:10:15
 tags:
-- Front-end
-- Javascript
+  - Front-end
+  - Javascript
 postKeywords: javascript validation, radio button checked, verificar js radio button, radio button verificacao, check js radio, javascript, front-end
 postDescription: Diariamente, o desenvolvedor constantemente depara-se com situações onde devem ser feitas verificações em seus formulários. Esses formulários são compostos, por sua maioria, de input de textos, telefones, endereço, etc. E também temos casos onde há o input do tipo radio. A pergunta é, como verificar se o radio button está checado, pelo Javascript?
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -31,11 +31,11 @@ Imaginemos que você tem o seguinte HTML:
 Para verificarmos se o gênero está selecionado, podemos usar a seguinte abordagem com Javascript puro:
 
 ```javascript
-if (document.getElementById('genero_masculino').checked) {
-  // Lógica caso seja gênero 
+if (document.getElementById("genero_masculino").checked) {
+  // Lógica caso seja gênero
   // masculino selecionado
-} else if (document.getElementById('genero_feminino').checked) {
-  // Lógica caso seja gênero 
+} else if (document.getElementById("genero_feminino").checked) {
+  // Lógica caso seja gênero
   // feminino selecionado
 }
 ```

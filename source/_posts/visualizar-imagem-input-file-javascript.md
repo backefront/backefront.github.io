@@ -2,14 +2,14 @@
 title: Convertendo imagem para base64 e exibindo no front-end
 date: 2020-07-20 07:35:19
 tags:
-- Front-end
-- Javascript
-- React
-postKeywords: base64 img, input file convert img, image to base64, exibir imagem input file, exibir imagem carregada, javascript imagem, base64 javascript 
+  - Front-end
+  - Javascript
+  - React
+postKeywords: base64 img, input file convert img, image to base64, exibir imagem input file, exibir imagem carregada, javascript imagem, base64 javascript
 postDescription: Neste artigo, irei mostrar como podemos exibir em nosso front-end a imagem que está sendo enviada pelo usuário através do input="file", convertendo o arquivo em base64 para exibição em tempo real!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -22,23 +22,25 @@ Então veja como podemos visualizar a imagem que está sendo enviada, na nossa p
 
 <!-- more -->
 
-Vamos assumir que temos a seguinte estrutura em nosso HTML: 
+Vamos assumir que temos a seguinte estrutura em nosso HTML:
 
 ```jsx
 const ProfilePhoto = () => {
-  const [newPicture, setNewPicture] = ('')
-  
+  const [newPicture, setNewPicture] = "";
+
   const handleProfile = (e) => {
     // Função que vamos implementar
-  }
+  };
 
-  return <input
-    type="file"
-    name="profile"
-    accept="image/*"
-    onChange={e => handleProfile(e)}
-  />
-}
+  return (
+    <input
+      type="file"
+      name="profile"
+      accept="image/*"
+      onChange={(e) => handleProfile(e)}
+    />
+  );
+};
 ```
 
 Legal, vamos trabalhar em cima desse input.
@@ -47,13 +49,13 @@ A primeira coisa que queremos fazer é selecionar o arquivo que está sendo envi
 
 O objeto FileReader permite-nos ler o conteúdo dos arquivos que estão armazenados no computador do usuário de maneira assíncrona, utilizando os objetos `File`ou `Blob` para especificar o arquivo ou o dado a ser lido!
 
-Mas como? A explicação acima parece muito mais complicada do que realmente é! 
+Mas como? A explicação acima parece muito mais complicada do que realmente é!
 Vamos converter isso em código:
 
 ```jsx
 const ProfilePhoto = () => {
-  const [newPicture, setNewPicture] = ('')
-  
+  const [newPicture, setNewPicture] = "";
+
   const handleProfile = (e) => {
     // Selecionando o arquivo
     const file = e.target.files[0];
@@ -63,9 +65,11 @@ const ProfilePhoto = () => {
 
     // Adicionamos um evento para
     // escutar o Reader
-    reader.addEventListener('load', () => {
-        //  Quando carregado, 
-        // reader.result retornará 
+    reader.addEventListener(
+      "load",
+      () => {
+        //  Quando carregado,
+        // reader.result retornará
         // o objeto convertido em Base64
         setNewPicture(reader.result);
       },
@@ -77,15 +81,17 @@ const ProfilePhoto = () => {
     if (file) {
       reader.readAsDataURL(file);
     }
-  }
+  };
 
-  return <input
-    type="file"
-    name="profile"
-    accept="image/*"
-    onChange={e => handleProfile(e)}
-  />
-}
+  return (
+    <input
+      type="file"
+      name="profile"
+      accept="image/*"
+      onChange={(e) => handleProfile(e)}
+    />
+  );
+};
 ```
 
 Bem mais simples olhando a implementação, não é mesmo?

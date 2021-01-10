@@ -2,19 +2,19 @@
 title: O que é DOM HTML
 date: 2019-12-30 07:30:22
 tags:
-- Front-end
+  - Front-end
 postKeywords: dom, o que é dom, dom html, entender dom, como funciona dom, dom web, web, front-end
 postDescription:
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
 
 Quando iniciamos no mundo de desenvolvimento para internet, somos bombardeados por diversas informações, regras, sintaxes, nomenclaturas e abreviações que, em sua grande maioria, parece formar uma densa névoa de confusão em nossas cabeças e não sabemos por onde começar a abrir os caminhos nessa tão vasta área.
 
-Pensando nisso, vamos começar a tentar clarear aos poucos as mais diversas dúvidas iniciais! 
+Pensando nisso, vamos começar a tentar clarear aos poucos as mais diversas dúvidas iniciais!
 
 No post de hoje, conversaremos sobre DOM! Esse DOM não está relacionado com talento ou qualidade inata e sim com nosso querido HTML!
 Mas e aí, o que é esse tal de DOM?
@@ -31,7 +31,7 @@ Vamos conhecer alguns dos principais e mais usados?
 
 ### Window
 
-Window é o objeto que contém o objeto `document` dentro do DOM. Podemos considerar que ele é a cabeça de tudo. 
+Window é o objeto que contém o objeto `document` dentro do DOM. Podemos considerar que ele é a cabeça de tudo.
 Toda nossa página fica abaixo dele
 
 ```javascript
@@ -42,18 +42,17 @@ const window = document.defaultView;
 
 ```javascript
 // Armazena no localstorage "nome"
-window.localStorage.setItem('nome', 'Victor');
+window.localStorage.setItem("nome", "Victor");
 
 // Recupera o valor da variável "nome"
-window.localStorage.getItem('nome');
+window.localStorage.getItem("nome");
 ```
 
 Com o window, conseguimos também exibir um alerta na tela do usuário! Através do `window.alert`
 
 ```javascript
-window.alert('Olá, back&front!');
+window.alert("Olá, back&front!");
 ```
-
 
 O window também é utilizando quando queremos capturar o tamanho da tela do navegador que está sendo utilizando pelo o usuário de nosso site, sistema, através de `window.innerHeight` ou `window.innerWidth`
 

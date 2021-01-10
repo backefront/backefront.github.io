@@ -2,12 +2,12 @@
 title: Como debuggar componentes HTML
 date: 2020-09-21 08:36:38
 tags:
-- Front-end
+  - Front-end
 postKeywords: debugging html, depurate html, inspecionar componente, html, front-end, como debuggar html, how to debug html
 postDescription: Você sabia que podemos debuggar aquele componente HTML, de forma que mesmo alterando o estado (hover, focus) ainda conseguimos manter ele fixo na tela, para podermos mexer nele livremente?
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e pós-graduando em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -15,7 +15,7 @@ authorGithub: victorjordan95
 Esses dias um amigo me mostrou um tweet do [@sulco](https://twitter.com/sulco) sobre **como debuggar html**, de uma forma bem simples!
 Sabe aquele `Select` componente ou aquele dropdown que usamos e as vezes queremos alterar seu estilo, com ele aberto?
 
-Sempre que tentamos selecioná-lo, acaba fechando, sumindo, desfazendo! Dá uma raiva! 
+Sempre que tentamos selecioná-lo, acaba fechando, sumindo, desfazendo! Dá uma raiva!
 Então hoje apresento algo que até poucos dias atrás não conhecia: "emulate a focused page"
 
 <!-- more -->
