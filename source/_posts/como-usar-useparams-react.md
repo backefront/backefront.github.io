@@ -1,10 +1,10 @@
 ---
 title: Como usar useParams para obter parâmetros URL - React
 date: 2021-01-29 08:35:46
-tags: 
-- Front-end
-- Javascript
-- React
+tags:
+  - Front-end
+  - Javascript
+  - React
 postKeywords: react hooks, useParams hooks, obter parametro url react, react url variavel, react useParams, como usar useparams, react, front-end, javascript, react router
 postDescription: Os Hooks do React chegaram mudando tudo! O que conhecíamos antes, com a atualização, passou a ficar muito mais fácil! Isso se aplica aos nossos códigos mas também em algumas famosas libs! Um exemplo disso é o React Router Dom! Vamos ver como fica o acesso de parâmetros da URL com o useParams()?
 author: Victor Jordan
@@ -15,8 +15,8 @@ authorGithub: victorjordan95
 ---
 
 Os Hooks do React chegaram mudando tudo! O que conhecíamos antes, com a atualização, passou a ficar muito mais fácil!
-Isso se aplica aos nossos códigos mas também em algumas famosas libs! 
-Um exemplo disso é o React Router Dom! 
+Isso se aplica aos nossos códigos mas também em algumas famosas libs!
+Um exemplo disso é o React Router Dom!
 Vamos ver como fica o acesso de parâmetros da URL com o useParams()?
 
 <!-- more -->
@@ -41,5 +41,5 @@ function BlogPost() {
 ```
 
 Simples assim! Tem jeito de ser mais fácil do que isso?
-E você, tem utilizado muito os hooks? 
+E você, tem utilizado muito os hooks?
 Diz aí como tem sido sua experiência!
