@@ -67,7 +67,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
       *ngFor="let user of usersOptions"
       [user]="user"
       class="col-12 col-md-4"
-      (counter)="onCounter($event)"
+      (counterEmitter)="onCounter($event)"
     ></app-voto-card>
   `,
   styleUrls: ["./parent.component.scss"],
