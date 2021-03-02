@@ -22,7 +22,7 @@ Fazer isso com Javascript é muito fácil, com uma linha você já consegue solu
 const string = 'Palavra com espaço';
 
 // Usamos replace com regex para substituir
-str.replace(/\s/g, '');
+string.replace(/\s+/g, '');
 
 // Resultado: Palavracomespaço
 ```
