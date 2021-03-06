@@ -29,7 +29,7 @@ Neste arquivo, definiremos as variáveis que iremos utilizar para nosso desenvol
 
 Com o arquivo criado, podemos começar definir nossas variáveis, sempre se atentando a um detalhe em específico:
 
-> Todas nossas variáveis devem iniciar com REACT*APP* para que o React entenda ela como uma variável de ambiente
+> Todas nossas variáveis devem iniciar com REACT\_APP\_ para que o React entenda ela como uma variável de ambiente
 
 Feito isso, olha como ficaria nosso arquivo:
 
