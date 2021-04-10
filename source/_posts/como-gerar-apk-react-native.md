@@ -1,6 +1,6 @@
 ---
 title: Como gerar APK com React Native 
-date: 2020-04-09 08:00:28
+date: 2021-04-10 08:00:28
 tags:
   - React
   - React Native
