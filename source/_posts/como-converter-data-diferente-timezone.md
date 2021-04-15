@@ -17,7 +17,6 @@ Neste post, mostro como é fácil converter uma data para um timezone diferente!
 
 <!-- more -->
 
-You can use the toLocaleString() method to convert dates in one timezone to another. For example, let's convert current date to British English timezone as below,
 Para isso, você pode usar o método `toLocaleString() ` para converter uma data em um outro timezone.
 Como por exemplo: 
 
