@@ -4,7 +4,7 @@ date: 2021-04-22 08:00:28
 tags:
   - Front-end
   - React Native
-postKeywords: Can't find variable Intl, variable intl, intl react native, como usar intl, adicionar intl, react native, react, android
+postKeywords: Cant find variable Intl, variable intl, intl react native, como usar intl, adicionar intl, react native, react, android
 postDescription: Neste post, vou mostrar como corrigir o erro de variável não encontrada do Intl, para o react native!
 author: Victor Jordan
 authorImg: victor.png
