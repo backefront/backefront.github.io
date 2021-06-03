@@ -1,6 +1,6 @@
 ---
 title: Como ver requisições network - React Native
-date: 2019-01-24 07:35:46
+date: 2021-06-02 07:35:46
 tags: 
 - Front-end
 - Javascript
