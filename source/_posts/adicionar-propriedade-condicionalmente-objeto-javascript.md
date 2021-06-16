@@ -1,6 +1,6 @@
 ---
 title: Como adicionar uma propriedade em objeto JS dinamicamente 
-date: 2021-06-16 07:30:00
+date: 2021-06-15 07:30:00
 tags:
   - Front-end
   - Javascript
