@@ -25,7 +25,7 @@ jobs:
 
     - name: Adding token
     - run: echo "${{secrets.__GITHUB_TOKEN__}}"
-    - run: sed -i "s/__GITHUB_TOKEN__/${{secrets.__GITHUB_TOKEN__}}/" _config.yml
+    - run: sed -i "s/__GITHUB_TOKEN__/__GITHUB_TOKEN__/" _config.yml
 
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
