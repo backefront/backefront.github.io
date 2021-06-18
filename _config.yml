@@ -89,9 +89,9 @@ feed:
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+#repo: https://__GITHUB_TOKEN__@github.com/backefront/backefront.github.io.git
 deploy:
   type: git
-  #repo: https://__GITHUB_TOKEN__@github.com/backefront/backefront.github.io.git
   repo: https://${{secrets.__GITHUB_TOKEN__}}@github.com/backefront/backefront.github.io.git
   branch: master
   
