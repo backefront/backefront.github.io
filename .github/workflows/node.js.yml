@@ -19,11 +19,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Setting up git config
     - run: git config --global user.name "Victor Jordan"
     - run: git config --global user.email "victorjordan95@gmail.com"
-
-    - name: Adding token
     - run: echo "${{secrets.__GITHUB_TOKEN__}}"
     - run: sed -i "s/__GITHUB_TOKEN__/__GITHUB_TOKEN__/" _config.yml
 
