@@ -20,7 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: git config --global user.name "Victor Jordan"
-    - run: git config --global user.email "victorjordan95@gmail.com"
+    - run: git config --global user.email "backefront@gmail.com"
     - run: sed -i "s/__GITHUB_TOKEN__/${{secrets.__GITHUB_TOKEN__}}/" _config.yml
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
