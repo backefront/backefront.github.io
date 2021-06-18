@@ -21,9 +21,7 @@ jobs:
     - uses: actions/checkout@v2
     - run: git config --global user.name "Victor Jordan"
     - run: git config --global user.email "victorjordan95@gmail.com"
-    - run: echo "${{secrets.__GITHUB_TOKEN__}}"
-    - run: sed -i "s/__GITHUB_TOKEN__/__GITHUB_TOKEN__/" _config.yml
-
+    - run: sed -i "s/__GITHUB_TOKEN__/${__GITHUB_TOKEN__}/" _config.yml
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
