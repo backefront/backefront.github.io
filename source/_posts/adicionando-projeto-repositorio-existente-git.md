@@ -36,7 +36,7 @@ git add .
 git commit -m "Adicionando arquivos do projeto"
 ```
 
-Agora só precisamos fazer um **push** para nosso repositório, e para isso, devemos primeiramente **definir** qual é nossa URL de destino! Então usaremos o comando "_git remote add origin remote **urlRepositorio** _"
+Agora só precisamos fazer um **push** para nosso repositório, e para isso, devemos primeiramente **definir** qual é nossa URL de destino! Então usaremos o comando "_git remote add origin remote **urlRepositorio**_"
 
 ```bash
 # Define um novo repositório como destino
