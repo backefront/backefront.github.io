@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Dicas de desenvolvimento e programação</title>
+  
+  <subtitle>Dicas de desenvolvimento front-end, back-end, testes e muito mais!</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://backefront.com.br/"/>
+  <updated>2021-07-13T11:13:15.261Z</updated>
+  <id>https://backefront.com.br/</id>
+  
+  <author>
+    <name>Melanie Jordan e Victor Jordan</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Como Remover O Último Elemento De Uma Lista Javascript</title>
+    <link href="https://backefront.com.br/como-remover-ultimo-elemento-javascript/"/>
+    <id>https://backefront.com.br/como-remover-ultimo-elemento-javascript/</id>
+    <published>2021-07-13T10:30:50.000Z</published>
+    <updated>2021-07-13T11:13:15.261Z</updated>
+    
+    <content type="html"><![CDATA[<p>Remover o último elemento de uma lista com Javascript é uma coisa bem simples, podemos fazer isso de várias formas.<br>Podemos usar o <code>.pop()</code> ou <code>.splice()</code>, da seguinte maneira:<br><a id="more"></a></p><p>Usando o Splice:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> array = [<span class="number">1</span>,<span class="number">0</span>,<span class="number">2</span>];</span><br><span class="line">array.splice(<span class="number">-1</span>,<span class="number">1</span>);</span><br><span class="line"><span class="comment">// Resultado: [1,0];</span></span><br></pre></td></tr></table></figure></p><p>Usando pop:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> array = [<span class="number">1</span>,<span class="number">0</span>,<span class="number">2</span>];</span><br><span class="line"><span class="keyword">const</span> novoArray = array.pop();</span><br><span class="line"><span class="comment">// Resultado: [1,0];</span></span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Remover o último elemento de uma lista com Javascript é uma coisa bem simples, podemos fazer isso de várias formas.&lt;br&gt;Podemos usar o &lt;code&gt;.pop()&lt;/code&gt; ou &lt;code&gt;.splice()&lt;/code&gt;, da seguinte maneira:&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Front-end" scheme="https://backefront.com.br/tags/Front-end/"/>
+    
+      <category term="Javascript" scheme="https://backefront.com.br/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Como Adicionar Uma Propriedade Em Objeto JS Dinamicamente</title>
+    <link href="https://backefront.com.br/adicionar-propriedade-condicionalmente-objeto-javascript/"/>
+    <id>https://backefront.com.br/adicionar-propriedade-condicionalmente-objeto-javascript/</id>
+    <published>2021-06-17T10:30:00.000Z</published>
+    <updated>2021-07-13T11:13:15.261Z</updated>
+    
+    <content type="html"><![CDATA[<p>Certa vez, enquanto estava fazendo integração em um determinado endpoint, tinha certas propriedades que eu não podia enviar dentro do payload caso o valor fosse vazio.</p><p>Pensando nisso, poderíamos fazer diversos IF, verificando se existe valor naquela propriedade ou não, e assim adicionar.<br>Mas sabia que podemos montar um objeto de uma só vez, verificando isso diretamente?</p><a id="more"></a><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> condition = <span class="literal">true</span>;</span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  id: <span class="number">1</span>,</span><br><span class="line">  name: <span class="string">'John Doe'</span>,</span><br><span class="line">  ...(condition &amp;&amp; &#123; <span class="attr">idade</span>: <span class="number">16</span> &#125;),</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><p>Dessa forma, montamos nosso objeto da forma que queremos, de maneira condicional, adicionado uma propriedade ao objeto apenas se cumprir os requisitos!</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Certa vez, enquanto estava fazendo integração em um determinado endpoint, tinha certas propriedades que eu não podia enviar dentro do payload caso o valor fosse vazio.&lt;/p&gt;
+&lt;p&gt;Pensando nisso, poderíamos fazer diversos IF, verificando se existe valor naquela propriedade ou não, e assim adicionar.&lt;br&gt;Mas sabia que podemos montar um objeto de uma só vez, verificando isso diretamente?&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Front-end" scheme="https://backefront.com.br/tags/Front-end/"/>
+    
+      <category term="Javascript" scheme="https://backefront.com.br/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Como Ver Requisições Network - React Native</title>
+    <link href="https://backefront.com.br/como-ver-request-network-react-native/"/>
+    <id>https://backefront.com.br/como-ver-request-network-react-native/</id>
+    <published>2021-06-02T10:35:46.000Z</published>
+    <updated>2021-07-13T11:13:15.261Z</updated>
+    
+    <content type="html"><![CDATA[<p>O React Native Debugger veio da necessidade de trazer tudo aquilo que já estamos acostumados em nosso desenvolvimento web dentro do React Native!<br>Neste post, vou mostrar como você pode habilitar, facilmente, o inspecionar requisições em seu debugger!<br><a id="more"></a></p><p>Seguindo a resposta do <a href="https://stackoverflow.com/users/5449850/kashish-grover" target="_blank" rel="noopener">Kashish Grover</a>, <a href="https://stackoverflow.com/questions/33997443/how-can-i-view-network-requests-for-debugging-in-react-native" target="_blank" rel="noopener">neste link</a></p><p>A primeira coisa que devemos é baixar o React Native Debugger: </p><p><a href="https://github.com/jhen0409/react-native-debugger" target="_blank" rel="noopener">Download React Debugger</a></p><p>Feito isso, basta seguir os passos: </p><p>1 - Abra o Debugger<br>2 - Feche o chrome (debugger padrão, caso esteja aberto)<br>3 - Botão direito do mouse e selecione “Enable Network Inspect”</p><p><img src="https://i.stack.imgur.com/eVT7L.png" alt="Enable Network Inspect"></p><p><img src="https://i.stack.imgur.com/QQbJ8.png" alt="Enable Network Inspect"></p><p>E pronto, você estará recebendo em seu debugger todas as requisições!</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;O React Native Debugger veio da necessidade de trazer tudo aquilo que já estamos acostumados em nosso desenvolvimento web dentro do React Native!&lt;br&gt;Neste post, vou mostrar como você pode habilitar, facilmente, o inspecionar requisições em seu debugger!&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Front-end" scheme="https://backefront.com.br/tags/Front-end/"/>
+    
+      <category term="Javascript" scheme="https://backefront.com.br/tags/Javascript/"/>
+    
+      <category term="React Native" scheme="https://backefront.com.br/tags/React-Native/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Como Remover Acentuação Javascript</title>
+    <link href="https://backefront.com.br/remover-acentuacao-js/"/>
+    <id>https://backefront.com.br/remover-acentuacao-js/</id>
+    <published>2021-05-15T11:16:00.000Z</published>
+    <updated>2021-07-13T11:13:15.265Z</updated>
+    
+    <content type="html"><![CDATA[<p>Esses dias estava desenvolvendo um projeto onde uma das regras de negócio era que todos os cadastros não aceitassem acentuações.<br>Então, fazendo uma pesquisa, encontrei um regex que faz essa alteração, olha como é fácil!</p><a id="more"></a><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">"Crème Brulée"</span>;</span><br><span class="line">str.normalize(<span class="string">"NFD"</span>).replace(<span class="regexp">/[\u0300-\u036f]/g</span>, <span class="string">""</span>)</span><br><span class="line">&gt; <span class="string">"Creme Brulee"</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Esses dias estava desenvolvendo um projeto onde uma das regras de negócio era que todos os cadastros não aceitassem acentuações.&lt;br&gt;Então, fazendo uma pesquisa, encontrei um regex que faz essa alteração, olha como é fácil!&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Front-end" scheme="https://backefront.com.br/tags/Front-end/"/>
+    
+      <category term="Javascript" scheme="https://backefront.com.br/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Como Usar INTL No React Native</title>
+    <link href="https://backefront.com.br/usar-intl-react-native/"/>
+    <id>https://backefront.com.br/usar-intl-react-native/</id>
+    <published>2021-04-22T11:00:28.000Z</published>
+    <updated>2021-07-13T11:13:15.265Z</updated>
+    
+    <content type="html"><![CDATA[<p>Estava desenvolvendo um aplicativo com React Native e em determinado momento, precisava fazer a conversão de um valor para real (dinheiro, R$)<br>Como estou acostumado em desenvolver web, logo pensei no Intl, fazendo o seguinte:</p><a id="more"></a><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> convertPriceForReal = <span class="function">(<span class="params">number</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Intl</span>.NumberFormat(<span class="string">'pt-BR'</span>, &#123; <span class="attr">style</span>: <span class="string">'currency'</span>, <span class="attr">currency</span>: <span class="string">'BRL'</span> &#125;).format(</span><br><span class="line">    number</span><br><span class="line">  );</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><p>Quando fui testar no aplicativo, o que acontece? Tomo um erro que antes não tinha visto:</p><blockquote><p>Can’t find variable Intl</p></blockquote><p>Para resolver esse erro, basta fazer os passos (considerando que você está no  React Native v0.60+):</p><p>No seu arquivo: <code>app/build.gradle</code>, alterar de <code>org.webkit:android-jsc:+</code> para: </p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">def jscFlavor = <span class="string">'org.webkit:android-jsc-intl:+'</span></span><br></pre></td></tr></table></figure><p>E verifica, neste mesmo arquivo, se está implementado em suas dependências, como mostro abaixo:</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">dependencies &#123;</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">if</span> (enableHermes) &#123;</span><br><span class="line">        ...</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        implementation jscFlavor</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>Com isso, é para funcionar tudo certinho! :)</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Estava desenvolvendo um aplicativo com React Native e em determinado momento, precisava fazer a conversão de um valor para real (dinheiro, R$)&lt;br&gt;Como estou acostumado em desenvolver web, logo pensei no Intl, fazendo o seguinte:&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Front-end" scheme="https://backefront.com.br/tags/Front-end/"/>
+    
+      <category term="React Native" scheme="https://backefront.com.br/tags/React-Native/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Como Converter Uma Data Para Outro Timezone</title>
+    <link href="https://backefront.com.br/como-converter-data-diferente-timezone/"/>
+    <id>https://backefront.com.br/como-converter-data-diferente-timezone/</id>
+    <published>2021-04-15T10:30:00.000Z</published>
+    <updated>2021-07-13T11:13:15.261Z</updated>
+    
+    <content type="html"><![CDATA[<p>Neste post, mostro como é fácil converter uma data para um timezone diferente!</p><a id="more"></a><p>Para isso, você pode usar o método <code>toLocaleString()</code> para converter uma data em um outro timezone.<br>Como por exemplo: </p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(event.toLocaleString(<span class="string">'en-GB'</span>, &#123; <span class="attr">timeZone</span>: <span class="string">'UTC'</span> &#125;)); </span><br><span class="line"><span class="comment">// Retorno: 29/06/2019, 09:56:00</span></span><br></pre></td></tr></table></figure><p>Ou para português:</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(event.toLocaleString(<span class="string">'pt-BR'</span>, &#123; <span class="attr">timeZone</span>: <span class="string">'UTC'</span> &#125;)); </span><br><span class="line"><span class="comment">// Retorno: 29/06/2019, 09:56:00</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Neste post, mostro como é fácil converter uma data para um timezone diferente!&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Front-end" scheme="https://backefront.com.br/tags/Front-end/"/>
+    
+      <category term="Javascript" scheme="https://backefront.com.br/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Como Gerar APK Com React Native</title>
+    <link href="https://backefront.com.br/como-gerar-apk-react-native/"/>
+    <id>https://backefront.com.br/como-gerar-apk-react-native/</id>
+    <published>2021-04-10T11:00:28.000Z</published>
+    <updated>2021-07-13T11:13:15.261Z</updated>
+    
+    <content type="html"><![CDATA[<p>Você está desenvolvendo em React Native e quer gerar um apk para instalar em seu celular.<br>Mas você não quer mandar esse app ainda para uma store para poder baixar.</p><p>Para gerar o apk, é muito simples com o react native, se liga só!</p><a id="more"></a><h4 id="Pre-requisito"><a href="#Pre-requisito" class="headerlink" title="Pre-requisito:"></a>Pre-requisito:</h4><p>react-native version &gt; 0.57</p><h4 id="Passo-1"><a href="#Passo-1" class="headerlink" title="Passo 1"></a>Passo 1</h4><p>Na raiz do seu projeto, rode o seguinte comando no seu terminal:</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res</span><br></pre></td></tr></table></figure><h4 id="Passo-2"><a href="#Passo-2" class="headerlink" title="Passo 2"></a>Passo 2</h4><p>Acesse a pasta Android:</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> android</span><br></pre></td></tr></table></figure><h4 id="Passo-3"><a href="#Passo-3" class="headerlink" title="Passo 3"></a>Passo 3</h4><p>Agora dentro da sua pasta Android, execute o comando:</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./gradlew assembleDebug</span><br></pre></td></tr></table></figure><p>E pronto! Seu apk será gerado no caminho:</p><p><code>seuProjeto/android/app/build/outputs/apk/debug/app-debug.apk</code></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Você está desenvolvendo em React Native e quer gerar um apk para instalar em seu celular.&lt;br&gt;Mas você não quer mandar esse app ainda para uma store para poder baixar.&lt;/p&gt;
+&lt;p&gt;Para gerar o apk, é muito simples com o react native, se liga só!&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Front-end" scheme="https://backefront.com.br/tags/Front-end/"/>
+    
+      <category term="React" scheme="https://backefront.com.br/tags/React/"/>
+    
+      <category term="React Native" scheme="https://backefront.com.br/tags/React-Native/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Diferença Entre Slice E Splice - Javascript</title>
+    <link href="https://backefront.com.br/diferenca-slice-splice-javascript/"/>
+    <id>https://backefront.com.br/diferenca-slice-splice-javascript/</id>
+    <published>2021-03-29T11:00:28.000Z</published>
+    <updated>2021-07-13T11:13:15.265Z</updated>
+    
+    <content type="html"><![CDATA[<p>Você conhece a diferença entre o método slice e o método splice, do Javascript?<br>Apesar de serem bem semelhantes, há umas diferenças!<br>Olha só:</p><a id="more"></a><table><thead><tr><th>Slice</th><th>Splice</th></tr></thead><tbody><tr><td>Não modifica o array original (imutável)</td><td>Modifica o array original (mutável)</td></tr><tr><td>Retorna um subconjunto do array original</td><td>Retorna os itens deletados do array</td></tr><tr><td>Usado para escolher os elementos do array</td><td>É usado para inserir ou deletar elementos do array</td></tr></tbody></table><h3 id="Slice"><a href="#Slice" class="headerlink" title="Slice"></a>Slice</h3><p>Ele seleciona os elementos começando no argumento inicial fornecido e termina no argumento final (opcional) fornecido sem incluir o último elemento.<br>Se você omitir o segundo argumento, ele seleciona até o final.</p><p>Alguns dos exemplos deste método são:</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arrayIntegers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line"><span class="keyword">let</span> arrayIntegers1 = arrayIntegers.slice(<span class="number">0</span>,<span class="number">2</span>); <span class="comment">// retorna [1,2]</span></span><br><span class="line"><span class="keyword">let</span> arrayIntegers2 = arrayIntegers.slice(<span class="number">2</span>,<span class="number">3</span>); <span class="comment">// retorna [3]</span></span><br><span class="line"><span class="keyword">let</span> arrayIntegers3 = arrayIntegers.slice(<span class="number">4</span>); <span class="comment">// retorna [5]</span></span><br></pre></td></tr></table></figure><h3 id="Splice"><a href="#Splice" class="headerlink" title="Splice"></a>Splice</h3><p>O método splice () é usado para adicionar ou remover itens de um array e, em seguida, retornar o item removido.<br>O primeiro argumento especifica a posição da matriz para inserção ou exclusão, enquanto o segundo argumento da opção indica o número de elementos a serem excluídos.<br>Cada argumento adicional é adicionado ao array.</p><p>Alguns dos exemplos deste método são:</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arrayIntegersOriginal1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line"><span class="keyword">let</span> arrayIntegersOriginal2 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line"><span class="keyword">let</span> arrayIntegersOriginal3 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> arrayIntegers1 = arrayIntegersOriginal1.splice(<span class="number">0</span>,<span class="number">2</span>); <span class="comment">// retorna [1, 2]; original array: [3, 4, 5]</span></span><br><span class="line"><span class="keyword">let</span> arrayIntegers2 = arrayIntegersOriginal2.splice(<span class="number">3</span>); <span class="comment">// retorna [4, 5]; original array: [1, 2, 3]</span></span><br><span class="line"><span class="keyword">let</span> arrayIntegers3 = arrayIntegersOriginal3.splice(<span class="number">3</span>, <span class="number">1</span>, <span class="string">"a"</span>, <span class="string">"b"</span>, <span class="string">"c"</span>); <span class="comment">// retorna [4]; original array: [1, 2, 3, "a", "b", "c", 5]</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Você conhece a diferença entre o método slice e o método splice, do Javascript?&lt;br&gt;Apesar de serem bem semelhantes, há umas diferenças!&lt;br&gt;Olha só:&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Front-end" scheme="https://backefront.com.br/tags/Front-end/"/>
+    
+      <category term="Javascript" scheme="https://backefront.com.br/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Como Alterar Para Branch Remota Para Local</title>
+    <link href="https://backefront.com.br/como-alterar-branch-remota-localmente-git/"/>
+    <id>https://backefront.com.br/como-alterar-branch-remota-localmente-git/</id>
+    <published>2021-03-11T11:00:28.000Z</published>
+    <updated>2021-07-13T11:13:15.261Z</updated>
+    
+    <content type="html"><![CDATA[<p>Você está trabalhando em uma atividade juntamente com seu colega de trabalho.<br>Em determinado momento, ele pediu que você ajudasse nesse desenvolvimento e pediu que entrasse na branch que ele está trabalhando.<br>Você sabe como trazer a branch remota, localmente?</p><a id="more"></a><p>Introduzido na versão <code>2.30.2</code> do git, o comando <code>git switch</code> veio para facilitar a nossa vida e deixar esse processo muito mais simples!<br>Quando queremos acessar uma branch que não está em nosso ambiente, podemos utilizar esse comando, da seguinte maneira: </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git switch nomeDaBranch</span><br></pre></td></tr></table></figure><p>Massa não é? Ajuda muito!</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Você está trabalhando em uma atividade juntamente com seu colega de trabalho.&lt;br&gt;Em determinado momento, ele pediu que você ajudasse nesse desenvolvimento e pediu que entrasse na branch que ele está trabalhando.&lt;br&gt;Você sabe como trazer a branch remota, localmente?&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Git" scheme="https://backefront.com.br/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Como Criar Variável De Ambiente React</title>
+    <link href="https://backefront.com.br/como-criar-variavel-ambiente-react/"/>
+    <id>https://backefront.com.br/como-criar-variavel-ambiente-react/</id>
+    <published>2021-03-06T13:19:53.000Z</published>
+    <updated>2021-07-13T11:13:15.261Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Antes de mais nada, essa feature está disponível a partir da versão 0.5.0 do react-scripts</p></blockquote><p>Uma excelente prática enquanto estamos desenvolvendo é que nosso sistema nunca tenha estaticamente no código URLs e endereços, o famoso <code>hard coded</code>.<br>É muito aconselhável que tenhamos essas informações em um arquivo de variáveis</p><p>Para isso, neste post irei mostrar como podemos armazenas esses informações dentro de um arquivo chamado <code>.env</code></p><a id="more"></a><h3 id="O-que-e-ENV"><a href="#O-que-e-ENV" class="headerlink" title="O que é .ENV?"></a>O que é .ENV?</h3><p>Para começar, devemos criar um arquivo na raiz do seu projeto, chamado <code>.env</code>.<br>Neste arquivo, definiremos as variáveis que iremos utilizar para nosso desenvolvimento</p><p>Com o arquivo criado, podemos começar definir nossas variáveis, sempre se atentando a um detalhe em específico:</p><blockquote><p>Todas nossas variáveis devem iniciar com REACT_APP_ para que o React entenda ela como uma variável de ambiente</p></blockquote><p>Feito isso, olha como ficaria nosso arquivo:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">REACT_APP_BASE_URL=https://myendpoint.com/api</span><br></pre></td></tr></table></figure><p>E como podemos usar essas variáveis? Simples! Só usar! ahahaha</p><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">render() &#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;small&gt;Endereço da aplicação &lt;b&gt;&#123;process.env.REACT_APP_BASE_URL&#125;&lt;<span class="regexp">/b&gt; mode.&lt;/</span>small&gt;</span><br><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  );</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br></pre></td></tr></table></figure><p>Agora quando rodarmos nosso projeto, ele automaticamente reconhece nossas variáveis de ambiente e adiciona no nosso código React!</p><blockquote><p>Sempre que atualizar uma variável ou o arquivo em si, é necessário reiniciar a aplicação!</p></blockquote><p>Muito simples não é mesmo?</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Antes de mais nada, essa feature está disponível a partir da versão 0.5.0 do react-scripts&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Uma excelente prática enquanto estamos desenvolvendo é que nosso sistema nunca tenha estaticamente no código URLs e endereços, o famoso &lt;code&gt;hard coded&lt;/code&gt;.&lt;br&gt;É muito aconselhável que tenhamos essas informações em um arquivo de variáveis&lt;/p&gt;
+&lt;p&gt;Para isso, neste post irei mostrar como podemos armazenas esses informações dentro de um arquivo chamado &lt;code&gt;.env&lt;/code&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Front-end" scheme="https://backefront.com.br/tags/Front-end/"/>
+    
+      <category term="React" scheme="https://backefront.com.br/tags/React/"/>
+    
+  </entry>
+  
+</feed>
