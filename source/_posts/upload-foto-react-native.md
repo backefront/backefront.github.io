@@ -1,6 +1,6 @@
 ---
 title: Como acessar galeria de fotos e exibir - React Native
-date: 2020-06-29 08:00:28
+date: 2021-08-11 08:00:28
 tags:
   - Front-end
   - React Native
