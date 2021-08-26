@@ -18,6 +18,5 @@ A função Javascript abaixo irá verificar se a string que passar como parâmet
 
 ```javascript
 const hasUpper = (str) => /[A-Z]/.test(str);
-}
 ```
 
