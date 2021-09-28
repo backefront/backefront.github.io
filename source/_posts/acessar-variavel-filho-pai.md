@@ -1,3 +1,4 @@
+---
 title: Angular - Como acessar variável do componente filho no componente pai
 date: 2020-06-29 08:00:28
 tags:
