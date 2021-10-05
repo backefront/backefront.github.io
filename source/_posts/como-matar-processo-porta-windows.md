@@ -36,3 +36,5 @@ taskkill /F /PID 16568
 
 Sendo este último número, o PID do serviço específico que você estava procurando!
 Fácil não é mesmo?
+
+[Teste](acerstore://acerstore/home)
