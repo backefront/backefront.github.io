@@ -5,7 +5,7 @@ tags:
   - Front-end
   - Javascript
 postKeywords: quadrado perfeito numero, javascript, square number, perfect square, js, front-end, teste logica numero quadrado perfeito
-postDescription: A definição de um número quadrado perfeito pode ser entendida como: um número natural inteiro positivo cuja raiz quadrada é, também, um número natural inteiro positivo. Mas como podemos verificar isso, usando o Javascript?
+postDescription: A definição de um número quadrado perfeito pode ser entendida como um número natural inteiro positivo cuja raiz quadrada é, também, um número natural inteiro positivo. Mas como podemos verificar isso, usando o Javascript?
 author: Victor Jordan
 authorImg: victor.png
 authorDesc: Engenheiro Front-end no Mercado Livre, pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
