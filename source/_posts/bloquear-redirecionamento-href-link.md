@@ -13,7 +13,7 @@ authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
 
-Recentemente, trabalhando em um componente de paginação, tive a necessidade de bloquear o redirecionamento de um link ( <a href /> ), para que pudesse usar uma função customizada para fazer a paginação.
+Recentemente, trabalhando em um componente de paginação, tive a necessidade de bloquear o redirecionamento de um link (a href=""), para que pudesse usar uma função customizada para fazer a paginação.
 
 O atributo `href` por sua vez, era obrigatório ser passado e toda vez que o clique era feito, recarregava a página, fazendo com que eu perdesse o estado da minha aplicação.
 
