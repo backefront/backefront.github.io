@@ -1,6 +1,6 @@
 ---
 title: Como permitir diferentes valores no Proptypes em uma prop
-date: 2022-02-02 08:40:22
+date: 2022-02-02 08:16:00
 tags:
   - Front-end
   - Javascript
