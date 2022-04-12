@@ -27,8 +27,8 @@ Neste post, irei mostrar como podemos arredondar números com nosso Javascript, 
 Quando queremos que arredonde **para cima** o número, independente do valor após a vírgula, usamos `Math.ceil(valor)`:
 
 ```javascript
-Math.ceil(4.598); // returna 5
-Math.ceil(4 / 3); // returna 2
+Math.ceil(4.598); // retorna 5
+Math.ceil(4 / 3); // retorna 2
 ```
 
 ## Arredondar número para baixo
@@ -36,8 +36,8 @@ Math.ceil(4 / 3); // returna 2
 Quando queremos que arredonde **para baixo** o número, independente do valor após a vírgula, usamos `Math.floor(valor)`:
 
 ```javascript
-Math.floor(4.7); // returna 4
-Math.ceil(4 / 3); // returna 1
+Math.floor(4.7); // retorna 4
+Math.floor(4 / 3); // retorna 1
 ```
 
 ## Arredondar para o valor mais próximo
