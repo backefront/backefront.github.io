@@ -3,7 +3,7 @@ title: Como converter um número em moeda com Javascript
 date: 2021-02-15 10:26:08
 tags:
   - Front-end
-  - Javacript
+  - Javascript
 postKeywords: convert javascript currency, adicionar R$, converter moeda, moeda javascript, javascript, currency, moeda, convert, dinheiro javascript
 postDescription: Você sabia que nativamente o Javascript nos fornece uma maneira de convertermos um número para moeda? Essa forma nos permite trabalhar moedas de todos os tipos e automaticamente adicionar o pre-fixo, como "R$"
 author: Victor Jordan
