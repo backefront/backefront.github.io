@@ -1,15 +1,15 @@
 ---
 title: Como selecionar qual emulador irá abrir no Mac/iOS - React Native
 date: 2021-08-19 07:35:46
-tags: 
-- Front-end
-- Javascript
-- React Native
+tags:
+  - Front-end
+  - Javascript
+  - React Native
 postKeywords: select simulator react native, ios mac emulator, alterar emulador ios, emulador, react native, mac, ios reac native
 postDescription: Quando estamos desenvolvendo aplicações no mac, as vezes queremos rodar em outras versões de iphone. Neste post vou mostrar os comandos para rodar de acordo com cada dispositivo!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

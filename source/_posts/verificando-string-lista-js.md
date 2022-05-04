@@ -8,7 +8,7 @@ postKeywords: verificar string array, valor em array, achar numero array, array 
 postDescription: Você já precisou verificar se uma determinada palavra está presente em um array? Ou algum número? Em nosso querido ECMAScript 2016, temos um método chamado includes, o qual faz toda a mágica acontecer!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

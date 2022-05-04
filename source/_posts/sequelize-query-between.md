@@ -9,7 +9,7 @@ postKeywords: Sequelize between, sequelize op, como fazer between sequelize, nod
 postDescription: Neste post, irei mostrar o quão simples é realizar uma consulta usando o between entre duas datas com o Sequelize!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

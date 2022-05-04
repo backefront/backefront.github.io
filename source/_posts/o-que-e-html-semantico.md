@@ -8,7 +8,7 @@ postKeywords: html semantico, semantic html, melhorar seo, codigo html melhor, c
 postDescription: Você já ouviu falar sobre HTML semântico? Você sabia que com ele, você pode melhorar o seu código e consequentemente, também melhorar o SEO da sua página?
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

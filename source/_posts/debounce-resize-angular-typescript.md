@@ -9,7 +9,7 @@ postKeywords: debounce js, debounce typescript, angular debounce, watch resize p
 postDescription: Neste post, irei mostrar como podemos fazer debounce com Angular para ficar escutando alterações no tamanho da página!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -40,13 +40,11 @@ import { debounceTime, takeUntil } from "rxjs/operators";
   templateUrl: "./bar-chart.component.html",
   styleUrls: ["./bar-chart.component.scss"],
 })
-
 export class BarChartComponent implements OnInit, OnDestroy {
-
   // variáveis que devemos criar
   resizeObservable$: Observable<Event>;
   resizeSubscription$: Subscription;
-  
+
   // Ao inicializar o componente
   // inicializará o método de resize
   ngOnInit(): void {
@@ -58,12 +56,12 @@ export class BarChartComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.resizeSubscription$.unsubscribe();
   }
-  
+
   // Método que ficará escutando alterações
   resizeChart(): void {
     // Observable que escuta alteração de tela
     this.resizeObservable$ = fromEvent(window, "resize");
-    
+
     // Aqui acontence o debounce realmente
     this.resizeSubscription$ = this.resizeObservable$
       .pipe(debounceTime(1000))

@@ -8,7 +8,7 @@ postKeywords: recursive fatorial javascript, javascript fatorial, javascript com
 postDescription: Criar uma função que calcule o fatorial é algo frequentemente pedido em exercícios de lógica. Para criar então em Javascript é uma atividade muito fácil a ser realizada! Vamos utilizar recursão para deixar o nosso código mais enxuto possível!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

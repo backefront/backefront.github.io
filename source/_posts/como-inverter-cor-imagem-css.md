@@ -8,7 +8,7 @@ postKeywords: invert css, alterar cor css, img css, filter css, filter, css, fro
 postDescription: Você alguma vez já precisou alterar a cor de uma imagem mas não queria alterar propriamente a imagem? Com o CSS, conseguimos fazer algumas alterações na imagem diretamente, como por exemplo, inverter a cor dela!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

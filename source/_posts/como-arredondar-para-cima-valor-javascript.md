@@ -8,7 +8,7 @@ postKeywords: round number js, arredondar numero javascript, arredondar cima js,
 postDescription: Neste post, irei mostrar como podemos arredondar números com nosso Javascript, tudo utilizando o Math, de uma maneira simples e rápida, que nos garante um bom desenvolvimento e eficácia em nossos códigos!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

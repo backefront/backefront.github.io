@@ -8,7 +8,7 @@ postKeywords: convert javascript currency, adicionar R$, converter moeda, moeda 
 postDescription: Você sabia que nativamente o Javascript nos fornece uma maneira de convertermos um número para moeda? Essa forma nos permite trabalhar moedas de todos os tipos e automaticamente adicionar o pre-fixo, como "R$"
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

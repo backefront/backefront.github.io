@@ -9,7 +9,7 @@ postKeywords: context api react, front-end, react context, como usar context, ap
 postDescription: Segundo a documentação do React, Context provê uma forma de passar dados através da árvore de componentes sem a necessidade de passar esses dados através das props por cada nível desejado. O que isto significa? Significa que usando o context, você tem um ponto focal de acesso a informação. Se você quiser acessar determinada informação, basta apontar diretamente para o context! Com ele, conseguimos facilitar em muito nosso desenvolvimento!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

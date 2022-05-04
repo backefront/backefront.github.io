@@ -8,7 +8,7 @@ postKeywords: classe js puro, remover classe js, remove class pure js, classe js
 postDescription: Você sabia que pode remover classe pelo Javascript nativamente, de maneira mais eficiente e performática? Sem a necessidade de incluir bibliotecas externas, o que acabaria sobrecarregando sua aplicação desnecessáriamente!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

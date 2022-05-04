@@ -8,7 +8,7 @@ postKeywords: fibonacci recursivo, fibonacci javascript, performance fibonacci, 
 postDescription: Que atire a primeira pedra quem nunca em uma aula de algoritmo se deparou com o famoso fibonacci. Fibonacci é uma sequência numérica em que cada número seguinte é somado aos dois números anteriores, começando por 0. Com o Javascript, podemos fazer esse algoritmo muito fácil, usando a recursividade, em poucas linhas resolvemos o problema
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

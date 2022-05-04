@@ -8,7 +8,7 @@ postKeywords: javascript validation, radio button checked, verificar js radio bu
 postDescription: Diariamente, o desenvolvedor constantemente depara-se com situações onde devem ser feitas verificações em seus formulários. Esses formulários são compostos, por sua maioria, de input de textos, telefones, endereço, etc. E também temos casos onde há o input do tipo radio. A pergunta é, como verificar se o radio button está checado, pelo Javascript?
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

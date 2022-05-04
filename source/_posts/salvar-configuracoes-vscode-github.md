@@ -7,7 +7,7 @@ postKeywords: vscode extensions import, salvar extensão, importar extensão, ex
 postDescription: Neste post, irei mostrar como podemos fazer para não perdermos as nossas extensões quando mudamos de ambientes, dessa forma, podemos manter as mesmas extensões em todos os nossos ambientes!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

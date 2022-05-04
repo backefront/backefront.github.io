@@ -8,7 +8,7 @@ postKeywords: icon react, import icon react, como adicionar icone react, icone r
 postDescription: Quem nunca precisou utilizar ícones em seu desenvolvimento que atire a primeira pedra! Ícones além de deixar nossa aplicação mais elegante (quando bem escolhido), nos permite cumprir no mínimo duas das dez heurísticas criadas por Nielsen. Nielsen fala que nosso sistema deve ter uma compatibilidade com o mundo real (Heurística número 2) e que Consistência e Padronização (Heurística número 4) é essencial para que não seja necessário que o usuário fique pensando muito quando abrir a tela do seu software.
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

@@ -8,7 +8,7 @@ postKeywords: styled-components, como usar styled react, react style tutorial, c
 postDescription: Styled-components é um tópico que muito tem se visto falar no desenvolvimento front-end com React, você já conhece e já usa? Neste post, mostrarei como usar styled-components no React!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

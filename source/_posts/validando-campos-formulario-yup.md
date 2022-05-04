@@ -8,7 +8,7 @@ postKeywords: react yup, validar formulario, react validation form, yup como usa
 postDescription: Você já precisou validar se os dados que estão sendo enviado pelo front-end realmente estão corretos? Realizar uma validação antes de enviar seus dados para sua API é de extrema importância, pois dessa forma evitamos erros e envio de informações erradas! Uma maneira fácil para validarmos nosso formulário é utilizando um cara chamado Yup
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

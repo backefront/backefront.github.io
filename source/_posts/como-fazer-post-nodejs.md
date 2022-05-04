@@ -8,7 +8,7 @@ postKeywords: API Node, Nodejs, POST NodeJS, criar server node, api em node, com
 postDescription: Neste post, irei mostrar os primeiros passos para construção de uma API em NodeJS! Usaremos o express para configurar nossa primeira rota POST!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

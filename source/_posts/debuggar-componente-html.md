@@ -7,7 +7,7 @@ postKeywords: debugging html, depurate html, inspecionar componente, html, front
 postDescription: Você sabia que podemos debuggar aquele componente HTML, de forma que mesmo alterando o estado (hover, focus) ainda conseguimos manter ele fixo na tela, para podermos mexer nele livremente?
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

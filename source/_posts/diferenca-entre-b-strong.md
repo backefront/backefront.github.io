@@ -8,7 +8,7 @@ postKeywords: diferenca b e strong, difference b and strong, quando usar strong 
 postDescription: Apesar de serem visualmente iguais, você sabia que há uma grande diferença entre as tags <b> e <strong>? Visualmente, ambas deixam a palavra em negrito mas semânticamente elas tem um peso diferente! No SEO, há um impacto diferente dependendo de qual tag você utilizar. Você sabe qual?
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

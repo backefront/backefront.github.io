@@ -9,7 +9,7 @@ postKeywords: nodejs postgres, node query manual, fazer consulta nodejs, consult
 postDescription: Enquanto desenvolvemos aplicações com NodeJS e Postgres, é comum usarmos ORM para facilitar o nosso desenvolvimento, como por exemplo, Sequelize. O Sequelize nos fornece uma forma rápida e fácil de consultarmos dados em nosso banco, sem muitas preocupações! Mas como fazemos, quando a consulta que o Sequelize está fazendo é muito complexa ou é inviável fazer por ele? Podemos fazer nossas próprias consultas! Para isso usaremos um cara chamado Node-Postgres
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

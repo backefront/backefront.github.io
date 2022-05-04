@@ -9,7 +9,7 @@ postKeywords: base64 img, input file convert img, image to base64, exibir imagem
 postDescription: Neste artigo, irei mostrar como podemos exibir em nosso front-end a imagem que está sendo enviada pelo usuário através do input="file", convertendo o arquivo em base64 para exibição em tempo real!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

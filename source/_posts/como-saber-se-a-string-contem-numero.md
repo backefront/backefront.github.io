@@ -8,7 +8,7 @@ postKeywords: regex numero em string, string numero regex, verificar numero pala
 postDescription: Veja como é fácil verificar se uma determinada palavra possui algum número no meio, utilizando o Regex e a função test() no Javascript!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

@@ -8,7 +8,7 @@ postKeywords: debounce javascrit, funcao esperar digitar, debounce, como fazer d
 postDescription: Você já precisou executar uma função que esperasse um determinado tempo para aí sim executar? Quando falo nesse cenário, pode passar em sua cabeça usar o `setTimeout` o que não está errado! Mas sabia que existe uma prática que podemos usar chamada debounce? Você já ouviu falar nesse termo?
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

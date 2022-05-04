@@ -8,7 +8,7 @@ postKeywords: dry, o que é dry, dry js, javascript, export funcao, evitar repet
 postDescription: Você já ouviu falar sobre um tal de DRY? DRY é uma sigla para Don't Repeat Yourself, que significa Não Se Repita! Este princípio tem como intuito a redução de código repetidos em toda sua aplicação. Mas porque é tão importante evitarmos isso?
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

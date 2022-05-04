@@ -8,7 +8,7 @@ postKeywords: reactjs mask, cep mask react, criar mascara react, mascara telefon
 postDescription: Neste post, irei mostrar a maneira mais simples e fácil de criar uma máscara para um input em uma aplicação React, utilizando o react-input-mask!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

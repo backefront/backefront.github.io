@@ -8,7 +8,7 @@ postKeywords: export function js, exportar funcao js, como importar funcao, impo
 postDescription: Quando estamos desenvolvendo aplicações front-end, começamos a escrever códigos que podem ser reutilizados em outras partes do sistema. Dessa forma, o ideal seria que modularizarmos aquelas funções específicas! Você sabe como podemos exportar funções no Javascript? É algo simples e poderoso!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

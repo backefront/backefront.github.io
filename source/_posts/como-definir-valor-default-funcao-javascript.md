@@ -8,7 +8,7 @@ postKeywords: default js function, valor padrao funcao, definir valor funcao, fu
 postDescription: Uma das implementações do ES6 que deve ser adotada como boa prática é definir um valor default para parâmetros que são recebidos em funções, isto é, caso o parâmetro venha null, com essa prática, conseguimos seguir o fluxo normalmente, sem que isso venha resultar em um erro para o usuário ou até mesmo travar a nossa aplicação!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

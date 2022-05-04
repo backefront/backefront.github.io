@@ -7,7 +7,7 @@ tags:
 postKeywords: before css, after css, line title css, linha titulo css, linha before after, como criar linha no cabeçalho css, linha css
 postDescription: Neste post, irei ensinar como criar uma linha em um título, utilizando o after e before do CSS!
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

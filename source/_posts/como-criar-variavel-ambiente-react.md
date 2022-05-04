@@ -8,7 +8,7 @@ postKeywords: react env variable, como criar variavel ambiente, react variavel, 
 postDescription: Você sabe como podemos fazer para criar variáveis de ambiente dentro de uma aplicação React? Neste passo a passo, irei mostrar isso de uma maneira simples e rápida!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -29,7 +29,7 @@ Neste arquivo, definiremos as variáveis que iremos utilizar para nosso desenvol
 
 Com o arquivo criado, podemos começar definir nossas variáveis, sempre se atentando a um detalhe em específico:
 
-> Todas nossas variáveis devem iniciar com REACT\_APP\_ para que o React entenda ela como uma variável de ambiente
+> Todas nossas variáveis devem iniciar com REACT_APP\_ para que o React entenda ela como uma variável de ambiente
 
 Feito isso, olha como ficaria nosso arquivo:
 

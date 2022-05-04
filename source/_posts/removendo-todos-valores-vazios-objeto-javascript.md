@@ -8,7 +8,7 @@ postKeywords: remover null object, remove empty object, como remover null object
 postDescription: Você sabe como limpar o seu objeto javascript para apenas conter chaves do objeto com valor?
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -22,7 +22,9 @@ A função que utilizei para fazer isso é a seguinte:
 
 ```javascript
 export function removeEmptyFilter(obj) {
-  return Object.fromEntries(Object.entries(obj).filter(([_, v]) => v != null && v !== ''));
+  return Object.fromEntries(
+    Object.entries(obj).filter(([_, v]) => v != null && v !== "")
+  );
 }
 ```
 

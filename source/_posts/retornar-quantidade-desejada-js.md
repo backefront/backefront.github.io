@@ -8,7 +8,7 @@ postKeywords: enesimo numero array, retornar quantidade itens, retornar os dez p
 postDescription: Neste post, irei mostrar como podemos retornar apenas uma quantidade desejada de itens de algum outro array, com o javascript, com o método slice!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

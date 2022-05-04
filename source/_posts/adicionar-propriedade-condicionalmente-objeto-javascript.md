@@ -1,5 +1,5 @@
 ---
-title: Como adicionar uma propriedade em objeto JS dinamicamente 
+title: Como adicionar uma propriedade em objeto JS dinamicamente
 date: 2021-06-17 07:30:00
 tags:
   - Front-end
@@ -8,7 +8,7 @@ postKeywords: adicionar dinamicamente propriedade objeto, dynamic object, verifi
 postDescription: Veja como é fácil adicionar uma propriedade dinamicamente em um objeto com Javascript, sem if!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -24,7 +24,7 @@ Mas sabia que podemos montar um objeto de uma só vez, verificando isso diretame
 const condition = true;
 const person = {
   id: 1,
-  name: 'John Doe',
+  name: "John Doe",
   ...(condition && { idade: 16 }),
 };
 ```

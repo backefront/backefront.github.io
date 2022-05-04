@@ -8,7 +8,7 @@ postKeywords: debugger react native, open debugger menu, shortcut menu, abrir me
 postDescription: Conheça o atalho para abrir o menu de debugger do React Native no Mac!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
@@ -21,10 +21,10 @@ Depois de procurar, encontrei a solução que seria simular o "shake" do aparelh
 
 <!-- more -->
 
-Para isso então, você deve acessar: 
+Para isso então, você deve acessar:
 
 No menu superior, com o simulador aberto, clique em `Device` e clicar na opção `Shake`.
 
 Ou você pode usar o atalho: Ctrl+Cmd+Z
 
-Por hoje é só! 
+Por hoje é só!

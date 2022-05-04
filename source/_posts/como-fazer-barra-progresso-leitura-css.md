@@ -10,7 +10,7 @@ postKeywords: barra progresso leitura, porcentagem leitura css, css leitura barr
 postDescription: Uma coisa bem legal que podemos fazer para melhorar a usabilidade é criar uma barra de progresso indicando quanto falta para terminar a leitura de um determinado ou terminar a página! Veja como é fácil criar uma barra de progresso de leitura, usando CSS e Javascript!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

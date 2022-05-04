@@ -8,7 +8,7 @@ postKeywords: props history push, enviar parametro react router dom, enviar dado
 postDescription: Enquanto estamos desenvolvendo aplicações com React, é comum usarmos o react-router-dom para navegação entre rotas. Ele serve para quando necessitamos mudar de página, seja renderizado a nova página sem recarregar toda nossa aplicação! Um dos benefícios que podemos extrair dessa lib é a capacidade de enviar dados através rotas para que o nosso outro componente tenha acesso! Você já precisou passar parâmetros com o history.push?
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

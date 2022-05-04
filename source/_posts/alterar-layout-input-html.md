@@ -8,7 +8,7 @@ postKeywords: css input, alterar input html, input layout, modificar aparencia i
 postDescription: Veja como é fácil alterar o layout de um input no HTML utilizando CSS para deixar seus inputs iguais aos botões de sua aplicação!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

@@ -9,7 +9,7 @@ postKeywords: test jest, jest babel, jest import function, jest export, como imp
 postDescription: Entenda como criar um teste com o Jest, utilizando Babel e ES6, de uma maneira simples e sem dor de cabeça!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Engenheiro Front-end na FITec e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
