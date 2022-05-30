@@ -1,10 +1,10 @@
 ---
-title: Como criar query manual com nodejs postgres
+title: Como criar query manual com NodeJS Postgres
 date: 2020-08-31 08:43:52
 tags:
   - Front-end
   - Javascript
-  - Nodejs
+  - NodeJS
 postKeywords: nodejs postgres, node query manual, fazer consulta nodejs, consulta propria postgres, select nodejs postgres, select banco, front-end, nodejs, postgres, sequelize, query manual, node-postgres
 postDescription: Enquanto desenvolvemos aplicações com NodeJS e Postgres, é comum usarmos ORM para facilitar o nosso desenvolvimento, como por exemplo, Sequelize. O Sequelize nos fornece uma forma rápida e fácil de consultarmos dados em nosso banco, sem muitas preocupações! Mas como fazemos, quando a consulta que o Sequelize está fazendo é muito complexa ou é inviável fazer por ele? Podemos fazer nossas próprias consultas! Para isso usaremos um cara chamado Node-Postgres
 author: Victor Jordan
