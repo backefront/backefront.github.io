@@ -1,5 +1,5 @@
 ---
-title: Diferenca entre iguais no Javascript
+title: Diferenca entre == e === no Javascript
 date: 2019-04-01 07:00:44
 tags:
   - Front-end
