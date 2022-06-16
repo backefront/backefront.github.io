@@ -17,15 +17,13 @@ Uma das coisas que muito tem se falado, enquanto desenvolvendo aplicações com 
 Styled components são componentes onde criamos o CSS no próprio arquivo do componente, o arquivo JS.
 Com isso conseguimos obter algumas vantagens em diversos quesitos, tais como:
 
-- Carregamento automático do CSS crítico, isso é, os componentes são renderizados com a página e são injetados apenas o CSS que realmente
-  será utilizado, nada mais! Ajudando em performance, visto que os usuários carregarão apenas o necessário.
+- Carregamento automático do CSS crítico, isso é, os componentes são renderizados com a página e são injetados apenas o CSS que realmente será utilizado, nada mais! Ajudando em performance, visto que os usuários carregarão apenas o necessário.
 
 - Sem problemas com nomes de classes! Styled-componentes geram nomes de classes automaticamente, sem preocupação em gerar nomes duplicados.
 
 <!-- more -->
 
-- Fácil remoção de CSS, visto que todo o CSS fica, normalmente, no próprio arquivo JS, então você encontra fácil o que precisa remover e também consegue
-  facilmente
+- Fácil remoção de CSS, visto que todo o CSS fica, normalmente, no próprio arquivo JS, então você encontra fácil o que precisa remover e também consegue facilmente realizar a manutenção e adição de novas funcionalidades e estilização, baseado em variáveis que você passa para seu componente.
 
 Entre outras facilidades!
 Mas vamos para a parte prática, como podemos começar utilizar?
@@ -119,8 +117,7 @@ render(
 );
 ```
 
-Mas stlyed-component não se limita em estilizar apenas componentes que você criou, também podemos estilizar componentes
-de outras bibliotecas! Podemos, por exemplo, estilizar uma `tab` do react-bootstrap, da seguinte forma:
+Mas stlyed-component não se limita em estilizar apenas componentes que você criou, também podemos estilizar componentes de outras bibliotecas! Podemos, por exemplo, estilizar uma `tab` do react-bootstrap, da seguinte forma:
 
 ```javascript
 const StyledTab = styled(Tab)`
