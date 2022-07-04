@@ -1,6 +1,6 @@
 ---
 title: Metodo at, encontrando o último elemento - ES2022
-date: 2018-12-31 07:16:00
+date: 2022-07-04 07:16:00
 tags:
   - Front-end
   - Javascript
