@@ -1,6 +1,6 @@
 ---
 title: Qual a diferença entre Cookies e Localstorage?
-date: 2020-03-03 08:36:18
+date: 2022-12-16 08:20:18
 tags:
   - Front-end
   - Javascript
