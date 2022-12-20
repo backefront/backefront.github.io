@@ -21,6 +21,8 @@ O Bun é construído em cima do React e usa o npm para gerenciar pacotes e depen
 
 Instale o Bun CLI (Interface de Linha de Comando) executando o seguinte comando no seu terminal:
 
+<!-- more -->
+
 ```cmd
 npm install -g bun-cli
 ```
