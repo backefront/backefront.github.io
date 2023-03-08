@@ -10,7 +10,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
 
     strategy:
       matrix:
@@ -18,15 +18,39 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v2
-    - run: git config --global user.name "Victor Jordan"
-    - run: git config --global user.email "backefront@gmail.com"
-    - run: sed -i "s/__GITHUB_TOKEN__/${{secrets.__GITHUB_TOKEN__}}/" _config.yml
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
+    - name: Download Source file
+      uses: actions/checkout@v2
       with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm install -g gulp
-    - run: npm run build
+        ref: source # Specify the name of the branch where you store Hexo source files
+    - name: Prepare Node env
+      uses: actions/setup-node@v1
+      with:
+        node-version: "10.x" # This corresponds to your own nodejs version (10.12 tested well)
+    - name: Set Env
+      env: 
+        GITHUB_ACCESS_TOKEN: ${{ secrets.__GITHUB_TOKEN__ }}
+        GITHUB_EMAIL: ${{ secrets.__GITHUB_EMAIL__ }}  
+      run: |
+        git config --global user.name "Victor Jordan"
+        git config --global user.email "backefront@gmail.com"
+        sed -i "s/GITHUB_ACCESS_TOKEN/$GITHUB_ACCESS_TOKEN/g" ./_config.yml
+    - name: Hexo
+      run: |
+        npm i -g Hexo-cli
+        npm i -g gulp
+        npm i
+        npm run build
+    # Hexo clean && Hexo g && Hexo d
+
+    # - uses: actions/checkout@v2
+    # - run: git config --global user.name "Victor Jordan"
+    # - run: git config --global user.email "backefront@gmail.com"
+    # - run: sed -i "s/__GITHUB_TOKEN__/${{secrets.__GITHUB_TOKEN__}}/" _config.yml
+    # - uses: actions/checkout@v2
+    # - name: Use Node.js ${{ matrix.node-version }}
+    #   uses: actions/setup-node@v2
+    #   with:
+    #     node-version: ${{ matrix.node-version }}
+    # - run: npm install
+    # - run: npm install -g gulp
+    # - run: npm run build
