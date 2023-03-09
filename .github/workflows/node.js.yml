@@ -41,13 +41,13 @@ jobs:
     #     repo: https://github.com/backefront/backefront.github.io # https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
     #     branch: master
     
-    - name: Deploy
-      id: deploy
-      uses: sma11black/hexo-action@v1.0.3
-      with:
-        deploy_key: ${{ secrets.GH_PAT }}
-        user_name: Victor Jordan  # (or delete this input setting to use bot account)
-        user_email: backefront@gmail.com  # (or delete this input setting to use bot account)
+    # - name: Deploy
+    #   id: deploy
+    #   uses: sma11black/hexo-action@v1.0.3
+    #   with:
+    #     deploy_key: ${{ secrets.GH_PAT }}
+    #     user_name: Victor Jordan  # (or delete this input setting to use bot account)
+    #     user_email: backefront@gmail.com  # (or delete this input setting to use bot account)
     # Use the output from the `deploy` step(use for test action)
     # Hexo clean && Hexo g && Hexo d
 

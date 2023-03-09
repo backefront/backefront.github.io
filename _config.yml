@@ -91,7 +91,6 @@ feed:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  # repo: https://__GITHUB_EMAIL__:PASSWORD@github.com/backefront/backefront.github.io.git
   repo https://backefront:GH_PAT@github.com/backefront/backefront.github.io.git
   branch: master
   
