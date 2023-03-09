@@ -40,6 +40,10 @@ jobs:
     #     type: git
     #     repo: https://github.com/backefront/backefront.github.io # https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
     #     branch: master
+    - name: Hexo
+      run: |
+        npm i -g Hexo-cli
+        Hexo clean && Hexo g && Hexo d
     
     # - name: Deploy
     #   id: deploy
