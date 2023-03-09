@@ -42,7 +42,7 @@ jobs:
     #     branch: master
     - name: Hexo
       run: |
-        hexo clean && hexo g && hexo d
+        hexo clean && hexo deploy -g
     
     # - name: Deploy
     #   id: deploy
