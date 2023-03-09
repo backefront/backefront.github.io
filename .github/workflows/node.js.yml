@@ -28,22 +28,30 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: "10.12" # This corresponds to your own nodejs version (10.12 tested well)
-    - name: Set Env
-      env: 
-        GITHUB_ACCESS_TOKEN: ${{ secrets.__GITHUB_TOKEN__ }}
-        GITHUB_EMAIL: ${{ secrets.__GITHUB_EMAIL__ }}  
-      run: |
-        git config --global user.name "Victor Jordan"
-        git config --global user.email "backefront@gmail.com"
-        npm i hexo-cli -g
-        npm i -g gulp
-        npm i
-        npm run build
-      # deploy:
-      #   type: git
-      #   repo: https://github.com/backefront/backefront.github.io # https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
-      #   branch: master
+    # - name: Set Env
+    #   env: 
+    #     GITHUB_ACCESS_TOKEN: ${{ secrets.__GITHUB_TOKEN__ }}
+    #     GITHUB_EMAIL: ${{ secrets.__GITHUB_EMAIL__ }}  
+    #   run: |
+    #     git config --global user.name "Victor Jordan"
+    #     git config --global user.email "backefront@gmail.com"
+    #     npm i hexo-cli -g
+    #     npm i -g gulp
+    #     npm i
+    #     npm run build
+    #   deploy:
+    #     type: git
+    #     repo: https://github.com/backefront/backefront.github.io # https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
+    #     branch: master
     
+    - name: Deploy
+      id: deploy
+      uses: sma11black/hexo-action@v1.0.3
+      with:
+        deploy_key: ${{ secrets.GH_PAT }}
+        user_name: Victor Jordan  # (or delete this input setting to use bot account)
+        user_email: backefront@gmail.com  # (or delete this input setting to use bot account)
+    # Use the output from the `deploy` step(use for test action)
     # Hexo clean && Hexo g && Hexo d
 
     # sed -i "s/GITHUB_ACCESS_TOKEN/$GITHUB_ACCESS_TOKEN/g" ./_config.yml
