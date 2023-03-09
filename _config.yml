@@ -91,7 +91,7 @@ feed:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://__GITHUB_TOKEN__@github.com/backefront/backefront.github.io.git
+  repo: https://GH_PAT@github.com/backefront/backefront.github.io.git
   branch: master
   
 #Comments
