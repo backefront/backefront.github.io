@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "5.4.2"
+    "version": "3.7.1"
   },
   "scripts": {
     "update": "git checkout posts && git pull origin posts",
@@ -17,7 +17,7 @@
     "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.1.0",
     "gulp-uglify": "^3.0.0",
-    "hexo": "^5.0.0",
+    "hexo": "^3.2.0",
     "hexo-deployer-git": "^0.3.1",
     "hexo-generator-archive": "^0.1.4",
     "hexo-generator-category": "^0.1.3",
