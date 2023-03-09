@@ -35,12 +35,14 @@ jobs:
       run: |
         git config --global user.name "Victor Jordan"
         git config --global user.email "backefront@gmail.com"
-    - name: Hexo
-      run: |
         npm i hexo-cli -g
         npm i -g gulp
         npm i
         npm run build
+      # deploy:
+      #   type: git
+      #   repo: https://github.com/backefront/backefront.github.io # https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
+      #   branch: master
     
     # Hexo clean && Hexo g && Hexo d
 
