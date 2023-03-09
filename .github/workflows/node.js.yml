@@ -42,8 +42,7 @@ jobs:
     #     branch: master
     - name: Hexo
       run: |
-        npm i -g Hexo-cli
-        Hexo clean && Hexo g && Hexo d
+        hexo clean && hexo g && hexo d
     
     # - name: Deploy
     #   id: deploy
