@@ -8,7 +8,7 @@ postKeywords: remover último caractere lista, remover caractere, slice, javascr
 postDescription: Veja como é fácil remover o último caractere de uma palavra, usando os métodos do próprio Javascript!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

@@ -6,7 +6,7 @@ postKeywords: map javascript, retornar novo array, iterar array e retornar novo,
 postDescription: O método map() é uma função muito útil quando desejamos retornar um novo array sem alterar o original! Desta forma, criamos uma cópia e podemos realizar as alterações desejadas, sem nos preocupar em perder o array original!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

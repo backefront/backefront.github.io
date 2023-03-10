@@ -8,7 +8,7 @@ postKeywords: idioma navegador, linguagem navegador, idioma javascript, language
 postDescription: Atualizar o NPM é uma tarefa simples! Seja no Windows, Mac ou Linux, atualizar seu npm não deve ser um impecilho no seu desenvolvimento! Relembre o comando para atualizar seu NPM neste post!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

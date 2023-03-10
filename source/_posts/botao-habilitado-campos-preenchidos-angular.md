@@ -8,7 +8,7 @@ postKeywords: botao desabilitado formulario angular, botao habilitado form valid
 postDescription: Veja como é fácil e rápido de deixar o botão desabilitado caso seu formulário esteja com algum campo inválido ou vazio, com o Angular, que nos permite fazer isto nativamente e sem várias linhas de código!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

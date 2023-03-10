@@ -8,7 +8,7 @@ postKeywords: remove object json, delete json, deletar propriedade json, delete 
 postDescription: Veja como é fácil remover um item de um objeto javascript, nativamente e sem várias linhas de código!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

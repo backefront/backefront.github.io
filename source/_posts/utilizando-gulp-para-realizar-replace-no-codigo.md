@@ -8,7 +8,7 @@ postKeywords: substituir palavra gulp, gulp replace tutorial, como fazer replace
 postDescription: A criação de um script para substituição de palavras pelo Gulp é um processo simples e que gera ao desenvolvedor um aumento em sua produtividade, permitindo que este processo seja realizado em questão de segundos!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

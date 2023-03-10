@@ -7,7 +7,7 @@ postKeywords: lista encadeada c, tutorial lista encadeada, entendendo lista enca
 postDescription: Quem nunca teve aquela aula em estrutura de dados sobre lista encadeada em C, mas que não entrava na cabeça? Neste post, Felipe Casseb mostra um jeito simplificado de entender este conceito muito temido entre estudantes universitários!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

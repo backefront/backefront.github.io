@@ -7,7 +7,7 @@ postKeywords: kill pid process, como matar processo execução, encerrar process
 postDescription: Você já precisou executar algum serviço em uma determinada porta mas reparou que nesta mesma porta, já existia este mesmo processo sendo executado? Você já precisou "matar" um serviço de uma determinada porta mas não sabe como fazer isso? No windows, em seu terminal, conseguimos fazer isso em apenas dois comandos!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

@@ -8,7 +8,7 @@ postKeywords: melhores plugins gulp, produtividade gulp, best gulp plugins, plug
 postDescription: O Gulp nos auxilia e agiliza muito os nossos processos de desenvolvimento, em um post anterior, mostrei como podemos melhorar a performance usando ele, otimizando tarefas e ações repetitivas. Mas você pode fazer muito mais com ele! Veja os 10 plugins essenciais no seu uso diário!
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---

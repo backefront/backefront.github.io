@@ -8,7 +8,7 @@ postKeywords: paginação angular 7, paginacao angular, pagination angular table
 postDescription: Hoje irei falar sobre um item muito importante quando construimos uma tabela de registros, a paginação! A paginação permite que as informações sejam quebradas entre páginas, com o intuíto de evitar uma enorme quantidade de dados e ter uma página enorme, cheia de registros. Para isto, usaremos o ngx-pagination.
 author: Victor Jordan
 authorImg: victor.png
-authorDesc: Desenvolvedor front-end na Accenture e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+authorDesc: Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
 authorLinkedin: victorjordan95
 authorGithub: victorjordan95
 ---
