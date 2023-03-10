@@ -29,6 +29,11 @@ jobs:
             ${{ runner.OS }}-npm-cache
       - name: Install Dependencies
         run: npm install
+      - name: Env
+        run: |
+          git config --global user.name "Victor Jordan"
+          git config --global user.email "backefront@gmail.com"
+
       - name: Build
         run: npm run hexo:deploy
       - name: Deploy
