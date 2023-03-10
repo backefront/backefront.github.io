@@ -8,7 +8,10 @@
   "scripts": {
     "update": "git checkout posts && git pull origin posts",
     "build": "gulp build",
-    "deploy": "git add . && git commit -m 'newVersion' && git push"
+    "deploy": "git add . && git commit -m 'newVersion' && git push",
+    "hexo:deploy": "hexo clean && hexo generate && hexo deploy",
+    "hexo:build": "hexo clean && hexo generate",
+    "hexo:server": "hexo server"
   },
   "dependencies": {
     "del": "^3.0.0",
