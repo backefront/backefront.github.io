@@ -35,7 +35,7 @@ jobs:
           git config --global user.email "backefront@gmail.com"
 
       - name: Build
-        run: npm run hexo:deploy
+        run: npm run hexo:build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
