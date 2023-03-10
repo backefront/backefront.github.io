@@ -1,6 +1,6 @@
 ---
 title: Pare de usar index em seu map e use randomUUID!
-date: 2023-03-08 10:00:00
+date: 2023-03-10 10:00:00
 tags:
   - React
   - Front-end
