@@ -1,9 +1,9 @@
-<%- partial('_partial/head') %>
+<%- include('_partial/head') %>
 
 <body>
     <div id="container">
         <div id="wrap">
-            <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+            <%- include('./_partial/header.ejs', null, {cache: !config.relative_link}) %>
             <div class="outer">
                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- Header -->
@@ -16,15 +16,15 @@
                     <%- body %>
                 </section>
                 <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-                <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+                <%- include('./_partial/sidebar.ejs', null, {cache: !config.relative_link}) %>
                 <% } %>
             </div>
-            <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+            <%- include('./_partial/footer.ejs', null, {cache: !config.relative_link}) %>
         </div>
-        <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-        <%- partial('_partial/after-footer') %>
+        <%- include('./_partial/mobile-nav.ejs', null, {cache: !config.relative_link}) %>
+        <%- include('./_partial/after-footer.ejs') %>
     </div>
 </body>
-<%- partial('_partial/clevernt-ads') %>
+<%- include('_partial/clevernt-ads') %>
 
 </html>
