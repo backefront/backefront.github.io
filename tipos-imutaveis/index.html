@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-117244554-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  <!-- Google Adsense -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4429081934118390",
+    enable_page_level_ads: true
+  });
+</script>
+<!-- End Google Adsense -->
+  
+  <title>O Que São Tipos Imutáveis Na Programação? | Dicas de desenvolvimento e programação</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt">
+
+  
+    <meta name="keywords" content="back-end, front-end, dicas programação, desenvolvimento de sistemas, algoritmos, usabilidade, UX, websemântico">
+  
+  
+  
+    <meta name="description" content="Dicas, melhores práticas e novidades de desenvolvimento web!">
+    <meta property="og:description" content="Dicas, melhores práticas e novidades de desenvolvimento web!">
+    <meta name="twitter:description" content="Dicas, melhores práticas e novidades de desenvolvimento web!">
+  
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+
+  <link rel="alternate" href="/atom.xml" title="Dicas de desenvolvimento e programação" type="application/atom+xml">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+    <div id="container">
+        <div id="wrap">
+            <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Feed RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Buscar"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://backefront.com.br"></form>
+      </div>
+    </div>
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Dicas de desenvolvimento e programação</a>
+      </h1>
+      
+    </div>
+  </div>
+</header>
+            <div class="outer">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Header -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4429081934118390" data-ad-slot="2664458804"
+                    data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <section id="main">
+                    <article id="post-tipos-imutaveis" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-meta">
+        <a href="/tipos-imutaveis/" class="article-date">
+  <time datetime="2018-05-12T22:46:09.000Z" itemprop="datePublished">12-05-2018</time>
+</a>
+        
+    </div>
+    <div class="article-inner">
+        
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      O Que São Tipos Imutáveis Na Programação?
+    </h1>
+  
+
+        </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+            <p>Se você já programa em Java há algum tempo, provavelmente deve ter se deparado com a frase: <em>Strings são imutáveis</em>.<br>Beleza, mas o que isso significa?</p>
+<p>Um tipo imutável não permite a alteração do estado de um objeto criado a partir dele de forma <em>desautorizada</em>.</p>
+<p>Vamos ver um tipo “normal” (mutável):<br><span id="more"></span><br>    public class Pessoa {</p>
+<pre><code>    private String nome;
+
+    public Pessoa() &#123; &#125;
+
+    public Pessoa(String nome) &#123;
+        this.nome = nome;
+    &#125;
+
+    public String getNome() &#123;
+        return nome;
+    &#125;
+
+    public void setNome(String nome) &#123;
+        this.nome = nome;
+    &#125;
+&#125;
+</code></pre><p>Até aqui nada demais.<br>Agora vamos trabalhar com essa clsse:</p>
+<pre><code>public static void main(String[] args) &#123;
+    Pessoa p1 = new Pessoa();
+    Pessoa p2 = new Pessoa(&quot;Igor&quot;);
+
+    p1.setNome(&quot;Victor&quot;);
+    p2.setNome(&quot;João&quot;);
+
+    System.out.println(p1.getNome() + &quot;, &quot; + p2.getNome());
+&#125;
+</code></pre><blockquote>
+<p>Saída:<br><code>Victor, João</code></p>
+</blockquote>
+<p>Podemos perceber que o objeto <code>p1</code> foi criado sem informar o nome da pessoa, dessa forma, o atributo <code>nome</code> deveria ser nulo, mas é <code>Victor</code>.<br>Já o objeto <code>p2</code> foi criado com o nome Igor, mas seu nome atual é <code>João</code>.<br>Bom, até onde sei, são extremamente raros os casos onde uma pessoa muda de nome… Então por que permitir uma alteração desse tipo?</p>
+<p>Nesse caso, não faz sentido permitir que o tipo <code>Pessoa</code> seja mutável.<br>Pois então, como torná-lo <strong>imutável</strong>? Vamos lá:</p>
+<p>Primeiramente, precisamos declarar seu atributo como <code>final</code>.<br>A palavra reservada <code>final</code> diz que essa variável/atributo receberá uma atribuição apenas uma única vez. Normalmente essa atribuição acontece na declaração. Ex:</p>
+<pre><code>final String nome = &quot;Igor&quot;;
+</code></pre><p>Isso funciona, mas não faz sentido no nosso caso, pois não queremos que todas as instâncias de <code>Pessoa</code> se chamem Igor.<br>Então? Como fazemos?<br>Podemos declarar o atributo como <code>final</code>, sem inicializá-lo como o exemplo acima, mas inicializá-lo pelo construtor:</p>
+<pre><code>private final String nome;
+
+public Pessoa(String nome) &#123;
+    this.nome = nome;
+&#125;
+</code></pre><p>Pronto. Assim bloqueamos qualquer outra atribuição que o atributo <code>nome</code> poderia sofrer.<br>Mas e o construtor sem argumentos, como fica? Bom, nesse caso, não tem muito o que fazer:</p>
+<pre><code>private final String nome;
+
+public Pessoa() &#123;
+    nome = null;
+&#125;
+</code></pre><p>Não importa se o construtor tem ou não argumentos. O importante aqui é que todos os atributos marcados como <code>final</code> sejam inicializados em todos os construtores.</p>
+<p>Ótimo! Temos um atributo final e depois de criada uma instância sabemos que o nome nunca será alterado, mas tem coisa errada aí.<br>O método setter de <code>nome</code>.</p>
+<p>Nessa altura do campeonato ele já não compila mais jutamente pelo fato de fazer:</p>
+<pre><code>this.nome = nome;
+</code></pre><p>Uma vez que o atributo <code>nome</code> é <code>final</code>, qualquer tentativa de atribuição gera um erro de compilação.</p>
+<p>E agora? Devemos remover o método? Sim!<br>Essa é uma outra característica de tipos imutáveis: não possuir métodos setter.</p>
+<hr>
+<p>Aqui estamos exemplificando um tipo onde queremos que seja 100% imutável, mas é bem comum encontrarmos situaçãoes onde só alguns atributos queremos que sejam imutáveis e os demais não.<br>Não tem nenhum problema com isso, basta colocar os atributos que deseja ser imutável como <code>final</code>, inicialiá-los pelos construtores (todos) e remover seu método setter.</p>
+<p>Podemos citar como exemplo caso o tipo <code>Pessoa</code> tivesse um atributo <code>idade</code>.<br>Não faria nenhum sentido deixar esse atributo como <code>final</code>, justamente por que nós envelhecemos e nossa idade muda.</p>
+<p>Eu, particularmente, ao invés de criar um método setter para esse atributo, criaria algo como:</p>
+<pre><code>public void fazAniversario() &#123;
+    idade++;
+&#125;
+</code></pre><p>Pois num método setter, alugém poderia <em>setar</em> uma idade que antes era <code>15</code> para <code>25</code> e isso não faz sentido.</p>
+<p>Mas estamos fugindo um pouco do foco… Voltando:  </p>
+<p>Afinal, quais são as vantagens de usar um tipo imutável?</p>
+<p>De cabeça lembro de duas principais:</p>
+<ul>
+<li><p>Concorrência:<br>  Nada pior do que um cenário com múltiplas threads mexendo num mesmo objeto :(. Com um tipo imutável você garante que o seu objeto estará sempre <em>bonitinho</em>.</p>
+</li>
+<li><p>Segurança:<br>  Você sabe exatamente o que tem no seu objeto!</p>
+</li>
+</ul>
+<hr>
+<p>Show, mas até agora exemplificamos um tipo imutável com atributos de tipos imutáveis também.<br>Como fazemos com atributos de tipos não imutáveis?</p>
+<p>Vamos supôr que a classe <code>Pessoa</code> tenha um atirbuto do tipo <code>Endereco</code>, que é mutável:</p>
+<pre><code>public class Endereco &#123;
+
+    private String rua;
+    private Integer numero;
+
+    public Endereco(String rua, Integer numero) &#123;
+        this.rua = rua;
+        this.numero = numero;
+    &#125;
+
+    public String getRua() &#123;
+        return rua;
+    &#125;
+
+    public void setRua(String rua) &#123;
+        this.rua = rua;
+    &#125;
+
+    public Integer getNumero() &#123;
+        return numero;
+    &#125;
+
+    public void setNumero(Integer numero) &#123;
+        this.numero = numero;
+    &#125;
+&#125;
+
+public class Pessoa &#123;
+
+    private final String nome;
+    private final Endereco endereco;
+
+    public Pessoa() &#123;
+        nome = null;
+        endereco = null;
+     &#125;
+
+    public Pessoa(String nome, Endereco endereco) &#123;
+        this.nome = nome;
+        this.endereco = endereco;
+    &#125;
+
+    public String getNome() &#123;
+        return nome;
+    &#125;
+
+    public Endereco getEndereco() &#123;
+        return endereco;
+    &#125;
+&#125;
+</code></pre><p>Legal, o atributo <code>endereco</code> está <code>final</code>, mas isso não garante nada pois <code>Endereco</code> não é imutável. Vejamos:<br>Caso alguém invoque o método getter de <code>endereco</code>, essa pessoa pode alterar tanto a rua quanto o número:</p>
+<pre><code>public static void main(String[] args) &#123;
+    Endereco e = new Endereco(&quot;Av. Paulista&quot;, 10);
+    Pessoa p = new Pessoa(&quot;Igor&quot;, e);
+
+    Endereco enderecoModificado = p.getEndereco();
+    enderecoModificado.setRua(&quot;Av. Liberdade&quot;);
+    enderecoModificado.setNumero(200);
+
+    System.out.println(p.getEndereco().getRua());
+&#125;
+</code></pre><blockquote>
+<p>Saída:<br><code>Av. Liberdade</code></p>
+</blockquote>
+<p>Nesse caso, devemos criar uma cópia do objeto que queremos retornar, para que seja devolvida uma nova referência, deiferente da referência ao objeto original:</p>
+<pre><code>public Endereco getEndereco() &#123;
+    return new Endereco(endereco.getRua(), endereco.getNumero());
+&#125;
+</code></pre><p>Ao implementarmos o getter dessa forma, temos o mesmo exemplo de execução que retornou <code>Av. Liberdade</code> agora retornando <code>Av. Paulista</code>.</p>
+<p>Por último, temos os casos de listas.<br>Escrever métodos de cópias de listas é algo <em>bixeira</em>. Para isso devemos usar o método estático <code>Collections.unmodifiableList(list)</code>:</p>
+<pre><code>import java.util.Collections;   
+import java.util.List; 
+import java.util.ArrayList;   
+
+public class Pessoa &#123;
+
+    private final String nome;
+    private final List&lt;Endereco&gt; enderecos;
+
+    public Pessoa() &#123;
+        nome = null;
+        enderecos = null;
+     &#125;
+
+    public Pessoa(String nome, List&lt;Endereco&gt; enderecos) &#123;
+        this.nome = nome;
+        this.enderecos = enderecos;
+    &#125;
+
+    public String getNome() &#123;
+        return nome;
+    &#125;
+
+    public List&lt;Endereco&gt; getEnderecos() &#123;
+        return Collections.unmodifiableList(enderecos);
+    &#125;
+&#125;
+</code></pre><p>Ao tentarmos executar o código abaixo:</p>
+<pre><code>public static void main(String[] args) &#123;
+    List&lt;Endereco&gt; es = new ArrayList&lt;&gt;();
+    es.add(new Endereco(&quot;Rua 1&quot;, 10));
+    es.add(new Endereco(&quot;Rua 2&quot;, 20));
+
+    Pessoa p = new Pessoa(&quot;Igor&quot;, es);
+
+    List&lt;Endereco&gt; listNaoModif = p.getEnderecos();
+    listNaoModif.add(new Endereco(&quot;Rua 3&quot;, 30));
+&#125;
+</code></pre><p>Recebemos a Exception <code>java.lang.UnsupportedOperationException</code>, pois a lista retornada pelo <code>unmodifiableList(list)</code>, como o nome já diz, não pode ser modificada.</p>
+<p>Dessa forma conseguimos garantir o estado dos nossos objetos!</p>
+
+            
+        </div>
+        
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle"
+                style="display:block; text-align:center;"
+                data-ad-layout="in-article"
+                data-ad-format="fluid"
+                data-ad-client="ca-pub-4429081934118390"
+                data-ad-slot="6595725642"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        
+        <!-- <div class="article__ad-course">
+            <p class="article__ad-course--title">Você quer aprender a criar aplicativos web dinâmicos e atrativos com ReactJS?</p>
+            <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">
+              <img src="/author/curso-react-direto-ao-ponto.png">
+            </a>
+            <p>
+                Estamos lançando um curso perfeito para você! 
+                Com nosso treinamento prático e de fácil compreensão, você estará criando aplicativos incríveis, preparado para qualquer desafio do mercado. 
+                Não importa se você é um iniciante completo ou já possui conhecimento básico de desenvolvimento web, nosso curso é adaptável para atender a todos os níveis de habilidade.
+            </p>
+            <br />
+            <p>
+                Se interessou? Não perca esta oportunidade de aprender uma das ferramentas de desenvolvimento web mais populares e poderosas do mercado. 
+                <br />
+                <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">Inscreva-se agora</a> e junte-se à lista de espera para nosso curso "React direto ao ponto", autor do blog Back&Front!</p>
+            </p>
+        </div> -->
+        
+        <div class="article-author">
+            <figure>
+                <img src="/author/igor.png" alt="Foto de Igor Venturelli" class="author-figure">
+            </figure>
+            <div class="about-author">
+                <p class="author-name">
+                    Igor Venturelli
+                </p>
+                <p class="author-description">
+                    Desenvolvedor back-end na Mult-e Engenharia Digital e admirador de Java, Python, Go e DevOps!
+                </p>
+                
+                
+                <a target="_blank" rel="noopener" href="https://linkedin.com/in/igorventurelli" alt="Link para o Linkedin de Igor Venturelli">
+                    LinkedIn
+                </a>
+                
+                
+                <a target="_blank" rel="noopener" href="https://github.com/igorventurelli" alt="Link para o Github de Igor Venturelli">
+                    Github
+                </a>
+                
+                
+                <a target="_blank" rel="noopener" href="https://pt.stackoverflow.com/users/5963/igor-venturelli" alt="Link para o StackOverflow de Igor Venturelli">
+                    StackOverflow
+                </a>
+                
+                
+            </div>
+        </div>
+        
+        <footer class="article-footer">
+            <a data-url="https://backefront.com.br/tipos-imutaveis/" data-id="clf2z3wet009mohsmg75xb6qq" class="article-share-link">
+                Compartilhar</a>
+            
+            <a href="https://backefront.com.br/tipos-imutaveis/#disqus_thread" class="article-comment-link">
+                Comentários</a>
+            
+            
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Back-end/" rel="tag">Back-end</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/" rel="tag">Java</a></li></ul>
+
+        </footer>
+    </div>
+    
+    
+<nav id="article-nav">
+  
+    <a href="/git-basico/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Mais Recente</strong>
+      <div class="article-nav-title">
+        
+          Git - Sistema De Controle De Versão De Arquivos
+        
+      </div>
+    </a>
+  
+  
+    <a href="/z-index/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Mais Antigo</strong>
+      <div class="article-nav-title">Entendendo O Z-Index</div>
+    </a>
+  
+</nav>
+
+    
+</article>
+
+
+<section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+
+                </section>
+                
+                <aside id="sidebar">
+
+</aside>
+                
+            </div>
+            <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2023 Victor Jordan<br>
+      Desenvolvido por <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+        </div>
+        <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+</nav>
+        
+<script>
+  var disqus_shortname = 'backefront';
+  
+  var disqus_url = 'https://backefront.com.br/tipos-imutaveis/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+    </div>
+</body>
+<script data-cfasync="false" type="text/javascript" id="clever-core">
+  (function (document, window) {
+      var a, c = document.createElement("script");
+
+      c.id = "CleverCoreLoader58982";
+      c.src = "//scripts.cleverwebserver.com/432a594460b49f65d0da019dbb42c22e.js";
+
+      c.async = !0;
+      c.type = "text/javascript";
+      c.setAttribute("data-target", window.name);
+      c.setAttribute("data-callback", "put-your-callback-macro-here");
+
+      try {
+          a = parent.document.getElementsByTagName("script")[0] || document.getElementsByTagName("script")[0];
+      } catch (e) {
+          a = !1;
+      }
+
+      a || (a = document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]);
+      a.parentNode.insertBefore(c, a);
+  })(document, window);
+</script>                            
+
+
+</html>

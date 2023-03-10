@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-117244554-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  <!-- Google Adsense -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4429081934118390",
+    enable_page_level_ads: true
+  });
+</script>
+<!-- End Google Adsense -->
+  
+  <title>O Que É DOM HTML | Dicas de desenvolvimento e programação</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt">
+
+  
+    <meta name="keywords" content='dom, o que é dom, dom html, entender dom, como funciona dom, dom web, web, front-end'>
+  
+  
+  
+    <meta name="description" content="Dicas, melhores práticas e novidades de desenvolvimento web!">
+    <meta property="og:description" content="Dicas, melhores práticas e novidades de desenvolvimento web!">
+    <meta name="twitter:description" content="Dicas, melhores práticas e novidades de desenvolvimento web!">
+  
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+
+  <link rel="alternate" href="/atom.xml" title="Dicas de desenvolvimento e programação" type="application/atom+xml">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+    <div id="container">
+        <div id="wrap">
+            <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Feed RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Buscar"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://backefront.com.br"></form>
+      </div>
+    </div>
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Dicas de desenvolvimento e programação</a>
+      </h1>
+      
+    </div>
+  </div>
+</header>
+            <div class="outer">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Header -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4429081934118390" data-ad-slot="2664458804"
+                    data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <section id="main">
+                    <article id="post-o-que-e-dom-html" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-meta">
+        <a href="/o-que-e-dom-html/" class="article-date">
+  <time datetime="2019-12-30T10:30:22.000Z" itemprop="datePublished">30-12-2019</time>
+</a>
+        
+    </div>
+    <div class="article-inner">
+        
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      O Que É DOM HTML
+    </h1>
+  
+
+        </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+            <p>Quando iniciamos no mundo de desenvolvimento para internet, somos bombardeados por diversas informações, regras, sintaxes, nomenclaturas e abreviações que, em sua grande maioria, parece formar uma densa névoa de confusão em nossas cabeças e não sabemos por onde começar a abrir os caminhos nessa tão vasta área.</p>
+<p>Pensando nisso, vamos começar a tentar clarear aos poucos as mais diversas dúvidas iniciais!</p>
+<p>No post de hoje, conversaremos sobre DOM! Esse DOM não está relacionado com talento ou qualidade inata e sim com nosso querido HTML!<br>Mas e aí, o que é esse tal de DOM?</p>
+<span id="more"></span>
+<p>DOM é uma sigla que em inglês significa Document Object Model, ou em português, Modelo de Documento por Objetos é a forma como o seu HTML e XML são lidos pelos navegadores.<br>No momento em que acessamos uma página, o navegador interpreta o que está escrito em HTML (o código) e cria uma representação da estrutura da página, que chamamos de <code>árvore DOM</code>.</p>
+<p>Essa árvore nos fornece opções de manipulações dos elementos, de maneira dinâmica, utilizando o Javascript.<br>A manipulação de elementos em nossas páginas são diretamente dependentes de conhecermos o DOM bem como seus métodos e funções!</p>
+<p>Vamos conhecer alguns dos principais e mais usados?</p>
+<h3 id="Window"><a href="#Window" class="headerlink" title="Window"></a>Window</h3><p>Window é o objeto que contém o objeto <code>document</code> dentro do DOM. Podemos considerar que ele é a cabeça de tudo.<br>Toda nossa página fica abaixo dele</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="variable language_">window</span> = <span class="variable language_">document</span>.<span class="property">defaultView</span>;</span><br></pre></td></tr></table></figure>
+<p>É com window que temos acesso a um dos principais métodos, o nosso <code>localstorage</code>:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Armazena no localstorage &quot;nome&quot;</span></span><br><span class="line"><span class="variable language_">window</span>.<span class="property">localStorage</span>.<span class="title function_">setItem</span>(<span class="string">&quot;nome&quot;</span>, <span class="string">&quot;Victor&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Recupera o valor da variável &quot;nome&quot;</span></span><br><span class="line"><span class="variable language_">window</span>.<span class="property">localStorage</span>.<span class="title function_">getItem</span>(<span class="string">&quot;nome&quot;</span>);</span><br></pre></td></tr></table></figure>
+<p>Com o window, conseguimos também exibir um alerta na tela do usuário! Através do <code>window.alert</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">window</span>.<span class="title function_">alert</span>(<span class="string">&quot;Olá, back&amp;front!&quot;</span>);</span><br></pre></td></tr></table></figure>
+<p>O window também é utilizando quando queremos capturar o tamanho da tela do navegador que está sendo utilizando pelo o usuário de nosso site, sistema, através de <code>window.innerHeight</code> ou <code>window.innerWidth</code></p>
+<h3 id="Document"><a href="#Document" class="headerlink" title="Document"></a>Document</h3><p>Document é o nosso primeiro nó do DOM e é com ele que conseguimos ter acesso ao corpo de nosso HTML, por exemplo <code>document.getElementById()</code>, <code>document.querySelector()</code> entre outros!</p>
+<p>Esse é um pequeno resumo do que é o DOM e algumas coisinhas dele, mas essa conversa pode se delongar muito mais!<br>Espero que tenha dado uma iluminada no que é o DOM e para que serve!</p>
+
+            
+        </div>
+        
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle"
+                style="display:block; text-align:center;"
+                data-ad-layout="in-article"
+                data-ad-format="fluid"
+                data-ad-client="ca-pub-4429081934118390"
+                data-ad-slot="6595725642"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        
+        <!-- <div class="article__ad-course">
+            <p class="article__ad-course--title">Você quer aprender a criar aplicativos web dinâmicos e atrativos com ReactJS?</p>
+            <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">
+              <img src="/author/curso-react-direto-ao-ponto.png">
+            </a>
+            <p>
+                Estamos lançando um curso perfeito para você! 
+                Com nosso treinamento prático e de fácil compreensão, você estará criando aplicativos incríveis, preparado para qualquer desafio do mercado. 
+                Não importa se você é um iniciante completo ou já possui conhecimento básico de desenvolvimento web, nosso curso é adaptável para atender a todos os níveis de habilidade.
+            </p>
+            <br />
+            <p>
+                Se interessou? Não perca esta oportunidade de aprender uma das ferramentas de desenvolvimento web mais populares e poderosas do mercado. 
+                <br />
+                <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">Inscreva-se agora</a> e junte-se à lista de espera para nosso curso "React direto ao ponto", autor do blog Back&Front!</p>
+            </p>
+        </div> -->
+        
+        <div class="article-author">
+            <figure>
+                <img src="/author/victor.png" alt="Foto de Victor Jordan" class="author-figure">
+            </figure>
+            <div class="about-author">
+                <p class="author-name">
+                    Victor Jordan
+                </p>
+                <p class="author-description">
+                    Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+                </p>
+                
+                
+                <a target="_blank" rel="noopener" href="https://linkedin.com/in/victorjordan95" alt="Link para o Linkedin de Victor Jordan">
+                    LinkedIn
+                </a>
+                
+                
+                <a target="_blank" rel="noopener" href="https://github.com/victorjordan95" alt="Link para o Github de Victor Jordan">
+                    Github
+                </a>
+                
+                
+                
+            </div>
+        </div>
+        
+        <footer class="article-footer">
+            <a data-url="https://backefront.com.br/o-que-e-dom-html/" data-id="clf2z3wat007mohsmgxgj2xf5" class="article-share-link">
+                Compartilhar</a>
+            
+            <a href="https://backefront.com.br/o-que-e-dom-html/#disqus_thread" class="article-comment-link">
+                Comentários</a>
+            
+            
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Front-end/" rel="tag">Front-end</a></li></ul>
+
+        </footer>
+    </div>
+    
+    
+<nav id="article-nav">
+  
+    <a href="/como-fazer-post-javascript-puro/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Mais Recente</strong>
+      <div class="article-nav-title">
+        
+          Como Fazer Um POST Com Javascript Puro
+        
+      </div>
+    </a>
+  
+  
+    <a href="/como-inverter-cor-imagem-css/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Mais Antigo</strong>
+      <div class="article-nav-title">Como Inverter a Cor De Uma Imagem Com CSS</div>
+    </a>
+  
+</nav>
+
+    
+</article>
+
+
+<section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+
+                </section>
+                
+                <aside id="sidebar">
+
+</aside>
+                
+            </div>
+            <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2023 Victor Jordan<br>
+      Desenvolvido por <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+        </div>
+        <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+</nav>
+        
+<script>
+  var disqus_shortname = 'backefront';
+  
+  var disqus_url = 'https://backefront.com.br/o-que-e-dom-html/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+    </div>
+</body>
+<script data-cfasync="false" type="text/javascript" id="clever-core">
+  (function (document, window) {
+      var a, c = document.createElement("script");
+
+      c.id = "CleverCoreLoader58982";
+      c.src = "//scripts.cleverwebserver.com/432a594460b49f65d0da019dbb42c22e.js";
+
+      c.async = !0;
+      c.type = "text/javascript";
+      c.setAttribute("data-target", window.name);
+      c.setAttribute("data-callback", "put-your-callback-macro-here");
+
+      try {
+          a = parent.document.getElementsByTagName("script")[0] || document.getElementsByTagName("script")[0];
+      } catch (e) {
+          a = !1;
+      }
+
+      a || (a = document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]);
+      a.parentNode.insertBefore(c, a);
+  })(document, window);
+</script>                            
+
+
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-117244554-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  <!-- Google Adsense -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4429081934118390",
+    enable_page_level_ads: true
+  });
+</script>
+<!-- End Google Adsense -->
+  
+  <title>Como Configurar ESLint No React | Dicas de desenvolvimento e programação</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt">
+
+  
+    <meta name="keywords" content='eslint react, configurar eslint, padrao projeto react, javascript eslint, melhores praticas javascript, react, front-end, eslint'>
+  
+  
+  
+    <meta name="description" content='Você conhece o ESLint? ESLint é uma poderosa ferramenta que nos permite trabalhar melhor em nossos códigos, de forma que conseguimos codificar seguindo as práticas impostas através de uma style guide! Neste post, irei ensinar como você pode configurar o ESLint em um projeto React, do zero!'>
+    <meta property="og:description" content='Você conhece o ESLint? ESLint é uma poderosa ferramenta que nos permite trabalhar melhor em nossos códigos, de forma que conseguimos codificar seguindo as práticas impostas através de uma style guide! Neste post, irei ensinar como você pode configurar o ESLint em um projeto React, do zero!'>
+    <meta name="twitter:description" content='Você conhece o ESLint? ESLint é uma poderosa ferramenta que nos permite trabalhar melhor em nossos códigos, de forma que conseguimos codificar seguindo as práticas impostas através de uma style guide! Neste post, irei ensinar como você pode configurar o ESLint em um projeto React, do zero!'>
+  
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+
+  <link rel="alternate" href="/atom.xml" title="Dicas de desenvolvimento e programação" type="application/atom+xml">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+    <div id="container">
+        <div id="wrap">
+            <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Feed RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Buscar"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://backefront.com.br"></form>
+      </div>
+    </div>
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Dicas de desenvolvimento e programação</a>
+      </h1>
+      
+    </div>
+  </div>
+</header>
+            <div class="outer">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Header -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4429081934118390" data-ad-slot="2664458804"
+                    data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <section id="main">
+                    <article id="post-como-configurar-eslint-react" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-meta">
+        <a href="/como-configurar-eslint-react/" class="article-date">
+  <time datetime="2020-03-16T11:00:54.000Z" itemprop="datePublished">16-03-2020</time>
+</a>
+        
+    </div>
+    <div class="article-inner">
+        
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      Como Configurar ESLint No React
+    </h1>
+  
+
+        </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+            <p>Em nosso desenvolvimento diário, saber programar apenas não é o suficiente para sermos de fato um bom programador.<br>Existem padrões de projetos, boas práticas e alguns padrões que se seguirmos, nos torna muito melhor, bem como o nosso próprio código!</p>
+<p>Uma coisa que devemos ter em mente é que, um código para ser considerado <strong>realmente bom</strong> é aquele código que fazemos de forma que um outro ser humano possa entender!</p>
+<p>Pensando nisso, uma boa prática é utilizarmos o <code>eslint</code>!</p>
+<span id="more"></span>
+<p>ESLint é um plugin desenhado para permitir que desenvolvedores encontrem problemas em seu Javascript sem a necessidade de executar ele.<br>Ele é usado para encontrar problemas de padrões de projeto ou algum código que não se encaixe em algum determinado style guidelines</p>
+<p>O ESlint é uma biblioteca open source, escrita originalmente por Nicholas C. Zakas em Junho de 2013.</p>
+<h3 id="Instalando-o-ESLint"><a href="#Instalando-o-ESLint" class="headerlink" title="Instalando o ESLint"></a>Instalando o ESLint</h3><p>Para começarmos utilizar o ESLint, devemos instalar ele através do <code>npm</code> ou <code>yarn</code>.<br>Instalaremos ele como uma dependência de Dev:</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install eslint --save-dev</span><br><span class="line"></span><br><span class="line">// ou</span><br><span class="line"></span><br><span class="line">yarn add eslint --dev</span><br></pre></td></tr></table></figure>
+<p>Agora com o ESLint devidamente instalado, devemos inicializar o arquivo <code>eslintrc.json</code>.<br>É neste arquivo onde iremos adicionar as instruções, as regras que queremos que seguir</p>
+<p>Então podemos usar o terminal rodando o seguinte comando:</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx eslint --init</span><br></pre></td></tr></table></figure>
+<p>Assim que rodamos este comando, nos deparamos com as seguintes opções:<br><img src="/posts/ESLint - configuration.png" alt="Opções para criação do arquivo ESLint"></p>
+<p>Neste post, iremos selecionar a opção <strong>To check syntax, find problems, and enforce code style</strong></p>
+<p>E vamos selecionar as próximas escolhas na seguinte ordem:</p>
+<ul>
+<li>JavaScript modules (import/export)</li>
+<li>React</li>
+<li>Does your project use TypeScript? (y/N): N</li>
+<li>(*) Browser</li>
+<li>Use a popular style guide</li>
+<li>Airbnb</li>
+<li>Javascript</li>
+<li>Would you like to install them now with npm? Yes</li>
+</ul>
+<p>Por que selecionamos Airbnb?<br>A style guide do Airbnb é uma das mais completas e cobre praticamente todas as principais práticas para Javascript.<br>Caso seja do seu interesse, você pode ver o <a target="_blank" rel="noopener" href="https://github.com/airbnb/javascript">repositório no GitHub do Airbnb</a></p>
+<p>Nosso arquivo <strong>eslintrc.json</strong> deve ter ficado da seguinte forma:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="attr">env</span>: &#123;</span><br><span class="line">    <span class="attr">browser</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">es6</span>: <span class="literal">true</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">extends</span>: [<span class="string">&quot;plugin:react/recommended&quot;</span>, <span class="string">&quot;airbnb&quot;</span>],</span><br><span class="line">  <span class="attr">globals</span>: &#123;</span><br><span class="line">    <span class="title class_">Atomics</span>: <span class="string">&quot;readonly&quot;</span>,</span><br><span class="line">    <span class="title class_">SharedArrayBuffer</span>: <span class="string">&quot;readonly&quot;</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">parserOptions</span>: &#123;</span><br><span class="line">    <span class="attr">ecmaFeatures</span>: &#123;</span><br><span class="line">      <span class="attr">jsx</span>: <span class="literal">true</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">ecmaVersion</span>: <span class="number">2018</span>,</span><br><span class="line">    <span class="attr">sourceType</span>: <span class="string">&quot;module&quot;</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">plugins</span>: [<span class="string">&quot;react&quot;</span>],</span><br><span class="line">  <span class="attr">rules</span>: &#123;&#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>Para ficar melhor ainda, vamos adicionar mais uma dependência, chamada <code>prettier</code>:</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install prettier --save-dev</span><br><span class="line"></span><br><span class="line">// ou</span><br><span class="line"></span><br><span class="line">yarn add prettier --dev</span><br></pre></td></tr></table></figure>
+<p>Com ela instalada, vamos alterar nosso arquivo <strong>eslintrc.json</strong>, vamos fazer uma pequena modificação:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="attr">env</span>: &#123;</span><br><span class="line">    <span class="attr">browser</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">es6</span>: <span class="literal">true</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">extends</span>: [<span class="string">&quot;airbnb&quot;</span>, <span class="string">&quot;prettier&quot;</span>, <span class="string">&quot;prettier/react&quot;</span>],</span><br><span class="line">  <span class="attr">globals</span>: &#123;</span><br><span class="line">    <span class="title class_">Atomics</span>: <span class="string">&quot;readonly&quot;</span>,</span><br><span class="line">    <span class="title class_">SharedArrayBuffer</span>: <span class="string">&quot;readonly&quot;</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">parser</span>: <span class="string">&quot;babel-eslint&quot;</span>,</span><br><span class="line">  <span class="attr">parserOptions</span>: &#123;</span><br><span class="line">    <span class="attr">ecmaFeatures</span>: &#123;</span><br><span class="line">      <span class="attr">jsx</span>: <span class="literal">true</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">ecmaVersion</span>: <span class="number">2018</span>,</span><br><span class="line">    <span class="attr">sourceType</span>: <span class="string">&quot;module&quot;</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">plugins</span>: [</span><br><span class="line">    <span class="string">&quot;react&quot;</span>,</span><br><span class="line">    <span class="string">&quot;prettier&quot;</span>, <span class="comment">// Adicionando prettier como plugin</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="comment">// Modificamos as regras</span></span><br><span class="line">  <span class="comment">// para que o prettier nos avise</span></span><br><span class="line">  <span class="comment">// de erros na formtação</span></span><br><span class="line">  <span class="attr">rules</span>: &#123;</span><br><span class="line">    <span class="string">&quot;prettier/prettier&quot;</span>: <span class="string">&quot;error&quot;</span>,</span><br><span class="line">    <span class="string">&quot;react/jsx-filename-extension&quot;</span>: [<span class="string">&quot;warn&quot;</span>, &#123; <span class="attr">extensions</span>: [<span class="string">&quot;.jsx&quot;</span>, <span class="string">&quot;.js&quot;</span>] &#125;],</span><br><span class="line">    <span class="string">&quot;import/prefer-default-export&quot;</span>: <span class="string">&quot;off&quot;</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>Agora devemos adicionar mais três libs. Elas nos ajudarão a informar onde que estamos errando ou o que estamos esquecendo!<br>Vamos então rodar o comando:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yarn add -D babel-eslint eslint-plugin-prettier eslint-config-prettier</span><br><span class="line"><span class="comment">// Ou</span></span><br><span class="line">npm install --save-dev babel-eslint eslint-plugin-prettier eslint-config-prettier</span><br></pre></td></tr></table></figure>
+<p>E para finalizar nossa configuração no VS Code, vamos instalar a extensão do ESLint, pode ser acessada através do link:</p>
+<p><a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint</a></p>
+<p>Agora com toda essa configuração feita, ao salvarmos nossos arquivos, eles são formatados para se adequar ao melhor padrão bem como também temos agora notificações de Javascript, para tornar os nossos códigos ainda mais legíveis, utilizando as melhores práticas!</p>
+
+            
+        </div>
+        
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle"
+                style="display:block; text-align:center;"
+                data-ad-layout="in-article"
+                data-ad-format="fluid"
+                data-ad-client="ca-pub-4429081934118390"
+                data-ad-slot="6595725642"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        
+        <!-- <div class="article__ad-course">
+            <p class="article__ad-course--title">Você quer aprender a criar aplicativos web dinâmicos e atrativos com ReactJS?</p>
+            <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">
+              <img src="/author/curso-react-direto-ao-ponto.png">
+            </a>
+            <p>
+                Estamos lançando um curso perfeito para você! 
+                Com nosso treinamento prático e de fácil compreensão, você estará criando aplicativos incríveis, preparado para qualquer desafio do mercado. 
+                Não importa se você é um iniciante completo ou já possui conhecimento básico de desenvolvimento web, nosso curso é adaptável para atender a todos os níveis de habilidade.
+            </p>
+            <br />
+            <p>
+                Se interessou? Não perca esta oportunidade de aprender uma das ferramentas de desenvolvimento web mais populares e poderosas do mercado. 
+                <br />
+                <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">Inscreva-se agora</a> e junte-se à lista de espera para nosso curso "React direto ao ponto", autor do blog Back&Front!</p>
+            </p>
+        </div> -->
+        
+        <div class="article-author">
+            <figure>
+                <img src="/author/victor.png" alt="Foto de Victor Jordan" class="author-figure">
+            </figure>
+            <div class="about-author">
+                <p class="author-name">
+                    Victor Jordan
+                </p>
+                <p class="author-description">
+                    Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+                </p>
+                
+                
+                <a target="_blank" rel="noopener" href="https://linkedin.com/in/victorjordan95" alt="Link para o Linkedin de Victor Jordan">
+                    LinkedIn
+                </a>
+                
+                
+                <a target="_blank" rel="noopener" href="https://github.com/victorjordan95" alt="Link para o Github de Victor Jordan">
+                    Github
+                </a>
+                
+                
+                
+            </div>
+        </div>
+        
+        <footer class="article-footer">
+            <a data-url="https://backefront.com.br/como-configurar-eslint-react/" data-id="clf2z3vs7001hohsmb71bbl8c" class="article-share-link">
+                Compartilhar</a>
+            
+            <a href="https://backefront.com.br/como-configurar-eslint-react/#disqus_thread" class="article-comment-link">
+                Comentários</a>
+            
+            
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Front-end/" rel="tag">Front-end</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/React/" rel="tag">React</a></li></ul>
+
+        </footer>
+    </div>
+    
+    
+<nav id="article-nav">
+  
+    <a href="/como-criar-estilo-global-styled-components/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Mais Recente</strong>
+      <div class="article-nav-title">
+        
+          Como Criar Estilo Global Com Styled Components - React
+        
+      </div>
+    </a>
+  
+  
+    <a href="/validacao-email-javascript/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Mais Antigo</strong>
+      <div class="article-nav-title">Como Validar Um E-Mail Com Javascript</div>
+    </a>
+  
+</nav>
+
+    
+</article>
+
+
+<section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+
+                </section>
+                
+                <aside id="sidebar">
+
+</aside>
+                
+            </div>
+            <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2023 Victor Jordan<br>
+      Desenvolvido por <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+        </div>
+        <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+</nav>
+        
+<script>
+  var disqus_shortname = 'backefront';
+  
+  var disqus_url = 'https://backefront.com.br/como-configurar-eslint-react/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+    </div>
+</body>
+<script data-cfasync="false" type="text/javascript" id="clever-core">
+  (function (document, window) {
+      var a, c = document.createElement("script");
+
+      c.id = "CleverCoreLoader58982";
+      c.src = "//scripts.cleverwebserver.com/432a594460b49f65d0da019dbb42c22e.js";
+
+      c.async = !0;
+      c.type = "text/javascript";
+      c.setAttribute("data-target", window.name);
+      c.setAttribute("data-callback", "put-your-callback-macro-here");
+
+      try {
+          a = parent.document.getElementsByTagName("script")[0] || document.getElementsByTagName("script")[0];
+      } catch (e) {
+          a = !1;
+      }
+
+      a || (a = document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]);
+      a.parentNode.insertBefore(c, a);
+  })(document, window);
+</script>                            
+
+
+</html>
