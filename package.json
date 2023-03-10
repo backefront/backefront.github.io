@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "6.3.0"
+    "version": "5.4.2"
   },
   "scripts": {
     "update": "git checkout posts && git pull origin posts",
@@ -33,7 +33,7 @@
     "hexo-server": "^3.0.0",
     "hexo-tag-video": "0.0.2",
     "hexo-theme-landscape": "^0.0.3",
-    "hexo": "^6.3.0",
+    "hexo": "^5.4.0",
     "natives": "^1.1.6",
     "run-sequence": "^2.2.1"
   },
