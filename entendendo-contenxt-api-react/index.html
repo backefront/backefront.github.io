@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-117244554-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  <!-- Google Adsense -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4429081934118390",
+    enable_page_level_ads: true
+  });
+</script>
+<!-- End Google Adsense -->
+  
+  <title>Entendendo o context API - ReactJS | Dicas de desenvolvimento e programação</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt">
+
+  
+    <meta name="keywords" content='context api react, front-end, react context, como usar context, api context, storage react, shared context, compartilhar react'>
+  
+  
+  
+    <meta name="description" content='Segundo a documentação do React, Context provê uma forma de passar dados através da árvore de componentes sem a necessidade de passar esses dados através das props por cada nível desejado. O que isto significa? Significa que usando o context, você tem um ponto focal de acesso a informação. Se você quiser acessar determinada informação, basta apontar diretamente para o context! Com ele, conseguimos facilitar em muito nosso desenvolvimento!'>
+    <meta property="og:description" content='Segundo a documentação do React, Context provê uma forma de passar dados através da árvore de componentes sem a necessidade de passar esses dados através das props por cada nível desejado. O que isto significa? Significa que usando o context, você tem um ponto focal de acesso a informação. Se você quiser acessar determinada informação, basta apontar diretamente para o context! Com ele, conseguimos facilitar em muito nosso desenvolvimento!'>
+    <meta name="twitter:description" content='Segundo a documentação do React, Context provê uma forma de passar dados através da árvore de componentes sem a necessidade de passar esses dados através das props por cada nível desejado. O que isto significa? Significa que usando o context, você tem um ponto focal de acesso a informação. Se você quiser acessar determinada informação, basta apontar diretamente para o context! Com ele, conseguimos facilitar em muito nosso desenvolvimento!'>
+  
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+
+  <link rel="alternate" href="/atom.xml" title="Dicas de desenvolvimento e programação" type="application/atom+xml">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+    <div id="container">
+        <div id="wrap">
+            <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Feed RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Buscar"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://backefront.com.br"></form>
+      </div>
+    </div>
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Dicas de desenvolvimento e programação</a>
+      </h1>
+      
+    </div>
+  </div>
+</header>
+            <div class="outer">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Header -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4429081934118390" data-ad-slot="2664458804"
+                    data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <section id="main">
+                    <article id="post-entendendo-contenxt-api-react" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-meta">
+        <a href="/entendendo-contenxt-api-react/" class="article-date">
+  <time datetime="2020-07-13T11:59:00.000Z" itemprop="datePublished">13-07-2020</time>
+</a>
+        
+    </div>
+    <div class="article-inner">
+        
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      Entendendo o context API - ReactJS
+    </h1>
+  
+
+        </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+            <p>Segundo a documentação do React, Context provê uma forma de passar dados através da árvore de componentes sem a necessidade de passar esses dados através das props por cada nível desejado.</p>
+<p>O que isto significa? Significa que usando o context, você tem um ponto focal de acesso a informação. Se você quiser acessar determinada informação, basta apontar diretamente para o context!</p>
+<p>Com ele, conseguimos facilitar em muito nosso desenvolvimento!</p>
+<span id="more"></span>
+
+<p>Vamos imaginar que queremos criar um context de informação do usuário logado.</p>
+<p>Essa informação usaremos através de toda a aplicação, então queremos mante-la em um ponto.</p>
+<p>Começamos criando o arquivo <code>UserContext.js</code>:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span> <span class="keyword">from</span> <span class="string">&quot;react&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> userContext = <span class="title class_">React</span>.<span class="title function_">createContext</span>(&#123;&#125;);</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> userContext;</span><br></pre></td></tr></table></figure>
+
+<p>Legal, agora como utilizamos ele?</p>
+<p>Primeiramente, temos que pensar em dois momentos de nossa aplicação.</p>
+<p>1 - Quando o usuário acessar a tela de login, o context deve estar vazio</p>
+<p>2 - Quando o usuário realizar o login, devemos alterar o valor do context</p>
+<p>Com isso em mente, vamos adicionar ele no nosso arquivo <code>App.js</code> pois é nele que toda nossa aplicação está englobada:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span>, &#123; useState, useEffect &#125; <span class="keyword">from</span> <span class="string">&quot;react&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Login</span> <span class="keyword">from</span> <span class="string">&quot;./pages/Login/Login.page&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Register</span> <span class="keyword">from</span> <span class="string">&quot;./pages/Register/Register.page&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> userContext <span class="keyword">from</span> <span class="string">&quot;./store/UserContext&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">App</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">userContext.Provider</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">Router</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">BrowserRouter</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">          <span class="tag">&lt;<span class="name">Switch</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">Route</span> <span class="attr">path</span>=<span class="string">&quot;/&quot;</span> <span class="attr">exact</span> <span class="attr">component</span>=<span class="string">&#123;Login&#125;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">Route</span> <span class="attr">path</span>=<span class="string">&quot;/cadastro&quot;</span> <span class="attr">component</span>=<span class="string">&#123;Register&#125;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">Route</span> <span class="attr">path</span>=<span class="string">&quot;/dashboard&quot;</span> <span class="attr">component</span>=<span class="string">&#123;Dashboard&#125;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">          <span class="tag">&lt;/<span class="name">Switch</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">BrowserRouter</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">Router</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">userContext.Provider</span>&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title class_">App</span>;</span><br></pre></td></tr></table></figure>
+
+<p>Adicionamos o <code>userContext.Provider</code>, encapsulando toda nossa aplicação. Note que esse userContext é o nosso arquivo que acabamos de criar!</p>
+<p>Agora, precisamos passar um <code>value</code> dentro dele, pois é esse valor que teremos acesso pela aplicação:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span>, &#123; useState, useEffect &#125; <span class="keyword">from</span> <span class="string">&quot;react&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">BrowserRouter</span>, <span class="title class_">Switch</span>, <span class="title class_">Route</span>, <span class="title class_">Router</span> &#125; <span class="keyword">from</span> <span class="string">&quot;react-router-dom&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Login</span> <span class="keyword">from</span> <span class="string">&quot;./pages/Login/Login.page&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Register</span> <span class="keyword">from</span> <span class="string">&quot;./pages/Register/Register.page&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> userContext <span class="keyword">from</span> <span class="string">&quot;./store/UserContext&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">App</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> [loggedUser, setLoggedUser] = <span class="title function_">useState</span>(&#123;&#125;);</span><br><span class="line">  <span class="keyword">const</span> [contextValue, setContextValue] = <span class="title function_">useState</span>(&#123;&#125;);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> <span class="title function_">logout</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">    <span class="title function_">setLoggedUser</span>(&#123;&#125;);</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> <span class="title function_">handleUserContext</span> = (<span class="params">user</span>) =&gt; &#123;</span><br><span class="line">    <span class="title function_">setLoggedUser</span>(user);</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">useEffect</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="title function_">setContextValue</span>(&#123;</span><br><span class="line">      <span class="attr">user</span>: loggedUser,</span><br><span class="line">      logout,</span><br><span class="line">      handleUserContext,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;, [loggedUser]);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">userContext.Provider</span> <span class="attr">value</span>=<span class="string">&#123;contextValue&#125;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">Router</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">BrowserRouter</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">          <span class="tag">&lt;<span class="name">Switch</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">Route</span> <span class="attr">path</span>=<span class="string">&quot;/&quot;</span> <span class="attr">exact</span> <span class="attr">component</span>=<span class="string">&#123;Login&#125;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">Route</span> <span class="attr">path</span>=<span class="string">&quot;/cadastro&quot;</span> <span class="attr">component</span>=<span class="string">&#123;Register&#125;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">Route</span> <span class="attr">path</span>=<span class="string">&quot;/dashboard&quot;</span> <span class="attr">component</span>=<span class="string">&#123;Dashboard&#125;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">          <span class="tag">&lt;/<span class="name">Switch</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">BrowserRouter</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">Router</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">userContext.Provider</span>&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title class_">App</span>;</span><br></pre></td></tr></table></figure>
+
+<p>Aqui está a grande sacada do context! Não necessariamente precisamos passar APENAS valores dentro dele, podemos passar também FUNÇÕES!</p>
+<p>Então, no nosso caso, vamos passar duas funções que queremos que sejam lidadas dentro de <code>App.js</code>, a função de logout e a função para lidar com login, chamada <code>handleUserContext</code></p>
+<p>Dessa maneira, nosso context tem acesso a essas funções e ao estado do usuário!</p>
+<p>Agora que temos isso, conseguimos fazer a chamada de login em nosso componente de login e atualizar o nosso estado, que nos retorna o usuário logado!<br>Vamos então nesse componente importar nosso context:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Outros imports</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">React</span>, &#123; useState, useContext &#125; <span class="keyword">from</span> <span class="string">&quot;react&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> userContext <span class="keyword">from</span> <span class="string">&quot;./store/UserContext&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Login</span>(<span class="params">props</span>) &#123;</span><br><span class="line">  <span class="comment">// Criamos a variável currentlyUser</span></span><br><span class="line">  <span class="comment">// com o valor do context</span></span><br><span class="line">  <span class="keyword">const</span> currentlyUser = <span class="title function_">useContext</span>(userContext);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> <span class="title function_">handleSubmit</span> = <span class="keyword">async</span> (<span class="params">e</span>) =&gt; &#123;</span><br><span class="line">    e.<span class="title function_">preventDefault</span>();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">      <span class="comment">// Realizamos o login no back-end</span></span><br><span class="line">      <span class="keyword">const</span> loggedUser = <span class="keyword">await</span> api.<span class="title function_">post</span>(<span class="string">&quot;/session&quot;</span>, formValues);</span><br><span class="line">      <span class="keyword">const</span> usarData = <span class="keyword">await</span> api.<span class="title function_">get</span>(<span class="string">`/users/<span class="subst">$&#123;loggedUser.data.user.id&#125;</span>`</span>);</span><br><span class="line"></span><br><span class="line">      <span class="comment">// Acessamos a função criada previamente</span></span><br><span class="line">      <span class="comment">// e usamos o context para atualizar o valor</span></span><br><span class="line">      currentlyUser.<span class="title function_">handleUserContext</span>(usarData.<span class="property">data</span>);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (err) &#123;</span><br><span class="line">      toast.<span class="title function_">error</span>(err?.<span class="property">response</span>?.<span class="property">data</span>?.<span class="property">error</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Viu como é fácil usar o context? Além de ajudar muito nosso desenvolvimento, é muito prático!</p>
+
+            
+        </div>
+        
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle"
+                style="display:block; text-align:center;"
+                data-ad-layout="in-article"
+                data-ad-format="fluid"
+                data-ad-client="ca-pub-4429081934118390"
+                data-ad-slot="6595725642"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        
+        <!-- <div class="article__ad-course">
+            <p class="article__ad-course--title">Você quer aprender a criar aplicativos web dinâmicos e atrativos com ReactJS?</p>
+            <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">
+              <img src="/author/curso-react-direto-ao-ponto.png">
+            </a>
+            <p>
+                Estamos lançando um curso perfeito para você! 
+                Com nosso treinamento prático e de fácil compreensão, você estará criando aplicativos incríveis, preparado para qualquer desafio do mercado. 
+                Não importa se você é um iniciante completo ou já possui conhecimento básico de desenvolvimento web, nosso curso é adaptável para atender a todos os níveis de habilidade.
+            </p>
+            <br />
+            <p>
+                Se interessou? Não perca esta oportunidade de aprender uma das ferramentas de desenvolvimento web mais populares e poderosas do mercado. 
+                <br />
+                <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">Inscreva-se agora</a> e junte-se à lista de espera para nosso curso "React direto ao ponto", autor do blog Back&Front!</p>
+            </p>
+        </div> -->
+        
+        <div class="article-author">
+            <figure>
+                <img src="/author/victor.png" alt="Foto de Victor Jordan" class="author-figure">
+            </figure>
+            <div class="about-author">
+                <p class="author-name">
+                    Victor Jordan
+                </p>
+                <p class="author-description">
+                    Engenheiro Front-end no Mercado Livre e pós-graduado em Engenharia de Software pela PUC-MG e formado em Banco de Dados pela Fatec, apaixonado por usabilidade, performance e UX!
+                </p>
+                
+                
+                <a target="_blank" rel="noopener" href="https://linkedin.com/in/victorjordan95" alt="Link para o Linkedin de Victor Jordan">
+                    LinkedIn
+                </a>
+                
+                
+                <a target="_blank" rel="noopener" href="https://github.com/victorjordan95" alt="Link para o Github de Victor Jordan">
+                    Github
+                </a>
+                
+                
+                
+            </div>
+        </div>
+        
+        <footer class="article-footer">
+            <a data-url="https://backefront.com.br/entendendo-contenxt-api-react/" data-id="clf2gu7uh005uifsm82jb6whi" class="article-share-link">
+                Compartilhar</a>
+            
+            <a href="https://backefront.com.br/entendendo-contenxt-api-react/#disqus_thread" class="article-comment-link">
+                Comentários</a>
+            
+            
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Front-end/" rel="tag">Front-end</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li></ul>
+
+        </footer>
+    </div>
+    
+    
+<nav id="article-nav">
+  
+    <a href="/visualizar-imagem-input-file-javascript/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Mais Recente</strong>
+      <div class="article-nav-title">
+        
+          Convertendo imagem para base64 e exibindo no front-end
+        
+      </div>
+    </a>
+  
+  
+    <a href="/acessar-variavel-filho-pai/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Mais Antigo</strong>
+      <div class="article-nav-title">Angular - Como acessar variável do componente filho no componente pai</div>
+    </a>
+  
+</nav>
+
+    
+</article>
+
+
+<section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+
+                </section>
+                
+                <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Acessibilidade/" rel="tag">Acessibilidade</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Algoritmos/" rel="tag">Algoritmos</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Angular/" rel="tag">Angular</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Back-end/" rel="tag">Back-end</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/" rel="tag">CSS</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Engenharia-de-Software/" rel="tag">Engenharia de Software</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Estrutura-de-Dados/" rel="tag">Estrutura de Dados</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Eventos/" rel="tag">Eventos</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Front-end/" rel="tag">Front-end</a><span class="tag-list-count">147</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/" rel="tag">Git</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GraphQL/" rel="tag">GraphQL</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/" rel="tag">HTML</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTTP/" rel="tag">HTTP</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a><span class="tag-list-count">91</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Metodologias/" rel="tag">Metodologias</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NodeJS/" rel="tag">NodeJS</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/" rel="tag">React</a><span class="tag-list-count">21</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React-Native/" rel="tag">React Native</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ReactJS/" rel="tag">ReactJS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SENAC/" rel="tag">SENAC</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SO/" rel="tag">SO</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Scrum/" rel="tag">Scrum</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sequelize/" rel="tag">Sequelize</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Testes/" rel="tag">Testes</a><span class="tag-list-count">7</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Postagens Recentes</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/como-usar-crypto-randomUUID/">Pare de usar index em seu map e use randomUUID!</a>
+          </li>
+        
+          <li>
+            <a href="/o-que-e-big-o/">O que é Big O (Big O notation)</a>
+          </li>
+        
+          <li>
+            <a href="/como-criar-app-react-com-bun/">Como criar um App React com Bun</a>
+          </li>
+        
+          <li>
+            <a href="/o-e-hoc-react/">O que é HOC - ReactJS</a>
+          </li>
+        
+          <li>
+            <a href="/como-depurar-c%C3%B3digo-Javascript-identificar-corrigir-erros-comuns/">como depurar código Javascript e identificar e corrigir erros comuns</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+                
+            </div>
+            <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2023 Melanie Jordan e Victor Jordan<br>
+      Desenvolvido por <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+        </div>
+        <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+</nav>
+        
+<script>
+  var disqus_shortname = 'backefront';
+  
+  var disqus_url = 'https://backefront.com.br/entendendo-contenxt-api-react/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+    </div>
+</body>
+<script data-cfasync="false" type="text/javascript" id="clever-core">
+  (function (document, window) {
+      var a, c = document.createElement("script");
+
+      c.id = "CleverCoreLoader58982";
+      c.src = "//scripts.cleverwebserver.com/432a594460b49f65d0da019dbb42c22e.js";
+
+      c.async = !0;
+      c.type = "text/javascript";
+      c.setAttribute("data-target", window.name);
+      c.setAttribute("data-callback", "put-your-callback-macro-here");
+
+      try {
+          a = parent.document.getElementsByTagName("script")[0] || document.getElementsByTagName("script")[0];
+      } catch (e) {
+          a = !1;
+      }
+
+      a || (a = document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]);
+      a.parentNode.insertBefore(c, a);
+  })(document, window);
+</script>                            
+
+
+</html>

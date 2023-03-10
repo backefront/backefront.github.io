@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-117244554-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  <!-- Google Adsense -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4429081934118390",
+    enable_page_level_ads: true
+  });
+</script>
+<!-- End Google Adsense -->
+  
+  <title>Dicas de desenvolvimento e programação</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt">
+
+  
+    <meta name="keywords" content="back-end, front-end, dicas programação, desenvolvimento de sistemas, algoritmos, usabilidade, UX, websemântico">
+  
+  
+  
+    <meta name="description" content="Dicas, melhores práticas e novidades de desenvolvimento web!">
+    <meta property="og:description" content="Dicas, melhores práticas e novidades de desenvolvimento web!">
+    <meta name="twitter:description" content="Dicas, melhores práticas e novidades de desenvolvimento web!">
+  
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+
+  <link rel="alternate" href="/atom.xml" title="Dicas de desenvolvimento e programação" type="application/atom+xml">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+    <div id="container">
+        <div id="wrap">
+            <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Feed RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Buscar"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://backefront.com.br"></form>
+      </div>
+    </div>
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Dicas de desenvolvimento e programação</a>
+      </h1>
+      
+    </div>
+  </div>
+</header>
+            <div class="outer">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Header -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4429081934118390" data-ad-slot="2664458804"
+                    data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <section id="main">
+                    
+  
+    <article id="post-como-funciona-destructuring-js" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-meta">
+        <a href="/como-funciona-destructuring-js/" class="article-date">
+  <time datetime="2018-12-24T09:30:00.000Z" itemprop="datePublished">24-12-2018</time>
+</a>
+        
+    </div>
+    <div class="article-inner">
+        
+        
+        <header class="article-header">
+            
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/como-funciona-destructuring-js/">Como funciona o destructuring no Javascript</a>
+    </h1>
+  
+
+        </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+            <h2 id="O-que-e-destructuring"><a href="#O-que-e-destructuring" class="headerlink" title="O que é destructuring?"></a>O que é destructuring?</h2><p><em>Destructuring</em> (desestruturação) é uma expressão no Javascript que possibilita ao usuário “desempacotar” valores de um array ou propriedades de objetos, em variáveis diferentes!<br>Com ele, conseguimos criar um código mais legível, mais estruturado e fácil de dar manutenção!</p>
+<p>Sem este conceito, caso quiséssemos acessar os três valores de um array, teríamos que fazer algo desta forma:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> array = [<span class="string">&quot;Um&quot;</span>, <span class="string">&quot;Dois&quot;</span>, <span class="string">&quot;Três&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> primeiro = array[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">let</span> segundo = array[<span class="number">1</span>];</span><br><span class="line"><span class="keyword">let</span> terceiro = array[<span class="number">2</span>];</span><br></pre></td></tr></table></figure>
+
+<p>Agora, se formos reescrever o mesmo código, utilizando o <strong>destructuring</strong>:</p>
+            
+            <p class="article-more-link">
+                <a href="/como-funciona-destructuring-js/#more">
+                    Ler mais</a>
+            </p>
+            
+            
+        </div>
+        
+        <!-- <div class="article__ad-course">
+            <p class="article__ad-course--title">Você quer aprender a criar aplicativos web dinâmicos e atrativos com ReactJS?</p>
+            <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">
+              <img src="/author/curso-react-direto-ao-ponto.png">
+            </a>
+            <p>
+                Estamos lançando um curso perfeito para você! 
+                Com nosso treinamento prático e de fácil compreensão, você estará criando aplicativos incríveis, preparado para qualquer desafio do mercado. 
+                Não importa se você é um iniciante completo ou já possui conhecimento básico de desenvolvimento web, nosso curso é adaptável para atender a todos os níveis de habilidade.
+            </p>
+            <br />
+            <p>
+                Se interessou? Não perca esta oportunidade de aprender uma das ferramentas de desenvolvimento web mais populares e poderosas do mercado. 
+                <br />
+                <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">Inscreva-se agora</a> e junte-se à lista de espera para nosso curso "React direto ao ponto", autor do blog Back&Front!</p>
+            </p>
+        </div> -->
+        
+        <footer class="article-footer">
+            <a data-url="https://backefront.com.br/como-funciona-destructuring-js/" data-id="clf2gu7qn0030ifsmaon6fna4" class="article-share-link">
+                Compartilhar</a>
+            
+            <a href="https://backefront.com.br/como-funciona-destructuring-js/#disqus_thread" class="article-comment-link">
+                Comentários</a>
+            
+            
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Front-end/" rel="tag">Front-end</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li></ul>
+
+        </footer>
+    </div>
+    
+</article>
+
+
+  
+    <article id="post-como-alterar-remote-git" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-meta">
+        <a href="/como-alterar-remote-git/" class="article-date">
+  <time datetime="2018-12-17T09:30:44.000Z" itemprop="datePublished">17-12-2018</time>
+</a>
+        
+    </div>
+    <div class="article-inner">
+        
+        
+        <header class="article-header">
+            
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/como-alterar-remote-git/">Como alterar a URL de um projeto git</a>
+    </h1>
+  
+
+        </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+            <p>Digamos que você esteja trabalhando em um determinado projeto, a qual está <em>apontado</em> para um repositório git (bitbucket, github, etc) e em certo momento, é decidido que deve ser migrado para outro repositório. Então, você deve enviar todas suas novas alterações para o novo caminho!</p>
+<p>Clonar o novo repositório e passar os arquivos alterados na base do <em>ctrl + c&#x2F;ctrl + v</em> não parece ser a solução mais eficiente e elegante, não é mesmo? Para isto, o git possui um comando chamado <code>git remote set-url</code>!</p>
+            
+            <p class="article-more-link">
+                <a href="/como-alterar-remote-git/#more">
+                    Ler mais</a>
+            </p>
+            
+            
+        </div>
+        
+        <!-- <div class="article__ad-course">
+            <p class="article__ad-course--title">Você quer aprender a criar aplicativos web dinâmicos e atrativos com ReactJS?</p>
+            <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">
+              <img src="/author/curso-react-direto-ao-ponto.png">
+            </a>
+            <p>
+                Estamos lançando um curso perfeito para você! 
+                Com nosso treinamento prático e de fácil compreensão, você estará criando aplicativos incríveis, preparado para qualquer desafio do mercado. 
+                Não importa se você é um iniciante completo ou já possui conhecimento básico de desenvolvimento web, nosso curso é adaptável para atender a todos os níveis de habilidade.
+            </p>
+            <br />
+            <p>
+                Se interessou? Não perca esta oportunidade de aprender uma das ferramentas de desenvolvimento web mais populares e poderosas do mercado. 
+                <br />
+                <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">Inscreva-se agora</a> e junte-se à lista de espera para nosso curso "React direto ao ponto", autor do blog Back&Front!</p>
+            </p>
+        </div> -->
+        
+        <footer class="article-footer">
+            <a data-url="https://backefront.com.br/como-alterar-remote-git/" data-id="clf2gu7mp0019ifsmhdf1hk3p" class="article-share-link">
+                Compartilhar</a>
+            
+            <a href="https://backefront.com.br/como-alterar-remote-git/#disqus_thread" class="article-comment-link">
+                Comentários</a>
+            
+            
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/" rel="tag">Git</a></li></ul>
+
+        </footer>
+    </div>
+    
+</article>
+
+
+  
+    <article id="post-adicionando-projeto-repositorio-existente-git" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-meta">
+        <a href="/adicionando-projeto-repositorio-existente-git/" class="article-date">
+  <time datetime="2018-12-10T09:30:00.000Z" itemprop="datePublished">10-12-2018</time>
+</a>
+        
+    </div>
+    <div class="article-inner">
+        
+        
+        <header class="article-header">
+            
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/adicionando-projeto-repositorio-existente-git/">Como adicionar um projeto a um novo repositório git</a>
+    </h1>
+  
+
+        </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+            <p>O git é uma ferramenta muito utilizada no dia-a-dia de um desenvolvedor. Frequentemente, precisamos nos aventurar nos comandos <code>git ...</code> para concluir nossas tarefas diárias. O conhecimento em git é essencial, independente do seu nível de senioridade ou anos de experiência!</p>
+<p>Frequentemente clonamos repositórios para alterar os arquivos de acordo com a necessidade de nossas atividades, <em>commitamos</em> nossas alterações e enviamos e por aí vai! Mas e caso tivéssemos criado nosso projeto do <strong>zero</strong> e no final do dia, desejamos adicionar todos nossos arquivos em um repositório? Quase que o oposto do primeiro cenário! Então como podemos adicionar um projeto novo à um repositório no git?</p>
+            
+            <p class="article-more-link">
+                <a href="/adicionando-projeto-repositorio-existente-git/#more">
+                    Ler mais</a>
+            </p>
+            
+            
+        </div>
+        
+        <!-- <div class="article__ad-course">
+            <p class="article__ad-course--title">Você quer aprender a criar aplicativos web dinâmicos e atrativos com ReactJS?</p>
+            <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">
+              <img src="/author/curso-react-direto-ao-ponto.png">
+            </a>
+            <p>
+                Estamos lançando um curso perfeito para você! 
+                Com nosso treinamento prático e de fácil compreensão, você estará criando aplicativos incríveis, preparado para qualquer desafio do mercado. 
+                Não importa se você é um iniciante completo ou já possui conhecimento básico de desenvolvimento web, nosso curso é adaptável para atender a todos os níveis de habilidade.
+            </p>
+            <br />
+            <p>
+                Se interessou? Não perca esta oportunidade de aprender uma das ferramentas de desenvolvimento web mais populares e poderosas do mercado. 
+                <br />
+                <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">Inscreva-se agora</a> e junte-se à lista de espera para nosso curso "React direto ao ponto", autor do blog Back&Front!</p>
+            </p>
+        </div> -->
+        
+        <footer class="article-footer">
+            <a data-url="https://backefront.com.br/adicionando-projeto-repositorio-existente-git/" data-id="clf2gu7jh0003ifsmborp0et6" class="article-share-link">
+                Compartilhar</a>
+            
+            <a href="https://backefront.com.br/adicionando-projeto-repositorio-existente-git/#disqus_thread" class="article-comment-link">
+                Comentários</a>
+            
+            
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/" rel="tag">Git</a></li></ul>
+
+        </footer>
+    </div>
+    
+</article>
+
+
+  
+    <article id="post-laco-repeticao-scss" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-meta">
+        <a href="/laco-repeticao-scss/" class="article-date">
+  <time datetime="2018-12-03T09:30:50.000Z" itemprop="datePublished">03-12-2018</time>
+</a>
+        
+    </div>
+    <div class="article-inner">
+        
+        
+        <header class="article-header">
+            
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/laco-repeticao-scss/">Como fazer um laço de repetição com SCSS</a>
+    </h1>
+  
+
+        </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+            <p>Alguma vez você já precisou criar um sistema de grid em seu CSS mas não queria ficar repetindo manualmente as classes de forma ineficiente? Ou por algum outro motivo, você pensa o quão bom seria fazer um <strong>laço de repetição</strong> dentro do seu arquivo <strong>SCSS</strong> e descobre que com o <a target="_blank" rel="noopener" href="https://sass-lang.com/">Sass</a> possibilita fazer isso! Mas como?</p>
+            
+            <p class="article-more-link">
+                <a href="/laco-repeticao-scss/#more">
+                    Ler mais</a>
+            </p>
+            
+            
+        </div>
+        
+        <!-- <div class="article__ad-course">
+            <p class="article__ad-course--title">Você quer aprender a criar aplicativos web dinâmicos e atrativos com ReactJS?</p>
+            <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">
+              <img src="/author/curso-react-direto-ao-ponto.png">
+            </a>
+            <p>
+                Estamos lançando um curso perfeito para você! 
+                Com nosso treinamento prático e de fácil compreensão, você estará criando aplicativos incríveis, preparado para qualquer desafio do mercado. 
+                Não importa se você é um iniciante completo ou já possui conhecimento básico de desenvolvimento web, nosso curso é adaptável para atender a todos os níveis de habilidade.
+            </p>
+            <br />
+            <p>
+                Se interessou? Não perca esta oportunidade de aprender uma das ferramentas de desenvolvimento web mais populares e poderosas do mercado. 
+                <br />
+                <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">Inscreva-se agora</a> e junte-se à lista de espera para nosso curso "React direto ao ponto", autor do blog Back&Front!</p>
+            </p>
+        </div> -->
+        
+        <footer class="article-footer">
+            <a data-url="https://backefront.com.br/laco-repeticao-scss/" data-id="clf2gu7vk006wifsm6p78aqsn" class="article-share-link">
+                Compartilhar</a>
+            
+            <a href="https://backefront.com.br/laco-repeticao-scss/#disqus_thread" class="article-comment-link">
+                Comentários</a>
+            
+            
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Front-end/" rel="tag">Front-end</a></li></ul>
+
+        </footer>
+    </div>
+    
+</article>
+
+
+  
+    <article id="post-validacao-class-css-angular" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-meta">
+        <a href="/validacao-class-css-angular/" class="article-date">
+  <time datetime="2018-11-26T09:20:39.000Z" itemprop="datePublished">26-11-2018</time>
+</a>
+        
+    </div>
+    <div class="article-inner">
+        
+        
+        <header class="article-header">
+            
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/validacao-class-css-angular/">Como adicionar classe através de uma validação no Angular</a>
+    </h1>
+  
+
+        </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+            <p>Diariamente no desenvolvimento de aplicações mais complexas, nos deparamos com situações em que devemos aplicar uma classe em um elemento HTML apenas se satisfazer determinada condição. Trabalhando com o Angular, por exemplo, podemos fazer isso de maneira muito simples, caso a condição seja algo do tipo <code>if/else</code>.</p>
+<p>O Angular possui uma sintaxe de templates que é muito poderosa! Como por exemplo, podemos citar o <strong>ngFor</strong>, <strong>ngStyle</strong> e a que permite adicionar uma validação dentro de uma classe é o <strong>ngClass</strong>!</p>
+            
+            <p class="article-more-link">
+                <a href="/validacao-class-css-angular/#more">
+                    Ler mais</a>
+            </p>
+            
+            
+        </div>
+        
+        <!-- <div class="article__ad-course">
+            <p class="article__ad-course--title">Você quer aprender a criar aplicativos web dinâmicos e atrativos com ReactJS?</p>
+            <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">
+              <img src="/author/curso-react-direto-ao-ponto.png">
+            </a>
+            <p>
+                Estamos lançando um curso perfeito para você! 
+                Com nosso treinamento prático e de fácil compreensão, você estará criando aplicativos incríveis, preparado para qualquer desafio do mercado. 
+                Não importa se você é um iniciante completo ou já possui conhecimento básico de desenvolvimento web, nosso curso é adaptável para atender a todos os níveis de habilidade.
+            </p>
+            <br />
+            <p>
+                Se interessou? Não perca esta oportunidade de aprender uma das ferramentas de desenvolvimento web mais populares e poderosas do mercado. 
+                <br />
+                <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">Inscreva-se agora</a> e junte-se à lista de espera para nosso curso "React direto ao ponto", autor do blog Back&Front!</p>
+            </p>
+        </div> -->
+        
+        <footer class="article-footer">
+            <a data-url="https://backefront.com.br/validacao-class-css-angular/" data-id="clf2gu7yt00a2ifsm9mzp03jk" class="article-share-link">
+                Compartilhar</a>
+            
+            <a href="https://backefront.com.br/validacao-class-css-angular/#disqus_thread" class="article-comment-link">
+                Comentários</a>
+            
+            
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Angular/" rel="tag">Angular</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Front-end/" rel="tag">Front-end</a></li></ul>
+
+        </footer>
+    </div>
+    
+</article>
+
+
+  
+    <article id="post-principais-codigos-http" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-meta">
+        <a href="/principais-codigos-http/" class="article-date">
+  <time datetime="2018-11-19T09:30:20.000Z" itemprop="datePublished">19-11-2018</time>
+</a>
+        
+    </div>
+    <div class="article-inner">
+        
+        
+        <header class="article-header">
+            
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/principais-codigos-http/">Principais códigos HTTP que você precisa conhecer!</a>
+    </h1>
+  
+
+        </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+            <p>Todo desenvolvedor web com certeza já esbarrou no famoso HTTP, seja implementando uma nova API ou consumindo uma. A necessidade de conhecer, no mínimo, o básico sobre o protocolo HTTP, é obrigatório! Utilizamos praticamente em todo momento algo envolvendo o HTTP, e entender seu funcionamento e como trabalhar da melhor forma, é o que difere profissionais!</p>
+<p>Para isso, devemos entender o funcionamento, o significado dos códigos de retorno, entender qual verbo certo utilizar em um determinado momento do desenvolvimento! Alguns posts atrás, falei um pouco sobre as principais <a href="https://backefront.com.br/diferencas-http2/">diferenças entre o HTTP1 x HTTP2</a>, se você ainda não leu, depois confere lá!</p>
+            
+            <p class="article-more-link">
+                <a href="/principais-codigos-http/#more">
+                    Ler mais</a>
+            </p>
+            
+            
+        </div>
+        
+        <!-- <div class="article__ad-course">
+            <p class="article__ad-course--title">Você quer aprender a criar aplicativos web dinâmicos e atrativos com ReactJS?</p>
+            <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">
+              <img src="/author/curso-react-direto-ao-ponto.png">
+            </a>
+            <p>
+                Estamos lançando um curso perfeito para você! 
+                Com nosso treinamento prático e de fácil compreensão, você estará criando aplicativos incríveis, preparado para qualquer desafio do mercado. 
+                Não importa se você é um iniciante completo ou já possui conhecimento básico de desenvolvimento web, nosso curso é adaptável para atender a todos os níveis de habilidade.
+            </p>
+            <br />
+            <p>
+                Se interessou? Não perca esta oportunidade de aprender uma das ferramentas de desenvolvimento web mais populares e poderosas do mercado. 
+                <br />
+                <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">Inscreva-se agora</a> e junte-se à lista de espera para nosso curso "React direto ao ponto", autor do blog Back&Front!</p>
+            </p>
+        </div> -->
+        
+        <footer class="article-footer">
+            <a data-url="https://backefront.com.br/principais-codigos-http/" data-id="clf2gu7xi008iifsmg5sz4qz7" class="article-share-link">
+                Compartilhar</a>
+            
+            <a href="https://backefront.com.br/principais-codigos-http/#disqus_thread" class="article-comment-link">
+                Comentários</a>
+            
+            
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTTP/" rel="tag">HTTP</a></li></ul>
+
+        </footer>
+    </div>
+    
+</article>
+
+
+  
+    <article id="post-angular-routing" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-meta">
+        <a href="/angular-routing/" class="article-date">
+  <time datetime="2018-11-12T09:34:08.000Z" itemprop="datePublished">12-11-2018</time>
+</a>
+        
+    </div>
+    <div class="article-inner">
+        
+        
+        <header class="article-header">
+            
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/angular-routing/">Criando projeto Angular com arquivo routing!</a>
+    </h1>
+  
+
+        </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+            <p>O AngularCLI facilita muito na criação de projetos, com a geração de componentes, services, por linha de comando! Porém, quando executamos o comando <strong>ng new nova-aplicacao</strong>, o Angular nos fornece um projeto <strong>sem</strong> um arquivo muito importante: <code>app-routing.ts</code>.</p>
+<p>É neste arquivo que indicamos as rotas que nossa aplicação usará e também quais componentes cada rota injetará em nosso navegador! Quando você gera um projeto apenas com esse comando, você precisa criar na mão posteriormente este mesmo arquivo para que possa adicionar suas rotas. Mas será mesmo que o nosso querido CLI não possui, nativamente, algo que possa solucionar esse problema?</p>
+            
+            <p class="article-more-link">
+                <a href="/angular-routing/#more">
+                    Ler mais</a>
+            </p>
+            
+            
+        </div>
+        
+        <!-- <div class="article__ad-course">
+            <p class="article__ad-course--title">Você quer aprender a criar aplicativos web dinâmicos e atrativos com ReactJS?</p>
+            <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">
+              <img src="/author/curso-react-direto-ao-ponto.png">
+            </a>
+            <p>
+                Estamos lançando um curso perfeito para você! 
+                Com nosso treinamento prático e de fácil compreensão, você estará criando aplicativos incríveis, preparado para qualquer desafio do mercado. 
+                Não importa se você é um iniciante completo ou já possui conhecimento básico de desenvolvimento web, nosso curso é adaptável para atender a todos os níveis de habilidade.
+            </p>
+            <br />
+            <p>
+                Se interessou? Não perca esta oportunidade de aprender uma das ferramentas de desenvolvimento web mais populares e poderosas do mercado. 
+                <br />
+                <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">Inscreva-se agora</a> e junte-se à lista de espera para nosso curso "React direto ao ponto", autor do blog Back&Front!</p>
+            </p>
+        </div> -->
+        
+        <footer class="article-footer">
+            <a data-url="https://backefront.com.br/angular-routing/" data-id="clf2gu7k3000lifsmhy610jv0" class="article-share-link">
+                Compartilhar</a>
+            
+            <a href="https://backefront.com.br/angular-routing/#disqus_thread" class="article-comment-link">
+                Comentários</a>
+            
+            
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Angular/" rel="tag">Angular</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Front-end/" rel="tag">Front-end</a></li></ul>
+
+        </footer>
+    </div>
+    
+</article>
+
+
+  
+    <article id="post-filtro-tabela-angular" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-meta">
+        <a href="/filtro-tabela-angular/" class="article-date">
+  <time datetime="2018-11-05T09:00:40.000Z" itemprop="datePublished">05-11-2018</time>
+</a>
+        
+    </div>
+    <div class="article-inner">
+        
+        
+        <header class="article-header">
+            
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/filtro-tabela-angular/">Como fazer um filtro em uma tabela com Angular</a>
+    </h1>
+  
+
+        </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+            <p>Começando uma série de melhorias que podemos fazer para trazer uma melhor experiência para o usuário, irei demonstrar como podemos fazer um filtro pelo Angular(2+) em uma tabela, de forma rápida e eficiente!<br>Este filtro percorrerá todas as colunas da tabela, procurando pelo valor que inserido dentro do input e retornar todos os resultados que correspondem! Desta forma, se tivermos os mesmos valores em colunas diferentes, aparecerá igualmente!</p>
+<p>Iremos utilizar o componente <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/ng2-search-filter">ng2-search-filter</a>, esta dependência funciona perfeitamente com Angular 2, 4+.</p>
+            
+            <p class="article-more-link">
+                <a href="/filtro-tabela-angular/#more">
+                    Ler mais</a>
+            </p>
+            
+            
+        </div>
+        
+        <!-- <div class="article__ad-course">
+            <p class="article__ad-course--title">Você quer aprender a criar aplicativos web dinâmicos e atrativos com ReactJS?</p>
+            <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">
+              <img src="/author/curso-react-direto-ao-ponto.png">
+            </a>
+            <p>
+                Estamos lançando um curso perfeito para você! 
+                Com nosso treinamento prático e de fácil compreensão, você estará criando aplicativos incríveis, preparado para qualquer desafio do mercado. 
+                Não importa se você é um iniciante completo ou já possui conhecimento básico de desenvolvimento web, nosso curso é adaptável para atender a todos os níveis de habilidade.
+            </p>
+            <br />
+            <p>
+                Se interessou? Não perca esta oportunidade de aprender uma das ferramentas de desenvolvimento web mais populares e poderosas do mercado. 
+                <br />
+                <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">Inscreva-se agora</a> e junte-se à lista de espera para nosso curso "React direto ao ponto", autor do blog Back&Front!</p>
+            </p>
+        </div> -->
+        
+        <footer class="article-footer">
+            <a data-url="https://backefront.com.br/filtro-tabela-angular/" data-id="clf2gu7up0068ifsm793dgtdq" class="article-share-link">
+                Compartilhar</a>
+            
+            <a href="https://backefront.com.br/filtro-tabela-angular/#disqus_thread" class="article-comment-link">
+                Comentários</a>
+            
+            
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Angular/" rel="tag">Angular</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Front-end/" rel="tag">Front-end</a></li></ul>
+
+        </footer>
+    </div>
+    
+</article>
+
+
+  
+    <article id="post-js-forof" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-meta">
+        <a href="/js-forof/" class="article-date">
+  <time datetime="2018-10-29T10:36:32.000Z" itemprop="datePublished">29-10-2018</time>
+</a>
+        
+    </div>
+    <div class="article-inner">
+        
+        
+        <header class="article-header">
+            
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/js-forof/">For of - Como fazer uma condição de parada no For no Javascript</a>
+    </h1>
+  
+
+        </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+            <p>Digamos que você tenha um objeto e que caso dentro desse objeto, contenha um determinado valor, deve retornar imediatamente um novo valor. Para isto, você pode pensar em utilizar um <code>for</code> com alguma condição para “quebrar” seu laço de repetição, mas por que não utilizar a declaração <code>for... of</code>?</p>
+<p>O <strong>for of</strong> cria um loop a qual itera objetos, inclusive: Strings, Array, Map, Set. Assim como o <strong>for</strong>, <strong>forEach</strong>, o <code>for of</code> itera cada elemento porém com uma diferença que pode ser o essencial para resolver seu problema: você pode quebrar seu laço com o <strong>break</strong>.</p>
+            
+            <p class="article-more-link">
+                <a href="/js-forof/#more">
+                    Ler mais</a>
+            </p>
+            
+            
+        </div>
+        
+        <!-- <div class="article__ad-course">
+            <p class="article__ad-course--title">Você quer aprender a criar aplicativos web dinâmicos e atrativos com ReactJS?</p>
+            <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">
+              <img src="/author/curso-react-direto-ao-ponto.png">
+            </a>
+            <p>
+                Estamos lançando um curso perfeito para você! 
+                Com nosso treinamento prático e de fácil compreensão, você estará criando aplicativos incríveis, preparado para qualquer desafio do mercado. 
+                Não importa se você é um iniciante completo ou já possui conhecimento básico de desenvolvimento web, nosso curso é adaptável para atender a todos os níveis de habilidade.
+            </p>
+            <br />
+            <p>
+                Se interessou? Não perca esta oportunidade de aprender uma das ferramentas de desenvolvimento web mais populares e poderosas do mercado. 
+                <br />
+                <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">Inscreva-se agora</a> e junte-se à lista de espera para nosso curso "React direto ao ponto", autor do blog Back&Front!</p>
+            </p>
+        </div> -->
+        
+        <footer class="article-footer">
+            <a data-url="https://backefront.com.br/js-forof/" data-id="clf2gu7ve006uifsmb1owdr0z" class="article-share-link">
+                Compartilhar</a>
+            
+            <a href="https://backefront.com.br/js-forof/#disqus_thread" class="article-comment-link">
+                Comentários</a>
+            
+            
+        </footer>
+    </div>
+    
+</article>
+
+
+  
+    <article id="post-object-js-caracter-especial" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-meta">
+        <a href="/object-js-caracter-especial/" class="article-date">
+  <time datetime="2018-10-17T12:17:49.000Z" itemprop="datePublished">17-10-2018</time>
+</a>
+        
+    </div>
+    <div class="article-inner">
+        
+        
+        <header class="article-header">
+            
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/object-js-caracter-especial/">Acessando objetos com espaço no Javascript</a>
+    </h1>
+  
+
+        </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+            <p>Normalmente, acessamos os valores de um objeto javascript através de “.” (ponto), por exemplo, temos o seguinte objeto:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> user = &#123; <span class="attr">name</span>: <span class="string">&quot;Victor&quot;</span>, <span class="attr">idade</span>: <span class="number">22</span> &#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Para resgatar o valor <code>name</code>, bastaria acessar usando: <code>user.name</code>, correto? Mas você sabe como acessar caso a chave do seu objeto tenha caracteres especiais ou espaços, como no exemplo abaixo?</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> address = &#123; <span class="title class_">Endere</span>ç<span class="attr">o</span>: <span class="string">&quot;Rua Nova&quot;</span>, <span class="string">&quot;Descrição Rua&quot;</span>: <span class="string">&quot;Uma rua nova&quot;</span> &#125;;</span><br></pre></td></tr></table></figure>
+            
+            <p class="article-more-link">
+                <a href="/object-js-caracter-especial/#more">
+                    Ler mais</a>
+            </p>
+            
+            
+        </div>
+        
+        <!-- <div class="article__ad-course">
+            <p class="article__ad-course--title">Você quer aprender a criar aplicativos web dinâmicos e atrativos com ReactJS?</p>
+            <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">
+              <img src="/author/curso-react-direto-ao-ponto.png">
+            </a>
+            <p>
+                Estamos lançando um curso perfeito para você! 
+                Com nosso treinamento prático e de fácil compreensão, você estará criando aplicativos incríveis, preparado para qualquer desafio do mercado. 
+                Não importa se você é um iniciante completo ou já possui conhecimento básico de desenvolvimento web, nosso curso é adaptável para atender a todos os níveis de habilidade.
+            </p>
+            <br />
+            <p>
+                Se interessou? Não perca esta oportunidade de aprender uma das ferramentas de desenvolvimento web mais populares e poderosas do mercado. 
+                <br />
+                <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">Inscreva-se agora</a> e junte-se à lista de espera para nosso curso "React direto ao ponto", autor do blog Back&Front!</p>
+            </p>
+        </div> -->
+        
+        <footer class="article-footer">
+            <a data-url="https://backefront.com.br/object-js-caracter-especial/" data-id="clf2gu7x20082ifsm68ye7gzn" class="article-share-link">
+                Compartilhar</a>
+            
+            <a href="https://backefront.com.br/object-js-caracter-especial/#disqus_thread" class="article-comment-link">
+                Comentários</a>
+            
+            
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Front-end/" rel="tag">Front-end</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li></ul>
+
+        </footer>
+    </div>
+    
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/page/15/">&amp;laquo; Anterior</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="page-number" href="/page/15/">15</a><span class="page-number current">16</span><a class="page-number" href="/page/17/">17</a><a class="page-number" href="/page/18/">18</a><a class="extend next" rel="next" href="/page/17/">Próximo &amp;raquo;</a>
+  </nav>
+
+
+                </section>
+                
+                <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Acessibilidade/" rel="tag">Acessibilidade</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Algoritmos/" rel="tag">Algoritmos</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Angular/" rel="tag">Angular</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Back-end/" rel="tag">Back-end</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/" rel="tag">CSS</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Engenharia-de-Software/" rel="tag">Engenharia de Software</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Estrutura-de-Dados/" rel="tag">Estrutura de Dados</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Eventos/" rel="tag">Eventos</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Front-end/" rel="tag">Front-end</a><span class="tag-list-count">147</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/" rel="tag">Git</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GraphQL/" rel="tag">GraphQL</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/" rel="tag">HTML</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTTP/" rel="tag">HTTP</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a><span class="tag-list-count">91</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Metodologias/" rel="tag">Metodologias</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NodeJS/" rel="tag">NodeJS</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/" rel="tag">React</a><span class="tag-list-count">21</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React-Native/" rel="tag">React Native</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ReactJS/" rel="tag">ReactJS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SENAC/" rel="tag">SENAC</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SO/" rel="tag">SO</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Scrum/" rel="tag">Scrum</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sequelize/" rel="tag">Sequelize</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Testes/" rel="tag">Testes</a><span class="tag-list-count">7</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Postagens Recentes</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/como-usar-crypto-randomUUID/">Pare de usar index em seu map e use randomUUID!</a>
+          </li>
+        
+          <li>
+            <a href="/o-que-e-big-o/">O que é Big O (Big O notation)</a>
+          </li>
+        
+          <li>
+            <a href="/como-criar-app-react-com-bun/">Como criar um App React com Bun</a>
+          </li>
+        
+          <li>
+            <a href="/o-e-hoc-react/">O que é HOC - ReactJS</a>
+          </li>
+        
+          <li>
+            <a href="/como-depurar-c%C3%B3digo-Javascript-identificar-corrigir-erros-comuns/">como depurar código Javascript e identificar e corrigir erros comuns</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+                
+            </div>
+            <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2023 Melanie Jordan e Victor Jordan<br>
+      Desenvolvido por <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+        </div>
+        <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+</nav>
+        
+<script>
+  var disqus_shortname = 'backefront';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+    </div>
+</body>
+<script data-cfasync="false" type="text/javascript" id="clever-core">
+  (function (document, window) {
+      var a, c = document.createElement("script");
+
+      c.id = "CleverCoreLoader58982";
+      c.src = "//scripts.cleverwebserver.com/432a594460b49f65d0da019dbb42c22e.js";
+
+      c.async = !0;
+      c.type = "text/javascript";
+      c.setAttribute("data-target", window.name);
+      c.setAttribute("data-callback", "put-your-callback-macro-here");
+
+      try {
+          a = parent.document.getElementsByTagName("script")[0] || document.getElementsByTagName("script")[0];
+      } catch (e) {
+          a = !1;
+      }
+
+      a || (a = document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]);
+      a.parentNode.insertBefore(c, a);
+  })(document, window);
+</script>                            
+
+
+</html>
