@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,18 +121,23 @@ ga('send', 'pageview');
             
             <p>Quem nunca deparou-se com essa palavra em descrições de vagas ou em uma conversa técnica com colegas da área?<br>Saber o conceito de Git já se tornou essencial na área de desenvolvimento mas nem todos sabem ou tem vergonha de perguntar sobre este assunto! Neste artigo, iremos apresentar este conceito de versionamento de arquivos!</p>
 <span id="more"></span>
-<h2 id="O-que-e-git"><a href="#O-que-e-git" class="headerlink" title="O que é git?"></a>O que é git?</h2><p>Em rápidas palavras, Git é um sistema de controle de versões de arquivos. Ele armazena as mudanças realizadas em algum determinado arquivo ao decorrer de um período e permite que você possa acessar, recuperar essas versões mais antigas. O uso de versionamento de arquivos pode abranger diversas áreas, como por exemplo, se você é um escritor ou até um designer gráfico, você pode armazenar seus textos/ilustrações e você pode acessar suas últimas alterações.<br>O Git permite que veja quais e quando foram as últimas alterações realizadas nos arquivos alterados.</p>
+
+<h2 id="O-que-e-git"><a href="#O-que-e-git" class="headerlink" title="O que é git?"></a>O que é git?</h2><p>Em rápidas palavras, Git é um sistema de controle de versões de arquivos. Ele armazena as mudanças realizadas em algum determinado arquivo ao decorrer de um período e permite que você possa acessar, recuperar essas versões mais antigas. O uso de versionamento de arquivos pode abranger diversas áreas, como por exemplo, se você é um escritor ou até um designer gráfico, você pode armazenar seus textos&#x2F;ilustrações e você pode acessar suas últimas alterações.<br>O Git permite que veja quais e quando foram as últimas alterações realizadas nos arquivos alterados.</p>
 <h2 id="Conceitos-de-branch"><a href="#Conceitos-de-branch" class="headerlink" title="Conceitos de branch"></a>Conceitos de branch</h2><p>O git trabalha com um conceito de <em>branch</em>, que em inglês significa <em>ramo</em> ou <em>ramificação</em>, que é justamente a representação do git, onde temos uma árvore principal e as variações, que seriam as alterações que fazemos em arquivos.<br>A imagem abaixo exemplifica este conceito, onde podemos ver que foi criado uma ramificação a partir do galho principal, que é a bolinha verde-água.<br>Nas branches, podemos realizar alterações sem que a ramificação principal seja afetado, com isso podemos trabalhar com maior tranquilidade sem medo de perder os arquivos antigos.</p>
-<p><img src="/posts/Conceito de Branch - Git Basico.png" alt="Conceito de branch - Git básico"></p>
+<p>![Conceito de branch - Git básico](&#x2F;posts&#x2F;Conceito de Branch - Git Basico.png)</p>
 <h2 id="Como-utilizar-Git"><a href="#Como-utilizar-Git" class="headerlink" title="Como utilizar Git"></a>Como utilizar Git</h2><h4 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h4><p>Para começar utilizar, primeiramente você precisa ter instalado em seu computador. Você pode baixar diretamente pelo <a target="_blank" rel="noopener" href="https://git-scm.com/downloads">site Oficial</a>.</p>
 <h4 id="Iniciando-repositorio"><a href="#Iniciando-repositorio" class="headerlink" title="Iniciando repositório"></a>Iniciando repositório</h4><p>Após instalar, você poderá criar um novo <em>repositório</em>, que nada mais é que o local onde o Git passará a observar alterações.<br>Dentro da pasta em que deseja criar o repositório, abra o terminal (prompt de comando) e digite o comando <code>git init</code></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
 <p>Adicione um arquivo dentro desta pasta e digite <code>git status</code>, com este comando você poderá ver todas as modificações que foram feitas dentro da pasta. Possivelmente você terá um retorno semelhante ao abaixo</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br><span class="line">On branch master</span><br><span class="line"></span><br><span class="line">Initial commit</span><br><span class="line"></span><br><span class="line">Untracked files:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span><br><span class="line"></span><br><span class="line">        backefront.txt</span><br><span class="line"></span><br><span class="line">nothing added to commit but untracked files present (use &quot;git add&quot; to track)</span><br></pre></td></tr></table></figure>
-<h4 id="Adicionando-e-commitando-o-arquivo"><a href="#Adicionando-e-commitando-o-arquivo" class="headerlink" title="Adicionando e commitando o arquivo"></a>Adicionando e commitando o arquivo</h4><p>O arquivo recém adicionado estará em <em>vermelho</em>, o que significa que este arquivo ainda não foi confirmado, isto é, que realmente deseja “salvar” ele. Para isto, você precisa adicionar esse arquivo e fazer o <code>commit</code>.<br>Para adicionar arquivos você pode usar <code>git add &lt;nomeDoArquivo&gt;</code> ou <code>git add *</code>. Esse <strong> * </strong> significa que você está adicionando todos os arquivos alterados.</p>
+
+<h4 id="Adicionando-e-commitando-o-arquivo"><a href="#Adicionando-e-commitando-o-arquivo" class="headerlink" title="Adicionando e commitando o arquivo"></a>Adicionando e commitando o arquivo</h4><p>O arquivo recém adicionado estará em <em>vermelho</em>, o que significa que este arquivo ainda não foi confirmado, isto é, que realmente deseja “salvar” ele. Para isto, você precisa adicionar esse arquivo e fazer o <code>commit</code>.<br>Para adicionar arquivos você pode usar <code>git add &lt;nomeDoArquivo&gt;</code> ou <code>git add *</code>. Esse ** * ** significa que você está adicionando todos os arquivos alterados.</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add * //Para adicionar os arquivos</span><br><span class="line">git commit -m &#x27;Enviando arquivos&#x27; //Commitando os arquivos e adicionando mensagem para identificação</span><br></pre></td></tr></table></figure>
+
 <h4 id="Enviando-alteracoes"><a href="#Enviando-alteracoes" class="headerlink" title="Enviando alterações"></a>Enviando alterações</h4><p>Nesta etapa, você está pronto para enviar suas alterações para o seu repositório remoto, para isso, execute o comando <code>git push origin master</code></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+
 <p>Se você não clonou um repositório existente e quer vincular seu repositório a um servidor remoto, você deve adiciona com o seguinte comando <code>git remote add origin &lt;urlDoServidor&gt;</code><br>Agora você é capaz de enviar suas alterações para o servidor remoto selecionado.</p>
 <p>Em próximos posts, abordaremos os principais comandos <code>git</code> e também os principais serviços para hospedagem de seus repositórios.</p>
 
@@ -196,7 +201,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/git-basico/" data-id="clf2z3w75006fohsm9f7h2pu3" class="article-share-link">
+            <a data-url="https://backefront.com.br/git-basico/" data-id="clf30yo0y006fh5otc66dgu4u" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/git-basico/#disqus_thread" class="article-comment-link">

@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,9 +122,12 @@ ga('send', 'pageview');
             <p>Recentemente, precisei fazer uma funcionalidade em meu sistema onde ao clicar em um botão, copiasse o texto que estava na caixa de texto.<br>Fazer isso com Javascript é muito simples!</p>
 <p>Primeiro vamos considerar a seguinte estrutura:</p>
 <span id="more"></span>
+
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- Input texto --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">value</span>=<span class="string">&quot;Texto a ser copiado&quot;</span> <span class="attr">id</span>=<span class="string">&quot;texto-usuario&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- Botão que usaremos para copiar --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">&quot;copiarTexto()&quot;</span>&gt;</span>Copiar texto<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>Legal, agora vamos ver como fica o Javascript!</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">copiarTexto</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">/* Selecionamos por ID o nosso input */</span></span><br><span class="line">  <span class="keyword">var</span> textoCopiado = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;texto-usuario&quot;</span>);</span><br><span class="line"></span><br><span class="line">  <span class="comment">/* Deixamos o texto selecionado (em azul) */</span></span><br><span class="line">  textoCopiado.<span class="title function_">select</span>();</span><br><span class="line">  textoCopiado.<span class="title function_">setSelectionRange</span>(<span class="number">0</span>, <span class="number">99999</span>); <span class="comment">/* Para mobile */</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">/* Copia o texto que está selecionado */</span></span><br><span class="line">  <span class="variable language_">document</span>.<span class="title function_">execCommand</span>(<span class="string">&quot;copy&quot;</span>);</span><br><span class="line"></span><br><span class="line">  <span class="title function_">alert</span>(<span class="string">&quot;Texto copiado: &quot;</span> + textoCopiado.<span class="property">value</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Super simples, não é mesmo? 😁✌</p>
 <p>🏡</p>
 
@@ -188,7 +191,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-copiar-texto-javascript/" data-id="clf2z3vt5001oohsm1s695k1n" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-copiar-texto-javascript/" data-id="clf30yny4001oh5ot79c4438o" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-copiar-texto-javascript/#disqus_thread" class="article-comment-link">

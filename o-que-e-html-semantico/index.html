@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -123,14 +123,17 @@ ga('send', 'pageview');
 <p>Atualmente, com a evolução do HTML, tornou-se frequente ouvirmos falar<br>sobre desenvolvimento de <code>HTML semântico</code>.</p>
 <p>Isto significa que passamos a usar <code>elementos HTML</code> pelo o que eles <strong>são</strong><br>e deixamos de lado a construção das tags pensando apenas no lado visual.</p>
 <span id="more"></span>
+
 <h3 id="HTML-semantico"><a href="#HTML-semantico" class="headerlink" title="HTML semântico"></a>HTML semântico</h3><p>O HTML semântico nos leva a produzir uma página web<br>que tenha um real significado e que não seja feita<br>apenas para apresentação bonita!</p>
 <p>Um elemento semântico ele nos diz claramente o seu significado,<br>seja para o navegador quanto para o desenvolvedor no qual está<br>fazendo o código.</p>
 <p>Temos por exemplo a tag <code>div</code>.<br>div é uma tag <strong>não-semântica</strong>, pois ela não nos diz nada<br>sobre seu conteúdo! Ela sozinha, não representa nada para nós</p>
 <p>Agora, por outro lado, temos a tag <code>table</code><br>Table é uma tag <strong>semântica</strong> pois mesmo sem conteúdo,<br>nós sabemos que ela é uma tabela, e nos diz isso claramente.</p>
 <p>Observe este exemplo, onde primeiro temos um código não-semântico:</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Exemplo de página<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;header&quot;</span>&gt;</span>Cabeçalho da página<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;main&quot;</span>&gt;</span>Conteúdo principal do site<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;footer&quot;</span>&gt;</span>Rodapé<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>Agora, se formos escrever esse mesmo pedaço de código<br>utilizando as <a target="_blank" rel="noopener" href="https://www.w3schools.com/html/html5_semantic_elements.asp">novas tags do HTML5</a>:</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Exemplo de página<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">header</span>&gt;</span>Cabeçalho da página<span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">main</span>&gt;</span>Conteúdo principal do site<span class="tag">&lt;/<span class="name">main</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">footer</span>&gt;</span>Rodapé<span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="HTML-Semantico-e-SEO"><a href="#HTML-Semantico-e-SEO" class="headerlink" title="HTML Semântico e SEO"></a>HTML Semântico e SEO</h3><p>O desenvolvimento utilizando essas práticas de<br>construção de páginas pensando nas tags corretas<br>tem como benefício também a melhoria no seu SEO.</p>
 <p>Isso porque os robôs de buscas conseguirão entender<br>melhor o que seu site está passando para eles,<br>com conteúdos organizados e claros!</p>
 <p>O site <a target="_blank" rel="noopener" href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.png">html5 Doctor</a> criou uma imagem muito legal para nos ajudar<br>a entender qual tag HTML podemos usar para construção:</p>
@@ -196,7 +199,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/o-que-e-html-semantico/" data-id="clf2z3wax007rohsmbqpwaqst" class="article-share-link">
+            <a data-url="https://backefront.com.br/o-que-e-html-semantico/" data-id="clf30yo1o007rh5ot6ty970kd" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/o-que-e-html-semantico/#disqus_thread" class="article-comment-link">

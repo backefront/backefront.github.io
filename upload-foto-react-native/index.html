@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,18 +122,24 @@ ga('send', 'pageview');
             <p>Recentemente, em um projeto mobile, precisei adicionar no formulário um input onde o usuário inserisse fotos.<br>O usuário deveria ser capaz de inserir uma foto que já está salva no celular dele dentro de um formulário.</p>
 <p>Para fazer isso, usei a lib <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/react-native-image-picker">react-native-image-picker</a></p>
 <span id="more"></span>
+
 <p>Para instalar:</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i react-native-image-picker</span><br></pre></td></tr></table></figure>
+
 <p>OU</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add react-native-image-picker</span><br></pre></td></tr></table></figure>
+
 <p>Com a lib instalada, podemos dar prosseguimento na nossa atividade.</p>
 <p>Precisamos de um botão, que chame o método que vai abrir a galeria:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="title class_">Button</span> onPress=&#123;handleChoosePhoto&#125; title=<span class="string">&quot;Abrir câmera&quot;</span> color=<span class="string">&quot;#841584&quot;</span> /&gt;</span><br></pre></td></tr></table></figure>
+
 <p>Agora vamos implementar o método <code>handleChoosePhoto</code>:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Import da lib</span></span><br><span class="line"><span class="keyword">import</span> &#123; launchImageLibrary &#125; <span class="keyword">from</span> <span class="string">&quot;react-native-image-picker&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">PhotoComponent</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">// Nosso estado de arquivos</span></span><br><span class="line">  <span class="keyword">const</span> [file, setFile] = <span class="title function_">useState</span>();</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> <span class="title function_">handleChoosePhoto</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">    <span class="keyword">const</span> options = &#123;</span><br><span class="line">      <span class="attr">noData</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="attr">title</span>: <span class="string">&quot;Foto de avaliação&quot;</span>,</span><br><span class="line">      <span class="attr">takePhotoButtonTitle</span>: <span class="string">&quot;Escolha uma foto&quot;</span>,</span><br><span class="line">      <span class="attr">chooseFromLibraryButtonTitle</span>: <span class="string">&quot;Selecione da galeria uma foto&quot;</span>,</span><br><span class="line">      <span class="attr">selectionLimit</span>: <span class="number">1</span>, <span class="comment">// Se deixar 1, será permitido apenas uma foto e 0 várias</span></span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="title function_">launchImageLibrary</span>(options, <span class="keyword">async</span> (response) =&gt; &#123;</span><br><span class="line">      <span class="keyword">if</span> (response.<span class="property">didCancel</span>) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Usuário cancelou a seleção&quot;</span>);</span><br><span class="line">      &#125; <span class="keyword">else</span> <span class="keyword">if</span> (response.<span class="property">error</span>) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Ocorreu um erro.&quot;</span>);</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">const</span> photoFile = &#123;</span><br><span class="line">          <span class="attr">uri</span>: asset.<span class="property">uri</span>,</span><br><span class="line">          <span class="attr">name</span>: asset.<span class="property">fileName</span>,</span><br><span class="line">          <span class="attr">type</span>: <span class="string">&quot;image/jpeg&quot;</span>,</span><br><span class="line">        &#125;;</span><br><span class="line"></span><br><span class="line">        <span class="title function_">setFile</span>(photoFile);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Pronto, se tudo ocorreu bem, você já pode exibir a imagem no seu aplicativo!</p>
 <p>Basta acessar seu state:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="title class_">Image</span> source=&#123;&#123; <span class="attr">uri</span>: photoFile.<span class="property">uri</span> &#125;&#125; /&gt;</span><br></pre></td></tr></table></figure>
+
 <p>Simples, não é?</p>
 <p>Uma observação, no iOS, em específico no emulador, a foto <strong>não</strong> aparece.</p>
 <p>Mas isso não é bug e nem problema de implementação, para exibir realmente precisa ser feito em um dispositivo real! ;)</p>
@@ -198,7 +204,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/upload-foto-react-native/" data-id="clf2z3wev009rohsm497u6vi3" class="article-share-link">
+            <a data-url="https://backefront.com.br/upload-foto-react-native/" data-id="clf30yo2o009th5ot8n0qbrbr" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/upload-foto-react-native/#disqus_thread" class="article-comment-link">

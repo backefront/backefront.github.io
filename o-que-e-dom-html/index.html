@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -123,15 +123,19 @@ ga('send', 'pageview');
 <p>Pensando nisso, vamos começar a tentar clarear aos poucos as mais diversas dúvidas iniciais!</p>
 <p>No post de hoje, conversaremos sobre DOM! Esse DOM não está relacionado com talento ou qualidade inata e sim com nosso querido HTML!<br>Mas e aí, o que é esse tal de DOM?</p>
 <span id="more"></span>
+
 <p>DOM é uma sigla que em inglês significa Document Object Model, ou em português, Modelo de Documento por Objetos é a forma como o seu HTML e XML são lidos pelos navegadores.<br>No momento em que acessamos uma página, o navegador interpreta o que está escrito em HTML (o código) e cria uma representação da estrutura da página, que chamamos de <code>árvore DOM</code>.</p>
 <p>Essa árvore nos fornece opções de manipulações dos elementos, de maneira dinâmica, utilizando o Javascript.<br>A manipulação de elementos em nossas páginas são diretamente dependentes de conhecermos o DOM bem como seus métodos e funções!</p>
 <p>Vamos conhecer alguns dos principais e mais usados?</p>
 <h3 id="Window"><a href="#Window" class="headerlink" title="Window"></a>Window</h3><p>Window é o objeto que contém o objeto <code>document</code> dentro do DOM. Podemos considerar que ele é a cabeça de tudo.<br>Toda nossa página fica abaixo dele</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="variable language_">window</span> = <span class="variable language_">document</span>.<span class="property">defaultView</span>;</span><br></pre></td></tr></table></figure>
+
 <p>É com window que temos acesso a um dos principais métodos, o nosso <code>localstorage</code>:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Armazena no localstorage &quot;nome&quot;</span></span><br><span class="line"><span class="variable language_">window</span>.<span class="property">localStorage</span>.<span class="title function_">setItem</span>(<span class="string">&quot;nome&quot;</span>, <span class="string">&quot;Victor&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Recupera o valor da variável &quot;nome&quot;</span></span><br><span class="line"><span class="variable language_">window</span>.<span class="property">localStorage</span>.<span class="title function_">getItem</span>(<span class="string">&quot;nome&quot;</span>);</span><br></pre></td></tr></table></figure>
+
 <p>Com o window, conseguimos também exibir um alerta na tela do usuário! Através do <code>window.alert</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">window</span>.<span class="title function_">alert</span>(<span class="string">&quot;Olá, back&amp;front!&quot;</span>);</span><br></pre></td></tr></table></figure>
+
 <p>O window também é utilizando quando queremos capturar o tamanho da tela do navegador que está sendo utilizando pelo o usuário de nosso site, sistema, através de <code>window.innerHeight</code> ou <code>window.innerWidth</code></p>
 <h3 id="Document"><a href="#Document" class="headerlink" title="Document"></a>Document</h3><p>Document é o nosso primeiro nó do DOM e é com ele que conseguimos ter acesso ao corpo de nosso HTML, por exemplo <code>document.getElementById()</code>, <code>document.querySelector()</code> entre outros!</p>
 <p>Esse é um pequeno resumo do que é o DOM e algumas coisinhas dele, mas essa conversa pode se delongar muito mais!<br>Espero que tenha dado uma iluminada no que é o DOM e para que serve!</p>
@@ -196,7 +200,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/o-que-e-dom-html/" data-id="clf2z3wat007mohsmgxgj2xf5" class="article-share-link">
+            <a data-url="https://backefront.com.br/o-que-e-dom-html/" data-id="clf30yo1k007mh5ot473a4udi" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/o-que-e-dom-html/#disqus_thread" class="article-comment-link">

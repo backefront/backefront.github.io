@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,10 +121,13 @@ ga('send', 'pageview');
             
             <p>Recentemente em um projeto, precisei formatar um valor para moeda.<br>Poderia facilmente fazer uma função que tratasse esse tipo de número ou algo do tipo, mas você sabia que o Javascript possui uma maneira nativa de fazer essa conversão?<br>Olha como é fácil!</p>
 <span id="more"></span>
+
 <p>Vamos considerar a seguinte variável:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> montante = <span class="number">600000.0</span>;</span><br></pre></td></tr></table></figure>
+
 <p>Agora vamos converter esse número para String e adicionaremos até o “R$” juntamente ao valor!<br>Para isso então, fazemos isso:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">montante.<span class="title function_">toLocaleString</span>(<span class="string">&quot;pt-br&quot;</span>, &#123; <span class="attr">style</span>: <span class="string">&quot;currency&quot;</span>, <span class="attr">currency</span>: <span class="string">&quot;BRL&quot;</span> &#125;);</span><br><span class="line"><span class="comment">// Output: R$ 600.000,00</span></span><br></pre></td></tr></table></figure>
+
 <p>Bem legal né? Podemos fazer isso em vários tipos de moeda:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// EUR</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(</span><br><span class="line">  number.<span class="title function_">toLocaleString</span>(<span class="string">&quot;de-DE&quot;</span>, &#123; <span class="attr">style</span>: <span class="string">&quot;currency&quot;</span>, <span class="attr">currency</span>: <span class="string">&quot;EUR&quot;</span> &#125;)</span><br><span class="line">);</span><br><span class="line"><span class="comment">// → 123.456,79 €</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Japão</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(</span><br><span class="line">  number.<span class="title function_">toLocaleString</span>(<span class="string">&quot;ja-JP&quot;</span>, &#123; <span class="attr">style</span>: <span class="string">&quot;currency&quot;</span>, <span class="attr">currency</span>: <span class="string">&quot;JPY&quot;</span> &#125;)</span><br><span class="line">);</span><br><span class="line"><span class="comment">// → ￥123,457</span></span><br></pre></td></tr></table></figure>
 
@@ -188,7 +191,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-converter-numero-moeda-javascript/" data-id="clf2z3vsz001mohsm1t7c6bsc" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-converter-numero-moeda-javascript/" data-id="clf30yny3001mh5othg668chp" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-converter-numero-moeda-javascript/#disqus_thread" class="article-comment-link">

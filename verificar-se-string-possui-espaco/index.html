@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -124,11 +124,14 @@ ga('send', 'pageview');
 <p>Estas são as regras mais comuns, mas também as vezes as senhas pedem para que <strong>não</strong> contenham espaços vazios (espaço, tab)</p>
 <p>Você sabe como validar se esse tipo de carácter está presente na string digitada?</p>
 <span id="more"></span>
+
 <p>Podemos verificar se uma string contém um espaço vazio de duas formas.</p>
 <p>A primeira, podemos usar o método <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf">indexOf</a></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">verificaEspaco</span> = (<span class="params">string</span>) =&gt; string.<span class="title function_">indexOf</span>(<span class="string">&#x27; &#x27;</span>) &gt;= <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+
 <p>Ou podemos usar o método <a target="_blank" rel="noopener" href="https://www.w3schools.com/jsref/jsref_regexp_test.asp">test</a>, utilizando RegEx</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">verificaEspaco</span> = (<span class="params">string</span>) =&gt; <span class="regexp">/\s/g</span>.<span class="title function_">test</span>(string);</span><br></pre></td></tr></table></figure>
+
 <p>Em ambos os casos retornarão <code>true</code> ou <code>false</code> caso a string possua um espaço vazio.</p>
 <p>Porém, o segundo método também considera <strong>tab</strong> como espaço, tornando uma solução mais completa.</p>
 
@@ -188,7 +191,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/verificar-se-string-possui-espaco/" data-id="clf2z3wgu00alohsmg7iu06i1" class="article-share-link">
+            <a data-url="https://backefront.com.br/verificar-se-string-possui-espaco/" data-id="clf30yo3600alh5ot1pehdxrp" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/verificar-se-string-possui-espaco/#disqus_thread" class="article-comment-link">

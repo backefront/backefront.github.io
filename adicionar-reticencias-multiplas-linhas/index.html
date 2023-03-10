@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,12 +122,15 @@ ga('send', 'pageview');
             <p>Você está desenvolvendo uma aplicação web onde em determinado local, você precisa mostrar a descrição de um produto.<br>Essa descrição pode ser um texto enorme, mais de 10 linhas ou pode ser um texto pequeno, contendo apenas duas linhas.<br>Então, o UX designer determina que a descrição deve conter apenas 3 linhas, caso ultrapasse isso, deve-se acrescentar reticências (…)</p>
 <p>Como podemos adicionar reticências em múltiplas linhas, com CSS?<br>Vamos usar uma propriedade chamada <code>-webkit-line-clamp</code>! Bora ver como funciona?</p>
 <span id="more"></span>
+
 <p>A propriedade <code>-webkit-line-clamp</code> permite limitar um container com um número específico de linhas.</p>
 <p>Essa propriedade funciona através da combinação entre a propriedade <code>display</code>, que deve ser definida como <code>-webkit-box</code> ou <code>-webkit-inline-box</code><br>e a propriedade <code>-webkit-box-orient</code> deve ser definida como <code>vertical</code></p>
 <p>Então, vamos dizer que temos o seguinte conteúdo:</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">  Este trecho de código tem como funcionalidade demonstrar a propriedade</span><br><span class="line">  webkit-line-clamp em ação, no blog back &amp; front!</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>Agora, adicionamos o CSS:</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">  -webkit-box-orient: vertical;</span><br><span class="line">  -webkit-line-clamp: <span class="number">3</span>; <span class="comment">/* Definimos quantas linhas queremos */</span></span><br><span class="line">  <span class="attribute">display</span>: -webkit-box;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">300px</span>; <span class="comment">/* Definimos o tamanho máximo do nosso container*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>E obtemos o seguinte resultado:</p>
 <p><img src="/posts/reticencias.png" alt="Resultado obtido através da propriedade -webkit-line-clamp"></p>
 
@@ -191,7 +194,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/adicionar-reticencias-multiplas-linhas/" data-id="clf2z3vm9000dohsm82s76oqm" class="article-share-link">
+            <a data-url="https://backefront.com.br/adicionar-reticencias-multiplas-linhas/" data-id="clf30ynxe000dh5ot9qwv9ibm" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/adicionar-reticencias-multiplas-linhas/#disqus_thread" class="article-comment-link">

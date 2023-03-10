@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,10 +121,13 @@ ga('send', 'pageview');
             
             <p>Uma das coisas mais poderosas que um desenvolvedor pode ter conhecimento é Regex. Regex são padrões utilizados para encontrar uma certa combinação em um texto, palavra, string! Graças ao Regex, conseguimos aplicar facilmente validações e hoje, irei mostrar como podemos verificar se uma determinada string possui número ou não, de forma que retorne <code>true</code> ou <code>false</code>!</p>
 <span id="more"></span>
+
 <p>Neste exemplo, buscaremos por toda a palavra, a existência de algum número:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> palavra = <span class="string">&quot;Olá, mundo!&quot;</span>;</span><br></pre></td></tr></table></figure>
+
 <p>Com esta palavra, precisamos definir um modelo regex que iremos utilizar. Neste cenário, queremos apenas ver se há numeros, então ficaria assim:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> regex = <span class="regexp">/[0-9]/</span>;</span><br></pre></td></tr></table></figure>
+
 <p>Basicamente, dizemos que queremos procurar números de 0 à 9 com o [0-9], desta forma, assim que o regex encontrar um dos algarismos, já nos enviará como resposta se há ou não um número naquela string.<br>Então, para testarmos, usamos a função <code>test()</code>, que o regex possui, que retorna <strong>true</strong> ou <strong>false</strong>!</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">regex.<span class="title function_">test</span>(palavra);</span><br><span class="line"><span class="comment">// Retorno esperado: false</span></span><br></pre></td></tr></table></figure>
 
@@ -188,7 +191,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-saber-se-a-string-contem-numero/" data-id="clf2z3vxt003zohsm3sjzatnk" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-saber-se-a-string-contem-numero/" data-id="clf30ynzk003zh5otd60s7vjo" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-saber-se-a-string-contem-numero/#disqus_thread" class="article-comment-link">

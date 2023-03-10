@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,21 +122,28 @@ ga('send', 'pageview');
             <p>Quando falamos de desenvolvimento de um sistema logo nos vem na cabeça consumo de API, integração com back-end, etc.</p>
 <p>Back-end é o que temos por trás de nossa aplicação, é onde estará concentrada a lógica do sistema, onde ocorrerá a comunicação entre o front-end com o banco de dados.<br>Neste post, vamos mostrar como criar um POST com NodeJS!</p>
 <span id="more"></span>
+
 <p>NodeJS é uma tecnologia que podemos utilizar como back-end, que usa o Javascript como síntaxe.</p>
 <p>Vamos criar então, a nossa primeira API!</p>
 <p>Na pasta onde deseja guardar o projeto, vamos iniciar um projeto novo, rodando:</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn init -y</span><br></pre></td></tr></table></figure>
+
 <p>Ou caso esteja usando NPM:</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init -y</span><br></pre></td></tr></table></figure>
+
 <p>Agora temos nosso arquivo <code>package.json</code> criado, vamos instalar a dependência <code>express</code>:</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install express</span><br><span class="line"></span><br><span class="line">// ou</span><br><span class="line"></span><br><span class="line">yarn add express</span><br></pre></td></tr></table></figure>
+
 <p>Agora sim, temos tudo pronto para iniciarmos! Vamos criar um arquivo chamado <code>index.js</code> e adicionaremos o seguinte trecho de código:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">&quot;express&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> server = <span class="title function_">express</span>();</span><br><span class="line">server.<span class="title function_">use</span>(express.<span class="title function_">json</span>());</span><br><span class="line">server.<span class="title function_">listen</span>(<span class="number">4000</span>);</span><br></pre></td></tr></table></figure>
+
 <p>Feito isso, se rodarmos em nosso terminal <code>node index.js</code>, já teremos nosso servidor sendo executado!</p>
 <p>Vamos deixar um objeto mockado, representando o nosso banco de dados</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">&quot;express&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> server = <span class="title function_">express</span>();</span><br><span class="line">server.<span class="title function_">use</span>(express.<span class="title function_">json</span>());</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * A variável `projects` pode ser `const` porque um `array`</span></span><br><span class="line"><span class="comment"> * pode receber adições ou exclusões mesmo sendo uma constante.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> projects = [];</span><br><span class="line"></span><br><span class="line">server.<span class="title function_">listen</span>(<span class="number">4000</span>);</span><br></pre></td></tr></table></figure>
+
 <p>Agora, vamos criar a nossa rota POST!</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Código anterior</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Request body: id, title</span></span><br><span class="line"><span class="comment"> * Cadastra um novo projeto</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">server.<span class="title function_">post</span>(<span class="string">&quot;/projects&quot;</span>, <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> &#123; id, title &#125; = req.<span class="property">body</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> project = &#123;</span><br><span class="line">    id,</span><br><span class="line">    title,</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  projects.<span class="title function_">push</span>(project);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> res.<span class="title function_">json</span>(project);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
 <p>Nesta rota, devemos passar dentro do body <code>id</code> e <code>title</code>!<br>Como podemos testar? Vamos usar o <a target="_blank" rel="noopener" href="https://insomnia.rest/">Insomnia</a></p>
 <p>Para testar nossa rota, devemos criar uma nova requisição do tipo POST, alterar a URL e adicionarmos nosso body, o que deve ficar da seguinte forma:</p>
 <p><img src="/posts/insomnia.png" alt="POST - Cadastrar projetos"></p>
@@ -202,7 +209,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-fazer-post-nodejs/" data-id="clf2z3vui002tohsm1r7nd4g5" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-fazer-post-nodejs/" data-id="clf30ynyu002th5ote4kc0ufg" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-fazer-post-nodejs/#disqus_thread" class="article-comment-link">

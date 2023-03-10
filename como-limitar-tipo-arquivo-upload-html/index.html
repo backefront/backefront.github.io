@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,10 +121,14 @@ ga('send', 'pageview');
             
             <p>Em nosso dia a dia de desenvolvimento, as vezes precisamos fazer upload de arquivos, como imagens, PDFs, etc.<br>Esses arquivos, muitas das vezes, queremos que seja apenas de um determinado tipo, apenas um tipo de arquivo!<br>Você sabe como limitar extensão de um arquivo, pelo HTML?</p>
 <span id="more"></span>
+
 <p>Para limitarmos o tipo de arquivo que será aceito pela nossa interface, basta alterarmos uma propriedade no nosso <code>input file</code>:</p>
 <h3 id="Limitando-apenas-imagens"><a href="#Limitando-apenas-imagens" class="headerlink" title="Limitando apenas imagens"></a>Limitando apenas imagens</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;file&quot;</span> <span class="attr">multiple</span> <span class="attr">accept</span>=<span class="string">&quot;image/*&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="Limitando-apenas-PDFs"><a href="#Limitando-apenas-PDFs" class="headerlink" title="Limitando apenas PDFs"></a>Limitando apenas PDFs</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;file&quot;</span> <span class="attr">multiple</span> <span class="attr">accept</span>=<span class="string">&quot;application/pdf&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="Limitando-apenas-arquivos-de-texto"><a href="#Limitando-apenas-arquivos-de-texto" class="headerlink" title="Limitando apenas arquivos de texto"></a>Limitando apenas arquivos de texto</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span></span></span><br><span class="line"><span class="tag">  <span class="attr">type</span>=<span class="string">&quot;file&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">multiple</span></span></span><br><span class="line"><span class="tag">  <span class="attr">accept</span>=<span class="string">&quot;application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>Com isso, podemos limitar que o usuário veja apenas um tipo de extensão de arquivo, através de nossa interface!<br>O ideal é que mesmo limitando isso, ainda verificarmos se é realmente aquele tipo pelo Javascript e se possível, verificar no back-end também!</p>
 
             
@@ -187,7 +191,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-limitar-tipo-arquivo-upload-html/" data-id="clf2z3vwy003bohsm3qc49dvw" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-limitar-tipo-arquivo-upload-html/" data-id="clf30ynz2003bh5ot1gu6gqyu" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-limitar-tipo-arquivo-upload-html/#disqus_thread" class="article-comment-link">

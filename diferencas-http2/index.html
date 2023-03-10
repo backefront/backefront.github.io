@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -120,25 +120,26 @@ ga('send', 'pageview');
         <div class="article-entry" itemprop="articleBody">
             
             <p>Basicamente, HTTP é um conjunto de padrões que permite que um usuário da internet possa trocar informações com o site. Desde sua primeira versão, em 1991, contamos com quatro tipos de interações HTTP, que são: GET, HEAD, PUT e POST.</p>
-<p>O HTTP/1.1 é a terceira versão e ficou sem nova atualização por quase duas décadas, até que em 2015, com os avanços dos sites, cada vez ficando mais complexos e o surgimento de aplicações web mais poderosas, foi lançado uma nova versão, o HTTP/2, que teve foi uma evolução do protocolo SPDY. Epa, Perai! Não estávamos falando de HTTP? Que raios é esse tal de SPDY?</p>
+<p>O HTTP&#x2F;1.1 é a terceira versão e ficou sem nova atualização por quase duas décadas, até que em 2015, com os avanços dos sites, cada vez ficando mais complexos e o surgimento de aplicações web mais poderosas, foi lançado uma nova versão, o HTTP&#x2F;2, que teve foi uma evolução do protocolo SPDY. Epa, Perai! Não estávamos falando de HTTP? Que raios é esse tal de SPDY?</p>
 <span id="more"></span>
+
 <p>SPDY (pronuncia speedy, acho que isso já diz muita coisa né?) foi um protocolo criado pelo Google em 2010, que visava melhorar como HTTP lidava com requests e responses. Seu principal foco era reduzir a latência via TCP pipelining, que é uma técnica onde várias requisições HTTPs são enviadas em uma única conexão TCP, sem ficar esperando pela respostas correspondente. E também, provia uma compressão obrigatória, que por design era GZip ou Deflate.</p>
 <p><img src="/posts/http2-timeline.png" alt="Timeline de Evolução do HTTP"></p>
-<h2 id="O-que-tinha-de-errado-com-HTTP-1"><a href="#O-que-tinha-de-errado-com-HTTP-1" class="headerlink" title="O que tinha de errado com HTTP/1?"></a>O que tinha de errado com HTTP/1?</h2><p>O HTTP/1 era limitado a processar apenas uma solicitação por conexão TCP, forçando os navegadores a utilizarem multiplas conexões TCP para processar múltiplas requisições simultaneamente.</p>
-<p>Entretanto, usar várias conexões em paralelo causa congestionamento na rede, e para os navegadores trabalharem com múltiplas requisições ocupa uma grande quantidade de recurso da rede, causando uma queda na performance de outros usuários que estão tentado baixar aqueles mesmos recursos que sua aplicação/site requere.</p>
-<h2 id="Caracteristicas-do-HTTP-2"><a href="#Caracteristicas-do-HTTP-2" class="headerlink" title="Características do HTTP/2"></a>Características do HTTP/2</h2><p>Tendo em vista que o HTTP/2 foi modelado após o SPDY, algumas features dele foram incluídas, como por exemplo, um header fixo de algoritmo de compressão (Content-Encoding) como por exemplo: gzip, compress, deflate, identity, br.</p>
+<h2 id="O-que-tinha-de-errado-com-HTTP-x2F-1"><a href="#O-que-tinha-de-errado-com-HTTP-x2F-1" class="headerlink" title="O que tinha de errado com HTTP&#x2F;1?"></a>O que tinha de errado com HTTP&#x2F;1?</h2><p>O HTTP&#x2F;1 era limitado a processar apenas uma solicitação por conexão TCP, forçando os navegadores a utilizarem multiplas conexões TCP para processar múltiplas requisições simultaneamente.</p>
+<p>Entretanto, usar várias conexões em paralelo causa congestionamento na rede, e para os navegadores trabalharem com múltiplas requisições ocupa uma grande quantidade de recurso da rede, causando uma queda na performance de outros usuários que estão tentado baixar aqueles mesmos recursos que sua aplicação&#x2F;site requere.</p>
+<h2 id="Caracteristicas-do-HTTP-x2F-2"><a href="#Caracteristicas-do-HTTP-x2F-2" class="headerlink" title="Características do HTTP&#x2F;2"></a>Características do HTTP&#x2F;2</h2><p>Tendo em vista que o HTTP&#x2F;2 foi modelado após o SPDY, algumas features dele foram incluídas, como por exemplo, um header fixo de algoritmo de compressão (Content-Encoding) como por exemplo: gzip, compress, deflate, identity, br.</p>
 <p>A nova versão do protocolo melhorou (e muito!) a velocidade de entrega de conteúdo e consequentemente, a experiência do usuário dentro da aplicação, podemos citar:</p>
 <p><strong>Protocolos Binários</strong><br>Protocolos binários consomem menores quantidades de banda, são analisados de maneira mais eficiente e são menos propenso a erros, comparado com sua primeira versão do protocolo HTTP.</p>
-<p><strong>Multiplexing</strong><br>Isso quer dizer que o HTTP/2 consegue lidar com múltiplas requisições em paralelo em uma única conexão TCP(igual ao SPDY). Como resultado, as páginas renderizam seus elementos de forma mais eficiente, rápida e elimina o problema que existia no HTTP/1 em que um elemento acabava bloqueando o outro de ser transmitido, como demonstrado na imagem abaixo.</p>
+<p><strong>Multiplexing</strong><br>Isso quer dizer que o HTTP&#x2F;2 consegue lidar com múltiplas requisições em paralelo em uma única conexão TCP(igual ao SPDY). Como resultado, as páginas renderizam seus elementos de forma mais eficiente, rápida e elimina o problema que existia no HTTP&#x2F;1 em que um elemento acabava bloqueando o outro de ser transmitido, como demonstrado na imagem abaixo.</p>
 <p><img src="/posts/http2-lidando-requisicoes.jpg" alt="Conceito de Multiplexing - Comparação entre as duas versões do protocolo HTTP"></p>
-<p>Graças a este conceito, alguns “<em>hacks</em> de otimização” utilizados no HTTP/1 se tornaram desnecessárias, como por exemplo, imagens sprites, concatenação e domain sharding, que consistia em dividir seus recursos em outros domínios para que o navegador baixasse mais recursos simultaneamente.</p>
+<p>Graças a este conceito, alguns “<em>hacks</em> de otimização” utilizados no HTTP&#x2F;1 se tornaram desnecessárias, como por exemplo, imagens sprites, concatenação e domain sharding, que consistia em dividir seus recursos em outros domínios para que o navegador baixasse mais recursos simultaneamente.</p>
 <p><strong>Compressão no Header</strong><br>O HTTP utiliza compressão no header afim de reduzir o tamanho dos arquivos e reduzir consequentemente a sobrecarga causada pelo TCP, no início do seu carregamento, semelhante ao SPDY, porém no header você diz qual tipo de algoritmo de compressão será usado.</p>
 <p><strong>Server push</strong><br>O Server Push tem como objetivo reduzir ainda mais as requisições, isto é, quando o usuário requisitar o HTML por exemplo, podemos enviar a resposta do CSS junto mesmo antes de ele requisitar. A explicação do Sérgio Lopes <a target="_blank" rel="noopener" href="http://blog.caelum.com.br/http2-server-push-na-pratica/">neste post sobre server push</a> explica perfeitamente com poucas palavras:</p>
 <blockquote>
-<p>Com uma única requisição, no HTTP/2, podem ser enviadas múltiplas respostas. Sem precisar fazer inline, sem matar o cache e de forma bastante simples.</p>
+<p>Com uma única requisição, no HTTP&#x2F;2, podem ser enviadas múltiplas respostas. Sem precisar fazer inline, sem matar o cache e de forma bastante simples.</p>
 </blockquote>
-<p><strong>Aumento de Segurança</strong><br>Os navegadores só conseguem trabalhar com HTTP/2 através de conexões criptografadas, aumentando então a segurança do usuário e da aplicação.</p>
-<p><strong>Priorização de Fluxo</strong><br>O HTTP/2 permite que o cliente escolha qual a preferência de um fluxo de dados específico. Apesar do servidor não esteja vinculado para seguir essas informações, este mecanimos permite que o servidor otimize a alocação de recursos de rede com base nos requisitos do usuário.</p>
+<p><strong>Aumento de Segurança</strong><br>Os navegadores só conseguem trabalhar com HTTP&#x2F;2 através de conexões criptografadas, aumentando então a segurança do usuário e da aplicação.</p>
+<p><strong>Priorização de Fluxo</strong><br>O HTTP&#x2F;2 permite que o cliente escolha qual a preferência de um fluxo de dados específico. Apesar do servidor não esteja vinculado para seguir essas informações, este mecanimos permite que o servidor otimize a alocação de recursos de rede com base nos requisitos do usuário.</p>
 <h2 id="Suporte-dos-Navegadores"><a href="#Suporte-dos-Navegadores" class="headerlink" title="Suporte dos Navegadores"></a>Suporte dos Navegadores</h2><p><img src="/posts/http2-suporte-navegadores.png" alt="Suporte do HTTP/2 nos Navegadores"></p>
 
             
@@ -201,7 +202,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/diferencas-http2/" data-id="clf2z3w4i005mohsm7g112klj" class="article-share-link">
+            <a data-url="https://backefront.com.br/diferencas-http2/" data-id="clf30yo0h005mh5othwxa3w8c" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/diferencas-http2/#disqus_thread" class="article-comment-link">

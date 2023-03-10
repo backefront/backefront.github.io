@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,12 +121,16 @@ ga('send', 'pageview');
             
             <p>Enquanto estamos desenvolvendo formulários em nossas aplicações, nos deparamos com campos comuns do tipo CEP, CPF, RG, telefone, etc.<br>Esses campos possuem uma formatação padrão entre eles, por exemplo, o CEP sabemos que o formato é algo assim:</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xxxxx-xxx</span><br></pre></td></tr></table></figure>
+
 <p>Então, como podemos adicionar essa formatação automaticamente dentro do nosso sistema?<br>Para ser mais rápido, utilizaremos um cara chamado <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/react-input-mask">react-input-mask</a></p>
 <span id="more"></span>
+
 <p>Primeira coisa que devemos fazer é instalar essa dependência:</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yarn add react-input-mask</span><br><span class="line">npm i react-input-mask</span><br></pre></td></tr></table></figure>
+
 <p>Com ele instalado, utilizar é a coisa mais simples!<br>Basta importarmos e transformar algum input nosso para <code>InputMask</code>:</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span> <span class="keyword">from</span> <span class="string">&quot;react&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">InputMask</span> <span class="keyword">from</span> <span class="string">&quot;react-input-mask&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">Input</span> = (<span class="params">props</span>) =&gt; (</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">InputMask</span> <span class="attr">mask</span>=<span class="string">&quot;99999-999&quot;</span> <span class="attr">value</span>=<span class="string">&#123;props.value&#125;</span> <span class="attr">onChange</span>=<span class="string">&#123;props.onChange&#125;</span> /&gt;</span></span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title class_">Input</span>;</span><br></pre></td></tr></table></figure>
+
 <p>Pronto, com isso já temos um input de CEP!<br>O ‘9’ significa que ele aceitará qualquer valor, de 0 a 9!<br>Caso quisesse fazer um do tipo <code>telefone</code>, a propriedade mask ficaria: <code>(xx) xxxx-xxxx</code></p>
 <p>Rápido!</p>
 
@@ -190,7 +194,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/mascara-input-react/" data-id="clf2z3w7i0070ohsmd57a7hsp" class="article-share-link">
+            <a data-url="https://backefront.com.br/mascara-input-react/" data-id="clf30yo170070h5ot2yut7d9y" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/mascara-input-react/#disqus_thread" class="article-comment-link">

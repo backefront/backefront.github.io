@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,10 +121,14 @@ ga('send', 'pageview');
             
             <p>Alguma vez você já precisou criar um sistema de grid em seu CSS mas não queria ficar repetindo manualmente as classes de forma ineficiente? Ou por algum outro motivo, você pensa o quão bom seria fazer um <strong>laço de repetição</strong> dentro do seu arquivo <strong>SCSS</strong> e descobre que com o <a target="_blank" rel="noopener" href="https://sass-lang.com/">Sass</a> possibilita fazer isso! Mas como?</p>
 <span id="more"></span>
+
 <h2 id="Laco-de-Repeticao-for"><a href="#Laco-de-Repeticao-for" class="headerlink" title="Laço de Repetição @for"></a>Laço de Repetição @for</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$<span class="selector-tag">i</span>: <span class="number">0</span>;</span><br><span class="line"><span class="keyword">@for</span> $i from <span class="number">1</span> through <span class="number">4</span> &#123;</span><br><span class="line">  <span class="selector-class">.classe-</span>#&#123;$<span class="selector-tag">i</span>&#125; &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">60px</span> + $i;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Quando compilado, o resultado será o seguinte:</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.classe-1</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">61px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.classe-2</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">62px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.classe-3</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">63px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.classe-4</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">64px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h2 id="Laco-de-Repeticao-while"><a href="#Laco-de-Repeticao-while" class="headerlink" title="Laço de Repetição @while"></a>Laço de Repetição @while</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$<span class="selector-tag">i</span>: <span class="number">0</span>;</span><br><span class="line"><span class="keyword">@while</span> $i &lt;= <span class="number">4</span> &#123;</span><br><span class="line">  <span class="selector-class">.classe-</span>#&#123;$<span class="selector-tag">i</span>&#125; &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">60px</span> + $i;</span><br><span class="line">  &#125;</span><br><span class="line">  $<span class="selector-tag">i</span>: $i + <span class="number">5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>O resultado será exatamente igual ao exemplo superior!</p>
 <h2 id="Conclusao"><a href="#Conclusao" class="headerlink" title="Conclusão"></a>Conclusão</h2><p>Podemos utilizar esses laços de repetições quando precisamos criar classes que de alguma forma, serão iguais, ou terão um padrão de repetição, como é feito em um sistema de grids, como o do bootstrap!</p>
 
@@ -188,7 +192,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/laco-repeticao-scss/" data-id="clf2z3w7f006vohsmbqkzfadd" class="article-share-link">
+            <a data-url="https://backefront.com.br/laco-repeticao-scss/" data-id="clf30yo15006vh5ot4fx9bnoo" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/laco-repeticao-scss/#disqus_thread" class="article-comment-link">

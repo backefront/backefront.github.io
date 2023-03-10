@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,6 +121,7 @@ ga('send', 'pageview');
             
             <p>Você já precisou executar uma função que esperasse um determinado tempo para aí sim executar?<br>Quando falo nesse cenário, pode passar em sua cabeça usar o <code>setTimeout</code> o que não está errado!<br>Mas sabia que existe uma prática que podemos usar chamada <code>debounce</code>?<br>Você já ouviu falar nesse termo?</p>
 <span id="more"></span>
+
 <p>Debounce no Javascript é uma prática usada para melhorar nossa performance nos navegadores.</p>
 <p>Mas como assim?</p>
 <p>É simples! Sabe aquela função que executamos para fazer uma busca enquanto o usuário está digitando no campo de busca?<br>Se deixarmos que a função seja executada toda vez que tivermos alteração no input, não concorda que estaremos constantemente fazendo requisições desnecessárias?</p>
@@ -128,6 +129,7 @@ ga('send', 'pageview');
 <p>Isso é debounce! Bem legal, né?</p>
 <p>Vamos ver isso em código agora!<br>Peguei esse trecho de código <a target="_blank" rel="noopener" href="https://levelup.gitconnected.com/debounce-in-javascript-improve-your-applications-performance-5b01855e086">deste artigo</a>. Se você sabe inglês, recomendo a leitura!</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">debounce</span> = (<span class="params">func, wait</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">let</span> timeout;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">function</span> <span class="title function_">executedFunction</span>(<span class="params">...args</span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> <span class="title function_">later</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">      <span class="built_in">clearTimeout</span>(timeout);</span><br><span class="line">      <span class="title function_">func</span>(...args);</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">clearTimeout</span>(timeout);</span><br><span class="line">    timeout = <span class="built_in">setTimeout</span>(later, wait);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
 <p>No código acima temos três coisas que precisamos entender:</p>
 <ul>
 <li>Parâmetro <code>func</code>: É a função que você deseja executar após o tempo;</li>
@@ -136,7 +138,8 @@ ga('send', 'pageview');
 </ul>
 <p>Agora com a nossa função criada, como podemos utilizá-la?<br>Basta chamar ela, passando os parâmetros necessários!</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> returnedFunction = <span class="title function_">debounce</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">// Aqui podemos inserir a lógica</span></span><br><span class="line">  <span class="comment">// para realizar as buscas em</span></span><br><span class="line">  <span class="comment">//  nosso back-end.</span></span><br><span class="line">&#125;, <span class="number">250</span>);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">document</span></span><br><span class="line">  .<span class="title function_">getElementById</span>(<span class="string">&quot;input-search&quot;</span>)</span><br><span class="line">  .<span class="title function_">addEventListener</span>(<span class="string">&quot;keyup&quot;</span>, returnedFunction);</span><br></pre></td></tr></table></figure>
-<p>Os cenários mais comuns para o uso do debounce são: resize, scroll, e keyup/keydown.<br>Espero que tenha gostado e que isso possa ajudá-los a diminuir a quantidade de requisições e consequentemente, melhorar a performance de sua aplicação!</p>
+
+<p>Os cenários mais comuns para o uso do debounce são: resize, scroll, e keyup&#x2F;keydown.<br>Espero que tenha gostado e que isso possa ajudá-los a diminuir a quantidade de requisições e consequentemente, melhorar a performance de sua aplicação!</p>
 
             
         </div>
@@ -198,7 +201,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/executar-funcao-apos-terminar-digitar-javascript/" data-id="clf2z3w5w005zohsmbd0ve7g0" class="article-share-link">
+            <a data-url="https://backefront.com.br/executar-funcao-apos-terminar-digitar-javascript/" data-id="clf30yo0m005zh5ot4oym4777" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/executar-funcao-apos-terminar-digitar-javascript/#disqus_thread" class="article-comment-link">

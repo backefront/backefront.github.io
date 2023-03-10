@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -124,9 +124,12 @@ ga('send', 'pageview');
 <p>De acordo com a especificação, o método verifica se um determinado valor está incluso nos valores dentro do array.</p>
 <p>Vamos analisar o exemplo abaixo:</p>
 <span id="more"></span>
+
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> array = [<span class="number">5</span>, <span class="number">4</span>, <span class="number">7</span>];</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array.<span class="title function_">includes</span>(<span class="number">4</span>));</span><br><span class="line"><span class="comment">// Retorno: true</span></span><br></pre></td></tr></table></figure>
+
 <p>E também funciona perfeitamente com strings:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> array = [<span class="string">&quot;Victor&quot;</span>, <span class="string">&quot;Igor&quot;</span>, <span class="string">&quot;Melanie&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array.<span class="title function_">includes</span>(<span class="string">&quot;Roberto&quot;</span>));</span><br><span class="line"><span class="comment">// Retorno: false</span></span><br></pre></td></tr></table></figure>
+
 <p>Este método pode ser de grande ajuda no desenvolvimento de uma autenticação por role, isto é, o tipo de perfil do usuário.<br>Por exemplo:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> usuario = &#123; <span class="attr">nome</span>: <span class="string">&quot;Victor&quot;</span>, <span class="attr">idade</span>: <span class="string">&quot;23&quot;</span>, <span class="attr">role</span>: [<span class="string">&quot;STUDENT&quot;</span>] &#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (usuario.<span class="property">role</span>.<span class="title function_">includes</span>(<span class="string">&quot;ADMIN&quot;</span>)) &#123;</span><br><span class="line">  <span class="comment">// código destinado para usuarios do tipo admin</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -190,7 +193,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/verificando-string-lista-js/" data-id="clf2z3wfh00a7ohsm3ixe8pbf" class="article-share-link">
+            <a data-url="https://backefront.com.br/verificando-string-lista-js/" data-id="clf30yo3000a9h5ot859khh9c" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/verificando-string-lista-js/#disqus_thread" class="article-comment-link">

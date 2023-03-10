@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,10 +121,13 @@ ga('send', 'pageview');
             
             <p>Alguma vez você já precisou adicionar um estilo em algum elemento baseado em uma condição?<br>Você sabe como adicionar um operador ternário no estilo, no React?<br>É muito simples, só precisamos nos atentar na quantidade de chaves <code>&#123;&#125;</code>!</p>
 <span id="more"></span>
+
 <p>Vamos imaginar um cenário onde queremos que a cor onde está escrita a nota do aluno seja diferente de acordo com a situação dele.<br>Caso a nota seja maior que 6, deve exibir a nota em <code>azul</code>.<br>Caso a nota seja menor que 6, deve exibir a nota em <code>vermelho</code><br>Então, para fazermos essa condição, usaremos o operador ternário no react, no elemento <code>p</code>, da seguinte forma:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p style=&#123;notaAluno &gt; <span class="number">6</span> ? &#123; <span class="attr">color</span>: <span class="string">&quot;blue&quot;</span> &#125; : &#123; <span class="attr">color</span>: <span class="string">&quot;red&quot;</span> &#125;&#125;&gt;&#123;notaAluno&#125;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
 <p>Ou também podemos fazer:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p style=&#123;&#123; <span class="attr">color</span>: notaAluno &gt; <span class="number">6</span> ? <span class="string">&quot;blue&quot;</span> : <span class="string">&quot;red&quot;</span> &#125;&#125;&gt;&#123;notaAluno&#125;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
 <p>Particularmente, eu prefiro essa última opção, mas você pode usar a que achar que fica mais legível, entendível!</p>
 
             
@@ -187,7 +190,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/operador-ternario-classe-react/" data-id="clf2z3wba0089ohsmboehfx3x" class="article-share-link">
+            <a data-url="https://backefront.com.br/operador-ternario-classe-react/" data-id="clf30yo1w0089h5ot3q5tehvi" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/operador-ternario-classe-react/#disqus_thread" class="article-comment-link">

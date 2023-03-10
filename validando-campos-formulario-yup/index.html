@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,14 +122,19 @@ ga('send', 'pageview');
             <p>Você já precisou validar se os dados que estão sendo enviado pelo front-end realmente estão corretos?<br>Realizar uma validação antes de enviar seus dados para sua API é de extrema importância, pois dessa forma evitamos erros e envio de informações erradas!</p>
 <p>Uma maneira fácil para validarmos nosso formulário é utilizando um cara chamado <a target="_blank" rel="noopener" href="https://github.com/jquense/yup">Yup</a>!</p>
 <span id="more"></span>
+
 <p>Primeiramente, vamos instalar ele:</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add yup</span><br></pre></td></tr></table></figure>
+
 <p>O Yup faz validações de dados do tipo <code>string</code>, <code>integer</code>, <code>boolean</code>, <code>array</code>, <code>object</code> e <code>date</code>.<br>Então vamos criar uma validação da seguinte estrutura:</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">email</span>: email  <span class="comment">// obrigatório</span></span><br><span class="line">  <span class="attr">nome</span>: string, <span class="comment">// obrigatório</span></span><br><span class="line">  <span class="attr">endereco</span>: string <span class="comment">// obrigatório,</span></span><br><span class="line">  <span class="attr">numero</span>: number <span class="comment">// obrigatório</span></span><br><span class="line">  <span class="attr">complemento</span>: string <span class="comment">// não obrigatório</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Agora vamos criar o nosso <code>Yup.object</code>:</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> userSchema = yup.<span class="title function_">object</span>().<span class="title function_">shape</span>(&#123;</span><br><span class="line">  <span class="attr">email</span>: yup.<span class="title function_">string</span>().<span class="title function_">email</span>().required(),</span><br><span class="line">  <span class="attr">nome</span>: yup.<span class="title function_">string</span>().required(),</span><br><span class="line">  <span class="attr">endereco</span>: yup.<span class="title function_">string</span>().required(),</span><br><span class="line">  <span class="attr">numero</span>: yup.<span class="title function_">number</span>().required().<span class="title function_">positive</span>().<span class="title function_">integer</span>(),</span><br><span class="line">  <span class="attr">complemento</span>: yup.<span class="title function_">string</span>().<span class="title function_">notRequired</span>(),</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
 <p>Legal! Agora como podemos validar um objeto com o que acabamos de criar com o Yup?<br>Com a lib, nós temos acesso à uma função chamada <code>isValid</code>, que é uma promise, então podemos fazer da seguinte forma:</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">submitForm</span> = <span class="keyword">async</span> (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">const</span> userFormData = &#123;</span><br><span class="line">    <span class="attr">email</span>: <span class="string">&quot;victorjordan@gmail.com&quot;</span>,</span><br><span class="line">    <span class="attr">nome</span>: <span class="string">&quot;Victor Jordan&quot;</span>,</span><br><span class="line">    <span class="attr">endereco</span>: <span class="string">&quot;Rua teste, 123, jardim Oriente, São Paulo&quot;</span>,</span><br><span class="line">    <span class="attr">numero</span>: <span class="number">123</span>,</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Essa função retorna true/false</span></span><br><span class="line">  <span class="keyword">const</span> isValid = <span class="keyword">await</span> userSchema.<span class="title function_">isValid</span>(addressFormData);</span><br><span class="line">  <span class="keyword">if</span> (isValid) &#123;</span><br><span class="line">    <span class="comment">// envio informações para o backend</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
 <p>Fácil validar formulários assim, não é mesmo?</p>
 
             
@@ -192,7 +197,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/validando-campos-formulario-yup/" data-id="clf2z3wfj00a9ohsm4me164l1" class="article-share-link">
+            <a data-url="https://backefront.com.br/validando-campos-formulario-yup/" data-id="clf30yo2w00a7h5ot45ox5qpj" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/validando-campos-formulario-yup/#disqus_thread" class="article-comment-link">

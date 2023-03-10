@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,11 +122,14 @@ ga('send', 'pageview');
             <p>Assim como expliquei <a href="https://backefront.com.br/como-obter-parametro-url-angular/">neste post</a>, o React nos permite fazer o mesmo de uma maneira extremamente simples<br>Podemos obter os parâmetros enviados pela URL usando o nosso querido <code>props</code>!</p>
 <p>Vamos começar configurando a nossa rota, para informarmos qual vai ser a nossa variável em nossa URL:</p>
 <span id="more"></span>
+
 <p>Em nosso arquivo onde definimos a navegação das rotas de nossa aplicação, devemos adicionar uma variável, que configuramos usando <code>:nomeVariavel</code><br>No exemplo abaixo, a nossa rota <code>movie</code> recebe uma variável chamada <code>id</code>:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="title class_">Route</span> path=<span class="string">&quot;/movie/:id&quot;</span>&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">Movie</span> /&gt;</span></span></span><br><span class="line">&lt;/<span class="title class_">Route</span>&gt;</span><br></pre></td></tr></table></figure>
+
 <p>Desta forma, o React irá entender que precisamos passar alguma informação após a string <code>movie</code>!<br>Muito bem, feito isso podemos acessar então a nossa variável, no componente desta página!</p>
 <p>Em nosso componente, precisamos ter acesso ao <code>props</code> e com ele, tudo já está disponível para usarmos!<br>Então, para acessarmos o parâmetro ID pela URL, podemos acessar da seguinte maneira:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">fetchMovieById</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">  <span class="comment">// Usamos essa propriedade para acessar</span></span><br><span class="line">  <span class="comment">// a variável vinda pela URL!</span></span><br><span class="line">  <span class="keyword">const</span> movieId = props.<span class="property">match</span>.<span class="property">params</span>.<span class="property">id</span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
 <p>Temos acesso facilmente através de <code>props.match.params</code> e passamos o nome da variável que configuramos pela URL!</p>
 
             
@@ -189,7 +192,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/obter-parametro-url-react/" data-id="clf2z3wb70083ohsme36c0p67" class="article-share-link">
+            <a data-url="https://backefront.com.br/obter-parametro-url-react/" data-id="clf30yo1t0083h5ot37kfa03l" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/obter-parametro-url-react/#disqus_thread" class="article-comment-link">

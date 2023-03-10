@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,13 +122,17 @@ ga('send', 'pageview');
             <p>Você está desenvolvendo em React Native e quer gerar um apk para instalar em seu celular.<br>Mas você não quer mandar esse app ainda para uma store para poder baixar.</p>
 <p>Para gerar o apk, é muito simples com o react native, se liga só!</p>
 <span id="more"></span>
+
 <h4 id="Pre-requisito"><a href="#Pre-requisito" class="headerlink" title="Pre-requisito:"></a>Pre-requisito:</h4><p>react-native version &gt; 0.57</p>
 <h4 id="Passo-1"><a href="#Passo-1" class="headerlink" title="Passo 1"></a>Passo 1</h4><p>Na raiz do seu projeto, rode o seguinte comando no seu terminal:</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res</span><br></pre></td></tr></table></figure>
+
 <h4 id="Passo-2"><a href="#Passo-2" class="headerlink" title="Passo 2"></a>Passo 2</h4><p>Acesse a pasta Android:</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> android</span><br></pre></td></tr></table></figure>
+
 <h4 id="Passo-3"><a href="#Passo-3" class="headerlink" title="Passo 3"></a>Passo 3</h4><p>Agora dentro da sua pasta Android, execute o comando:</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./gradlew assembleDebug</span><br></pre></td></tr></table></figure>
+
 <p>E pronto! Seu apk será gerado no caminho:</p>
 <p><code>seuProjeto/android/app/build/outputs/apk/debug/app-debug.apk</code></p>
 
@@ -192,7 +196,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-gerar-apk-react-native/" data-id="clf2z3vws0033ohsm6lcd0znb" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-gerar-apk-react-native/" data-id="clf30ynyz0033h5otc3fs41re" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-gerar-apk-react-native/#disqus_thread" class="article-comment-link">

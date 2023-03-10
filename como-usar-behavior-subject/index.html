@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,11 +121,14 @@ ga('send', 'pageview');
             
             <p>O Angular, ao contrário do React, por exemplo, não possui um padrão definido de gerenciamento de estado.<br>O Rxjs possui <em>observers</em> (que são a nossa interface para consumir dados) e <em>observables</em> (nossa interface para submeter dados).<br>Então, hoje vamos ver como podemos utilizar o BehaviorSubject, um Subject que permite emitir o valor atual!</p>
 <span id="more"></span>
+
 <p>A primeira coisa que devemos fazer então é criar o nosso Service:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">Injectable</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;@angular/core&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">BehaviorSubject</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;rxjs/BehaviorSubject&#x27;</span>;</span><br><span class="line"></span><br><span class="line">interface <span class="title class_">IUser</span> &#123;</span><br><span class="line">  <span class="attr">name</span>: string;</span><br><span class="line">  <span class="attr">lastName</span>: string;</span><br><span class="line">  <span class="attr">age</span>: number;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@<span class="title class_">Injectable</span>()</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">class</span> <span class="title class_">UserService</span> &#123;</span><br><span class="line"></span><br><span class="line">  private userData = <span class="keyword">new</span> <span class="title class_">BehaviorSubject</span>&lt;<span class="title class_">IUser</span>&gt;(<span class="literal">undefined</span>);</span><br><span class="line"></span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params"></span>) &#123; &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">setUser</span>(<span class="attr">user</span>: <span class="title class_">IUser</span>): <span class="keyword">void</span> &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">userData</span>.<span class="title function_">next</span>(user);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">getUser</span>(): <span class="title class_">Observable</span>&lt;<span class="title class_">IUser</span>&gt; &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">userData</span>.<span class="title function_">asObservable</span>();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Dessa forma agora temos o nosso getter/setter de usuário, em um ponto centralizado!<br>Agora como podemos utilizar esse serviço?</p>
+
+<p>Dessa forma agora temos o nosso getter&#x2F;setter de usuário, em um ponto centralizado!<br>Agora como podemos utilizar esse serviço?</p>
 <p>Chamamos o service para isso:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//injetamos o service</span></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="title class_">UserService</span>.<span class="property">getUser</span>.<span class="title function_">subscribe</span>(<span class="function"><span class="params">user</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// Recebemos as informações</span></span><br><span class="line">  <span class="comment">// do usuário dentro do subscribe</span></span><br><span class="line">&#125;)</span><br><span class="line">...</span><br><span class="line"><span class="comment">// Atualizamos as informações</span></span><br><span class="line"><span class="comment">// do usuário</span></span><br><span class="line"><span class="title class_">UserService</span>.<span class="title function_">setUser</span>(newUser);</span><br></pre></td></tr></table></figure>
+
 <p>Bem tranquilo de usar, não é mesmo?</p>
 
             
@@ -188,7 +191,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-usar-behavior-subject/" data-id="clf2z3vzf0043ohsmekduf070" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-usar-behavior-subject/" data-id="clf30ynzm0043h5otd0mrc6qz" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-usar-behavior-subject/#disqus_thread" class="article-comment-link">

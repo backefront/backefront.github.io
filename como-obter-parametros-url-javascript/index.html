@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,11 +121,14 @@ ga('send', 'pageview');
             
             <p>Trabalhar com URLs é uma tarefa comum em nosso desenvolvimento diário<br>Muitas das vezes, trabalhamos com frameworks como Angular, Vue, React que facilitam e muito o trabalho de manipular URLs, obter parâmetros, etc.<br>Mas alguma vez você já precisou obter os valores de uma <code>query parameter</code> com <strong>javascript puro</strong>?</p>
 <span id="more"></span>
+
 <p>Para obter os valores de parâmetro de uma URL, através do Javascript puro, podemos utilizar um cara chamado: <code>URLSearchParams</code><br>Ele nos permite trabalharmos com as strings da URL com maior facilidade!</p>
 <p>Veja como é fácil:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// armazenamos os parâmetros da url</span></span><br><span class="line"><span class="keyword">const</span> urlParams = <span class="keyword">new</span> <span class="title class_">URLSearchParams</span>(<span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">search</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// acessamos o valor que desejamos</span></span><br><span class="line"><span class="keyword">const</span> myParam = urlParams.<span class="title function_">get</span>(<span class="string">&quot;nomeDoParametro&quot;</span>);</span><br></pre></td></tr></table></figure>
+
 <p>Então, vamos ter como exemplo a URL: <code>www.backefront.com.br/post?topic=javascript</code><br>Seguindo o código acima, para termos o valor de <code>topic</code>precisamos então fazer:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// armazenamos os parâmetros da url</span></span><br><span class="line"><span class="keyword">const</span> urlParams = <span class="keyword">new</span> <span class="title class_">URLSearchParams</span>(<span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">search</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// acessamos o valor que desejamos</span></span><br><span class="line"><span class="keyword">const</span> topic = urlParams.<span class="title function_">get</span>(<span class="string">&quot;topic&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(topic);</span><br><span class="line"><span class="comment">// Resultado esperado: &quot;javascript&quot;</span></span><br></pre></td></tr></table></figure>
+
 <p>Bem mais fácil do que imaginávamos!<br>Quanto sua aceitação nos navegadores, consultando o <a target="_blank" rel="noopener" href="https://caniuse.com/#feat=urlsearchparams">Can I Use</a> vemos que praticamente apenas o IE não suporta essa interface!</p>
 <p>🏡</p>
 
@@ -189,7 +192,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-obter-parametros-url-javascript/" data-id="clf2z3vx6003eohsm5poadst2" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-obter-parametros-url-javascript/" data-id="clf30ynza003ih5ot9z5thkd0" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-obter-parametros-url-javascript/#disqus_thread" class="article-comment-link">

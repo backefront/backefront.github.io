@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,10 +121,13 @@ ga('send', 'pageview');
             
             <p>Enquanto estamos desenvolvendo um formulário no HTML, as vezes nos deparamos em cenários onde precisamos pegar o valor selecionado pelo usuário.<br>Isso envolve campos de texto, select box, radio buttons, checkbox!<br>Hoje, vou mostrar como podemos pegar o valor selecionado pelo usuário em um radio button, com Javascript puro!</p>
 <span id="more"></span>
+
 <p>Vamos considerar que o nosso HTML tem a seguinte estrutura:</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;form-group&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">&quot;d-block font-weight-bold&quot;</span>&gt;</span>Já é cliente?<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;form-check form-check-inline&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">class</span>=<span class="string">&quot;form-check-input&quot;</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">value</span>=<span class="string">&quot;true&quot;</span> <span class="attr">name</span>=<span class="string">&quot;client&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;form-check form-check-inline&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">class</span>=<span class="string">&quot;form-check-input&quot;</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">value</span>=<span class="string">&quot;false&quot;</span> <span class="attr">name</span>=<span class="string">&quot;client&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">&quot;form-check-label&quot;</span>&gt;</span>Não<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>Legal, agora queremos saber qual é o valor selecionado pelo usuário.<br>Para isso, vamos verificar com Javascript!</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;input[name=&quot;client&quot;]:checked&#x27;</span>).<span class="property">value</span>;</span><br></pre></td></tr></table></figure>
+
 <p>Com esse Javascript, nós acessamos apenas o radio button que estiver selecionado e que seu name seja client, que é o que definimos no nosso HTML!<br>Bem simples né?</p>
 
             
@@ -187,7 +190,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/obter-valor-selecionado-radio-button/" data-id="clf2z3wb80085ohsmb1bj0fpn" class="article-share-link">
+            <a data-url="https://backefront.com.br/obter-valor-selecionado-radio-button/" data-id="clf30yo1u0085h5otc8g31ue7" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/obter-valor-selecionado-radio-button/#disqus_thread" class="article-comment-link">

@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,12 +122,14 @@ ga('send', 'pageview');
             <p>Diariamente no desenvolvimento de aplicações mais complexas, nos deparamos com situações em que devemos aplicar uma classe em um elemento HTML apenas se satisfazer determinada condição. Trabalhando com o Angular, por exemplo, podemos fazer isso de maneira muito simples, caso a condição seja algo do tipo <code>if/else</code>.</p>
 <p>O Angular possui uma sintaxe de templates que é muito poderosa! Como por exemplo, podemos citar o <strong>ngFor</strong>, <strong>ngStyle</strong> e a que permite adicionar uma validação dentro de uma classe é o <strong>ngClass</strong>!</p>
 <span id="more"></span>
+
 <p>Para utilizar, vamos usar o seguinte cenário:</p>
 <blockquote>
 <p>Queremos aplicar a cor vermelha caso a nota de um aluno seja <strong>menor</strong> que 6 e azul, caso seja <strong>maior</strong> que 6</p>
 </blockquote>
 <p>Com isto em mente, logo pensamos em um <code>if (nota &lt; 6 ) &#123;...&#125;</code> e podemos “traduzir” este pequeno trecho, diretamente no componente HTML, ficando da seguinte forma:</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> [<span class="attr">ngClass</span>]=<span class="string">&quot;&#123;&#123;nota &lt; 6 ? red : blue&#125;&#125;&quot;</span>&gt;</span>&#123;&#123;nota&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>Com este operador ternário, ele adiciona uma classe de acordo com a validação, tornando muito mais fácil e rápido a adição de classes de acordo com sua validação!</p>
 
             
@@ -190,7 +192,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/validacao-class-css-angular/" data-id="clf2z3wf1009zohsme29l8988" class="article-share-link">
+            <a data-url="https://backefront.com.br/validacao-class-css-angular/" data-id="clf30yo2s00a1h5ot2w6i90th" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/validacao-class-css-angular/#disqus_thread" class="article-comment-link">

@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,15 +121,18 @@ ga('send', 'pageview');
             
             <p>Que atire a primeira pedra quem nunca em uma aula de algoritmo se deparou com o famoso fibonacci.<br>Fibonacci é uma sequência numérica em que cada número seguinte é somado aos dois números anteriores, começando por 0.<br>A fórmula então seria:</p>
 <blockquote>
-<p>Fn = (Fn - 1) + (Fn - 2)</p>
+<p>Fn &#x3D; (Fn - 1) + (Fn - 2)</p>
 </blockquote>
 <p>Vamos ver como aplicar isso em um algoritmo Javascript?</p>
 <span id="more"></span>
+
 <p>Com o Javascript, podemos fazer esse algoritmo muito fácil, usando a recursividade, em poucas linhas resolvemos o problema</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">fibonacci</span> = (<span class="params">num</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">if</span> (num &lt;= <span class="number">1</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="title function_">fibonacci</span>(num - <span class="number">1</span>) + <span class="title function_">fibonacci</span>(num - <span class="number">2</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
 <p>Só que nem tudo são rosas…<br>Usar fibonacci recursivo tem um problema, aumentamos a complexidade do algoritmo ao pior caso.<br>Isto quer dizer que conforme formos aumentando os números, mais complexo fica e mais demorado o tempo de resposta é.<br>O tempo de resposta tornou-se exponencial!</p>
 <p>Uma forma que podemos fazer para corrigir tal problema é a utilização de <em>memorização</em><br>Ela é uma técnica usada para aumentar a velocidade de programas, armazenando os resultados de outra chamadas.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">fibonacci</span> = (<span class="params">num, memo</span>) =&gt; &#123;</span><br><span class="line">  <span class="comment">// Recebe os números anteriores</span></span><br><span class="line">  <span class="comment">// ou um novo objeto, se for a primeira vez</span></span><br><span class="line">  memo = memo || &#123;&#125;;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Verifica se já existe o</span></span><br><span class="line">  <span class="comment">// valor calculado anteriormente</span></span><br><span class="line">  <span class="keyword">if</span> (memo[num]) <span class="keyword">return</span> memo[num];</span><br><span class="line">  <span class="keyword">if</span> (num &lt;= <span class="number">1</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Caso realmente não tenha,</span></span><br><span class="line">  <span class="comment">// executa normalmente o código</span></span><br><span class="line">  <span class="keyword">return</span> (memo[num] = <span class="title function_">fibonacci</span>(num - <span class="number">1</span>, memo) + <span class="title function_">fibonacci</span>(num - <span class="number">2</span>, memo));</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
 <p>Com essa pequena alteração, o ganho de performance é gigantesco!<br>Espero que tenham gostado!</p>
 
             
@@ -192,7 +195,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/fibonacci-javascript/" data-id="clf2z3w610063ohsmb6nn5p55" class="article-share-link">
+            <a data-url="https://backefront.com.br/fibonacci-javascript/" data-id="clf30yo0s0063h5otf6v4bosj" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/fibonacci-javascript/#disqus_thread" class="article-comment-link">

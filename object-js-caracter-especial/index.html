@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,14 +121,19 @@ ga('send', 'pageview');
             
             <p>Normalmente, acessamos os valores de um objeto javascript através de “.” (ponto), por exemplo, temos o seguinte objeto:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> user = &#123; <span class="attr">name</span>: <span class="string">&quot;Victor&quot;</span>, <span class="attr">idade</span>: <span class="number">22</span> &#125;;</span><br></pre></td></tr></table></figure>
+
 <p>Para resgatar o valor <code>name</code>, bastaria acessar usando: <code>user.name</code>, correto? Mas você sabe como acessar caso a chave do seu objeto tenha caracteres especiais ou espaços, como no exemplo abaixo?</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> address = &#123; <span class="title class_">Endere</span>ç<span class="attr">o</span>: <span class="string">&quot;Rua Nova&quot;</span>, <span class="string">&quot;Descrição Rua&quot;</span>: <span class="string">&quot;Uma rua nova&quot;</span> &#125;;</span><br></pre></td></tr></table></figure>
+
 <span id="more"></span>
+
 <p>Caso você tente acessar “<code>address.Descrição Rua</code>“, com certeza não irá conseguir, afinal, esse espaço acaba estragando tudo! Então, para acessar, você pode passar o campo que deseja acessar entre colchetes <code>[]</code>, no nosso caso, ficaria: <code>address[&#39;Descrição Rua&#39;]</code></p>
 <p>Caso você esteja trabalhando com algum framework como Angular, quando fizesse um <strong>ngFor</strong> (ng-repeat, se estiver usando AngularJS) que percorresse esse objeto, e tentasse usar:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &#123;</span><br><span class="line">    user.<span class="property">Endere</span>ço;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>acabaria deparando-se com um erro justamente por causa do caractere especial <strong>“ç”</strong>. Para contornar este erro, você deve usar a mesma técnica de acesso, alterando para:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &#123;</span><br><span class="line">    user[<span class="string">&quot;Endereço&quot;</span>];</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Desta forma, você evitará erros e alcançará o resultado esperado!</p>
 
             
@@ -191,7 +196,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/object-js-caracter-especial/" data-id="clf2z3wb50081ohsmdltah6qe" class="article-share-link">
+            <a data-url="https://backefront.com.br/object-js-caracter-especial/" data-id="clf30yo1s0081h5ot1xia0fyk" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/object-js-caracter-especial/#disqus_thread" class="article-comment-link">

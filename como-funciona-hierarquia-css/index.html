@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,17 +121,22 @@ ga('send', 'pageview');
             
             <p>Você sabe qual a diferença entre escrever um estilo no CSS usando ID ou Classe? E você sabe o porque falamos que para escrever estilos você deve usar sempre classes? Chega aí pra entender como funciona o CSS!</p>
 <span id="more"></span>
+
 <p>O CSS possui uma hierarquia de estilos, isto é, depenendendo do que você usar para criar seu estilo, ele pode acabar sobrescrevendo algum outro estilo! Tudo isso pois o CSS possui uma contagem para saber qual o estilo é mais importante, olha como funciona a especificidade:</p>
 <p>Começando pelo a estilização mais específica, onde você define o estilo do seu elemento diretamente no HTML, chamamos de estilo in-line, de forma que sobrescreve todos os outros estilos que podem estar sendo aplicados naquele elemento, usamos ele da seguinte forma:</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color: #ff0000&quot;</span>&gt;</span>Parágrafo<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>Agora falando através de seletores, podemos estilizar com IDs, Classes e próprias tags, vamos analisar cada uma delas!</p>
 <p>ID é o seletor mais específico, por ser exigido que só exista um por página HTML, então utilizar ID para criar estilos é uma má prática, pois você acaba não conseguindo reutilizar em outros lugares da sua página.</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#footer</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#424242</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Classes é o segundo seletor seguido de ID, mas por poder ser repetido quantas vezes quisermos na nossa página, normalmente construímos nossos estilos usando classe, visando o reaproveitamento de código!</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.card</span> &#123;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">5px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Mas estas não são as únicas opções para estilização, podemos usar também as próprias tags HTML, de forma que se apliquem a todos os elementos das tags que selecionamos, está é a forma mais genérica de criar um estilo!</p>
 <p>Para finalizar, temos mais uma forma de adicionar um estilo, que sobrescreve as outras marcações, que é usando o !important que sobrescreve qualquer outro elemento do CSS:</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.classe</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ff0000</span> <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Quando utilizamos diversos seletores para estilizar, temos uma fórmula para encontrar qual CSS será utilizado, isto é, que possui maior importância, cada atributo possuí um valor determinado, abaixo está a tabela mostrando o valor de cada:</p>
 <table>
 <thead>
@@ -140,8 +145,7 @@ ga('send', 'pageview');
 <th>Valor</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>Estilo In-line</td>
 <td>1000</td>
 </tr>
@@ -157,12 +161,12 @@ ga('send', 'pageview');
 <td>HTML Tags</td>
 <td>1</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>Então com isso, conseguimos definir o valor de cada CSS! Vamos ver um exemplo?</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#paragrafo</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.paragrafo</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Temos estes dois estilos aplicando estilo em todos os parágrafos, qual cor será aplicado? Para descobrir isso, vamos contar de acordo com a regra:</p>
-<p><strong>Estilo 1</strong> - Temos um ID e uma tag HTML, então o valor desse CSS é: 100 (ID) + 1 (Tag) = 101.<br><strong>Estilo 2</strong> - Temos uma classe uma tag HTML, então o valor desse CSS é: 10(classe) + 1(Tag) = 11.</p>
+<p><strong>Estilo 1</strong> - Temos um ID e uma tag HTML, então o valor desse CSS é: 100 (ID) + 1 (Tag) &#x3D; 101.<br><strong>Estilo 2</strong> - Temos uma classe uma tag HTML, então o valor desse CSS é: 10(classe) + 1(Tag) &#x3D; 11.</p>
 <p>Com isso, podemos concluir que o primeiro CSS tem um “peso” maior, que é o que será utilizado, então a resposta para a pergunta é: <strong>Será utilizada a cor vermelha</strong>.</p>
 
             
@@ -225,7 +229,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-funciona-hierarquia-css/" data-id="clf2z3vwr0031ohsmged7g2qu" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-funciona-hierarquia-css/" data-id="clf30ynyy0031h5ot0z3r5zz9" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-funciona-hierarquia-css/#disqus_thread" class="article-comment-link">

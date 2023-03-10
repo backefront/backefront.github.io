@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -123,11 +123,14 @@ ga('send', 'pageview');
 <p>E é por isso que é sempre bom termos esse tipo de código em um só lugar!</p>
 <p>Mas você sabia que é possível criar regras CSS comuns com o Styled-components?</p>
 <span id="more"></span>
+
 <p>Para criar um estilo comum com Styled é muito simples:</p>
 <p>Primeiro criamos nosso arquivo comum:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; css &#125; <span class="keyword">from</span> <span class="string">&#x27;styled-components&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title class_">CommonStyles</span> = css`<span class="language-css"></span></span><br><span class="line"><span class="language-css">  <span class="attribute">background-color</span>: <span class="number">#c9c9c9</span>;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">color</span>: <span class="number">#000</span>;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">text-align</span>: center;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">  <span class="keyword">@media</span> (<span class="attribute">min-width</span>: <span class="number">768px</span>) &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">text-align</span>: left;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">`</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title class_">CommonStyles</span>;</span><br></pre></td></tr></table></figure>
+
 <p>Agora que temos nosso CSS criado, basta usarmos em qualquer styled nosso:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> styled <span class="keyword">from</span> <span class="string">&#x27;styled-components&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">CommonStyles</span> <span class="keyword">from</span> <span class="string">&#x27;../../../styles/CommonStyles&#x27;</span>; <span class="comment">// importamos ele</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="title class_">Container</span> = styled.<span class="property">section</span><span class="string">`</span></span><br><span class="line"><span class="string">  <span class="subst">$&#123;CommonStyles&#125;</span>; </span></span><br><span class="line"><span class="string">  height: 100vh;</span></span><br><span class="line"><span class="string">  display: flex;</span></span><br><span class="line"><span class="string">  ...</span></span><br><span class="line"><span class="string">`</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>Muito simples e fácil criar um arquivo reutilizável de CSS, não é?</p>
 
             
@@ -190,7 +193,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/reutilizar-css-styled-components/" data-id="clf2z3wee0095ohsm67pk1njt" class="article-share-link">
+            <a data-url="https://backefront.com.br/reutilizar-css-styled-components/" data-id="clf30yo2c0095h5ot4ozmf2xg" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/reutilizar-css-styled-components/#disqus_thread" class="article-comment-link">

@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -119,13 +119,15 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
             
-            <p>No começo de nosso aprendizado em javascript, é comum nos depararmos com algumas situações que causam dúvidas e até estramento, principalmente se o estudante estiver estudando alguma outra linguagem em paralelo ou já possui um conhecimento prévio de linguagem de programação, e uma desta dúvida é: qual a diferença entre comparar algo com <strong>dois iguais</strong> ( == ) e com <strong>três iguais</strong> ( === )?<br>No Javascript, tem uma diferença enorme entre esses dois tipos de comparações! Vamos ver?</p>
+            <p>No começo de nosso aprendizado em javascript, é comum nos depararmos com algumas situações que causam dúvidas e até estramento, principalmente se o estudante estiver estudando alguma outra linguagem em paralelo ou já possui um conhecimento prévio de linguagem de programação, e uma desta dúvida é: qual a diferença entre comparar algo com <strong>dois iguais</strong> ( &#x3D;&#x3D; ) e com <strong>três iguais</strong> ( &#x3D;&#x3D;&#x3D; )?<br>No Javascript, tem uma diferença enorme entre esses dois tipos de comparações! Vamos ver?</p>
 <span id="more"></span>
-<p>A comparação feita com === tem como objetivo comparar o <strong>tipo</strong> e o <strong>valor</strong>. Isto quer dizer que, para que o retorno da comparação seja verdadeiro, precisa ser o mesmo tipo (string, number, boolean) e o valor o mesmo. Por exemplo:</p>
+
+<p>A comparação feita com &#x3D;&#x3D;&#x3D; tem como objetivo comparar o <strong>tipo</strong> e o <strong>valor</strong>. Isto quer dizer que, para que o retorno da comparação seja verdadeiro, precisa ser o mesmo tipo (string, number, boolean) e o valor o mesmo. Por exemplo:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="number">1</span> === <span class="number">1</span>);</span><br><span class="line"><span class="comment">// Retorno true</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="number">1</span> === <span class="string">&quot;1&quot;</span>);</span><br><span class="line"><span class="comment">// Retorno false, pois o tipo é diferente (number é diferente de string)</span></span><br></pre></td></tr></table></figure>
-<p>Já a comparação feita com == tem como objetivo comparar apenas o valor, ou seja, ignorando se o tipo do que está sendo comparado são iguais. Por exemplo:</p>
-<p>console.log(1 == 1);<br>// Retorno true</p>
-<p>console.log(1 == ‘1’);<br>// Retorno true</p>
+
+<p>Já a comparação feita com &#x3D;&#x3D; tem como objetivo comparar apenas o valor, ou seja, ignorando se o tipo do que está sendo comparado são iguais. Por exemplo:</p>
+<p>console.log(1 &#x3D;&#x3D; 1);<br>&#x2F;&#x2F; Retorno true</p>
+<p>console.log(1 &#x3D;&#x3D; ‘1’);<br>&#x2F;&#x2F; Retorno true</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
 
             
@@ -188,7 +190,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/diferenca-entre-iguais-javascript/" data-id="clf2z3w41005cohsmgy7q6ina" class="article-share-link">
+            <a data-url="https://backefront.com.br/diferenca-entre-iguais-javascript/" data-id="clf30yo0d005ch5otcaobf41p" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/diferenca-entre-iguais-javascript/#disqus_thread" class="article-comment-link">

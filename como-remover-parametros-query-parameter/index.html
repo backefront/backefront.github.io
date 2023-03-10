@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,7 +121,9 @@ ga('send', 'pageview');
             
             <p>Em um post anterior, ensinava como você conseguia <a href="https://backefront.com.br/como-obter-parametros-url-javascript/">obter parâmetros da URL pelo Javascript</a>, lembra?<br>Mas, e se em um determinado cenário, você precisasse fazer o oposto, como por exemplo, remover um parâmetro de uma URL e retornar ela?<br>Com o seguinte método, conseguimos realizar essa atividade sem dificuldades!</p>
 <span id="more"></span>
+
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Remove um parâmetro dos query parameters</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> url String - URL que deseja fazer a remoção</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> parameter String - Nome do parâmetro que deseja remover</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="title function_">removeURLParameter</span>(<span class="params">url, parameter</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> urlparts = url.<span class="title function_">split</span>(<span class="string">&quot;?&quot;</span>);</span><br><span class="line">  <span class="keyword">if</span> (urlparts.<span class="property">length</span> &gt;= <span class="number">2</span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> prefix = <span class="built_in">encodeURIComponent</span>(parameter) + <span class="string">&quot;=&quot;</span>;</span><br><span class="line">    <span class="keyword">const</span> pars = urlparts[<span class="number">1</span>].<span class="title function_">split</span>(<span class="regexp">/[&amp;;]/g</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = pars.<span class="property">length</span>; i-- &gt; <span class="number">0</span>; ) &#123;</span><br><span class="line">      <span class="keyword">if</span> (pars[i].<span class="title function_">lastIndexOf</span>(prefix, <span class="number">0</span>) !== -<span class="number">1</span>) &#123;</span><br><span class="line">        pars.<span class="title function_">splice</span>(i, <span class="number">1</span>);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> urlparts[<span class="number">0</span>] + (pars.<span class="property">length</span> &gt; <span class="number">0</span> ? <span class="string">&quot;?&quot;</span> + pars.<span class="title function_">join</span>(<span class="string">&quot;&amp;&quot;</span>) : <span class="string">&quot;&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> url;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Bem simples e fácil né?<br>Espero que ajude!</p>
 
             
@@ -184,7 +186,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-remover-parametros-query-parameter/" data-id="clf2z3vxn003vohsmakric6q0" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-remover-parametros-query-parameter/" data-id="clf30ynzg003th5otdlsi6yis" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-remover-parametros-query-parameter/#disqus_thread" class="article-comment-link">

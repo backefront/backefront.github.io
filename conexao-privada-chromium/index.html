@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,7 +122,9 @@ ga('send', 'pageview');
             <p>Enquanto estava realizando alguns testes end-to-end com Puppeteer, me deparei com um problema que no instante que o Chromium abria, aparecia erro de “Sua conexão não é privada” (Your connection is not private)</p>
 <p>Então procurando a respeito, encontrei a solução para esse problema de conexão privada para o chromium, com o puppeteer:</p>
 <span id="more"></span>
+
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> browser = <span class="keyword">await</span> puppeteer.<span class="title function_">launch</span>(&#123; <span class="attr">ignoreHTTPSErrors</span>: <span class="literal">true</span> &#125;);</span><br></pre></td></tr></table></figure>
+
 <p>Com essa configuração, quando abrimos o navegador, ele ignora erros HTTPs, como é o caso da conexão!</p>
 
             
@@ -185,7 +187,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/conexao-privada-chromium/" data-id="clf2z3w08004lohsm0t1jez87" class="article-share-link">
+            <a data-url="https://backefront.com.br/conexao-privada-chromium/" data-id="clf30ynzw004nh5ot237u18p8" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/conexao-privada-chromium/#disqus_thread" class="article-comment-link">

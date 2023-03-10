@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,7 +121,9 @@ ga('send', 'pageview');
             
             <p>Estava desenvolvendo um aplicativo com React Native e em determinado momento, precisava fazer a conversão de um valor para real (dinheiro, R$)<br>Como estou acostumado em desenvolver web, logo pensei no Intl, fazendo o seguinte:</p>
 <span id="more"></span>
+
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="title function_">convertPriceForReal</span> = (<span class="params">number</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Intl</span>.<span class="title class_">NumberFormat</span>(<span class="string">&quot;pt-BR&quot;</span>, &#123;</span><br><span class="line">    <span class="attr">style</span>: <span class="string">&quot;currency&quot;</span>,</span><br><span class="line">    <span class="attr">currency</span>: <span class="string">&quot;BRL&quot;</span>,</span><br><span class="line">  &#125;).<span class="title function_">format</span>(number);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
 <p>Quando fui testar no aplicativo, o que acontece? Tomo um erro que antes não tinha visto:</p>
 <blockquote>
 <p>Can’t find variable Intl</p>
@@ -129,8 +131,10 @@ ga('send', 'pageview');
 <p>Para resolver esse erro, basta fazer os passos (considerando que você está no React Native v0.60+):</p>
 <p>No seu arquivo: <code>app/build.gradle</code>, alterar de <code>org.webkit:android-jsc:+</code> para:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">def</span> <span class="variable">jscFlavor</span> <span class="operator">=</span> <span class="string">&#x27;org.webkit:android-jsc-intl:+&#x27;</span></span><br></pre></td></tr></table></figure>
+
 <p>E verifica, neste mesmo arquivo, se está implementado em suas dependências, como mostro abaixo:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">dependencies &#123;</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">if</span> (enableHermes) &#123;</span><br><span class="line">        ...</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        implementation jscFlavor</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Com isso, é para funcionar tudo certinho! :)</p>
 
             
@@ -193,7 +197,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/usar-intl-react-native/" data-id="clf2z3wez009xohsmckmrdk7t" class="article-share-link">
+            <a data-url="https://backefront.com.br/usar-intl-react-native/" data-id="clf30yo2q009xh5ot11rpho4x" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/usar-intl-react-native/#disqus_thread" class="article-comment-link">

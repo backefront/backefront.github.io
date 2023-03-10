@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,8 +122,10 @@ ga('send', 'pageview');
             <p>Uma das coisas mais comuns em nosso desenvolvimento é a necessidade de rodar nossos projetos em ambientes diferentes, seja ele QA, Dev ou até mesmo apontar para PROD!<br>Seria extremamente chato se tivessémos que ficar alterando a URL em nosso arquivo <code>.env</code> toda vez que quiséssemos ver um diferente.</p>
 <p>E é pensando nisso que hoje apresento para vocês um pacote que ajuda muito, o <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/env-cmd">env-cmd</a></p>
 <span id="more"></span>
+
 <p>Basta instalarmos:</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install env-<span class="built_in">cmd</span></span><br></pre></td></tr></table></figure>
+
 <p>E criarmos os arquivos <code>.env</code> que queremos<br>No caso, iremos usar 3:</p>
 <ul>
 <li><code>.env.dev</code></li>
@@ -132,6 +134,7 @@ ga('send', 'pageview');
 </ul>
 <p>com esses arquivos criados, agora alteramos o nosso arquivo <code>package.json</code>:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ...package.json</span></span><br><span class="line">  <span class="string">&quot;scripts&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;dev&quot;</span>: <span class="string">&quot;env-cmd -f .env.dev react-scripts start&quot;</span>, <span class="comment">// adicionando Dev</span></span><br><span class="line">    <span class="string">&quot;dev:qa&quot;</span>: <span class="string">&quot;env-cmd -f .env.qa react-scripts start&quot;</span>, <span class="comment">// adicionando QA</span></span><br><span class="line">    <span class="string">&quot;dev:prod&quot;</span>: <span class="string">&quot;env-cmd -f .env.prod react-scripts start&quot;</span>, <span class="comment">// adicionando Prod</span></span><br><span class="line">    <span class="string">&quot;dev:3001&quot;</span>: <span class="string">&quot;PORT=3001 react-scripts start&quot;</span>,</span><br><span class="line">    <span class="string">&quot;build&quot;</span>: <span class="string">&quot;react-scripts build&quot;</span>,</span><br><span class="line">    <span class="string">&quot;test&quot;</span>: <span class="string">&quot;react-scripts test&quot;</span>,</span><br><span class="line">    <span class="string">&quot;eject&quot;</span>: <span class="string">&quot;react-scripts eject&quot;</span>,</span><br><span class="line">    <span class="string">&quot;commit&quot;</span>: <span class="string">&quot;git add . &amp;&amp; cz&quot;</span></span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+
 <p>Como pode ver, criamos 3 comandos diferentes e em cada um deles indicamos qual <code>env</code> gostaríamos de usar!<br>Fácil, não é?</p>
 
             
@@ -194,7 +197,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/usando-env-package-react/" data-id="clf2z3wey009vohsmhhfz66qo" class="article-share-link">
+            <a data-url="https://backefront.com.br/usando-env-package-react/" data-id="clf30yo2p009vh5ot545zdczd" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/usando-env-package-react/#disqus_thread" class="article-comment-link">

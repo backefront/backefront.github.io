@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -123,10 +123,12 @@ ga('send', 'pageview');
 <p>Um desses operadores que frequentemente utilizamos é o <code>between</code>.</p>
 <p>Você já precisou utilizar ele em seu desenvolvimento?</p>
 <span id="more"></span>
+
 <p>Sua utilização é muito simples!<br>Conforme a própria documentação nos orienta, devemos fazer isso através da importação de <code>Op</code>, do próprio Sequelize.</p>
 <p>No exemplo abaixo, buscaremos registros da coluna start entre duas datas e que o status seja igual a <strong>AGENDADO</strong>, sendo elas:</p>
 <p>1- O primeiro dia do mês de Julho;<br>2- O último dia do mês de Julho</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Appointment</span> <span class="keyword">from</span> <span class="string">&quot;../models/Appointment&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// -- Caso esteja utilizando a síntaxe antiga.</span></span><br><span class="line"><span class="comment">// const &#123; Op &#125; = require(&quot;sequelize&quot;);</span></span><br><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">Op</span> &#125; <span class="keyword">from</span> <span class="string">&quot;sequelize&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> appointments = <span class="keyword">await</span> <span class="title class_">Appointment</span>.<span class="title function_">findAll</span>(&#123;</span><br><span class="line">  <span class="attr">where</span>: &#123;</span><br><span class="line">    <span class="attr">status</span>: <span class="string">&quot;AGENDADO&quot;</span>,</span><br><span class="line">    <span class="attr">start</span>: &#123;</span><br><span class="line">      [<span class="title class_">Op</span>.<span class="property">between</span>]: [<span class="keyword">new</span> <span class="title class_">Date</span>(<span class="string">&quot;Jul 01 2020&quot;</span>), <span class="keyword">new</span> <span class="title class_">Date</span>(<span class="string">&quot;Jul 31 2020&quot;</span>)],</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
 <p>Dessa forma, retornaremos todos os registros que corresponderem a essa busca!<br>Bem simples, não é?</p>
 <p>E você, usa também o Sequelize em seus projetos?</p>
 
@@ -190,7 +192,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/sequelize-query-between/" data-id="clf2z3wei0099ohsmbq3e3m2a" class="article-share-link">
+            <a data-url="https://backefront.com.br/sequelize-query-between/" data-id="clf30yo2e0099h5otcv67gud2" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/sequelize-query-between/#disqus_thread" class="article-comment-link">

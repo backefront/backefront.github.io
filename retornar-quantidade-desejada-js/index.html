@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,12 +122,15 @@ ga('send', 'pageview');
             <p>Em uma determinada situação, nos deparamos com o seguinte problema:<br><em>“Precisamos retornar apenas uma quantidade de itens de um determinado array”</em></p>
 <p>Então, como fazemos para retornar, os primeiros N elementos de um array, no Javascript?<br>Para isso, podemos utilizar o método <code>slice</code>!</p>
 <span id="more"></span>
+
 <p>O método <strong>slice</strong> nos retorna uma quantidade de itens de um array em um novo array,<br>onde precisamos informar a partir de qual item queremos começar a contar e, caso queira,<br>podemos também informar até qual será o final.</p>
 <p>O array original, o qual estamos buscando esses elementos, não será modificado!</p>
 <p>Então, como resolvemos nosso problema?<br>Vamos considerar que temos uma lista com os seguintes números:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> lista = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span>, <span class="number">13</span>, <span class="number">14</span>];</span><br></pre></td></tr></table></figure>
+
 <p>E queremos que nos retorne apenas os <strong>10 primeiros</strong> elementos.<br>Podemos então, fazer da seguinte forma:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> lista = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span>, <span class="number">13</span>, <span class="number">14</span>];</span><br><span class="line"><span class="keyword">const</span> listaFiltrada = lista.<span class="title function_">slice</span>(<span class="number">0</span>, <span class="number">10</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(listaFiltrada); <span class="comment">// Resultado esperado: (10) [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</span></span><br></pre></td></tr></table></figure>
+
 <p>O método <code>slice()</code> aceita dois parâmetros, o primeiro é onde deve-se começar a extração.<br>Esse primeiro parâmetro aceita inclusive, <strong>números negativos</strong><br>Por exemplo, se passássemos <code>slice(-2)</code>, ele retornaria os dois últimos número do array</p>
 <p>Já o segundo parâmetro, é onde deve-se terminar!</p>
 <p>As vezes nos deparamos com problemas que são, em sua grande maioria, fáceis de serem resolvidos.<br>O que nos falta, é conciliar os nossos conhecimentos na linguagem de programação com a situação apresentada.</p>
@@ -192,7 +195,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/retornar-quantidade-desejada-js/" data-id="clf2z3we90093ohsmahbt4m5j" class="article-share-link">
+            <a data-url="https://backefront.com.br/retornar-quantidade-desejada-js/" data-id="clf30yo2b0093h5ot7spegb29" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/retornar-quantidade-desejada-js/#disqus_thread" class="article-comment-link">

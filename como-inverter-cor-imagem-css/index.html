@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -123,10 +123,12 @@ ga('send', 'pageview');
 <p>Todas as imagens e icones já estavam recortados e prontos para serem usados. Porém, em uma determinada página, estava sendo usado um ícone com o símbolo “+”, em branco, porém, a versão que eu tinha recortada era em preto, e eu não conseguiria conversar com o UI naquele momento, eu precisava me virar com o que eu tinha em mãos! Como poderia fazer isso?</p>
 <p>Graças ao CSS, conseguimos fazer algumas modificações em nossas imagens, sem a necessidade de alterar para uma outra imagem!<br>Você conhece a propriedade <code>filter</code>?</p>
 <span id="more"></span>
+
 <p>No CSS3 temos uma propriedade chamada filter, com ela definir efeitos visuais em um elemento!<br>Então, conhecendo essa propriedade, como eu contornei o problema de alterar a cor da imagem?</p>
 <p>O ícone que eu estava utilizando era de cor preta e em uma determinada página que o fundo também era preto, eu precisava daquele mesmo ícone em cor branca!</p>
 <p>A solução foi simples:</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.icone-branco</span> &#123;</span><br><span class="line">  <span class="attribute">filter</span>: <span class="built_in">invert</span>(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Com isso, invertemos a cor atual da imagem!<br>Simples não é mesmo?</p>
 <p>A propriedade filter possui outras opções, como blur(), brightness(), contrast(), drop-shadow(), grayscale(), hue-rotate(), invert(), opacity(), saturate(), sepia(), url().<br>Fique a vontade de brincar com essa propriedade super legal e muito útil!</p>
 
@@ -190,7 +192,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-inverter-cor-imagem-css/" data-id="clf2z3vwt0035ohsmh2qk0dhg" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-inverter-cor-imagem-css/" data-id="clf30ynz00035h5otcwxldj7j" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-inverter-cor-imagem-css/#disqus_thread" class="article-comment-link">

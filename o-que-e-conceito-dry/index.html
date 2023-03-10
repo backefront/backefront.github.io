@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,12 +121,14 @@ ga('send', 'pageview');
             
             <p>Você já ouviu falar sobre um tal de DRY? DRY é uma sigla para <em>Don’t Repeat Yourself</em>, que significa <strong>Não Se Repita</strong>!<br>Este princípio tem como intuito a redução de código repetidos em toda sua aplicação.<br>Mas porque é tão importante evitarmos isso?</p>
 <span id="more"></span>
+
 <p>Primeiramente, devemos ter em mente que não faz sentido ter um mesmo trecho de código em diversos lugares diferentes, isso é ambiguidade!<br>Isso acaba por deixar o seu sistema maior do que realmente necessário! Não faz sentido isso, certo?</p>
 <p>E se precisarmos fazer a correção de uma função que, por algum motivo, se repete em diversos lugares, vamos ter que alterar o mesmo código N vezes, afim de manter sua compatibilidade. Isso é horrível quando pensamos em manutenção de código, mais um motivo para evitarmos a repetição desnecessária de código!</p>
 <h3 id="Como-podemos-melhorar-nossa-estrutura"><a href="#Como-podemos-melhorar-nossa-estrutura" class="headerlink" title="Como podemos melhorar nossa estrutura?"></a>Como podemos melhorar nossa estrutura?</h3><p>Uma das formas que podemos seguir afim de evitar tal redundância é criarmos um arquivo específico para essas funções compartilhadas.<br>Em meus projetos, quando me deparo com funções desse tipo, eu as deixo separadas, dentro de uma pasta chamada <strong>Utils</strong>.</p>
 <p>Dentro dessa pasta, crio minhas funções exportando-as, para que eu possa reutilizá-las livremente por todo meu software! E caso precise fazer alguma correção, faço em um lugar apenas!</p>
 <p>Exemplo de função compartilhada:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// utils/formValidator.js</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Return if the email</span></span><br><span class="line"><span class="comment"> * is a valid one</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">String</span>&#125; email The user&#x27;s email</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="title function_">validateEmail</span> = (<span class="params">email</span>) =&gt; <span class="regexp">/\S+@\S+\.\S+/</span>.<span class="title function_">test</span>(email);</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Returns if the lenght of the</span></span><br><span class="line"><span class="comment"> * fullname is more than 8 characters</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">String</span>&#125; fullname The user&#x27;s Fullname</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="title function_">validateFullname</span> = (<span class="params">fullname</span>) =&gt; fullname.<span class="property">length</span> &gt;= <span class="number">8</span>;</span><br></pre></td></tr></table></figure>
+
 <p>Com isso, onde quer que eu precise utilizar essas funções, eu preciso apenas importá-las!<br>Muito mais simples e prático, não é?</p>
 
             
@@ -189,7 +191,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/o-que-e-conceito-dry/" data-id="clf2z3was007kohsmfzdyasnv" class="article-share-link">
+            <a data-url="https://backefront.com.br/o-que-e-conceito-dry/" data-id="clf30yo1j007kh5ot2g3m0fc4" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/o-que-e-conceito-dry/#disqus_thread" class="article-comment-link">

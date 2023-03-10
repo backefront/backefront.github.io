@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,9 +121,11 @@ ga('send', 'pageview');
             
             <p>O react introduziu em sua versão 16.7.0 os Hooks, que tem como objetivo trabalhar os estados e outras funcionalidades sem precisar criar uma classe!<br>E com a chegada dos Hooks, uma pergunta que pode ser frequente é, como podemos chamar os eventos do componente, como o <code>componentDidMount</code> dentro de um<br>componente stateful?</p>
 <span id="more"></span>
+
 <p>Para acionarmos uma função, que no momento que estamos carregando o componente (igual ao componentDidMount),<br>devemos usar um hook chamado <code>useEffect()</code>.</p>
 <p>Então, nosso código deve ficar da seguinte forma:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; useEffect &#125; <span class="keyword">from</span> <span class="string">&quot;react&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="title function_">nossoComponent</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">  <span class="title function_">useEffect</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// Lógica para quando carregar</span></span><br><span class="line">    <span class="comment">// o componente.</span></span><br><span class="line">  &#125;, []);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
 <p>O useEffect é um React hook onde podemos utilizar quando precisamos pegar dados do servidor, por exemplo.</p>
 <p>O primeiro argumento é um callback, que será acionado após o navegador e o layout da página aparecerem.</p>
 <p>O segundo argumento é um array de valores, quando passado vazio ele é acionado sempre a cada renderização, similar ao componentDidMount</p>
@@ -188,7 +190,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/component-did-mount-react-hooks/" data-id="clf2z3w08004nohsm3vov1165" class="article-share-link">
+            <a data-url="https://backefront.com.br/component-did-mount-react-hooks/" data-id="clf30ynzv004lh5otgyi3bn1l" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/component-did-mount-react-hooks/#disqus_thread" class="article-comment-link">

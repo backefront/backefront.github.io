@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,27 +122,36 @@ ga('send', 'pageview');
             <p>Template Strings são literais strings que permitem a concatenação de strings e expressões de um modo muito mais fácil e agradável de interpretar o código. Em minha opinião, é uma das features implementadas no ECMAScript 2015 que facilitou meu desenvolvimento de códigos!</p>
 <h2 id="Como-utilizar-template-strings"><a href="#Como-utilizar-template-strings" class="headerlink" title="Como utilizar template strings"></a>Como utilizar template strings</h2><p>A utilização de Template Strings é muito fácil, basta envolver o que você deseja entre acentos graves (também conhecido como crase).<br>No exemplo abaixo, mostramos como é a utilização normal e como ficaria usando a template string.</p>
 <span id="more"></span>
+
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> nome = <span class="string">&quot;Essa é uma declaração de variável de forma clássica&quot;</span>;</span><br></pre></td></tr></table></figure>
+
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> nome = <span class="string">`Essa é a declaração usando template strings`</span>;</span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>Legal! Mas aparentemente nada mudou, continua a mesma coisa! Então qual seria a vantagem de trocar um pelo outro?</p>
 </blockquote>
 <p>Realmente, olhando em um exemplo tão básico assim, não faz diferença nenhuma! Mas e se complicarmos só um pouquinho?</p>
 <p>Vamos imaginar um cenário em que você deseja retornar um elemento HTML criado através do Javascript, vamos lá!</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> elemento =</span><br><span class="line">  <span class="string">&quot;&lt;section&gt;&lt;h1&gt;Pequeno teste&lt;/h1&gt;&lt;p&gt;Esse é um pequeno teste para o site backefront.com.br!&lt;/p&gt;&lt;/section&gt;&quot;</span>;</span><br></pre></td></tr></table></figure>
+
 <p>Meio confuso isso né? Vamos quebrar o elemento por linhas para poder facilitar a leitura!</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> elemento = <span class="string">&quot;&lt;section&gt;&quot;</span>;</span><br><span class="line">elemento += <span class="string">&quot;&lt;h1&gt;Pequeno teste&lt;/h1&gt;&quot;</span>;</span><br><span class="line">elemento += <span class="string">&quot;&lt;p&gt;Esse é um pequeno teste para o site backefront.com.br!&lt;/p&gt;&quot;</span>;</span><br><span class="line">elemento += <span class="string">&quot;&lt;/section&gt;&quot;</span>;</span><br></pre></td></tr></table></figure>
+
 <p>Agora melhorou, mas ainda sim é chato ficar digitando tudo isso! Com o template strings, isso fica muito mais fácil!</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> elemento = <span class="string">`</span></span><br><span class="line"><span class="string">  &lt;section&gt;</span></span><br><span class="line"><span class="string">    &lt;h1&gt;</span></span><br><span class="line"><span class="string">	Pequeno teste</span></span><br><span class="line"><span class="string">    &lt;/h1&gt;</span></span><br><span class="line"><span class="string">    &lt;p&gt;</span></span><br><span class="line"><span class="string">	Esse é um pequeno teste para o site backefront.com.br!</span></span><br><span class="line"><span class="string">    &lt;/p&gt;</span></span><br><span class="line"><span class="string">  &lt;/section&gt;</span></span><br><span class="line"><span class="string">`</span>;</span><br></pre></td></tr></table></figure>
+
 <p>Muito melhor não? E o melhor de tudo, isso funciona sem problemas! Perceba que envolvemos o conteúdo entre os acentos, da mesma forma que fazemos com aspas e pronto!</p>
 <h2 id="Template-Strings-encapsulando-funcoes"><a href="#Template-Strings-encapsulando-funcoes" class="headerlink" title="Template Strings encapsulando funções"></a>Template Strings encapsulando funções</h2><p>Para encapsular variáveis dentro de uma string, no molde antigo você precisaria fazer da seguinte forma:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> valor = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> encapsulado = <span class="string">&quot;Esse blog é &quot;</span> + valor; <span class="comment">//Resultado: Esse blog é 10</span></span><br></pre></td></tr></table></figure>
+
 <p>Agora com essa nova feature:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> valor = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> encapsulado = <span class="string">`Esse blog é <span class="subst">$&#123;valor&#125;</span>`</span>; <span class="comment">//Resultado: Esse blog é 10</span></span><br></pre></td></tr></table></figure>
+
 <p>O mesmo se aplica para quando quer passar uma função no meio da string!</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">valor</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">10</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> encapsulado = <span class="string">`Esse blog é <span class="subst">$&#123;valor()&#125;</span>`</span>; <span class="comment">//Resultado: Esse blog é 10</span></span><br></pre></td></tr></table></figure>
-<h2 id="Consideracoes-finais"><a href="#Consideracoes-finais" class="headerlink" title="Considerações finais"></a>Considerações finais</h2><p>Template Strings é uma característica do ES6 que veio para facilitar nossas vidas, é extremamente poderoso e muito útil no nosso dia-a-dia! Sua aceitação entre os navegadores é praticamente total, como demonstrado na imagem abaixo, através de um site de consulta do que podemos usar, o <a target="_blank" rel="noopener" href="https://caniuse.com">caniuse</a></p>
-<p><img src="/posts/CanIUse - Template Strings.png" alt="Can I Use - Template Strings"></p>
+
+<h2 id="Consideracoes-finais"><a href="#Consideracoes-finais" class="headerlink" title="Considerações finais"></a>Considerações finais</h2><p>Template Strings é uma característica do ES6 que veio para facilitar nossas vidas, é extremamente poderoso e muito útil no nosso dia-a-dia! Sua aceitação entre os navegadores é praticamente total, como demonstrado na imagem abaixo, através de um site de consulta do que podemos usar, o <a target="_blank" rel="noopener" href="https://caniuse.com/">caniuse</a></p>
+<p>![Can I Use - Template Strings](&#x2F;posts&#x2F;CanIUse - Template Strings.png)</p>
 <p>Espero que utilizem essa fantástica propriedade!</p>
 <h2 id="Referencias"><a href="#Referencias" class="headerlink" title="Referências"></a>Referências</h2><p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/template_strings">MDN - Template Strings</a><br><a target="_blank" rel="noopener" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/template_strings">ECMAScript 2015 (6th Edition, ECMA-262)</a></p>
 
@@ -206,7 +215,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/template-string/" data-id="clf2z3wem009gohsmha1v3szu" class="article-share-link">
+            <a data-url="https://backefront.com.br/template-string/" data-id="clf30yo2h009gh5ot1qqic3ne" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/template-string/#disqus_thread" class="article-comment-link">

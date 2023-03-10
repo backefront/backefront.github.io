@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,10 +121,13 @@ ga('send', 'pageview');
             
             <p>Com o decorrer do desenvolvimento, acabamos nos deparando com situações inusitadas que acabam nos permitindo aprender novas ferramentas e aumentar o nosso nível profissional. Um exemplo disso, seria a necessidade de substituir um caminho de todas as imagens, no HTML, para um outro, pois em nossa versão final, as imagens podem ser que fiquem em path diferente do que utilizamos no desenvolvimento local! Mas então, como podemos fazer isso de uma forma automatizada? Com nosso querido <a target="_blank" rel="noopener" href="https://gulpjs.com/">Gulp!</a></p>
 <span id="more"></span>
+
 <h2 id="O-que-vamos-precisar"><a href="#O-que-vamos-precisar" class="headerlink" title="O que vamos precisar?"></a>O que vamos precisar?</h2><p>Para começar, precisamos ter o Gulp configurado, <a href="https://backefront.com.br/melhorando-sua-performance-com-gulp/">como já fizemos neste link</a>, e instalar a dependência <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/gulp-replace">gulp-replace</a>, que é uma dependência que irá realizar a alteração de strings que correspondam ao que deseja alterar. Para isto, entre no diretório onde está seu arquivo <code>gulpfile.js</code> e execute o comando: </p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save-dev gulp-replace</span><br></pre></td></tr></table></figure>
+
 <h2 id="Configurando-o-Gulp-replace"><a href="#Configurando-o-Gulp-replace" class="headerlink" title="Configurando o Gulp-replace"></a>Configurando o Gulp-replace</h2><p>Agora que temos instalado o gulp-replace, podemos configurá-lo para fazer as alterações automaticamente. Para isto, devemos seguir a estrutura que nos é fornecida na documentação:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> replace = <span class="built_in">require</span>(<span class="string">&#x27;gulp-replace&#x27;</span>);</span><br><span class="line"> </span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&#x27;templates&#x27;</span>, <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="comment">// Primeiro informamos qual (ou quais) arquivo </span></span><br><span class="line">    <span class="comment">// desejamos alterar, separando por virgula, </span></span><br><span class="line">    <span class="comment">// caso haja outros arquivos.</span></span><br><span class="line">    gulp.<span class="title function_">src</span>([<span class="string">&#x27;nossoArquivoHTML.html&#x27;</span>])</span><br><span class="line">        <span class="comment">// No primeiro parâmetro do replace(),</span></span><br><span class="line">        <span class="comment">// dizemos qual palavra, frase, tag, etc</span></span><br><span class="line">        <span class="comment">// que desejamos procurar e no segundo</span></span><br><span class="line">        <span class="comment">// parâmetro a palavra que iremos </span></span><br><span class="line">        <span class="comment">// colocar no lugar.</span></span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">replace</span>(<span class="string">&#x27;frase a ser procurada&#x27;</span>, <span class="string">&#x27;frase encontrada!&#x27;</span>))</span><br><span class="line">        <span class="comment">// E dizemos para onde desejamos enviar</span></span><br><span class="line">        <span class="comment">// o arquivo com as alterações realizadas</span></span><br><span class="line">        .<span class="title function_">pipe</span>(gulp.<span class="title function_">dest</span>(<span class="string">&#x27;build/&#x27;</span>));</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
 <p>Desta forma, assim que executarmos o comando <code>gulp templates</code> no terminal, essa nossa tarefa será executada e todas as palavras que se encaixem no contexto, irá ser feito a substituição! </p>
 <p>Você pode realizar na mesma tarefa, diversos <em>replaces</em> juntos, basta adicionar outro <code>.pipe(replace())</code> em seguida do primeiro replace! Além disso, é possível fazer alterações usando <code>regex</code>, <code>funções de callback</code>, entre outras coisas!</p>
 
@@ -188,7 +191,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/utilizando-gulp-para-realizar-replace-no-codigo/" data-id="clf2z3wf200a1ohsm33irbzh6" class="article-share-link">
+            <a data-url="https://backefront.com.br/utilizando-gulp-para-realizar-replace-no-codigo/" data-id="clf30yo2r009zh5otdi501daq" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/utilizando-gulp-para-realizar-replace-no-codigo/#disqus_thread" class="article-comment-link">

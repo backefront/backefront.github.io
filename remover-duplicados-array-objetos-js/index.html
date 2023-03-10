@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -124,7 +124,9 @@ ga('send', 'pageview');
 <p>Além de não funcionar, não podemos simplesmente implementar um loop dentro de um loop (um forEach com um some, por exemplo), ou melhor dizendo, até podemos, mas esse algoritmo teria sua complexidade O(n²) o que é extremamente LENTO em caso de arrays maiores. </p>
 <p>Neste código abaixo, demonstro como podemos criar nossa função de remover valores repetidos em um array: </p>
 <span id="more"></span>
+
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">Array</span>&#125; <span class="variable">items</span> - Array de itens a serem removidos</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">String</span>&#125; <span class="variable">prop</span> - Propriedade a ser comparada</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns</span> &#123;<span class="type">Array</span>&#125; - Array de itens sem duplicidade</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">removeDuplicate</span>(<span class="params">items, prop</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> checkedItems = &#123;&#125;;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> uniqueArray = items.<span class="title function_">filter</span>(<span class="function">(<span class="params">item</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> isUnique = !checkedItems[<span class="string">`prop_<span class="subst">$&#123;item[prop]&#125;</span>`</span>];</span><br><span class="line">    checkedItems[<span class="string">`prop_<span class="subst">$&#123;item[prop]&#125;</span>`</span>] = <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">return</span> isUnique;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> uniqueArray;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Dessa forma, os valores que já foram verificados são adicionados em uma variável auxiliar e sabemos se já apareceu alguma vez em nosso Array.</p>
 <p>Talvez não seja a forma mais bonita, mas é eficiente!<br>Diz ai se você usa algum outro algoritmo!</p>
 
@@ -188,7 +190,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/remover-duplicados-array-objetos-js/" data-id="clf2z3we2008vohsm80imgx1z" class="article-share-link">
+            <a data-url="https://backefront.com.br/remover-duplicados-array-objetos-js/" data-id="clf30yo26008vh5ot77n9147w" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/remover-duplicados-array-objetos-js/#disqus_thread" class="article-comment-link">

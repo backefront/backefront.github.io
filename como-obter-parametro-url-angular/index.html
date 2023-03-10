@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -124,10 +124,12 @@ ga('send', 'pageview');
 <span id="more"></span>
 <p>Vamos supor que estamos criando uma aplicação de listagem de alunos<br>O sistema basicamente vai ser composto por duas telas<br>A tela com todos os Alunos, chamada <code>AlunosComponent</code><br>E a tela onde teremos toda as informações sobre um aluno em específico, <code>PerfilAlunoComponent</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="attr">routes</span>: <span class="title class_">Routes</span> = [</span><br><span class="line">  &#123; <span class="attr">path</span>: <span class="string">&#x27;&#x27;</span>, <span class="attr">component</span>: <span class="title class_">AlunosComponent</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">path</span>: <span class="string">&#x27;aluno/:id&#x27;</span>, <span class="attr">component</span>: <span class="title class_">PerfilAlunoComponent</span>&#125;</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
+
 <p>Quando colocamos esse <code>:id</code> em nosso path, dizemos que o próximo valor após a barra será um valor variável<br>E que essa nossa variável será chamada <strong>id</strong>.<br>É muito importante que entenda que da mesma forma que você definir o nome aqui,<br>Será usado para acessar essa informação mais tarde!</p>
 <p>Agora, vamos em nosso arquivo <code>PerfilAlunoComponent</code><br>Onde queremos obter esse ID para trazer as informações sobre esse aluno.</p>
 <p>Para obter esse valor pela URL, usaremos o <code>ActivatedRoute</code>.<br>Para isso, no <strong>constructor</strong>, adicione as seguintes linhas:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public userId;</span><br><span class="line"></span><br><span class="line"><span class="title function_">constructor</span>(<span class="params"> private route: ActivatedRoute </span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">route</span>.<span class="property">params</span>.<span class="title function_">subscribe</span>(<span class="function"><span class="params">params</span> =&gt;</span> <span class="variable language_">this</span>.<span class="property">userId</span> = params[<span class="string">&#x27;id&#x27;</span>]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Com isso adicionado, conseguimos obter todos os parâmetros da URL<br>Buscando pela variável que configuramos anteriormente no arquivo de rotas.</p>
 <p>E pronto! Temos em mãos o ID que queríamos, simples não é?</p>
 
@@ -191,7 +193,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-obter-parametro-url-angular/" data-id="clf2z3vxb003iohsm52am9q4j" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-obter-parametro-url-angular/" data-id="clf30ynza003gh5oteb7647cb" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-obter-parametro-url-angular/#disqus_thread" class="article-comment-link">

@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,8 +122,10 @@ ga('send', 'pageview');
             <p>Alguma vez você já precisou juntar, mergear dois arrays no javascript? Você poderia até construir uma lógica relativamente simples, que ocuparia algumas linhas de código para resolver esta situação, sem problema nenhum! Mas e se eu te disser que você consegue resolver esse problema com <strong>uma</strong> linha de código? Se liga nessa dica então!</p>
 <p>Temos as nossas duas listas, que contêm os nomes de alunos e a outra das alunas:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> alunos = [ <span class="string">&#x27;João Paulo&#x27;</span>, <span class="string">&#x27;Rodolfo&#x27;</span>, <span class="string">&#x27;Igor&#x27;</span>, <span class="string">&#x27;Pedro&#x27;</span>, <span class="string">&#x27;Gustavo&#x27;</span> ];</span><br><span class="line"><span class="keyword">const</span> alunas = [ <span class="string">&#x27;Maria&#x27;</span>, <span class="string">&#x27;Carla&#x27;</span>, <span class="string">&#x27;Melanie&#x27;</span>, <span class="string">&#x27;Sabrina&#x27;</span> ];</span><br></pre></td></tr></table></figure>
+
 <p>Agora vem a mágica, como podemos concatenar isso? Com o <strong>Spread Operator</strong>!</p>
 <span id="more"></span>
+
 <p>Spread Operator é o nosso querido amigo, que nos possibilitará de realizar essa “mágica” em apenas uma linha! Veja como é simples:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> classe = [ ...alunos, ...alunas ];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(classe);</span><br><span class="line"><span class="comment">// Resultado esperado: (9) [&quot;João Paulo&quot;, &quot;Rodolfo&quot;, &quot;Igor&quot;, &quot;Pedro&quot;, &quot;Gustavo&quot;, &quot;Maria&quot;, &quot;Carla&quot;, &quot;Melanie&quot;, &quot;Sabrina&quot;]</span></span><br></pre></td></tr></table></figure>
             
@@ -186,7 +188,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-juntar-arrays-javascript/" data-id="clf2z3vwu0037ohsm1qlfcmj2" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-juntar-arrays-javascript/" data-id="clf30ynz00037h5otgatt70zb" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-juntar-arrays-javascript/#disqus_thread" class="article-comment-link">

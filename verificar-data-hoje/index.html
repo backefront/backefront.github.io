@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,7 +121,9 @@ ga('send', 'pageview');
             
             <p>Você já precisou verificar se a data que está recebendo é no dia de <strong>hoje</strong>?<br>Com uma função bem simples, conseguimos validar se o dia que estamos recebendo como parâmetro é referente ao dia de hoje<br>Basta usar a seguinte função:</p>
 <span id="more"></span>
+
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Recebemos como parâmetro a data que queremos verificar</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">isToday</span> = (<span class="params">data</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">const</span> today = <span class="keyword">new</span> <span class="title class_">Date</span>();</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    data.<span class="title function_">getDate</span>() == today.<span class="title function_">getDate</span>() &amp;&amp;</span><br><span class="line">    data.<span class="title function_">getMonth</span>() == data.<span class="title function_">getMonth</span>() &amp;&amp;</span><br><span class="line">    data.<span class="title function_">getFullYear</span>() == today.<span class="title function_">getFullYear</span>()</span><br><span class="line">  );</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
 <p>Bem simples, fácil e útil!</p>
 
             
@@ -184,7 +186,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/verificar-data-hoje/" data-id="clf2z3wfn00abohsm7vcd6203" class="article-share-link">
+            <a data-url="https://backefront.com.br/verificar-data-hoje/" data-id="clf30yo3100abh5ot1ixy86ow" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/verificar-data-hoje/#disqus_thread" class="article-comment-link">

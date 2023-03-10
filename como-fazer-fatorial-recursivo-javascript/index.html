@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,12 +121,16 @@ ga('send', 'pageview');
             
             <p>Criar uma função que calcule o fatorial é algo frequentemente pedido em exercícios de lógica.<br>Para criar então em Javascript é uma atividade muito fácil a ser realizada!<br>Vamos utilizar recursão para deixar o nosso código mais enxuto possível!</p>
 <span id="more"></span>
+
 <p>Primeiramente, vamos entender como funciona o fatorial, por exemplo, fatorial de 5:</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5! = 5 * 4 * 3 * 2 * 1 = 120</span><br></pre></td></tr></table></figure>
+
 <p>Vamos agora converter essa lógica para o Javascript:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">fatorial</span> = (<span class="params">numero</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">if</span> (numero &lt; <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> numero === <span class="number">0</span> ? <span class="number">1</span> : numero * <span class="title function_">fatorial</span>(numero - <span class="number">1</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="title function_">fatorial</span>(<span class="number">5</span>);</span><br><span class="line"><span class="comment">// Resultado esperado: 120</span></span><br></pre></td></tr></table></figure>
+
 <p>Com essa função, podemos retornar o resultado fatorial de qualquer número em algumas poucas linhas!<br>Poderíamos diminuir ainda mais, deixando o <code>if</code> em uma linha só:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">fatorial</span> = (<span class="params">numero</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">if</span> (numero &lt; <span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">  <span class="keyword">return</span> numero === <span class="number">0</span> ? <span class="number">1</span> : numero * <span class="title function_">fatorial</span>(numero - <span class="number">1</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="title function_">fatorial</span>(<span class="number">5</span>);</span><br><span class="line"><span class="comment">// Resultado esperado: 120</span></span><br></pre></td></tr></table></figure>
+
 <p>Super simples realizar a função fatorial recursiva com Javascript, não é?</p>
 <p>🏡</p>
 
@@ -190,7 +194,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-fazer-fatorial-recursivo-javascript/" data-id="clf2z3vu8002hohsm2lt9erei" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-fazer-fatorial-recursivo-javascript/" data-id="clf30ynyk002hh5ot48rieshm" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-fazer-fatorial-recursivo-javascript/#disqus_thread" class="article-comment-link">

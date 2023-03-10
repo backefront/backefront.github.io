@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -119,9 +119,10 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
             
-            <p>Você sabia que você consegue alterar o estilo de um input, podendo adicionar o estilo que quiser, mas mantendo as propriedades de um input?<br>Como por exemplo, um input do tipo <code>file</code>, ter a forma de um botão com uma imagem/ícone.</p>
+            <p>Você sabia que você consegue alterar o estilo de um input, podendo adicionar o estilo que quiser, mas mantendo as propriedades de um input?<br>Como por exemplo, um input do tipo <code>file</code>, ter a forma de um botão com uma imagem&#x2F;ícone.</p>
 <p>Desta forma, conseguimos manter o estilo da nossa página e conseguimos manter o comportamento padrão do componente!</p>
 <span id="more"></span>
+
 <p>O GIF abaixo demonstra um exemplo, onde temos um <strong>input file</strong> com layout de um botão comum:</p>
 <p><img src="/posts/layout-button.gif" alt="Input File com CSS de botão"></p>
 <p>Para fazermos isso, basicamente usamos … coisas do HTML:</p>
@@ -132,9 +133,11 @@ ga('send', 'pageview');
 </ul>
 <p>Então, nosso HTML ficaria:</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">&quot;uploadPhoto&quot;</span> <span class="attr">type</span>=<span class="string">&quot;file&quot;</span> <span class="attr">accept</span>=<span class="string">&quot;image/*&quot;</span> <span class="attr">style</span>=<span class="string">&quot;display: none&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;uploadPhoto&quot;</span> <span class="attr">class</span>=<span class="string">&quot;btn-cta&quot;</span>&gt;</span></span><br><span class="line">    Upload picture</span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn3.iconfinder.com/data/icons/glypho-generic-icons/64/action-upload-alt-512.png&quot;</span> <span class="attr">style</span>=<span class="string">&quot;width: 20px&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>É muito importante adicionarmos o display none no input.<br>Pois precisamos esconder esse input da nossa exibição padrão, e deixar o comportamento seja guiado pelo nosso label!</p>
 <p>E apenas para estilizar este nosso label, vamos adicionar o seguinte CSS:</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.btn-cta</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#fff</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">2px</span> solid <span class="number">#424242</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#424242</span>;</span><br><span class="line">  <span class="attribute">cursor</span>: pointer;</span><br><span class="line">  <span class="attribute">font-weight</span>: bold;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">6px</span> <span class="number">16px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p><a target="_blank" rel="noopener" href="https://codepen.io/victorjordan95/pen/EebmOV">Neste link</a> você encontra o código feito neste post.<br>Esta dica funciona para outros tipos de inputs, solte sua criatividade para personalizar os inputs que você quiser!</p>
 
             
@@ -197,7 +200,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/alterar-layout-input-html/" data-id="clf2z3vn0000gohsmga67g8y6" class="article-share-link">
+            <a data-url="https://backefront.com.br/alterar-layout-input-html/" data-id="clf30ynxj000ih5otd0lubsy5" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/alterar-layout-input-html/#disqus_thread" class="article-comment-link">

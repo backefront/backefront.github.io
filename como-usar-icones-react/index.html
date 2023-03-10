@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -124,16 +124,21 @@ ga('send', 'pageview');
 <p>Afinal, quem não entende que aquele símbolo de setinha para esquerda significa <strong>voltar</strong> e a seta para direita de <strong>ir para frente</strong>?</p>
 <p>Por isso, a utilização de ícones em nossa aplicação é de suma importância!<br>Vamos então ver como podemos adicionar as melhores bibliotecas de iconologia em nosso projeto?</p>
 <span id="more"></span>
+
 <p>Para isso, vamos utilizar uma lib chamada <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/react-icons">react-icons</a></p>
 <p><strong>Yarn</strong></p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add react-icons</span><br></pre></td></tr></table></figure>
+
 <p><strong>NPM</strong></p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install react-icons --save</span><br></pre></td></tr></table></figure>
+
 <p>Com o React-icons instalado, a sua utilização é muito simples!<br>Precisamos apenas importar o ícone que queremos utilizar e de qual iconologia queremos!</p>
 <p>Neste exemplo, vamos importar o ícone para salvar, do <a target="_blank" rel="noopener" href="https://react-icons.netlify.com/#/icons/fa">Font Awesome</a></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">FaSave</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;react-icons/fa&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Question</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">    <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> &lt;button type=&quot;submit&quot;&gt;Save &lt;FaSave /&gt;&lt;button&gt;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Além disso, o ícone aceita algumas propriedades por padrão!<br>Onde podemos definir: <code>color</code>, <code>size</code>, <code>className</code>, <code>style</code> e <code>attr</code></p>
 <h3 id="Exemplo"><a href="#Exemplo" class="headerlink" title="Exemplo"></a>Exemplo</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">FaSave</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;react-icons/fa&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Question</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">    <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> (</span><br><span class="line">          &lt;button type=&quot;submit&quot;&gt;</span><br><span class="line">            Save</span><br><span class="line">            &lt;FaSave</span><br><span class="line">              size=&#123;16&#125;</span><br><span class="line">              color=&quot;#fff&quot;</span><br><span class="line">            /&gt;</span><br><span class="line">          &lt;button&gt;</span><br><span class="line">        )</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h3 id="Bibliotecas-contidas-no-react-icons"><a href="#Bibliotecas-contidas-no-react-icons" class="headerlink" title="Bibliotecas contidas no react-icons"></a>Bibliotecas contidas no react-icons</h3><p>Abaixo, podemos ver quais são as bibliotecas de ícones contidas em react-icons</p>
 <table>
 <thead>
@@ -141,8 +146,7 @@ ga('send', 'pageview');
 <th>Icon Library</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>Ant Design Icons</td>
 </tr>
 <tr>
@@ -178,8 +182,7 @@ ga('send', 'pageview');
 <tr>
 <td>Weather Icons</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h3 id="Documentacao"><a href="#Documentacao" class="headerlink" title="Documentação"></a>Documentação</h3><p>Para ter acesso a documentação completa e consequentemente, o nome dos ícones, modo de importação correto, você deve acessar a <a target="_blank" rel="noopener" href="https://react-icons.netlify.com/#/">documentação oficial do react-icons</a></p>
 <p>🏡</p>
 
@@ -243,7 +246,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-usar-icones-react/" data-id="clf2z3vzp0047ohsmciezh8mq" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-usar-icones-react/" data-id="clf30ynzo0047h5ot8wu2f3ae" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-usar-icones-react/#disqus_thread" class="article-comment-link">

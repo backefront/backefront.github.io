@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,10 +122,13 @@ ga('send', 'pageview');
             <p>Uma das coisas mais comuns enquanto desenvolvemos em React com Hooks é a utilização do <code>useEffect</code>.<br>Basicamente, com ele podemos executar alguma função no momento em que estamos carregando a página ou quando ocorre alteração de alguma variável que estamos assistindo.</p>
 <p>Mas por padrão, o React não aceita que essa função useEffect seja do tipo <code>async</code>.<br>Como podemos fazer então para realizar um fetch dentro do useEffect e aguardar o resultado?</p>
 <span id="more"></span>
+
 <h3 id="IIFE"><a href="#IIFE" class="headerlink" title="IIFE"></a>IIFE</h3><p>Uma das maneiras que você pode fazer é usar uma IIFE (Immediately Invoked Function Expression):</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">useEffect</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">  (<span class="keyword">async</span> () =&gt; &#123;</span><br><span class="line">    <span class="keyword">const</span> users = <span class="keyword">await</span> <span class="title function_">getUsers</span>();</span><br><span class="line">    <span class="title function_">setUsers</span>(users);</span><br><span class="line">  &#125;)();</span><br><span class="line">&#125;, []);</span><br></pre></td></tr></table></figure>
+
 <h3 id="Funcao-externa"><a href="#Funcao-externa" class="headerlink" title="Função externa"></a>Função externa</h3><p>Você pode criar uma função por fora do escopo da classe ou função do seu componente React:</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">fetchUsers</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">  <span class="comment">// Código para buscar usuários</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Users</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> [users, setUsers] = <span class="title function_">useState</span>([]);</span><br><span class="line"></span><br><span class="line">  <span class="title function_">useEffect</span>(<span class="function">()=&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">await</span> <span class="title function_">fetchUsers</span>();</span><br><span class="line">    <span class="title function_">setUsers</span>(users);</span><br><span class="line">  &#125;, []);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Seguindo uma dessas formas, você evita alguns problemas de looping e o ESLint também não reclama!</p>
 
             
@@ -188,7 +191,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-fazer-funcao-async-useeffect/" data-id="clf2z3vub002kohsmhpyj23v2" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-fazer-funcao-async-useeffect/" data-id="clf30ynyl002kh5otas0i271x" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-fazer-funcao-async-useeffect/#disqus_thread" class="article-comment-link">

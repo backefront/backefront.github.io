@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -124,6 +124,7 @@ ga('send', 'pageview');
             <p>Você já ouviu falar do método <code>trunc</code> de <code>Math</code>?<br>Ele remove as casas decimais, sem modificar em nada o número que está a frente!</p>
 <p>Olha como é simples:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> number = <span class="number">24.54</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> newNumber = <span class="title class_">Math</span>.<span class="title function_">trunc</span>(number);</span><br><span class="line"><span class="comment">// Output: 24</span></span><br></pre></td></tr></table></figure>
+
 <p>Muito simples né? Esse método só não funciona para IE (mas se nem a Microsoft dá mais suporte pra ele, quem sou eu pra dar né? 🤪)</p>
 
             
@@ -148,7 +149,7 @@ ga('send', 'pageview');
         </div> -->
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/remover-decimais-javascript/" data-id="clf2z3we1008tohsmb2ce2f15" class="article-share-link">
+            <a data-url="https://backefront.com.br/remover-decimais-javascript/" data-id="clf30yo25008th5otev9p7qh3" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/remover-decimais-javascript/#disqus_thread" class="article-comment-link">
@@ -194,6 +195,7 @@ ga('send', 'pageview');
 <p>4 - Procure sobre font e clique em “Edit in settings.json”</p>
 <p>5 - Dentro do JSON, copie e cole o seguinte código: </p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="string">&quot;editor.fontFamily&quot;</span>: <span class="string">&quot;Fira Code&quot;</span>,</span><br><span class="line"><span class="string">&quot;editor.fontSize&quot;</span>: <span class="number">12</span>,</span><br><span class="line"><span class="string">&quot;editor.fontLigatures&quot;</span>: <span class="literal">true</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>Feito isso, só reiniciar o editor de texto e pronto!</p>
 
             
@@ -218,7 +220,7 @@ ga('send', 'pageview');
         </div> -->
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/adicionar-fonte-firacoda-vscode/" data-id="clf2z3vlt0005ohsmcqwt6pft" class="article-share-link">
+            <a data-url="https://backefront.com.br/adicionar-fonte-firacoda-vscode/" data-id="clf30ynx70005h5ot9mgf883h" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/adicionar-fonte-firacoda-vscode/#disqus_thread" class="article-comment-link">
@@ -258,6 +260,7 @@ ga('send', 'pageview');
             
             <p>Você já precisou verificar se uma string possui duas ou mais opções com o método includes?<br>Como você sabe, isso não é possível com o método <code>includes()</code>, mas com RegEX, conseguimos criar uma alternativa muito simples!</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> hasWord = <span class="regexp">/teste|palavra/</span>.<span class="title function_">test</span>(<span class="string">&#x27;palavra&#x27;</span>);</span><br><span class="line"><span class="comment">// Resultado: true</span></span><br></pre></td></tr></table></figure>
+
 <p>Com esse RegEX, podemos passar quantas palavras queremos testar!<br>Mas isso só funciona com <code>strings</code>, com objetos você deve usar o <code>includes()</code> mesmo! :)</p>
 <p>Comenta aí o que achou!  </p>
 
@@ -283,7 +286,7 @@ ga('send', 'pageview');
         </div> -->
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/include-multiplas-opcoes/" data-id="clf2z3w7c006qohsmbqeadrbp" class="article-share-link">
+            <a data-url="https://backefront.com.br/include-multiplas-opcoes/" data-id="clf30yo13006qh5otetj2e290" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/include-multiplas-opcoes/#disqus_thread" class="article-comment-link">
@@ -324,6 +327,7 @@ ga('send', 'pageview');
             <p>Permitir que uma propriedade possa ser dois tipos, no Proptype é muito simples!</p>
 <p>Para isso, basta você fazer o seguinte:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">size</span>: <span class="title class_">PropTypes</span>.<span class="title function_">oneOfType</span>([</span><br><span class="line">  <span class="title class_">PropTypes</span>.<span class="property">string</span>,</span><br><span class="line">  <span class="title class_">PropTypes</span>.<span class="property">number</span></span><br><span class="line">])</span><br></pre></td></tr></table></figure>
+
 <p>Tranquilo, né?<br>🏡</p>
 
             
@@ -348,7 +352,7 @@ ga('send', 'pageview');
         </div> -->
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/proptypes-permitir-diferentes-tipos-uma-prop/" data-id="clf2z3wdw008lohsm1uay203h" class="article-share-link">
+            <a data-url="https://backefront.com.br/proptypes-permitir-diferentes-tipos-uma-prop/" data-id="clf30yo21008jh5otgm3z1frf" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/proptypes-permitir-diferentes-tipos-uma-prop/#disqus_thread" class="article-comment-link">
@@ -386,7 +390,7 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
             
-            <p>Recentemente, trabalhando em um componente de paginação, tive a necessidade de bloquear o redirecionamento de um link (a href=””), para que pudesse usar uma função customizada para fazer a paginação.</p>
+            <p>Recentemente, trabalhando em um componente de paginação, tive a necessidade de bloquear o redirecionamento de um link (a href&#x3D;””), para que pudesse usar uma função customizada para fazer a paginação.</p>
 <p>O atributo <code>href</code> por sua vez, era obrigatório ser passado e toda vez que o clique era feito, recarregava a página, fazendo com que eu perdesse o estado da minha aplicação.</p>
 <p>Como foi resolvido?</p>
             
@@ -417,7 +421,7 @@ ga('send', 'pageview');
         </div> -->
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/bloquear-redirecionamento-href-link/" data-id="clf2z3vnl000sohsmccyrbk1v" class="article-share-link">
+            <a data-url="https://backefront.com.br/bloquear-redirecionamento-href-link/" data-id="clf30ynxo000sh5ot9ieu1gva" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/bloquear-redirecionamento-href-link/#disqus_thread" class="article-comment-link">
@@ -486,7 +490,7 @@ ga('send', 'pageview');
         </div> -->
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/verificar-numero-quadrado-perfeito-js/" data-id="clf2z3wgd00ahohsm9fkhf3wh" class="article-share-link">
+            <a data-url="https://backefront.com.br/verificar-numero-quadrado-perfeito-js/" data-id="clf30yo3400ahh5ot8q2h17uw" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/verificar-numero-quadrado-perfeito-js/#disqus_thread" class="article-comment-link">
@@ -554,7 +558,7 @@ ga('send', 'pageview');
         </div> -->
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/atualizar-versao-android-react-native/" data-id="clf2z3vn8000nohsm0t8f75yu" class="article-share-link">
+            <a data-url="https://backefront.com.br/atualizar-versao-android-react-native/" data-id="clf30ynxm000nh5ot7qwj5ov0" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/atualizar-versao-android-react-native/#disqus_thread" class="article-comment-link">
@@ -622,7 +626,7 @@ ga('send', 'pageview');
         </div> -->
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/removendo-todos-valores-vazios-objeto-javascript/" data-id="clf2z3wdy008nohsmgx0dal4f" class="article-share-link">
+            <a data-url="https://backefront.com.br/removendo-todos-valores-vazios-objeto-javascript/" data-id="clf30yo23008nh5ot7vo47xnk" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/removendo-todos-valores-vazios-objeto-javascript/#disqus_thread" class="article-comment-link">
@@ -690,7 +694,7 @@ ga('send', 'pageview');
         </div> -->
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-abrir-menu-debugger-react-native/" data-id="clf2z3vpt0014ohsmd7wi7g5q" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-abrir-menu-debugger-react-native/" data-id="clf30ynxu0014h5ot3m2mbjr4" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-abrir-menu-debugger-react-native/#disqus_thread" class="article-comment-link">
@@ -758,7 +762,7 @@ ga('send', 'pageview');
         </div> -->
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/diferenca-class-component-function-component-react/" data-id="clf2z3w3y0056ohsm6uvo7c69" class="article-share-link">
+            <a data-url="https://backefront.com.br/diferenca-class-component-function-component-react/" data-id="clf30yo0a0056h5ota8tx5tk2" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/diferenca-class-component-function-component-react/#disqus_thread" class="article-comment-link">

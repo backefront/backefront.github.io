@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,13 +122,16 @@ ga('send', 'pageview');
             <p>Você já precisou testar sua aplicação em ambientes diferentes, com bases diferentes mas com o mesmo front, no Angular? Você poderia alterar a URL base para que sua aplicação conecte-se em outras bases, mas isso seria viável? Com isso, você poderia esquecer de voltar a variável e acabaria commitando ou cansaria de trocar a todo momento. Pensando nisso, porque não criar <em>environments</em> diferentes no Angular, um para cada tipo de base ou ambiente?</p>
 <h2 id="Criando-um-novo-ambiente"><a href="#Criando-um-novo-ambiente" class="headerlink" title="Criando um novo ambiente"></a>Criando um novo ambiente</h2><p>Primeiramente, é necessário alterar seu arquivo <strong>angular.json</strong>, que fica dentro da raiz do seu projeto, adicionando algumas configurações do novo environment que você está configurando.<br>Dentro do seu JSON, procure por <strong>configurations</strong> e em cima de <strong>production</strong>:</p>
 <span id="more"></span>
+
 <p><img src="/posts/environments-diferentes-onde-add.png" alt="Onde adicionar o JSON do Environment - 2018"></p>
 <p>Adicione um novo objeto, que é do nosso ambiente de <strong>DEV</strong>:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;dev&quot;</span>: &#123;</span><br><span class="line">  <span class="string">&quot;fileReplacements&quot;</span>: [</span><br><span class="line">	&#123;</span><br><span class="line">	  <span class="string">&quot;replace&quot;</span>: <span class="string">&quot;src/environments/environment.prod.ts&quot;</span>,</span><br><span class="line">	  <span class="string">&quot;with&quot;</span>: <span class="string">&quot;src/environments/environment.ts&quot;</span></span><br><span class="line">	&#125;</span><br><span class="line">  ],</span><br><span class="line">  <span class="string">&quot;optimization&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="string">&quot;outputHashing&quot;</span>: <span class="string">&quot;all&quot;</span>,</span><br><span class="line">  <span class="string">&quot;sourceMap&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="string">&quot;extractCss&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="string">&quot;namedChunks&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="string">&quot;aot&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="string">&quot;extractLicenses&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="string">&quot;vendorChunk&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="string">&quot;buildOptimizer&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="string">&quot;serviceWorker&quot;</span>: <span class="literal">true</span></span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
 <p>Todas estas opções definidas como <code>true</code> ou <code>false</code>, são configurações de build do Angular, onde permite que seus arquivos sejam minificados, otimizados, etc. <a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki/stories-application-environments">Neste link</a>, há uma explicação mais detalhada sobre as opções de configurações de ambientes.</p>
 <p>Feito isso, modifique a seção onde está o <em>serve</em>, adicionando uma nova configuração, apontando esse dev criado como um novo build:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;serve&quot;</span>:</span><br><span class="line">  <span class="string">&quot;configurations&quot;</span>: &#123;</span><br><span class="line">	<span class="string">&quot;dev&quot;</span>: &#123;</span><br><span class="line">	  <span class="string">&quot;browserTarget&quot;</span>: <span class="string">&quot;projectName:build:dev&quot;</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// ... restante do código</span></span><br></pre></td></tr></table></figure>
-<p>Agora que está tudo certo, você está apto a rodar o comando para inicializar o server com o ambiente desejado! Para isto, basta rodar o comando: <strong>ng s -c dev</strong> ou <strong>ng s –configuration=dev</strong></p>
+
+<p>Agora que está tudo certo, você está apto a rodar o comando para inicializar o server com o ambiente desejado! Para isto, basta rodar o comando: <strong>ng s -c dev</strong> ou <strong>ng s –configuration&#x3D;dev</strong></p>
 
             
         </div>
@@ -190,7 +193,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/criando-outros-environments-angular/" data-id="clf2z3w0k004rohsmhhirhhbk" class="article-share-link">
+            <a data-url="https://backefront.com.br/criando-outros-environments-angular/" data-id="clf30ynzy004rh5ot81z71dnl" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/criando-outros-environments-angular/#disqus_thread" class="article-comment-link">

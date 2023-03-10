@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -119,12 +119,14 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
             
-            <p>No Javascript quando passamos um objeto/array em uma função, como parâmetro, passamos ela como <strong>referência</strong>.<br>Quando realizamos alguma operação que altera, como por exemplo, adicionar um elemento novo ao objeto e utilizamos <code>push</code>, estamos alterando diretamente aquele objeto que passamos apenas como referência!</p>
+            <p>No Javascript quando passamos um objeto&#x2F;array em uma função, como parâmetro, passamos ela como <strong>referência</strong>.<br>Quando realizamos alguma operação que altera, como por exemplo, adicionar um elemento novo ao objeto e utilizamos <code>push</code>, estamos alterando diretamente aquele objeto que passamos apenas como referência!</p>
 <p>Qual a consequência disso? Caso uma outra função esteja utilizando o mesmo objeto, será afetado pela ação de adicionar!</p>
 <p>Então, pensando nisso, a melhor alternativa é sempre retornarmos uma cópia do objeto!<br>E para isso podemos utilizar o <a href="https://backefront.com.br/como-juntar-arrays-javascript/"><code>spread operator</code></a></p>
 <span id="more"></span>
+
 <p>Vamos utilizar como exemplo uma função que adicione um nome na lista:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">listaNomes = [<span class="string">&quot;Victor&quot;</span>, <span class="string">&quot;Lo Ruanda&quot;</span>, <span class="string">&quot;João&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">addName</span> = (<span class="params">listaNomes, nome</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> [...listaNomes, nome];</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="title function_">addName</span>(listaNomes, <span class="string">&quot;Vicenzo&quot;</span>);</span><br><span class="line"><span class="comment">// Retorno: [&#x27;Victor&#x27;, &#x27;Lo Ruanda&#x27;, &#x27;João&#x27;, &#x27;Vicenzo&#x27;]</span></span><br></pre></td></tr></table></figure>
+
 <p>Agora com essa função, estamos retornando um novo objeto e não mais alterando o objeto que foi nos passado!<br>Caso queira deixar essa função em apenas uma linha, você pode fazer a seguinte alteração:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">addName</span> = (<span class="params">listaNomes, nome</span>) =&gt; [...listaNomes, nome];</span><br><span class="line"></span><br><span class="line"><span class="title function_">addName</span>(listaNomes, <span class="string">&quot;Vicenzo&quot;</span>);</span><br><span class="line"><span class="comment">// Retorno: [&#x27;Victor&#x27;, &#x27;Lo Ruanda&#x27;, &#x27;João&#x27;, &#x27;Vicenzo&#x27;]</span></span><br></pre></td></tr></table></figure>
 
@@ -188,7 +190,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/evite-usar-push-javascript/" data-id="clf2z3w4u005xohsmhe7s2arn" class="article-share-link">
+            <a data-url="https://backefront.com.br/evite-usar-push-javascript/" data-id="clf30yo0l005xh5ot3jjxc32t" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/evite-usar-push-javascript/#disqus_thread" class="article-comment-link">

@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -119,12 +119,14 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
             
-            <p>Recentemente, trabalhando em um componente de paginação, tive a necessidade de bloquear o redirecionamento de um link (a href=””), para que pudesse usar uma função customizada para fazer a paginação.</p>
+            <p>Recentemente, trabalhando em um componente de paginação, tive a necessidade de bloquear o redirecionamento de um link (a href&#x3D;””), para que pudesse usar uma função customizada para fazer a paginação.</p>
 <p>O atributo <code>href</code> por sua vez, era obrigatório ser passado e toda vez que o clique era feito, recarregava a página, fazendo com que eu perdesse o estado da minha aplicação.</p>
 <p>Como foi resolvido?</p>
 <span id="more"></span>
+
 <p>Resolvi isso de uma maneira bem simples, com um bom e velho amigo, nosso querido javascript puro.<br>No lugar do href, simplesmente coloquei: </p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;javascript:void(0)&quot;</span>&gt;</span> Link <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>Simples, não é?</p>
 
             
@@ -187,7 +189,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/bloquear-redirecionamento-href-link/" data-id="clf2z3vnl000sohsmccyrbk1v" class="article-share-link">
+            <a data-url="https://backefront.com.br/bloquear-redirecionamento-href-link/" data-id="clf30ynxo000sh5ot9ieu1gva" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/bloquear-redirecionamento-href-link/#disqus_thread" class="article-comment-link">

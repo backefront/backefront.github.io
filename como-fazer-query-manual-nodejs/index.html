@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,12 +122,16 @@ ga('send', 'pageview');
             <p>Enquanto desenvolvemos aplicações com NodeJS e Postgres, é comum usarmos ORM para facilitar o nosso desenvolvimento, como por exemplo, Sequelize.<br>O Sequelize nos fornece uma forma rápida e fácil de consultarmos dados em nosso banco, sem muitas preocupações!<br>Mas como fazemos, quando a consulta que o Sequelize está fazendo é muito complexa ou é inviável fazer por ele?</p>
 <p>Podemos fazer nossas próprias consultas! Para isso usaremos um cara chamado <a target="_blank" rel="noopener" href="https://node-postgres.com/">Node-Postgres</a></p>
 <span id="more"></span>
+
 <p>Node-postgres nada mais é que uma API que nos permite conectar diretamente no banco de dados e executar nossas queries como se estivéssemos em nosso SGBD.<br>Vamos ver como usá-lo?</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install pg</span><br></pre></td></tr></table></figure>
+
 <p>Agora instalado, precisamos nos conectar ao banco de dados:</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123; <span class="title class_">Client</span> &#125; = <span class="built_in">require</span>(<span class="string">&quot;pg&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> client = <span class="keyword">new</span> <span class="title class_">Client</span>(&#123;</span><br><span class="line">  <span class="attr">user</span>: <span class="string">&quot;dbuser&quot;</span>,</span><br><span class="line">  <span class="attr">host</span>: <span class="string">&quot;database.server.com&quot;</span>,</span><br><span class="line">  <span class="attr">database</span>: <span class="string">&quot;mydb&quot;</span>,</span><br><span class="line">  <span class="attr">password</span>: <span class="string">&quot;secretpassword&quot;</span>,</span><br><span class="line">  <span class="attr">port</span>: <span class="number">3211</span>,</span><br><span class="line">&#125;);</span><br><span class="line">client.<span class="title function_">connect</span>();</span><br></pre></td></tr></table></figure>
+
 <p>Feito isso, temos uma conexão aberta!<br>E como fazer uma consulta simples?</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">client</span><br><span class="line">  .<span class="title function_">query</span>(<span class="string">&quot;SELECT * from CLIENTS&quot;</span>)</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">res</span>) =&gt;</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(res.<span class="property">rows</span>[<span class="number">0</span>]))</span><br><span class="line">  .<span class="title function_">catch</span>(<span class="function">(<span class="params">e</span>) =&gt;</span> <span class="variable language_">console</span>.<span class="title function_">error</span>(e.<span class="property">stack</span>));</span><br></pre></td></tr></table></figure>
+
 <p>Fácil não é mesmo?<br>Agora é só juntar todo seu conhecimento com banco de dados e mandar bala em suas consultas!</p>
 
             
@@ -190,7 +194,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-fazer-query-manual-nodejs/" data-id="clf2z3vuk002vohsm0m363i5m" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-fazer-query-manual-nodejs/" data-id="clf30ynyv002vh5otfdsb17tk" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-fazer-query-manual-nodejs/#disqus_thread" class="article-comment-link">

@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -123,13 +123,17 @@ ga('send', 'pageview');
 <p>Dessa forma, devemos criar um <code>input type=file</code> e permitir que o nosso usuário consiga subir o que tiver que subir!</p>
 <p>Mas como podemos fazer isso, no React?</p>
 <span id="more"></span>
+
 <p>Primeiramente, vamos criar no input:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">label</span> <span class="attr">className</span>=<span class="string">&quot;form-label&quot;</span>&gt;</span>File<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span></span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;file&quot;</span> <span class="attr">accept</span>=<span class="string">&quot;application/pdf&quot;</span> /&gt;</span></span></span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
 <p>Feito isso, devemos agora criar a nossa função que vai detectar quando adicionarmos algum arquivo:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Usamos hooks para controlar o estado</span></span><br><span class="line"><span class="keyword">const</span> [cardFile, setCardFile] = <span class="title function_">useState</span>();</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">handleUploadFile</span> = (<span class="params">e: any</span>) =&gt; <span class="title function_">setCardFile</span>(e.<span class="property">target</span>.<span class="property">files</span>[<span class="number">0</span>]);</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">className</span>=<span class="string">&quot;form-label&quot;</span>&gt;</span>File<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;file&quot;</span> <span class="attr">onChange</span>=<span class="string">&#123;handleUploadFile&#125;</span> <span class="attr">accept</span>=<span class="string">&quot;application/pdf&quot;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>;</span><br></pre></td></tr></table></figure>
+
 <p>Perfeito! Agora temos o arquivo em nossas mãos, podemos enviar para o nosso back-end!</p>
-<p>Vamos agora trabalhar com FormData, que é uma forma de construirmos facilmente um conjunto de pares de chave/valor.</p>
+<p>Vamos agora trabalhar com FormData, que é uma forma de construirmos facilmente um conjunto de pares de chave&#x2F;valor.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">addNewCard</span> = <span class="keyword">async</span> (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">  <span class="title function_">setSaving</span>(<span class="literal">true</span>);</span><br><span class="line">  <span class="keyword">const</span> data = <span class="keyword">new</span> <span class="title class_">FormData</span>();</span><br><span class="line">  data.<span class="title function_">append</span>(<span class="string">&quot;card&quot;</span>, cardFile);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="comment">// Inserimos aqui nossa chamada POST/PUT</span></span><br><span class="line">  <span class="comment">// para enviarmos nosso arquivo.</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
 <p>Dessa forma, conseguimos enviar arquivos pelo nosso front para o back!</p>
 <p>Caso você precise validar um tipo de extensão específica, <a href="https://backefront.com.br/como-limitar-tipo-arquivo-upload-html/">neste post</a> demonstrei como podemos fazer isso também pelo HTML!</p>
 
@@ -193,7 +197,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-fazer-upload-arquivo-react/" data-id="clf2z3vul002xohsmd217aiay" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-fazer-upload-arquivo-react/" data-id="clf30ynyw002xh5otf7ex138x" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-fazer-upload-arquivo-react/#disqus_thread" class="article-comment-link">

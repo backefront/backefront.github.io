@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,12 +121,15 @@ ga('send', 'pageview');
             
             <p>Quem nunca ouviu falar sobre teste unitário? Se o seu projeto possui testes de unidades?<br>É uma fala muito comum na vida cotidiana de um desenvolvedor!<br>Mas afinal, que raios é esse tal de teste unitário?</p>
 <span id="more"></span>
+
 <p>Um teste de unidade basicamente é o <strong>menor</strong> componente <strong>testável</strong> de um software, podendo ser esse componente uma função, procedimento, método, classe, objeto, etc.<br>Esse teste também conhecido como teste de componente, teste de módulo ou teste de programa.</p>
 <p>Vamos dizer que você está programando em Javascript e está fazendo seu front-end em React, nesse caso, a menor parte testável do seu código possivelmente será uma função! Caso estivesse usando uma linguagem orientada a objetos, um teste unitário seria um método de um objeto.</p>
 <p>Vamos supor que temos a seguinte função:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">soma</span> = (<span class="params">a, b</span>) =&gt; a + b;</span><br></pre></td></tr></table></figure>
+
 <p>Uma função simples que assim como diz o nome, tem como objetivo somar dois números!<br>Agora iremos fazer o teste unitário:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">test(&#x27;1 + 2 igual 3&#x27;, () =&gt; &#123;</span><br><span class="line">  expect(soma(1, 2)).toBe(3);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
 <p>Neste caso, estamos usando Jest para fazer o teste, caso tenha interesse em ler mais sobre o Jest, (em um post anterior falei sobre ele!)[<a href="https://backefront.com.br/criando-teste-com-jest/]">https://backefront.com.br/criando-teste-com-jest/]</a></p>
 <h3 id="Qual-a-serventia-de-teste-unitario"><a href="#Qual-a-serventia-de-teste-unitario" class="headerlink" title="Qual a serventia de teste unitário?"></a>Qual a serventia de teste unitário?</h3><p>Seu principal objetivo é garantir que cada unidade funcione de acordo com sua especificação, onde podemos incluir casos funcionais e não-funcionais.<br>Podemos destacar que não servem <strong>apenas</strong> para testar uma função específica e sim para termos a garantia que todas as funcionalidades antes desenvolvidas e testadas continuem funcionando depois de fazer alguma alteração em alguma parte do seu código.</p>
 <h3 id="Tarefas-de-preparacao-para-testes-de-unidade"><a href="#Tarefas-de-preparacao-para-testes-de-unidade" class="headerlink" title="Tarefas de preparação para testes de unidade"></a>Tarefas de preparação para testes de unidade</h3><p>Não basta simplesmente criarmos um teste, temos que ter um planejamento prévio, que podem ser divididos nos seguintes passos:</p>
@@ -197,7 +200,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/o-que-e-teste-unitario/" data-id="clf2z3wb3007zohsm4a6h8a1c" class="article-share-link">
+            <a data-url="https://backefront.com.br/o-que-e-teste-unitario/" data-id="clf30yo1r007zh5ot3yf0bamx" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/o-que-e-teste-unitario/#disqus_thread" class="article-comment-link">

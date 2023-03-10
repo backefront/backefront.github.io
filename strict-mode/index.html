@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,22 +121,27 @@ ga('send', 'pageview');
             
             <p>Quem nunca encontrou essas palavras enquanto procurava por referências ou até mesmo quando estava realizando a manutenção de um código, e acabou se deparando com ele?<br>É bem comum encontrarmos “strict mode” nos scripts mas como funciona seu funcionamento e para que serve? Neste post, explicaremos para você como usar e para que usar!</p>
 <span id="more"></span>
+
 <h2 id="O-“strict-mode”"><a href="#O-“strict-mode”" class="headerlink" title="O “strict mode”"></a>O “strict mode”</h2><p>Foi introduzido no ECMAScript5, atualmente suportado por todos os navegadores modernos,faz com que o navegador execute o seu código javascript de forma mais rígida. De certa forma, força que desenvolvamos nossos códigos de forma mais correta, não permitindo que façamos algumas coisas do tipo: utilizar uma variável que não havia sido declarada, usar palavras reservadas do javascript, entre outras coisas que listaremos mais a frente. Os benefícios de usá-lo, além de escrever melhor seu código, é também a possibilidade de encontrar bugs mais facilmente.</p>
 <h2 id="Usando-o-strict-mode"><a href="#Usando-o-strict-mode" class="headerlink" title="Usando o strict mode"></a>Usando o strict mode</h2><p>Para habilita-lo, você pode fazer de duas formas, sendo uma habilitando para todo o script ou em funções individuais.</p>
 <h2 id="Usando-em-scripts"><a href="#Usando-em-scripts" class="headerlink" title="Usando em scripts"></a>Usando em scripts</h2><p>Para invocar o strict mode dentro do script todo, você precisa apenas adicionar ‘use strict’; antes de qualquer trecho de código, ou seja, em sua primeira linha do JS.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&quot;use strict&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> mensagem = <span class="string">&quot;Bem-vindo ao backefront!&quot;</span>;</span><br></pre></td></tr></table></figure>
+
 <p>Esse código acima funcionaria sem problemas, pois você está declarando a variável mensagem e atribuindo um valor a mesma.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&quot;use strict&quot;</span>;</span><br><span class="line"></span><br><span class="line">mensagem = <span class="string">&quot;Bem-vindo ao backefront!&quot;</span>;</span><br></pre></td></tr></table></figure>
+
 <p>Já esse trecho apresentaria um erro, justamente por causa da invocação do strict, ocorreria um erro de referência.<br><code>Uncaught ReferenceError: mensagem is not defined</code></p>
 <h2 id="Usando-em-funcoes"><a href="#Usando-em-funcoes" class="headerlink" title="Usando em funções"></a>Usando em funções</h2><p>Para usarmos esse modo dentro de funções, o funcionamento e a chamada dele é igual ao que fizemos no modo script! A única diferença é que o modo será aplicado somente para aquela função que fora definido.</p>
 <p>Exemplo de implementação do código</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">strict</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="string">&quot;use strict&quot;</span>;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">&quot;Bem-vindo ao backefront!&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h2 id="Mudancas-ocasionadas-ao-utilizar-strict-mode"><a href="#Mudancas-ocasionadas-ao-utilizar-strict-mode" class="headerlink" title="Mudanças ocasionadas ao utilizar strict mode"></a>Mudanças ocasionadas ao utilizar strict mode</h2><p>As mudanças são percebidas tanto no comportamento em execução quanto em sintaxe. Em geral, as principais alterações que a diretiva faz são:</p>
 <ul>
 <li>Conversão de um simples engano no código para erro de compilação, que impedem a compilação do código.</li>
 <li>Não permite propriedades ou parametros duplicados</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&quot;use strict&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> object = &#123; <span class="attr">nome</span>: <span class="string">&quot;Back&quot;</span>, <span class="attr">nome</span>: <span class="string">&quot;front&quot;</span> &#125;; <span class="comment">//Lança erro de compilação</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">getName</span>(<span class="params">valor1, valor2, valor1</span>) &#123;&#125; <span class="comment">// Lança erro de compilação</span></span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>Lança erro ao utilizar errado o delete. O operador <code>delete</code> que é usado para remover propriedades de objetos, não pode ser utilizado em propriedades não-configurável (configurable definida como false) de algum objeto.</li>
 </ul>
@@ -203,7 +208,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/strict-mode/" data-id="clf2z3wej009bohsm885v4z57" class="article-share-link">
+            <a data-url="https://backefront.com.br/strict-mode/" data-id="clf30yo2e009bh5ot045x87mx" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/strict-mode/#disqus_thread" class="article-comment-link">

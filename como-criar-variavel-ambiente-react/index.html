@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -125,6 +125,7 @@ ga('send', 'pageview');
 <p>Uma excelente prática enquanto estamos desenvolvendo é que nosso sistema nunca tenha estaticamente no código URLs e endereços, o famoso <code>hard coded</code>.<br>É muito aconselhável que tenhamos essas informações em um arquivo de variáveis</p>
 <p>Para isso, neste post irei mostrar como podemos armazenas esses informações dentro de um arquivo chamado <code>.env</code></p>
 <span id="more"></span>
+
 <h3 id="O-que-e-ENV"><a href="#O-que-e-ENV" class="headerlink" title="O que é .ENV?"></a>O que é .ENV?</h3><p>Para começar, devemos criar um arquivo na raiz do seu projeto, chamado <code>.env</code>.<br>Neste arquivo, definiremos as variáveis que iremos utilizar para nosso desenvolvimento</p>
 <p>Com o arquivo criado, podemos começar definir nossas variáveis, sempre se atentando a um detalhe em específico:</p>
 <blockquote>
@@ -132,8 +133,10 @@ ga('send', 'pageview');
 </blockquote>
 <p>Feito isso, olha como ficaria nosso arquivo:</p>
 <figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">REACT_APP_BASE_URL=https://myendpoint.com/api</span><br></pre></td></tr></table></figure>
+
 <p>E como podemos usar essas variáveis? Simples! Só usar! ahahaha</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">small</span>&gt;</span>Endereço da aplicação <span class="tag">&lt;<span class="name">b</span>&gt;</span>&#123;process.env.REACT_APP_BASE_URL&#125;<span class="tag">&lt;/<span class="name">b</span>&gt;</span> mode.<span class="tag">&lt;/<span class="name">small</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Agora quando rodarmos nosso projeto, ele automaticamente reconhece nossas variáveis de ambiente e adiciona no nosso código React!</p>
 <blockquote>
 <p>Sempre que atualizar uma variável ou o arquivo em si, é necessário reiniciar a aplicação!</p>
@@ -200,7 +203,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-criar-variavel-ambiente-react/" data-id="clf2z3vts0021ohsm9bg62awm" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-criar-variavel-ambiente-react/" data-id="clf30ynya0021h5ot7o2dcv1b" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-criar-variavel-ambiente-react/#disqus_thread" class="article-comment-link">

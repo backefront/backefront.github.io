@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,10 +122,13 @@ ga('send', 'pageview');
             <p>Uma das implementações do ES6 que deve ser adotada como boa prática é definir um <code>valor default</code> para parâmetros que são recebidos em funções, isto é, caso o parâmetro venha null, com essa prática, conseguimos seguir o fluxo normalmente, sem que isso venha resultar em um erro para o usuário ou até mesmo travar a nossa aplicação!</p>
 <p>Mas então, como podemos definir um valor default em uma função no Javascript?</p>
 <span id="more"></span>
+
 <p>Vamos analisar a seguinte função:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">setName</span>(<span class="params">name</span>) &#123;</span><br><span class="line">  <span class="comment">// Exibe no console o nome informado</span></span><br><span class="line">  <span class="comment">// Mas caso não seja passado nada</span></span><br><span class="line">  <span class="comment">// Será retornado &#x27;undefined&#x27;</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(name);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Para que não venha acontecer de retornar <code>undefined</code> e possa acarretar em outros problemas podemos definir um valor default.<br>Então, modificamos levemente a nossa função, alterando-a para:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">setName</span>(<span class="params">name = <span class="string">&quot;Victor Jordan&quot;</span></span>) &#123;</span><br><span class="line">  <span class="comment">// Exibe no console o nome informado</span></span><br><span class="line">  <span class="comment">// Mas caso não seja passado nada</span></span><br><span class="line">  <span class="comment">// Será retornado &#x27;Victor Jordan&#x27;</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(name);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Essa forma pode ser aplicada para qualquer tipo de valor, podemos definir números, strings, listas como valor padrão de nossas funções, evitando diversos problemas!</p>
 
             
@@ -188,7 +191,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-definir-valor-default-funcao-javascript/" data-id="clf2z3vtv0023ohsmg7fcb4e3" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-definir-valor-default-funcao-javascript/" data-id="clf30ynyb0023h5ote5609hg7" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-definir-valor-default-funcao-javascript/#disqus_thread" class="article-comment-link">

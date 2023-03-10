@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,21 +121,22 @@ ga('send', 'pageview');
             
             <p>Até um tempinho atrás, metade dos anos 90, poucas empresas utilizava softwares o que atualmente é raro! Softwares estão presentes em quase todos os lugares, na padaria de bairro até grandes e poderosos estabelecimentos como aeroportos, bancos. E todos nós já passamos por algum tipo de falha de software como insdisponibilidade de software e sites, lentidão, etc.</p>
 <h3 id="Quando-falhas-ocorrem"><a href="#Quando-falhas-ocorrem" class="headerlink" title="Quando falhas ocorrem"></a>Quando falhas ocorrem</h3><p>Softwares que não funcionam corretamente, podem levar a muitos problemas como prejuízos financeiros, perda de reputação, risco em relação a integridade física das pessoas, multas contratuais… E até consequências maiores como lesões corporais e mortes (softwares aeronáuticos por exemplo) e até desastres tecnológicos como um mal funcionamento de um sistema de controle de mísseis!</p>
-<h3 id="Porque-falhas-ocorrem"><a href="#Porque-falhas-ocorrem" class="headerlink" title="Porque falhas ocorrem"></a>Porque falhas ocorrem</h3><p>Todos os produtos de desenvolvimento de software, desde a especificação e requerimentos até a documentação geral, são escritos por pessoas, e as pessoas são propensas a cometer erros, independentemente de suas experiências e qualificações. Podemos listar outros itens como:<br><span id="more"></span></p>
+<h3 id="Porque-falhas-ocorrem"><a href="#Porque-falhas-ocorrem" class="headerlink" title="Porque falhas ocorrem"></a>Porque falhas ocorrem</h3><p>Todos os produtos de desenvolvimento de software, desde a especificação e requerimentos até a documentação geral, são escritos por pessoas, e as pessoas são propensas a cometer erros, independentemente de suas experiências e qualificações. Podemos listar outros itens como:</p>
+<span id="more"></span>
 <ul>
 <li>Pressão do tempo de entrega: acaba com que as atividades sejam feitas e entregues sem o devido cuidado</li>
 <li>Falhas de comunicação e falta de requisitos ou mudanças</li>
 <li>Pessoas com pouco ou sem treinamento em suas funções</li>
 <li>Processo de desenvolvimento imaturo</li>
 </ul>
-<h3 id="Voce-sabe-a-diferenca-entre-erro-defeito-e-falha"><a href="#Voce-sabe-a-diferenca-entre-erro-defeito-e-falha" class="headerlink" title="Você sabe a diferença entre erro, defeito e falha?"></a>Você sabe a diferença entre erro, defeito e falha?</h3><p><strong>Erro</strong>: é uma ação humana que produz um resultado incorreto (e pode ser cometido em qualquer fase do desenvolvimento).<br><strong>Defeito</strong>: é a manifestação de um erro no software, também conhecido como <strong><em>bug</em></strong> e se executado, o defeito pode causar uma falha - É o resultado do erro cometido.<br><strong>Falha</strong>: diferença indesejável entre o observado e o esperado (defeito encontrado)</p>
+<h3 id="Voce-sabe-a-diferenca-entre-erro-defeito-e-falha"><a href="#Voce-sabe-a-diferenca-entre-erro-defeito-e-falha" class="headerlink" title="Você sabe a diferença entre erro, defeito e falha?"></a>Você sabe a diferença entre erro, defeito e falha?</h3><p><strong>Erro</strong>: é uma ação humana que produz um resultado incorreto (e pode ser cometido em qualquer fase do desenvolvimento).<br><strong>Defeito</strong>: é a manifestação de um erro no software, também conhecido como <em><strong>bug</strong></em> e se executado, o defeito pode causar uma falha - É o resultado do erro cometido.<br><strong>Falha</strong>: diferença indesejável entre o observado e o esperado (defeito encontrado)</p>
 <blockquote>
 <p>Um software pode conter defeitos mas mesmo assim nunca falhar.<br>Falha é um evento.<br>Defeito é um estado do software causado por um erro.</p>
 </blockquote>
 <p><img src="/posts/Figura1_ErroFalhaDefeito.jpg" alt="Diferença entre os 3 termos apresentados"></p>
-<p><strong>Um exemplo clássico</strong><br>Você conhece o caso da espaçonave <a target="_blank" rel="noopener" href="https://pt.wikipedia.org/wiki/Mercury-Atlas_1">Mercury</a>?<br>Vamos lá, o programa de computador a bordo da espaçonave continha a declaração escrita na linguagem de programação FORTRAN:<br><strong>Código escrito</strong>: DO 100i = 1.10<br><strong>Código esperado</strong>: DO 100i = 1,10</p>
+<p><strong>Um exemplo clássico</strong><br>Você conhece o caso da espaçonave <a target="_blank" rel="noopener" href="https://pt.wikipedia.org/wiki/Mercury-Atlas_1">Mercury</a>?<br>Vamos lá, o programa de computador a bordo da espaçonave continha a declaração escrita na linguagem de programação FORTRAN:<br><strong>Código escrito</strong>: DO 100i &#x3D; 1.10<br><strong>Código esperado</strong>: DO 100i &#x3D; 1,10</p>
 <p>Basicamente, por causa de uma vírgula, a espaçonave explodiu!</p>
-<h3 id="Como-o-teste-pode-nos-ajudar-a-construir-sofwares-melhores"><a href="#Como-o-teste-pode-nos-ajudar-a-construir-sofwares-melhores" class="headerlink" title="Como o teste pode nos ajudar a construir sofwares melhores?"></a>Como o teste pode nos ajudar a construir sofwares melhores?</h3><p>Testes rigorosos em documentos e no próprio software podem reduzir os riscos de problemas acontecerem em produção.<br><strong>Menos defeitos = menor chance do software falhar</strong><br>Testes propiciam o aumento de qualidade do software à medida que defeitos encontrados são corrigidos.<br>Ajuda a aumentar receitas das empresas desenvolvedoras de software (redução de retrabalho devido à correção de <em>bugs</em>)</p>
+<h3 id="Como-o-teste-pode-nos-ajudar-a-construir-sofwares-melhores"><a href="#Como-o-teste-pode-nos-ajudar-a-construir-sofwares-melhores" class="headerlink" title="Como o teste pode nos ajudar a construir sofwares melhores?"></a>Como o teste pode nos ajudar a construir sofwares melhores?</h3><p>Testes rigorosos em documentos e no próprio software podem reduzir os riscos de problemas acontecerem em produção.<br><strong>Menos defeitos &#x3D; menor chance do software falhar</strong><br>Testes propiciam o aumento de qualidade do software à medida que defeitos encontrados são corrigidos.<br>Ajuda a aumentar receitas das empresas desenvolvedoras de software (redução de retrabalho devido à correção de <em>bugs</em>)</p>
 <h3 id="E-como-o-teste-consegue-nos-auxiliar-nessas-tres-questoes"><a href="#E-como-o-teste-consegue-nos-auxiliar-nessas-tres-questoes" class="headerlink" title="E como o teste consegue nos auxiliar nessas três questões?"></a>E como o teste consegue nos auxiliar nessas três questões?</h3><p>Encontrando e corrigindo defeitos antes dos software ser liberado para uso operacional!</p>
 <p>No próximo post vamos comentar sobre Qualidade &amp; Teste e também Quanto testar?</p>
 
@@ -187,7 +188,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/fundamentos-teste-software/" data-id="clf2z3w74006dohsmcds7gy9s" class="article-share-link">
+            <a data-url="https://backefront.com.br/fundamentos-teste-software/" data-id="clf30yo0x006dh5ot7xfb7hqz" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/fundamentos-teste-software/#disqus_thread" class="article-comment-link">

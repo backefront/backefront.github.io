@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,9 +122,12 @@ ga('send', 'pageview');
             <p>Enquanto desenvolvemos, é muito comum queremos fazer um <code>console.log()</code> em algum valor para vermos que estamos enviando para nossa API.<br>Porém, nem sempre isso é possível! </p>
 <p>Caso estejamos trabalhando com um formData, não podemos isso:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> formData = <span class="keyword">new</span> <span class="title class_">FormData</span>();</span><br><span class="line">formData.<span class="title function_">append</span>(<span class="string">&quot;file&quot;</span>, image.<span class="property">file</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(formData);</span><br></pre></td></tr></table></figure>
+
 <span id="more"></span>
+
 <p>A maneira correta para conseguirmos ver se foi realizado o append de maneira correta seria utilizando <code>formData.get(&#39;chave&#39;)</code><br>Sendo assim, no nosso exemplo, para verificarmos se <code>file</code> foi preenchido de maneira correta, fazemos:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> formData = <span class="keyword">new</span> <span class="title class_">FormData</span>();</span><br><span class="line">formData.<span class="title function_">append</span>(<span class="string">&quot;file&quot;</span>, image.<span class="property">file</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(formData.<span class="title function_">get</span>(<span class="string">&#x27;file&#x27;</span>));</span><br></pre></td></tr></table></figure>
+
 <p>E pronto! Eis seus valores no console!<br>Qualquer dúvida comenta ai que vamos nos ajudando!</p>
 
             
@@ -187,7 +190,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-ver-conteudo-formdata/" data-id="clf2z3w04004fohsm9vfm1qwl" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-ver-conteudo-formdata/" data-id="clf30ynzs004fh5ot49e0fmqi" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-ver-conteudo-formdata/#disqus_thread" class="article-comment-link">

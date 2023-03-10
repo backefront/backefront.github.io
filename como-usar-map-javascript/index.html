@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,7 +122,9 @@ ga('send', 'pageview');
             <p>O método <code>map()</code> é uma função muito útil quando desejamos retornar um novo array sem alterar o original! Desta forma, criamos uma cópia e podemos realizar as alterações desejadas, sem nos preocupar em perder o array original!</p>
 <p>Sua síntaxe é simples de entender, muito semelhante ao <a href="https://backefront.com.br/filter-function/">filter</a>, basta informarmos o array que iremos percorrer e em seguida a função de retorno! Um exemplo seria:</p>
 <span id="more"></span>
+
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> array = [<span class="number">2</span>,<span class="number">4</span>,<span class="number">8</span>,<span class="number">10</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// Desejamos um array com a metade de cada um dos valores:</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> metade = array.<span class="title function_">map</span>(<span class="function"><span class="params">numero</span> =&gt;</span> numero / <span class="number">2</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(metade)</span><br><span class="line"><span class="comment">// Resultado esperado: [1,2,4,5]</span></span><br></pre></td></tr></table></figure>
+
 <p>No exemplo acima, estamos usando uma <code>arrow function</code>, onde a variável <code>numero</code> representa cada número dentro do array original, e dividimos ele por 2. </p>
 <p>O método <code>map()</code> irá realizar esta operação repetidas vezes, até concluir todos os número no array.</p>
 <h3 id="Consideracoes"><a href="#Consideracoes" class="headerlink" title="Considerações"></a>Considerações</h3><p>Considerando que <code>map</code> retorna um array inteiramente novo, usar este método quando você não pretende usar um array novo, é considerado uma má prática, caso seja o seu caso, use o <code>forEach()</code> ou <a href="https://backefront.com.br/js-forof/">for-of</a>.</p>
@@ -131,7 +133,7 @@ ga('send', 'pageview');
 <li>Você não está utilizando o array que está sendo retornado.</li>
 <li>Você não está retornando um valor do callback.</li>
 </ul>
-<p>Tendo estes detalhes observados, você está apto a utilizar o map! É muito importante saber <strong>quando</strong> e <strong>porque</strong> estamos fazendo/utilizando os recursos da linguagem!</p>
+<p>Tendo estes detalhes observados, você está apto a utilizar o map! É muito importante saber <strong>quando</strong> e <strong>porque</strong> estamos fazendo&#x2F;utilizando os recursos da linguagem!</p>
 
             
         </div>
@@ -193,7 +195,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-usar-map-javascript/" data-id="clf2z3vzv0049ohsm2vji9xri" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-usar-map-javascript/" data-id="clf30ynzp0049h5ot124w8dcx" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-usar-map-javascript/#disqus_thread" class="article-comment-link">

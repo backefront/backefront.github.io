@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,6 +121,7 @@ ga('send', 'pageview');
             
             <p>Você conhece a diferença entre o método slice e o método splice, do Javascript?<br>Apesar de serem bem semelhantes, há umas diferenças!<br>Olha só:</p>
 <span id="more"></span>
+
 <table>
 <thead>
 <tr>
@@ -128,8 +129,7 @@ ga('send', 'pageview');
 <th>Splice</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>Não modifica o array original (imutável)</td>
 <td>Modifica o array original (mutável)</td>
 </tr>
@@ -141,11 +141,11 @@ ga('send', 'pageview');
 <td>Usado para escolher os elementos do array</td>
 <td>É usado para inserir ou deletar elementos do array</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h3 id="Slice"><a href="#Slice" class="headerlink" title="Slice"></a>Slice</h3><p>Ele seleciona os elementos começando no argumento inicial fornecido e termina no argumento final (opcional) fornecido sem incluir o último elemento.<br>Se você omitir o segundo argumento, ele seleciona até o final.</p>
 <p>Alguns dos exemplos deste método são:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arrayIntegers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line"><span class="keyword">let</span> arrayIntegers1 = arrayIntegers.<span class="title function_">slice</span>(<span class="number">0</span>, <span class="number">2</span>); <span class="comment">// retorna [1,2]</span></span><br><span class="line"><span class="keyword">let</span> arrayIntegers2 = arrayIntegers.<span class="title function_">slice</span>(<span class="number">2</span>, <span class="number">3</span>); <span class="comment">// retorna [3]</span></span><br><span class="line"><span class="keyword">let</span> arrayIntegers3 = arrayIntegers.<span class="title function_">slice</span>(<span class="number">4</span>); <span class="comment">// retorna [5]</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="Splice"><a href="#Splice" class="headerlink" title="Splice"></a>Splice</h3><p>O método splice () é usado para adicionar ou remover itens de um array e, em seguida, retornar o item removido.<br>O primeiro argumento especifica a posição da matriz para inserção ou exclusão, enquanto o segundo argumento da opção indica o número de elementos a serem excluídos.<br>Cada argumento adicional é adicionado ao array.</p>
 <p>Alguns dos exemplos deste método são:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arrayIntegersOriginal1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line"><span class="keyword">let</span> arrayIntegersOriginal2 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line"><span class="keyword">let</span> arrayIntegersOriginal3 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> arrayIntegers1 = arrayIntegersOriginal1.<span class="title function_">splice</span>(<span class="number">0</span>, <span class="number">2</span>); <span class="comment">// retorna [1, 2]; original array: [3, 4, 5]</span></span><br><span class="line"><span class="keyword">let</span> arrayIntegers2 = arrayIntegersOriginal2.<span class="title function_">splice</span>(<span class="number">3</span>); <span class="comment">// retorna [4, 5]; original array: [1, 2, 3]</span></span><br><span class="line"><span class="keyword">let</span> arrayIntegers3 = arrayIntegersOriginal3.<span class="title function_">splice</span>(<span class="number">3</span>, <span class="number">1</span>, <span class="string">&quot;a&quot;</span>, <span class="string">&quot;b&quot;</span>, <span class="string">&quot;c&quot;</span>); <span class="comment">// retorna [4]; original array: [1, 2, 3, &quot;a&quot;, &quot;b&quot;, &quot;c&quot;, 5]</span></span><br></pre></td></tr></table></figure>
@@ -210,7 +210,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/diferenca-slice-splice-javascript/" data-id="clf2z3w4g005johsm9aaha5ud" class="article-share-link">
+            <a data-url="https://backefront.com.br/diferenca-slice-splice-javascript/" data-id="clf30yo0f005jh5ot8yn657wk" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/diferenca-slice-splice-javascript/#disqus_thread" class="article-comment-link">

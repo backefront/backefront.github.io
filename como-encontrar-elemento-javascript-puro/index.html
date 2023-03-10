@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,10 +122,13 @@ ga('send', 'pageview');
             <p>Mais um post sobre Javascript puro, hoje irei falar um pouco sobre como podemos encontrar um elemento no DOM utilizando o nosso querido Javascript!<br>Com o Javascript, podemos encontrar um elemento seja pela classe, elemento, por id!</p>
 <p>Sem a necessidade de adicionarmos uma biblioteca externa para fazer uma manipulação tão simples quanto essa, veja como é simples:</p>
 <span id="more"></span>
+
 <h2 id="Encontrar-um-elemento-pela-classe"><a href="#Encontrar-um-elemento-pela-classe" class="headerlink" title="Encontrar um elemento pela classe"></a>Encontrar um elemento pela classe</h2><p>Para encontrarmos um elemento pela classe, podemos fazer de duas formas:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">&quot;.class&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// OU</span></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">getElementsByClassName</span>(<span class="string">&quot;class&quot;</span>);</span><br></pre></td></tr></table></figure>
+
 <h2 id="Encontrar-um-elemento-pelo-ID"><a href="#Encontrar-um-elemento-pelo-ID" class="headerlink" title="Encontrar um elemento pelo ID"></a>Encontrar um elemento pelo ID</h2><p>Agora, para encontrarmos um elemento pelo ID, podemos fazer de três formas diferentes, sendo a terceira pouco conhecida!</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;#id&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// OU</span></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;id&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// OU</span></span><br><span class="line"><span class="variable language_">window</span>[<span class="string">&quot;id&quot;</span>];</span><br></pre></td></tr></table></figure>
+
 <p>A diferença entre querySelectorAll e as outras opções é que o querySelectorAll retorna todos os elementos que correspondem com aquilo que está procurando, como uma lista!<br>E também, por ser uma busca mais ampla, ele acaba sendo mais lento do que as outroas opções.<br>Então, caso performance seja algo que esteja buscando, recomendo que sempre opte por <code>document.getElementById</code>, <code>document.getElementsByClassName</code> ou <code>document.getElementsByTagName</code></p>
 
             
@@ -188,7 +191,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-encontrar-elemento-javascript-puro/" data-id="clf2z3vu10028ohsmd66l2e0q" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-encontrar-elemento-javascript-puro/" data-id="clf30ynyf0028h5ot7knsdtxv" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-encontrar-elemento-javascript-puro/#disqus_thread" class="article-comment-link">

@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -120,8 +120,12 @@ ga('send', 'pageview');
         <div class="article-entry" itemprop="articleBody">
             
             <p>A solução é muito simples, usando o método <code>slice()</code>, de uma string, passando 2 parâmetros<br>O primeiro é o ponto de início, ou seja, a partir de qual elemento vamos começar a contar para remover<br>O segundo é a quantidade de itens que desejamos remover</p>
-<p>Ao passarmos um número negativo, o JS começará a contar do fim ao começo<br>O código ficaria assim:<br><span id="more"></span></p>
-<p>Usando o Splice:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> texto = <span class="string">&#x27;backefront&#x27;</span></span><br><span class="line"><span class="keyword">const</span> novoTexto = texto.<span class="title function_">slice</span>(<span class="number">0</span>, -<span class="number">1</span>) <span class="comment">//&#x27;backefron&#x27;</span></span><br></pre></td></tr></table></figure></p>
+<p>Ao passarmos um número negativo, o JS começará a contar do fim ao começo<br>O código ficaria assim:</p>
+<span id="more"></span>
+
+<p>Usando o Splice:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> texto = <span class="string">&#x27;backefront&#x27;</span></span><br><span class="line"><span class="keyword">const</span> novoTexto = texto.<span class="title function_">slice</span>(<span class="number">0</span>, -<span class="number">1</span>) <span class="comment">//&#x27;backefron&#x27;</span></span><br></pre></td></tr></table></figure>
+
 <p>Fácil né?</p>
 
             
@@ -184,7 +188,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-remover-ultimo-caractere-js/" data-id="clf2z3vxm003tohsmd5wkea0d" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-remover-ultimo-caractere-js/" data-id="clf30ynzh003vh5ot0bjfgiju" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-remover-ultimo-caractere-js/#disqus_thread" class="article-comment-link">

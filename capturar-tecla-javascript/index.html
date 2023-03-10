@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -123,9 +123,12 @@ ga('send', 'pageview');
 <p>Com a evolução do Javascript, podemos reconhecer a tecla digitada pelo seu “nome”<br>Antes, tínhamos que reconhecer através de seu ID, hoje não é mais necessário isso!</p>
 <p>No código abaixo, temos a representação de como conseguimos pegar a tecla digitada pelo usuário através do Javascript</p>
 <span id="more"></span>
+
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">node.<span class="title function_">addEventListener</span>(<span class="string">&quot;keydown&quot;</span>, <span class="function">(<span class="params">e</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="title function_">alert</span>(e.<span class="property">key</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
 <p>Vamos imaginar um cenário onde queremos capturar a tecla <strong>“Enter”</strong>, em um <em>textarea</em><br>Caso seja enter, deve chamar uma função.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;textarea rows=<span class="string">&quot;5&quot;</span> id=<span class="string">&quot;user-text&quot;</span>&gt;&lt;/textarea&gt;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Primeiro pegamos o nosso input com javascript</span></span><br><span class="line"><span class="keyword">const</span> textarea = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;user-text&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Adicionamos nossa função para observar esse input</span></span><br><span class="line"><span class="comment">// e caso a tecla pressionada seja Enter</span></span><br><span class="line"><span class="comment">// chama a função &quot;salvaFormulario&quot;</span></span><br><span class="line">textarea.<span class="title function_">addEventListener</span>(<span class="string">&quot;keydown&quot;</span>, <span class="function">(<span class="params">e</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (e.<span class="property">key</span> === <span class="string">&quot;Enter&quot;</span>) &#123;</span><br><span class="line">    <span class="title function_">salvaFormulario</span>();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
 <p>Com essa pequena quantidade de código, conseguimos reconhecer qual tecla está sendo digitada<br>E através disso, melhoramos a usabilidade, trazendo mais velocidade para o usuário, que agora<br>pode salvar suas informações teclando Enter!</p>
 <p>É uma funcionalidade extremamente simples mas que quando bem usada, pode agregar muito em nossas aplicações!</p>
 
@@ -189,7 +192,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/capturar-tecla-javascript/" data-id="clf2z3vp7000xohsm0m91hf67" class="article-share-link">
+            <a data-url="https://backefront.com.br/capturar-tecla-javascript/" data-id="clf30ynxr000xh5ot3c8l4dy3" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/capturar-tecla-javascript/#disqus_thread" class="article-comment-link">

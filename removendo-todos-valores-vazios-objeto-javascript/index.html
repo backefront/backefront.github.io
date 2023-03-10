@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,7 +122,9 @@ ga('send', 'pageview');
             <p>Manipulação de objetos em Javascript é uma atividade comum em nosso desenvolvimento diário.<br>Recentemente, precisei remover todos os valores que eram vazios de um determinado objeto, com Javascript</p>
 <p>A função que utilizei para fazer isso é a seguinte:</p>
 <span id="more"></span>
+
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">removeEmptyFilter</span>(<span class="params">obj</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="title class_">Object</span>.<span class="title function_">fromEntries</span>(</span><br><span class="line">    <span class="title class_">Object</span>.<span class="title function_">entries</span>(obj).<span class="title function_">filter</span>(<span class="function">(<span class="params">[_, v]</span>) =&gt;</span> v != <span class="literal">null</span> &amp;&amp; v !== <span class="string">&quot;&quot;</span>)</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Muito simples a função, não é mesmo?</p>
 
             
@@ -185,7 +187,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/removendo-todos-valores-vazios-objeto-javascript/" data-id="clf2z3wdy008nohsmgx0dal4f" class="article-share-link">
+            <a data-url="https://backefront.com.br/removendo-todos-valores-vazios-objeto-javascript/" data-id="clf30yo23008nh5ot7vo47xnk" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/removendo-todos-valores-vazios-objeto-javascript/#disqus_thread" class="article-comment-link">

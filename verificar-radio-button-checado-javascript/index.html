@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,10 +122,13 @@ ga('send', 'pageview');
             <p>Diariamente, o desenvolvedor constantemente depara-se com situações onde devem ser feitas verificações em seus formulários.<br>Esses formulários são compostos, por sua maioria, de input de textos, telefones, endereço, etc<br>E também temos casos onde há o input do tipo <code>radio</code>.</p>
 <p>A pergunta é, como verificar se o radio button está checado, pelo Javascript?</p>
 <span id="more"></span>
+
 <p>Imaginemos que você tem o seguinte HTML:</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;gender&quot;</span> <span class="attr">id</span>=<span class="string">&quot;genero_masculino&quot;</span> <span class="attr">value</span>=<span class="string">&quot;Masculino&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;gender&quot;</span> <span class="attr">id</span>=<span class="string">&quot;genereo_feminino&quot;</span> <span class="attr">value</span>=<span class="string">&quot;Feminino&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>Para verificarmos se o gênero está selecionado, podemos usar a seguinte abordagem com Javascript puro:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;genero_masculino&quot;</span>).<span class="property">checked</span>) &#123;</span><br><span class="line">  <span class="comment">// Lógica caso seja gênero</span></span><br><span class="line">  <span class="comment">// masculino selecionado</span></span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;genero_feminino&quot;</span>).<span class="property">checked</span>) &#123;</span><br><span class="line">  <span class="comment">// Lógica caso seja gênero</span></span><br><span class="line">  <span class="comment">// feminino selecionado</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Esta é uma verificação bem simples que podemos fazer!<br>Mas lembre-se que nem só de validação <em>server-side</em> viverá sua aplicação!<br>O ideal sempre é que tenhamos alguma validação também do lado do back-end!</p>
 
             
@@ -188,7 +191,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/verificar-radio-button-checado-javascript/" data-id="clf2z3wgk00ajohsm9r3e808f" class="article-share-link">
+            <a data-url="https://backefront.com.br/verificar-radio-button-checado-javascript/" data-id="clf30yo3500ajh5ot8jzahcpj" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/verificar-radio-button-checado-javascript/#disqus_thread" class="article-comment-link">

@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,13 +121,15 @@ ga('send', 'pageview');
             
             <p>Em geral, uma página HTML pode ser considerada bidimensional, isto é, seus elementos como textos e imagens são organizados na página sem uma sobreposição. Neste caso, a construção da página segue um fluxo e os elementos têm consciência do espaço e tamanho que outros elementos ocupam. Com o z-index, podemos mudar esse funcionamento.</p>
 <span id="more"></span>
+
 <blockquote>
-<p>No CSS 2.1, cada elemento possui sua posição em três dimensões. Adicionado a sua posição horizontal/vertical, os elementos possuem os “z-axis” e são formados um no topo do outro. As posições z-axis são particulamente revelantes quando ocorre visualmente a sobreposição. (CSS 2.1 Section 9.9.1 - Layered presentation)</p>
+<p>No CSS 2.1, cada elemento possui sua posição em três dimensões. Adicionado a sua posição horizontal&#x2F;vertical, os elementos possuem os “z-axis” e são formados um no topo do outro. As posições z-axis são particulamente revelantes quando ocorre visualmente a sobreposição. (CSS 2.1 Section 9.9.1 - Layered presentation)</p>
 </blockquote>
 <p>A propriedade z-index define a posição dos elementos permitindo que um elemento fique por cima ou abaixo de outro. Os valores nele definido são descedentes, ou seja, quanto maior o número, mais ‘próximo’ de você ele estará.</p>
 <p>Para que esta propriedade seja aplicada, é necessário que o elemento que esteja sendo aplicado tenha um <code>position</code> diferente de <code>static</code>.</p>
 <h2 id="Sintaxe"><a href="#Sintaxe" class="headerlink" title="Sintaxe"></a>Sintaxe</h2><p>A propriedade z-index é definida por palavra-chave ou um inteiro, podendo esse número ser negativo!</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* Uso de uma palavra-chave */</span></span><br><span class="line"><span class="attribute">z-index</span>: auto;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Usando valores inteiros */</span></span><br><span class="line"><span class="attribute">z-index</span>: <span class="number">3</span>;</span><br><span class="line"><span class="attribute">z-index</span>: -<span class="number">1</span>; <span class="comment">/* Negative values to lower the priority */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* Valores globais */</span></span><br><span class="line"><span class="attribute">z-index</span>: inherit;</span><br><span class="line"><span class="attribute">z-index</span>: initial;</span><br><span class="line"><span class="attribute">z-index</span>: unset;</span><br></pre></td></tr></table></figure>
+
 <p>Com o z-index você pode sobrepor elementos, trazendo para a primeira camada o elemento desejado. Muito utilizado em construção de <code>modal</code>. Também podemos ver essa propriedade em ação quando queremos que o background tenha um efeito de sobrepor ao rolar a página, como pode ser visto neste exemplo <a target="_blank" rel="noopener" href="https://codepen.io/thomasvaeth/pen/xLwwZq">aqui</a>.</p>
 <p>Existem várias coisas legais que podem ser feitas, resta agora só usar imaginação! :)</p>
 
@@ -191,7 +193,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/z-index/" data-id="clf2z3woo00fcohsmfbrug45u" class="article-share-link">
+            <a data-url="https://backefront.com.br/z-index/" data-id="clf30yo3900arh5otat25goo7" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/z-index/#disqus_thread" class="article-comment-link">

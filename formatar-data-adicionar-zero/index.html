@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -127,8 +127,10 @@ ga('send', 'pageview');
 </ul>
 <p>Isso pode acabar impactando na usabilidade de nossa aplicação.<br>Vamos então ver como podemor formatar?</p>
 <span id="more"></span>
+
 <p>Para formatar a nossa data, e adicionarmos zero à frente<br>Podemos utilizar a seguinte função:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Recebemos como parâmetro a data que queremos formatar</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">formatDate</span> = (<span class="params">date</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">if</span> (date) &#123;</span><br><span class="line">    <span class="keyword">const</span> receivedDate = <span class="keyword">new</span> <span class="title class_">Date</span>(date);</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      (<span class="string">&quot;0&quot;</span> + receivedDate.<span class="title function_">getDate</span>()).<span class="title function_">slice</span>(-<span class="number">2</span>) +</span><br><span class="line">      <span class="string">&quot;/&quot;</span> +</span><br><span class="line">      (<span class="string">&quot;0&quot;</span> + (receivedDate.<span class="title function_">getMonth</span>() + <span class="number">1</span>)).<span class="title function_">slice</span>(-<span class="number">2</span>) +</span><br><span class="line">      <span class="string">&quot;/&quot;</span> +</span><br><span class="line">      receivedDate.<span class="title function_">getFullYear</span>()</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
 <p>Simples e rápido!</p>
 
             
@@ -191,7 +193,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/formatar-data-adicionar-zero/" data-id="clf2z3w6h006bohsm575o7u3x" class="article-share-link">
+            <a data-url="https://backefront.com.br/formatar-data-adicionar-zero/" data-id="clf30yo0w006bh5otafpyfoug" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/formatar-data-adicionar-zero/#disqus_thread" class="article-comment-link">

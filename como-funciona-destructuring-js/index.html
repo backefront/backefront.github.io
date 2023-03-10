@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,21 +122,29 @@ ga('send', 'pageview');
             <h2 id="O-que-e-destructuring"><a href="#O-que-e-destructuring" class="headerlink" title="O que é destructuring?"></a>O que é destructuring?</h2><p><em>Destructuring</em> (desestruturação) é uma expressão no Javascript que possibilita ao usuário “desempacotar” valores de um array ou propriedades de objetos, em variáveis diferentes!<br>Com ele, conseguimos criar um código mais legível, mais estruturado e fácil de dar manutenção!</p>
 <p>Sem este conceito, caso quiséssemos acessar os três valores de um array, teríamos que fazer algo desta forma:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> array = [<span class="string">&quot;Um&quot;</span>, <span class="string">&quot;Dois&quot;</span>, <span class="string">&quot;Três&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> primeiro = array[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">let</span> segundo = array[<span class="number">1</span>];</span><br><span class="line"><span class="keyword">let</span> terceiro = array[<span class="number">2</span>];</span><br></pre></td></tr></table></figure>
+
 <p>Agora, se formos reescrever o mesmo código, utilizando o <strong>destructuring</strong>:</p>
 <span id="more"></span>
+
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> array = [<span class="string">&quot;Um&quot;</span>, <span class="string">&quot;Dois&quot;</span>, <span class="string">&quot;Três&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> [primeiro, segundo, terceiro] = array;</span><br></pre></td></tr></table></figure>
+
 <p>Muito mais simples, não é mesmo?</p>
 <h2 id="Hora-de-desestruturar-tudo"><a href="#Hora-de-desestruturar-tudo" class="headerlink" title="Hora de desestruturar tudo!"></a>Hora de desestruturar tudo!</h2><p>Com esta mesma sintaxe, conseguimos fazer muito mais coisas! Vamos mostrar algumas coisas legais que conseguimos fazer com ele:</p>
 <p><strong>- Pular itens</strong><br>Passando vírgula, conseguimos pular quantos elementos quisermos e capturar o restante.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [, , terceiro] = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(terceiro); <span class="comment">// &quot;terceiro&quot;</span></span><br></pre></td></tr></table></figure>
+
 <p><strong>- Capturar um elemento em uma variável e o resto em outra</strong><br>Combinando com o operador spread (os três pontinhos), conseguimos associar quantos itens quisermos e associamos o restante à última variável após os três pontos.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [item, ...resto] = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(item); <span class="comment">// 1</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(resto); <span class="comment">// [2, 3, 4, 5]</span></span><br></pre></td></tr></table></figure>
+
 <p><strong>- Simplifica quando a propriedade e o valor têm nomes iguals</strong><br>Conseguimos simplificar a escrita do código quando a propriedade e o nome da variável são iguais:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> &#123; nome, sobrenome &#125; = &#123; <span class="attr">nome</span>: <span class="string">&quot;Victor&quot;</span>, <span class="attr">sobrenome</span>: <span class="string">&quot;Jordan&quot;</span> &#125;;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(nome); <span class="comment">// &#x27;Victor&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(sobrenome); <span class="comment">// &#x27;Jordan&#x27;</span></span><br></pre></td></tr></table></figure>
+
 <p><strong>- Valor <em>default</em></strong><br>Você pode definir um valor padrão, no caso do valor desempacotado seja <code>undefined</code>:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [a = <span class="number">5</span>, b = <span class="number">7</span>] = [<span class="number">1</span>];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(a); <span class="comment">// 1</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(b); <span class="comment">// 7</span></span><br></pre></td></tr></table></figure>
+
 <p><strong>- Troca de variáveis</strong><br>Com o destructuring, duas variáveis podem ter seus valores trocados, sem a necessidade de uma variável auxiliar!</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="number">4</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">7</span>;</span><br><span class="line">[a, b] = [b, a];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(a); <span class="comment">// 7</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(b); <span class="comment">// 4</span></span><br></pre></td></tr></table></figure>
+
 <p>Com esta destructuring no javascript, conseguimos melhorar a qualidade de nossos códigos, tornando-os menos repetitivos, escrevendo menos mas de maneira mais eficiente e elegante!</p>
 
             
@@ -199,7 +207,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-funciona-destructuring-js/" data-id="clf2z3vwp002zohsm7odyfs19" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-funciona-destructuring-js/" data-id="clf30ynyx002zh5otfxqrbhw3" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-funciona-destructuring-js/#disqus_thread" class="article-comment-link">

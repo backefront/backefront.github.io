@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,10 +121,13 @@ ga('send', 'pageview');
             
             <p>Uma coisa que normalmente precisamos fazer em nosso desenvolvimento diário é pegar o último elemento de um <code>array</code> ou uma <code>String</code>.<br>Atualmente (2022) para realizar isso, fazemos da seguinte forma:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arrayFrutas = [<span class="string">&#x27;banana&#x27;</span>, <span class="string">&#x27;maçã&#x27;</span>, <span class="string">&#x27;laranja&#x27;</span>, <span class="string">&#x27;goiaba&#x27;</span>];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arrayFrutas[arrayFrutas.<span class="property">length</span> -<span class="number">1</span>])</span><br><span class="line"><span class="comment">// Saída: goiaba</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> fruta = <span class="string">&#x27;mexerica&#x27;</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(fruta[fruta.<span class="property">length</span> -<span class="number">1</span>])</span><br><span class="line"><span class="comment">// Saída: a</span></span><br></pre></td></tr></table></figure>
+
 <p>Mas agora, com o novo método implementado na versão do <code>ECMAScript 2022</code>, podemos procurar por index negativo! Igual fazemos com Python</p>
 <span id="more"></span>
+
 <p>Para isso, fazemos da seguinte maneira:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```javascript</span><br><span class="line">const arrayFrutas = [&#x27;banana&#x27;, &#x27;maçã&#x27;, &#x27;laranja&#x27;, &#x27;goiaba&#x27;];</span><br><span class="line">console.log(arrayFrutas.at(-1))</span><br><span class="line">// Saída: goiaba</span><br><span class="line"></span><br><span class="line">const fruta = &#x27;mexerica&#x27;;</span><br><span class="line">console.log(fruta.at(-1))</span><br><span class="line">// Saída: a</span><br></pre></td></tr></table></figure>
+
 <p>Super mais prático, não é mesmo?</p>
 
             
@@ -187,7 +190,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/metodo-at-ecmascript-2022/" data-id="clf2z3w7p0078ohsmaxmzg9oh" class="article-share-link">
+            <a data-url="https://backefront.com.br/metodo-at-ecmascript-2022/" data-id="clf30yo1d0078h5otfrq28yyk" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/metodo-at-ecmascript-2022/#disqus_thread" class="article-comment-link">

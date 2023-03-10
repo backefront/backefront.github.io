@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,11 +122,14 @@ ga('send', 'pageview');
             <p>Quando estamos desenvolvendo, devemos nos preocupar em como a informação será apresentada na tela<br>Nossos sistemas normalmente contém algumas imagens, seja elas estáticas (aquela que nós mesmo inserimos o endereço da foto)<br>Quanto também imagens que foram enviadas pelo próprio usuário (foto de perfil, por exemplo)<br>E obviamente, não queremos que nosso layout fique quebrado por um erro na imagem, certo?</p>
 <p>Pensando nisso, você sabia que a tag <code>img</code> aceita um evento chamado <strong>onerror</strong>? </p>
 <span id="more"></span>
+
 <p>Com essa propriedade, você consegue tratar o erro no momento de carregamento de uma imagem<br>Sendo assim, no momento que a imagem “quebrar”, você pode substituir essa imagem por uma genérica!</p>
 <p>Basta adicionar, em sua tag img:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;logo.png&quot; onerror=&quot;handleError(this)&quot;&gt;</span><br><span class="line">&lt;!--</span><br><span class="line">    Usamos o this para passar como parâmetro</span><br><span class="line">    para que o Javascript tenha acesso as</span><br><span class="line">    propriedades da nossa tag img.</span><br><span class="line">--&gt;</span><br></pre></td></tr></table></figure>
+
 <p>E tratar esse erro no Javascript:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">handleError</span>(<span class="params">image</span>) &#123;</span><br><span class="line">    image.<span class="property">onerror</span> = <span class="string">&quot;&quot;</span>;</span><br><span class="line">    image.<span class="property">src</span> = <span class="string">&quot;/img/img-default.png&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Assim, conseguimos evitar imagens quebradas na nossa aplicação<br>Evitando que nosso layout também fique comprometido com problemas!</p>
 
             
@@ -189,7 +192,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/tratar-imagem-erro-html5/" data-id="clf2z3wex009tohsm3yiuf8zk" class="article-share-link">
+            <a data-url="https://backefront.com.br/tratar-imagem-erro-html5/" data-id="clf30yo2n009qh5ot0mxoaqts" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/tratar-imagem-erro-html5/#disqus_thread" class="article-comment-link">

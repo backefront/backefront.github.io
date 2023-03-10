@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,10 +121,13 @@ ga('send', 'pageview');
             
             <p>A manipulação de objetos javascript no desenvolvimento front-end é uma atividade diária e rotineira. Constantemente nos deparamos manipulando JSON, consultando uma propriedade específica, etc. Em um determinado dia, nos deparamos com o seguinte objeto:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> pessoa = &#123; <span class="attr">nome</span>: <span class="string">&quot;Victor&quot;</span>, <span class="attr">sobrenome</span>: <span class="string">&quot;Jordan&quot;</span>, <span class="attr">idade</span>: <span class="number">25</span> &#125;;</span><br></pre></td></tr></table></figure>
+
 <p>E por algum motivo, precisamos deletar a propriedade <strong>idade</strong>. E agora? Como fazer?</p>
 <span id="more"></span>
+
 <p>Deletar uma propriedade de um objeto é a coisa mais simples que existe! Nós podemos usar a keyword <code>delete</code>!<br>Então, a nossa implementação ficaria da seguinte forma:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> pessoa = &#123; <span class="attr">nome</span>: <span class="string">&quot;Victor&quot;</span>, <span class="attr">sobrenome</span>: <span class="string">&quot;Jordan&quot;</span>, <span class="attr">idade</span>: <span class="number">25</span> &#125;;</span><br><span class="line"><span class="keyword">delete</span> pessoa.<span class="property">idade</span>; <span class="comment">// Ou também delete pessoa[&quot;idade&quot;];</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(pessoa);</span><br><span class="line"><span class="comment">// Resultado esperado: &#123; nome: &quot;Victor&quot;, sobrenome: &quot;Jordan&quot; &#125;</span></span><br></pre></td></tr></table></figure>
+
 <p>Simples assim!</p>
 
             
@@ -187,7 +190,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-remover-item-json/" data-id="clf2z3vxl003rohsmcibefrah" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-remover-item-json/" data-id="clf30ynzf003rh5ot44idc3ij" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-remover-item-json/#disqus_thread" class="article-comment-link">

@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,12 +122,15 @@ ga('send', 'pageview');
             <p>No desenvolvimento diário de componentes reutilizáveis no Angular, nos deparamos com situações em que desejamos compartilhar variáveis, que estão no “componente pai” e queremos que de alguma forma, seja feita essa conexão entre os componentes. </p>
 <p>O compartilhamento de variáveis, com o Angular, é muito mais fácil do que parece! </p>
 <span id="more"></span>
+
 <h3 id="Configurando-nossos-componentes"><a href="#Configurando-nossos-componentes" class="headerlink" title="Configurando nossos componentes"></a>Configurando nossos componentes</h3><p>Vamos considerar o cenário onde temos o componente pai <code>MainComponent</code>, onde realizamos o GET de usuários e desejamos enviar para o componente <code>UsersComponent</code>, o resultado do GET de usuários realizado no pai.</p>
 <p>Para isto, primeiramente no HTML do <strong>MainComponent</strong> devemos passar como “parâmetro” esta variável, da seguinte forma:</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">app-users</span> [<span class="attr">users</span>]=<span class="string">&quot;users&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">app-users</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>Note que o que estamos passando dentro das aspas, deve ser o mesmo nome de variável que temos em nosso arquivo Typescript!</p>
 <p>Feito isso, devemos apenas criar <code>users</code> dentro de nosso <code>UsersComponent</code>, mas com uma pequena diferença:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// users.component.ts</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">Component</span>, <span class="title class_">Input</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;@angular/core&#x27;</span>;</span><br><span class="line">@<span class="title class_">Component</span>(&#123;</span><br><span class="line">    <span class="attr">selector</span>: <span class="string">&#x27;app-users&#x27;</span>,</span><br><span class="line">    <span class="attr">templateUrl</span>: <span class="string">&#x27;./users.component.html&#x27;</span>,</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">class</span> <span class="title class_">TeamModalComponent</span> &#123;</span><br><span class="line">    <span class="comment">// Com este @Input(), dizemos que</span></span><br><span class="line">    <span class="comment">// esta variável está associada ao</span></span><br><span class="line">    <span class="comment">// componente pai, MainComponent</span></span><br><span class="line">    @<span class="title class_">Input</span>() users;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Com isto feito, você terá acesso à variável que foi criada no componente pai e poderá manipulá-la normalmente dentro do seu componente filho!</p>
 
             
@@ -190,7 +193,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/compartilhando-variaveis-angular/" data-id="clf2z3w06004johsma9sv1unn" class="article-share-link">
+            <a data-url="https://backefront.com.br/compartilhando-variaveis-angular/" data-id="clf30ynzu004jh5ot3auigqok" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/compartilhando-variaveis-angular/#disqus_thread" class="article-comment-link">

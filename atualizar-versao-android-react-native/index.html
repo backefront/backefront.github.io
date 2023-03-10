@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,13 +122,17 @@ ga('send', 'pageview');
             <p>Trabalhar com desenvolvimento mobile envolve algumas preocupações, como dispositivos que usarão, tamanhos, modelo, se é iOS ou Android<br>E durante nosso trabalho, frequentemente precisamos atualizar versões e subir novas para as lojas, com novas features e melhorias<br>Enquanto estava atualizando a versão para <code>Android</code> notei que algumas vezes não atualizava o código certo, parecia manter uma espécie de cache</p>
 <p>Pesquisando, encontrei uma forma e um porque!</p>
 <span id="more"></span>
+
 <p>Isso acontece pois o nosso arquivo <code>index.android.bundle</code> está em uma versão antiga e precisamos atualizar ele.<br>Para isso, rodamos o seguinte comando em nosso terminal, na pasta raiz do projeto:</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res</span><br></pre></td></tr></table></figure>
+
 <p>e após o término:</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> android &amp;&amp; ./gradlew clean assembleDebug</span><br></pre></td></tr></table></figure>
+
 <p>Feito isso, pode gerar seu APP diretamente pelo Android Studio que é para pegar normalmente a nova versão!</p>
 <p>Para facilitar, você pode criar um comando para realizar esse processo, dentro do seu <code>package.json</code>:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;scripts&quot;</span>: &#123;</span><br><span class="line">  <span class="string">&quot;android&quot;</span>: <span class="string">&quot;react-native run-android&quot;</span>,</span><br><span class="line">  <span class="string">&quot;android-ios&quot;</span>: <span class="string">&quot;source ~/.bash_profile&amp;&amp;react-native run-android&quot;</span>,</span><br><span class="line">  <span class="string">&quot;ios&quot;</span>: <span class="string">&quot;react-native run-ios&quot;</span>,</span><br><span class="line">  <span class="string">&quot;start&quot;</span>: <span class="string">&quot;react-native start&quot;</span>,</span><br><span class="line">  <span class="string">&quot;bundle-android&quot;</span>: <span class="string">&quot;react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/ &amp;&amp; cd android &amp;&amp; ./gradlew assembleDebug &amp;&amp; cd ..&quot;</span>,</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
 
             
         </div>
@@ -190,7 +194,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/atualizar-versao-android-react-native/" data-id="clf2z3vn8000nohsm0t8f75yu" class="article-share-link">
+            <a data-url="https://backefront.com.br/atualizar-versao-android-react-native/" data-id="clf30ynxm000nh5ot7qwj5ov0" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/atualizar-versao-android-react-native/#disqus_thread" class="article-comment-link">

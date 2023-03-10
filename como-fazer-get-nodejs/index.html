@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,10 +122,13 @@ ga('send', 'pageview');
             <p>Continuando a série sobre NodeJS, hoje irei mostrar como podemos fazer uma rota de GET com ele!<br>Caso tenha perdido, você pode ler sobre como criar uma rota de POST <a href="https://backefront.com.br/como-fazer-post-nodejs/">neste link aqui</a></p>
 <p>Em nosso arquivo <code>index.js</code> iremos criar então as configurações desta nova rota:</p>
 <span id="more"></span>
+
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">&quot;express&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> server = <span class="title function_">express</span>();</span><br><span class="line">server.<span class="title function_">use</span>(express.<span class="title function_">json</span>());</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * A variável `projects` pode ser `const` porque um `array`</span></span><br><span class="line"><span class="comment"> * pode receber adições ou exclusões mesmo sendo uma constante.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> projects = [&#123; <span class="attr">id</span>: <span class="number">1</span>, <span class="attr">title</span>: <span class="string">&quot;Um novo post&quot;</span> &#125;];</span><br><span class="line"></span><br><span class="line">server.<span class="title function_">get</span>(<span class="string">&quot;/projects&quot;</span>, <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> res.<span class="title function_">json</span>(projects);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">server.<span class="title function_">listen</span>(<span class="number">4000</span>);</span><br></pre></td></tr></table></figure>
+
 <p>A nossa rota GET é bem simples, ela irá nos retornar todos os projetos que armazenamos.<br>Se testarmos a nossa rota criada anteriormente, fazendo um POST e depois requisitarmos todos os projetos através desta nova rota, devemos ver o projeto recém criado!</p>
 <p>Mas como faríamos se quiséssemos pegar um ID vindo da URL para fazer a consulta?<br>Não mudaria muito, a diferença que usaríamos os parâmetros de rota:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> projects = [&#123; <span class="attr">id</span>: <span class="number">1</span>, <span class="attr">title</span>: <span class="string">&quot;Um novo post&quot;</span> &#125;];</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Aqui definimos que depois de projects</span></span><br><span class="line"><span class="comment"> * teremos um valor que será enviado na URL</span></span><br><span class="line"><span class="comment"> * e o chamamos de ID.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">server.<span class="title function_">get</span>(<span class="string">&quot;/projects/:id&quot;</span>, <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> &#123; id &#125; = req.<span class="property">params</span>;</span><br><span class="line">  <span class="keyword">const</span> project = projects.<span class="title function_">find</span>(<span class="function">(<span class="params">project</span>) =&gt;</span> project.<span class="property">id</span> == id);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> res.<span class="title function_">json</span>(projects);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">server.<span class="title function_">listen</span>(<span class="number">4000</span>);</span><br></pre></td></tr></table></figure>
+
 <p>Com isso, pegamos o ID vindo da URL e buscamos em todos os projetos, retornando apenas o projeto que for igual ao ID enviado!<br>Simples não é mesmo?</p>
 
             
@@ -188,7 +191,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-fazer-get-nodejs/" data-id="clf2z3vud002mohsm31hd7cn4" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-fazer-get-nodejs/" data-id="clf30ynym002mh5ot6pkl7il3" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-fazer-get-nodejs/#disqus_thread" class="article-comment-link">

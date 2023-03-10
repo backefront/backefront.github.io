@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,12 +122,16 @@ ga('send', 'pageview');
             <p>Você utiliza Sass ou Scss para construir seu CSS e está criando um aplicação em React mas não sabe como utilizar ele?<br>Usar o Sass dentro do React é muito simples e fácil de ser configurado!</p>
 <p>Para isso, em seu terminal instale o sass:</p>
 <span id="more"></span>
+
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install node-sass</span><br><span class="line"></span><br><span class="line"><span class="comment">// Ou utlizando yarn</span></span><br><span class="line"></span><br><span class="line">yarn add node-sass</span><br></pre></td></tr></table></figure>
+
 <p>Pronto, agora você já está apto a utilizar arquivos Sass dentro do seu projeto!<br>Mas como podemos importar os estilos? Da mesma maneira que fazemos com o CSS tradicional</p>
 <p>Criamos um arquivo .scss, nesse caso, chamaremos de estilo.scss:</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$<span class="attribute">color</span>: <span class="number">#000</span>;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: $color;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>E dentro do nosso arquivo <code>js</code>, importamos nosso estilo:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span>, &#123; <span class="title class_">Component</span> &#125; <span class="keyword">from</span> <span class="string">&quot;react&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">ReactDOM</span> <span class="keyword">from</span> <span class="string">&quot;react-dom&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&quot;./estilo.scss&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">App</span> <span class="keyword">extends</span> <span class="title class_ inherited__">Component</span> &#123;</span><br><span class="line">  <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Blog Back&amp;Front!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>Seja bem-vindo!<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(<span class="language-xml"><span class="tag">&lt;<span class="name">App</span> /&gt;</span></span>, <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;root&quot;</span>));</span><br></pre></td></tr></table></figure>
+
 <p>Sem complicações nem dores de cabeça, simples e rápido! :)</p>
 <p>🏡</p>
 
@@ -191,7 +195,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-usar-scss-react/" data-id="clf2z3w01004bohsm9dry7qnl" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-usar-scss-react/" data-id="clf30ynzq004bh5ot35u7757n" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-usar-scss-react/#disqus_thread" class="article-comment-link">

@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,13 +121,17 @@ ga('send', 'pageview');
             
             <p>Quando estamos desenvolvendo aplicações front-end, começamos a escrever códigos que podem ser reutilizados em outras partes do sistema.<br>Dessa forma, o ideal seria que modularizarmos aquelas funções específicas!<br>Você sabe como podemos exportar funções no Javascript? É algo simples e poderoso!</p>
 <span id="more"></span>
+
 <p>Primeiramente, devemos isolar o nosso código em um arquivo separado</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Arquivo Calculos.js</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">soma</span> = (<span class="params">a, b</span>) =&gt; a + b;</span><br><span class="line"><span class="keyword">const</span> <span class="title function_">subtrair</span> = (<span class="params">a, b</span>) =&gt; a - b;</span><br></pre></td></tr></table></figure>
+
 <p>Agora que temos, no nosso arquivo <code>Calculos.js</code> as funções que usaremos em nossa aplicação, devemos exportá-las, isto quer dizer, deixa-las disponíveis para podemos importar onde quer que seja.</p>
 <p>Para isto, devemos então <strong>exportar</strong> as nossa funções, vamos fazer uma modificação no nosso arquivo <code>Calculos.js</code>:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Arquivo Calculos.js</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">soma</span> = (<span class="params">a, b</span>) =&gt; a + b;</span><br><span class="line"><span class="keyword">const</span> <span class="title function_">subtrair</span> = (<span class="params">a, b</span>) =&gt; a - b;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Adicionamos export</span></span><br><span class="line"><span class="comment">// e dizemos quais funções</span></span><br><span class="line"><span class="comment">// queremos exportar</span></span><br><span class="line"><span class="keyword">export</span> &#123; somar, subtrair &#125;;</span><br></pre></td></tr></table></figure>
+
 <p>Com isso, temos acesso a essas funções em qualquer lugar que quisermos!<br>Vamos agora, utilizar em nosso arquivo Javascript principal, que vamos chamar de <code>main.js</code>:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Arquivo main.js</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Importamos as funções que queremos usar</span></span><br><span class="line"><span class="comment">// do nosso arquivo Calculos.js</span></span><br><span class="line"><span class="keyword">import</span> &#123; somar, subtrair &#125; <span class="keyword">from</span> <span class="string">&quot;./Calculos.js&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// E podemos utilizar todas</span></span><br><span class="line"><span class="comment">// as funções que temos no outro arquivo</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`Resultado é <span class="subst">$&#123;somar(<span class="number">1</span>, <span class="number">2</span>)&#125;</span>`</span>);</span><br></pre></td></tr></table></figure>
+
 <p>Com esse import, temos acesso as funções que criamos, mas também podemos importar apenas as que realmente queremos utilizar! Ou seja, poderíamos fazer <code>import &#123;somar&#125; from &#39;./Calculos.js&#39;</code> sem problemas nenhum!</p>
 <p>Criar funções genéricas onde podemos utilizar em outras partes do sistema é uma boa prática, pois desta forma reaproveitamos código e deixamos mais fácil de realizar manutenções!</p>
 
@@ -191,7 +195,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-exportar-funcao-javascript/" data-id="clf2z3vu5002dohsme01d1row" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-exportar-funcao-javascript/" data-id="clf30ynyi002dh5ot81cgalrx" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-exportar-funcao-javascript/#disqus_thread" class="article-comment-link">

@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,8 +122,10 @@ ga('send', 'pageview');
             <p>Com a evolução do Javascript, fazer uma request com Javascript tornou-se uma tarefa muito mais simples!<br>O que antes nós usávamos JQuery para facilitar nosso trabalho, atualmente é algo relativamente fácil e tranquilo de ser feito através de javascript puro.</p>
 <p>Você sabe como fazer uma requisição “POST” com Javascript puro?</p>
 <span id="more"></span>
+
 <p>Quando queremos fazer um POST com Javascript puro, podemos usar o <code>fetch API</code>, que é uma interface para fazermos requisições!<br>Então como fazemos um POST com o fetch? Podemos fazer da seguinte maneira:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> data = &#123; <span class="attr">username</span>: <span class="string">&quot;Victor Jordan&quot;</span> &#125;;</span><br><span class="line"></span><br><span class="line"><span class="title function_">fetch</span>(<span class="string">&quot;https://backefront.com.br/api/users&quot;</span>, &#123;</span><br><span class="line">  <span class="attr">method</span>: <span class="string">&quot;POST&quot;</span>,</span><br><span class="line">  <span class="attr">headers</span>: &#123;</span><br><span class="line">    <span class="string">&quot;Content-Type&quot;</span>: <span class="string">&quot;application/json&quot;</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">body</span>: <span class="title class_">JSON</span>.<span class="title function_">stringify</span>(data),</span><br><span class="line">&#125;)</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">response</span>) =&gt;</span> response.<span class="title function_">json</span>())</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">data</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Success:&quot;</span>, data);</span><br><span class="line">  &#125;)</span><br><span class="line">  .<span class="title function_">catch</span>(<span class="function">(<span class="params">error</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&quot;Error:&quot;</span>, error);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
+
 <p>O Fetch nos permite trabalhar com todos os métodos HTTP, sendo eles: GET, POST, PUT, DELETE, etc.<br>Sua implementação é bem simples e intuitiva, o que facilita muito em nosso desenvolvimento!</p>
 
             
@@ -186,7 +188,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-fazer-post-javascript-puro/" data-id="clf2z3vuh002rohsmbdrmgg7w" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-fazer-post-javascript-puro/" data-id="clf30ynyr002rh5ot5dqw3pdb" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-fazer-post-javascript-puro/#disqus_thread" class="article-comment-link">

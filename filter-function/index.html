@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,9 +122,12 @@ ga('send', 'pageview');
             <p>Em um determinado momento de seu desenvolvimento, você recebe um array com diversos valores aleatórios, mas precisa trabalhar apenas os que são maiores que 20. Para isso, você poderia percorrer essa lista e verificar um por um e retornar um novo array apenas com os valores que passam nessas condições, que poderia ser feito com um <code>for</code> ou um <code>while</code> mas, coincidentemente, o Javascript possui um método do chamado <code>filter</code> que faz justamente isso!</p>
 <p>Você tem uma série de idades e deseja apenas quem é maior de idade.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> idades = [<span class="number">9</span>, <span class="number">10</span>, <span class="number">19</span>, <span class="number">1</span>, <span class="number">40</span>, <span class="number">55</span>, <span class="number">6</span>, <span class="number">87</span>];</span><br></pre></td></tr></table></figure>
+
 <span id="more"></span>
+
 <h2 id="Solucao"><a href="#Solucao" class="headerlink" title="Solução"></a>Solução</h2><p>O método <code>filter()</code> retorna um novo array com todos os valores que passam na validação implementada na função, caso nenhum número satisfaça essa condição, um array vazio será retornado.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> maioresDeIdade = idades.<span class="title function_">filter</span>(<span class="function">(<span class="params">idade</span>) =&gt;</span> idade &gt;= <span class="number">18</span>);</span><br></pre></td></tr></table></figure>
+
 <p>Na função acima, estamos percorrendo todos os valores do array e chamando o elemento que está sendo executado no momento com o nome <code>idade</code>. Desta forma, utilizando arrow function, passamos na mesma linha a condição, verificando se idade é igual ou maior à 18.</p>
 <p>E o resultado:<br><img src="/posts/filter-javascript.gif" alt="Retorno da função: Ensino Médio"></p>
 
@@ -188,7 +191,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/filter-function/" data-id="clf2z3w660065ohsmhxpdc1aj" class="article-share-link">
+            <a data-url="https://backefront.com.br/filter-function/" data-id="clf30yo0t0065h5otehyq2ztr" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/filter-function/#disqus_thread" class="article-comment-link">

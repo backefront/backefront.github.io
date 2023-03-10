@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,7 +122,9 @@ ga('send', 'pageview');
             <p>Certa vez, enquanto estava fazendo integração em um determinado endpoint, tinha certas propriedades que eu não podia enviar dentro do payload caso o valor fosse vazio.</p>
 <p>Pensando nisso, poderíamos fazer diversos IF, verificando se existe valor naquela propriedade ou não, e assim adicionar.<br>Mas sabia que podemos montar um objeto de uma só vez, verificando isso diretamente?</p>
 <span id="more"></span>
+
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> condition = <span class="literal">true</span>;</span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;John Doe&quot;</span>,</span><br><span class="line">  ...(condition &amp;&amp; &#123; <span class="attr">idade</span>: <span class="number">16</span> &#125;),</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
 <p>Dessa forma, montamos nosso objeto da forma que queremos, de maneira condicional, adicionado uma propriedade ao objeto apenas se cumprir os requisitos!</p>
 
             
@@ -185,7 +187,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/adicionar-propriedade-condicionalmente-objeto-javascript/" data-id="clf2z3vm6000bohsm966kese8" class="article-share-link">
+            <a data-url="https://backefront.com.br/adicionar-propriedade-condicionalmente-objeto-javascript/" data-id="clf30ynxd000bh5otczd975g4" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/adicionar-propriedade-condicionalmente-objeto-javascript/#disqus_thread" class="article-comment-link">

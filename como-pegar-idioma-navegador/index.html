@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,7 +122,10 @@ ga('send', 'pageview');
             <p>Alguma vez você já precisou pegar o idioma que o usuário utiliza em seu navegador para utilizar no sistema, seja para exibir alguma informação daquele idioma ou até para realizar a internacionalização?</p>
 <p>O navagador possui, dentro da propriedade <code>navigator</code>, os idiomas preferenciais do usuário, e é muito fácil recuperar esse valor:</p>
 <span id="more"></span>
-<p>Para recuperarmos, vamos acessar a propriedade <code>navigator</code>:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> userLocale = navigator?.<span class="property">languages</span>?.<span class="property">length</span> ? navigator.<span class="property">languages</span>[<span class="number">0</span>] : navigator.<span class="property">language</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(userLocale); <span class="comment">// 👉️ &quot;pr-BR&quot;, essa opção vai retornar o idioma preferencial</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Ou da seguinte maneira 👇️</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(navigator.<span class="property">languages</span>); <span class="comment">// [&quot;pt-BR&quot;, &quot;en-US&quot;, &quot;en&quot;], dessa forma retorna um array com os idiomas que o usuário tem preferência</span></span><br></pre></td></tr></table></figure></p>
+
+<p>Para recuperarmos, vamos acessar a propriedade <code>navigator</code>:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> userLocale = navigator?.<span class="property">languages</span>?.<span class="property">length</span> ? navigator.<span class="property">languages</span>[<span class="number">0</span>] : navigator.<span class="property">language</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(userLocale); <span class="comment">// 👉️ &quot;pr-BR&quot;, essa opção vai retornar o idioma preferencial</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Ou da seguinte maneira 👇️</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(navigator.<span class="property">languages</span>); <span class="comment">// [&quot;pt-BR&quot;, &quot;en-US&quot;, &quot;en&quot;], dessa forma retorna um array com os idiomas que o usuário tem preferência</span></span><br></pre></td></tr></table></figure>
+
 <p>Simples não é?</p>
 
             
@@ -185,7 +188,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/como-pegar-idioma-navegador/" data-id="clf2z3vxf003nohsmc9lj5iki" class="article-share-link">
+            <a data-url="https://backefront.com.br/como-pegar-idioma-navegador/" data-id="clf30ynzd003nh5ot1lqdfkb9" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/como-pegar-idioma-navegador/#disqus_thread" class="article-comment-link">

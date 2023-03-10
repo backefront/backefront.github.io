@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,9 +121,11 @@ ga('send', 'pageview');
             
             <p>Quando estamos desenvolvendo um formulário em uma aplicação web ou em um simples campo de e-mail, desejamos fazer uma validação se o texto que está sendo inserido pelo o usuário está no formato de e-mail realmente.<br>Existem algumas máscaras e até mesmo o input do HTML5 do tipo “email” que nos ajudam a fazer isto.<br>Mas como podemos fazer essa validação via Javascript?</p>
 <span id="more"></span>
+
 <p>A validação de e-mail através do Javascript pode ser feita utilizando um Regex!<br>Podemos usar a seguinte função para fazer essa verificação:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">validateEmail</span> = (<span class="params">email</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">const</span> re = <span class="regexp">/\S+@\S+\.\S+/</span>;</span><br><span class="line">  <span class="keyword">return</span> re.<span class="title function_">test</span>(email);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>Neste Regex, informamos que para ser válido esse teste, queremos que nossa string seja composta por: <a href="mailto:`algumtexto@maistexto.texto">`algumtexto@maistexto.texto</a>`<br>Dessa forma, caso a string digitada fuja desse padrão, o retorno dado será falso!</p>
+
+<p>Neste Regex, informamos que para ser válido esse teste, queremos que nossa string seja composta por: <code>algumtexto@maistexto.texto</code><br>Dessa forma, caso a string digitada fuja desse padrão, o retorno dado será falso!</p>
 
             
         </div>
@@ -185,7 +187,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/validacao-email-javascript/" data-id="clf2z3wfb00a3ohsmfide040c" class="article-share-link">
+            <a data-url="https://backefront.com.br/validacao-email-javascript/" data-id="clf30yo2t00a3h5otcj47abqf" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/validacao-email-javascript/#disqus_thread" class="article-comment-link">

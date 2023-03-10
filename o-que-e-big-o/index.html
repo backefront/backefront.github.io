@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -123,6 +123,7 @@ ga('send', 'pageview');
 <p>É uma forma de medir quanto tempo e espaço (ou memória) um algoritmo leva para executar em função do tamanho de seus dados de entrada. Em outras palavras, a notação Big O nos diz o quanto o tempo de execução de um algoritmo aumenta à medida que a quantidade de dados aumenta.</p>
 <p>Exemplos de notações Big O comuns incluem O(1), O(n), O(n^2) e O(log n). Aqui estão alguns exemplos de cada uma dessas notações em JavaScript:</p>
 <span id="more"></span>
+
 <h3 id="O-1"><a href="#O-1" class="headerlink" title="O(1)"></a>O(1)</h3><p>Significa que o tempo de execução é constante, independentemente do tamanho dos dados de entrada. Por exemplo:</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">getFirstElement</span>(<span class="params">arr</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> arr[<span class="number">0</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>O tempo de execução desta função será sempre O(1), pois independentemente do tamanho do array, ela sempre retornará o primeiro elemento em uma única operação.</p>
@@ -134,7 +135,8 @@ ga('send', 'pageview');
 <h3 id="O-log-n"><a href="#O-log-n" class="headerlink" title="O(log n)"></a>O(log n)</h3><p>Significa que o tempo de execução aumenta de forma logarítmica em relação ao tamanho dos dados de entrada. Isso significa que, se o tamanho dos dados de entrada aumentar 10 vezes, o tempo de execução aumentará apenas em um fator de 2. </p>
 <p>Exemplo:</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">binarySearch</span>(<span class="params">arr, value</span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> start = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">let</span> end = arr.<span class="property">length</span> - <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">while</span> (start &lt;= end) &#123;</span><br><span class="line">    <span class="keyword">const</span> middle = <span class="title class_">Math</span>.<span class="title function_">floor</span>((start + end) / <span class="number">2</span>);</span><br><span class="line">    <span class="keyword">if</span> (arr[middle] === value) &#123;</span><br><span class="line">      <span class="keyword">return</span> middle;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (arr[middle] &lt; value) &#123;</span><br><span class="line">      start = middle + <span class="number">1</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      end = middle - <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>A função de pesquisa binária divide o array ao meio em cada iteração do loop, portanto, o número de iterações é proporcional ao logaritmo do tamanho do array. Se o array tiver 1024 elementos, a função executará o loop no máximo 10 vezes (2^10 = 1024). Se o array tiver 1048576 elementos (2^20), a função executará o loop no máximo 20 vezes.</p>
+
+<p>A função de pesquisa binária divide o array ao meio em cada iteração do loop, portanto, o número de iterações é proporcional ao logaritmo do tamanho do array. Se o array tiver 1024 elementos, a função executará o loop no máximo 10 vezes (2^10 &#x3D; 1024). Se o array tiver 1048576 elementos (2^20), a função executará o loop no máximo 20 vezes.</p>
 <p>É importante notar que a notação Big O é uma forma de expressar a complexidade relativa de um algoritmo em relação ao tamanho dos dados de entrada. Ela não dá uma medida exata do tempo de execução em segundos ou milissegundos, mas sim uma forma de comparar a escalabilidade de diferentes algoritmos.</p>
 
             
@@ -197,7 +199,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/o-que-e-big-o/" data-id="clf2z3war007hohsm92r49sgb" class="article-share-link">
+            <a data-url="https://backefront.com.br/o-que-e-big-o/" data-id="clf30yo1i007hh5ote2fqbzjt" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/o-que-e-big-o/#disqus_thread" class="article-comment-link">

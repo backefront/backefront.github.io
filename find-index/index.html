@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -121,10 +121,13 @@ ga('send', 'pageview');
             
             <p>Digamos que temos o seguinte array e o banco de dados nos retorna apenas o valor da <code>role</code>, mas precisamos exibir em nosso front-end o valor da <code>label</code>. Para isso, precisamos acessar a lista pela role e retornar o nome da mesma. Mas como fazer isso?</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> lista = [</span><br><span class="line">  &#123; <span class="attr">role</span>: <span class="string">&quot;DOUTORADO&quot;</span>, <span class="attr">name</span>: <span class="string">&quot;Doutorado&quot;</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">role</span>: <span class="string">&quot;MESTRADO&quot;</span>, <span class="attr">name</span>: <span class="string">&quot;Mestrado&quot;</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">role</span>: <span class="string">&quot;POS_GRADUACAO&quot;</span>, <span class="attr">name</span>: <span class="string">&quot;Pós-graduação&quot;</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">role</span>: <span class="string">&quot;GRADUACAO&quot;</span>, <span class="attr">name</span>: <span class="string">&quot;Graduação&quot;</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">role</span>: <span class="string">&quot;ENSINO_MEDIO&quot;</span>, <span class="attr">name</span>: <span class="string">&quot;Ensino Médio&quot;</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">role</span>: <span class="string">&quot;NONE&quot;</span>, <span class="attr">name</span>: <span class="string">&quot;None&quot;</span> &#125;,</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
+
 <span id="more"></span>
+
 <h2 id="Aplicacao"><a href="#Aplicacao" class="headerlink" title="Aplicação"></a>Aplicação</h2><p>Em nossa API, quando fazemos o GET do usuário, ele retorna a apenas a <code>role</code> do usuário. Por questões visuais, não podemos deixar exibindo na tela uma informação sem a devida tratativa, correto? Então como faríamos para acessar o <code>name</code> da lista através da <code>role</code> que temos na mão? Para isso, podemos usar o FindIndex!</p>
 <p>Com uma variável auxiliar, encontramos o index da role desejada e acessamos o valor do name através dela! No exemplo, vamos usar ‘ENSINO_MEDIO’ como um valor vindo da API.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> educationIndex = lista.<span class="title function_">findIndex</span>(<span class="function">(<span class="params">item</span>) =&gt;</span> item.<span class="property">role</span> === <span class="string">&quot;ENSINO_MEDIO&quot;</span>); <span class="comment">// Busca o Index que tenha a role como &#x27;ENSINO_MEDIO&#x27;</span></span><br><span class="line"><span class="keyword">const</span> escolaridade = lista[educationIndex].<span class="property">name</span>; <span class="comment">// Sabendo o índice, fica fácil acessar o name desejado</span></span><br></pre></td></tr></table></figure>
+
 <p>E o resultado:<br><img src="/posts/findIndex-exemplo.gif" alt="Retorno da função: Ensino Médio"></p>
 <p>Bem fácil e pode ser muito útil quando precisamos acessar um valor que não sabemos o índice diretamente!</p>
 
@@ -188,7 +191,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/find-index/" data-id="clf2z3w6e0069ohsmef424sg1" class="article-share-link">
+            <a data-url="https://backefront.com.br/find-index/" data-id="clf30yo0v0069h5otd5eu14dz" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/find-index/#disqus_thread" class="article-comment-link">

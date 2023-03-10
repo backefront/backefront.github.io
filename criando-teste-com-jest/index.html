@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -124,6 +124,7 @@ ga('send', 'pageview');
 <p>Você conseguiria evitar isso, caso tivesse coberto aquele caso de uso, com um teste!</p>
 <p>Você sabe como fazer teste de uma função com o Jest? Vou ensinar como é fácil fazer um teste básico com Jest!</p>
 <span id="more"></span>
+
 <h3 id="Instalacoes-necessarias"><a href="#Instalacoes-necessarias" class="headerlink" title="Instalações necessárias"></a>Instalações necessárias</h3><p>Antes de começarmos a mexer no nosso teste em si, devemos instalar algumas dependências, que são:</p>
 <ul>
 <li>Jest</li>
@@ -131,18 +132,25 @@ ga('send', 'pageview');
 </ul>
 <p>Então, em seu terminal, execute o comando:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add --dev jest</span><br></pre></td></tr></table></figure>
+
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add --dev babel-jest @babel/core @babel/preset-env</span><br></pre></td></tr></table></figure>
+
 <h3 id="Criacao-e-alteracao-de-arquivos-para-o-teste"><a href="#Criacao-e-alteracao-de-arquivos-para-o-teste" class="headerlink" title="Criação e alteração de arquivos para o teste"></a>Criação e alteração de arquivos para o teste</h3><p>Primeiramente, devemos criar o arquivo <code>babel.config.js</code>, na raiz do projeto, com a seguinte configuração:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// babel.config.js</span></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="attr">presets</span>: [</span><br><span class="line">    [</span><br><span class="line">      <span class="string">&quot;@babel/preset-env&quot;</span>,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">targets</span>: &#123;</span><br><span class="line">          <span class="attr">node</span>: <span class="string">&quot;current&quot;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">      &#125;,</span><br><span class="line">    ],</span><br><span class="line">  ],</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
 <p>E agora, devemos adicionar nosso script de teste, no arquivo <code>package.json</code><br>Dentro de seção <strong>script</strong>, adicionamos nosso “test”:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;scripts&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;test&quot;</span>: <span class="string">&quot;jest&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Feito toda essa configuração, vamos agora criar um teste onde queremos verificar a soma de dois números.<br>Criemos então o arquivo <code>soma.js</code>, que é onde está a nossa função que desejamos testar:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">soma</span> = (<span class="params">a, b</span>) =&gt; a + b;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> &#123; soma &#125;;</span><br></pre></td></tr></table></figure>
+
 <p>E agora iremos criar o nosso teste em si mesmo!<br>Crie um arquivo chamado <code>soma.test.js</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; soma &#125; <span class="keyword">from</span> <span class="string">&quot;./soma.js&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">describe</span>(<span class="string">&quot;Cálculo de dois numero&quot;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="title function_">test</span>(<span class="string">&quot;1 + 2 igual 3&quot;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="title function_">expect</span>(<span class="title function_">soma</span>(<span class="number">1</span>, <span class="number">2</span>)).<span class="title function_">toBe</span>(<span class="number">3</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
 <p>Pronto! Seu teste está pronto para ser testado!<br>Vamos testar então o nosso primeiro teste com Jest?</p>
 <h3 id="Executando-o-seu-teste"><a href="#Executando-o-seu-teste" class="headerlink" title="Executando o seu teste"></a>Executando o seu teste</h3><p>Em seu terminal, execute o comando <code>yarn test</code> ou <code>npm run test</code>, e deve retornar a seguinte mensagem:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable constant_">PASS</span>  ./sum.<span class="property">test</span>.<span class="property">js</span></span><br><span class="line">Cálculo de dois numero</span><br><span class="line">✓ adds <span class="number">1</span> + <span class="number">2</span> to equal <span class="number">3</span> (5ms)</span><br></pre></td></tr></table></figure>
+
 <p>Perfeito! Seu teste está rodando e melhor, passou!</p>
 <p>Quer entender mais sobre o que é teste de software? <a href="https://backefront.com.br/fundamentos-teste-software/">Neste post</a> falamos sobre esse assunto tão importante!</p>
 
@@ -206,7 +214,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/criando-teste-com-jest/" data-id="clf2z3w3n004xohsm9p1p6a7b" class="article-share-link">
+            <a data-url="https://backefront.com.br/criando-teste-com-jest/" data-id="clf30yo00004vh5otct7435iw" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/criando-teste-com-jest/#disqus_thread" class="article-comment-link">

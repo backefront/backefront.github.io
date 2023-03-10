@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -120,25 +120,32 @@ ga('send', 'pageview');
         <div class="article-entry" itemprop="articleBody">
             
             <p>Digamos que você esteja trabalhando em dois projetos diferentes, com github <strong>diferentes</strong> e você precisa adicionar a <code>SSH Key</code> em ambos repositórios. Ao tentar adicionar sua deploy key, você tenta colocar aquela chave que usa no outro projeto mas ao clicar em salvar, se depara com o seguinte erro:</p>
-<p><img src="/posts/Error - Key is already in use.png" alt="Erro de Chave em uso"></p>
+<p>![Erro de Chave em uso](&#x2F;posts&#x2F;Error - Key is already in use.png)</p>
 <p>Para resolver esse problema, você deveria adicionar outra ssh key sem perder a que já está em uso. Mas como?</p>
 <span id="more"></span>
+
 <h2 id="Criando-a-nova-SSH"><a href="#Criando-a-nova-SSH" class="headerlink" title="Criando a nova SSH"></a>Criando a nova SSH</h2><p>Gere uma nova key, com o comando de sempre, com um porém, altere o <strong>nome</strong> de como ela será salva, como na imagem abaixo:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//Comando para gerar nova ssh</span><br><span class="line">ssh-keygen -t rsa -C &quot;seuemail@email.com&quot;</span><br></pre></td></tr></table></figure>
-<p><img src="/posts/Gerando SSH.png" alt="Gerando uma nova SSH Key, alterando o nome do arquivo"></p>
+
+<p>![Gerando uma nova SSH Key, alterando o nome do arquivo](&#x2F;posts&#x2F;Gerando SSH.png)</p>
 <p>Como pode ser visto, alterei a opção default de criação de uma SSH, que é <strong>id_rsa</strong> para <strong>id_rsa_trabalho</strong>. Essa vai ser a chave que adicionarei no outro projeto.</p>
 <h2 id="Criando-arquivo-de-configuracao"><a href="#Criando-arquivo-de-configuracao" class="headerlink" title="Criando arquivo de configuração"></a>Criando arquivo de configuração</h2><p>Para usar duas ssh keys diferentes, você deve acessar a pasta onde se encontra a atual e criar um arquivo de configuração:</p>
 <p>No Windows</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nul&gt;config</span><br></pre></td></tr></table></figure>
-<p>Linux/Mac</p>
+
+<p>Linux&#x2F;Mac</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch config</span><br></pre></td></tr></table></figure>
+
 <p>Assim que gerar esse arquivo config, você deve editá-lo, usando seu editor preferido, adicionando as seguintes configurações:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Host trabalho.github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    PreferredAuthentications publickey</span><br><span class="line">    IdentityFile ~/.ssh/id_rsa_trabalho</span><br><span class="line"></span><br><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    PreferredAuthentications publickey</span><br><span class="line">    IdentityFile ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
+
 <p>Observe que alterei o <code>Host</code> e o <code>IdentityFile</code>, fazendo referência a minha nova chave gerada e mantive a antiga public key como <em>default</em>.</p>
 <p>Feito isso, basta adicionar essa nova chave ao seu repositório e alterar no repositório clonado o <strong>remote</strong>, para fazer isso, deve alterar a url para a que você configurou em <code>Host</code>, da seguinte forma:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@trabalho.github.com:vjordan/projeto2</span><br></pre></td></tr></table></figure>
+
 <p>ou se quiser clonar:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@trabalho.github.com:vjordan/projeto2</span><br></pre></td></tr></table></figure>
+
 <p>Repare que depois do “@” eu coloquei <strong>trabalho.github.com</strong> que é o nosso HOST que criamos.<br>Enão se quisermos adicionar outros, basta alterar o valor que vai depois do <strong>@</strong></p>
 <p>Com isso, você terá N chaves e gerará novas sem perder as antigas, sem problema nenhum!</p>
 
@@ -202,7 +209,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/diferentes-sshkey-mesmo-computador/" data-id="clf2z3w4k005oohsmdaf8dxmy" class="article-share-link">
+            <a data-url="https://backefront.com.br/diferentes-sshkey-mesmo-computador/" data-id="clf30yo0i005oh5ot9f1o74xj" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/diferentes-sshkey-mesmo-computador/#disqus_thread" class="article-comment-link">

@@ -54,7 +54,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -122,12 +122,16 @@ ga('send', 'pageview');
             <p>O git é uma ferramenta muito utilizada no dia-a-dia de um desenvolvedor. Frequentemente, precisamos nos aventurar nos comandos <code>git ...</code> para concluir nossas tarefas diárias. O conhecimento em git é essencial, independente do seu nível de senioridade ou anos de experiência!</p>
 <p>Frequentemente clonamos repositórios para alterar os arquivos de acordo com a necessidade de nossas atividades, <em>commitamos</em> nossas alterações e enviamos e por aí vai! Mas e caso tivéssemos criado nosso projeto do <strong>zero</strong> e no final do dia, desejamos adicionar todos nossos arquivos em um repositório? Quase que o oposto do primeiro cenário! Então como podemos adicionar um projeto novo à um repositório no git?</p>
 <span id="more"></span>
+
 <h2 id="Criando-um-novo-git"><a href="#Criando-um-novo-git" class="headerlink" title="Criando um novo git"></a>Criando um novo git</h2><p>Primeiramente, devemos iniciar dentro da pasta onde contém os arquivos do projeto, o git, com o comando <code>git init</code></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
 <p>Feito isso, temos agora um repositório <strong>local</strong>, que contém seus arquivos! Só precisamos adicionar, commitar:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Adiciona todos os seus arquivos de uma vez.</span></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line"><span class="comment"># Commita e insere um comentário.</span></span><br><span class="line">git commit -m <span class="string">&quot;Adicionando arquivos do projeto&quot;</span></span><br></pre></td></tr></table></figure>
+
 <p>Agora só precisamos fazer um <strong>push</strong> para nosso repositório, e para isso, devemos primeiramente <strong>definir</strong> qual é nossa URL de destino! Então usaremos o comando “<em>git remote add origin remote <strong>urlRepositorio</strong></em>“</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Define um novo repositório como destino</span></span><br><span class="line">git remote add origin remote repository URL</span><br><span class="line"></span><br><span class="line">git remote -v</span><br><span class="line"><span class="comment"># Comando para verificar a URL que foi adicionada</span></span><br></pre></td></tr></table></figure>
+
 <p>E para finalizar, basta enviar suas alterações tranquilamente!</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Envia seus arquivos adicionados para o repositório definido</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
 
@@ -191,7 +195,7 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/adicionando-projeto-repositorio-existente-git/" data-id="clf2z3vlg0001ohsm3x1z8d9m" class="article-share-link">
+            <a data-url="https://backefront.com.br/adicionando-projeto-repositorio-existente-git/" data-id="clf30ynx50003h5otgg4t6t8g" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/adicionando-projeto-repositorio-existente-git/#disqus_thread" class="article-comment-link">
