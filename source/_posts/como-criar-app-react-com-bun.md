@@ -30,7 +30,7 @@ npm install -g bun-cli
 Depois que o Bun CLI estiver instalado, crie um novo app React executando o seguinte comando:
 
 ```cmd
-bun init meu-app
+bun create react [app name]
 ```
 
 Isso criará um novo diretório chamado "meu-app" e gerará um app React básico dentro dele.
@@ -39,7 +39,7 @@ Navegue até o novo diretório executando:
 
 ```cmd
 cd meu-app
-````
+```
 
 Inicie o servidor de desenvolvimento executando:
 
