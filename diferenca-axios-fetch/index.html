@@ -27,19 +27,19 @@ ga('send', 'pageview');
 </script>
 <!-- End Google Adsense -->
   
-  <title>Como Fazer Um Laço De Repetição Com SCSS | Dicas de desenvolvimento e programação</title>
+  <title>Axios vs. Fetch - Qual Escolher Para Suas Requisições HTTP? | Dicas de desenvolvimento e programação</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt">
 
   
-    <meta name="keywords" content='laco repeticao scss, while scss, como fazer for no scss, css while, css for, repetir classes css'>
+    <meta name="keywords" content='Axios, Fetch, requisições HTTP, front-end, biblioteca JavaScript, função nativa do navegador, interceptadores, cancelamento de requisições, conversão automática de dados, sintaxe de Promises, navegadores antigos, ES6.'>
   
   
   
-    <meta name="description" content='Aprenda a utilizar o @for e @while no SCSS para deixar seus arquivos de estilo mais poderosos!'>
-    <meta property="og:description" content='Aprenda a utilizar o @for e @while no SCSS para deixar seus arquivos de estilo mais poderosos!'>
-    <meta name="twitter:description" content='Aprenda a utilizar o @for e @while no SCSS para deixar seus arquivos de estilo mais poderosos!'>
+    <meta name="description" content='Descubra as principais diferenças entre Axios e Fetch para fazer requisições HTTP em projetos front-end. Saiba qual escolher de acordo com as necessidades do seu projeto e das suas preferências pessoais.'>
+    <meta property="og:description" content='Descubra as principais diferenças entre Axios e Fetch para fazer requisições HTTP em projetos front-end. Saiba qual escolher de acordo com as necessidades do seu projeto e das suas preferências pessoais.'>
+    <meta name="twitter:description" content='Descubra as principais diferenças entre Axios e Fetch para fazer requisições HTTP em projetos front-end. Saiba qual escolher de acordo com as necessidades do seu projeto e das suas preferências pessoais.'>
   
   
   
@@ -97,10 +97,10 @@ ga('send', 'pageview');
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
                 <section id="main">
-                    <article id="post-laco-repeticao-scss" class="article article-type-post" itemscope itemprop="blogPost">
+                    <article id="post-diferenca-axios-fetch" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-meta">
-        <a href="/laco-repeticao-scss/" class="article-date">
-  <time datetime="2018-12-03T09:30:50.000Z" itemprop="datePublished">03-12-2018</time>
+        <a href="/diferenca-axios-fetch/" class="article-date">
+  <time datetime="2023-04-29T10:35:46.000Z" itemprop="datePublished">29-04-2023</time>
 </a>
         
     </div>
@@ -111,7 +111,7 @@ ga('send', 'pageview');
             
   
     <h1 class="article-title" itemprop="name">
-      Como Fazer Um Laço De Repetição Com SCSS
+      Axios vs. Fetch - Qual Escolher Para Suas Requisições HTTP?
     </h1>
   
 
@@ -119,18 +119,25 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
             
-            <p>Alguma vez você já precisou criar um sistema de grid em seu CSS mas não queria ficar repetindo manualmente as classes de forma ineficiente? Ou por algum outro motivo, você pensa o quão bom seria fazer um <strong>laço de repetição</strong> dentro do seu arquivo <strong>SCSS</strong> e descobre que com o <a target="_blank" rel="noopener" href="https://sass-lang.com/">Sass</a> possibilita fazer isso! Mas como?</p>
+            <p>Quando se trata de fazer requisições HTTP em projetos front-end, há várias ferramentas disponíveis para os desenvolvedores. Duas das mais populares são Axios e Fetch. Ambas têm funcionalidades semelhantes, mas existem algumas diferenças importantes que podem influenciar na escolha da melhor opção para o seu projeto.</p>
 <span id="more"></span>
 
-<h2 id="Laco-de-Repeticao-for"><a href="#Laco-de-Repeticao-for" class="headerlink" title="Laço de Repetição @for"></a>Laço de Repetição @for</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$<span class="selector-tag">i</span>: <span class="number">0</span>;</span><br><span class="line"><span class="keyword">@for</span> $i from <span class="number">1</span> through <span class="number">4</span> &#123;</span><br><span class="line">  <span class="selector-class">.classe-</span>#&#123;$<span class="selector-tag">i</span>&#125; &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">60px</span> + $i;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>Quando compilado, o resultado será o seguinte:</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.classe-1</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">61px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.classe-2</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">62px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.classe-3</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">63px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.classe-4</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">64px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Laco-de-Repeticao-while"><a href="#Laco-de-Repeticao-while" class="headerlink" title="Laço de Repetição @while"></a>Laço de Repetição @while</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$<span class="selector-tag">i</span>: <span class="number">0</span>;</span><br><span class="line"><span class="keyword">@while</span> $i &lt;= <span class="number">4</span> &#123;</span><br><span class="line">  <span class="selector-class">.classe-</span>#&#123;$<span class="selector-tag">i</span>&#125; &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">60px</span> + $i;</span><br><span class="line">  &#125;</span><br><span class="line">  $<span class="selector-tag">i</span>: $i + <span class="number">5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>O resultado será exatamente igual ao exemplo superior!</p>
-<h2 id="Conclusao"><a href="#Conclusao" class="headerlink" title="Conclusão"></a>Conclusão</h2><p>Podemos utilizar esses laços de repetições quando precisamos criar classes que de alguma forma, serão iguais, ou terão um padrão de repetição, como é feito em um sistema de grids, como o do bootstrap!</p>
+<p>Axios é uma biblioteca JavaScript para fazer requisições HTTP que foi criada para oferecer suporte a navegadores antigos e para permitir o uso de interceptadores. Interceptadores são funções que podem ser usadas para gerenciar erros e autenticação de maneira centralizada. </p>
+<p>O Axios também tem um sistema de cancelamento de requisições em andamento, o que pode ser útil para melhorar a performance e evitar desperdício de recursos. Além disso, o Axios oferece suporte para conversão automática de dados de resposta, o que significa que você pode receber dados formatados em JSON, XML ou outros formatos diretamente. Em termos de sintaxe, o Axios é baseado em Promises e usa um formato mais familiar para os desenvolvedores que já estão acostumados com jQuery ou AngularJS.</p>
+<p>Fetch, por outro lado, é uma função nativa do navegador que foi introduzida no ECMAScript 6 (também conhecido como ES6 ou ES2015). Isso significa que você não precisa adicionar nenhuma biblioteca externa para fazer requisições HTTP em projetos front-end. No entanto, o Fetch não oferece suporte a navegadores antigos e não permite o uso de interceptadores. Também não há um recurso nativo de cancelamento de requisições em andamento, o que pode ser um problema para projetos que precisam lidar com muitas requisições simultâneas. </p>
+<p>Além disso, com Fetch você precisa usar métodos adicionais para converter os dados recebidos em um formato legível. Em termos de sintaxe, o Fetch usa a sintaxe de Promises nativa do JavaScript e pode parecer mais complicado para os desenvolvedores menos experientes.</p>
+<p>Então, qual escolher para suas requisições HTTP? A resposta depende das necessidades do seu projeto e das suas preferências pessoais. Se você precisa oferecer suporte a navegadores antigos, usar interceptadores ou converter automaticamente dados de resposta em formatos legíveis, o Axios pode ser a melhor escolha. Por outro lado, se você está trabalhando em um projeto que não precisa lidar com muitas requisições simultâneas ou se prefere a sintaxe de Promises nativa do JavaScript, o Fetch pode ser uma opção mais adequada.</p>
+<p>Em resumo, tanto o Axios quanto o Fetch são ferramentas úteis e podem ser usadas para fazer requisições HTTP em projetos front-end. A escolha entre eles dependerá das necessidades do seu projeto e das suas preferências pessoais. É importante entender as diferenças entre as duas ferramentas para tomar a melhor decisão para o seu projeto.</p>
+<h3 id="Resumindo-principais-diferencas"><a href="#Resumindo-principais-diferencas" class="headerlink" title="Resumindo principais diferenças"></a>Resumindo principais diferenças</h3><ul>
+<li><p>Axios oferece suporte a navegadores antigos e permite o uso de interceptadores, o que pode ajudar na gestão de erros e autenticação. Fetch, por outro lado, é uma função nativa do navegador e não oferece esses recursos adicionais.</p>
+</li>
+<li><p>Axios tem um sistema de cancelamento de requisições, o que significa que você pode cancelar uma requisição em andamento se necessário. Com Fetch, não há um recurso nativo de cancelamento.</p>
+</li>
+<li><p>Axios tem suporte para conversão automática de dados de resposta, o que significa que você pode receber dados formatados em JSON, XML ou outros formatos diretamente. Com Fetch, você precisa usar métodos adicionais para converter os dados recebidos em um formato legível.</p>
+</li>
+<li><p>Em termos de sintaxe, Axios é baseado em Promises e usa um formato mais familiar para os desenvolvedores que já estão acostumados com jQuery ou AngularJS. Fetch, por outro lado, usa a sintaxe de Promises nativa do JavaScript e pode parecer mais complicado para os desenvolvedores menos experientes.</p>
+</li>
+</ul>
 
             
         </div>
@@ -192,14 +199,14 @@ ga('send', 'pageview');
         </div>
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/laco-repeticao-scss/" data-id="clh20oj72006xhapa04o465t2" class="article-share-link">
+            <a data-url="https://backefront.com.br/diferenca-axios-fetch/" data-id="clh20oj6j0056hapabhqa4it2" class="article-share-link">
                 Compartilhar</a>
             
-            <a href="https://backefront.com.br/laco-repeticao-scss/#disqus_thread" class="article-comment-link">
+            <a href="https://backefront.com.br/diferenca-axios-fetch/#disqus_thread" class="article-comment-link">
                 Comentários</a>
             
             
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Front-end/" rel="tag">Front-end</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Front-end/" rel="tag">Front-end</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li></ul>
 
         </footer>
     </div>
@@ -207,19 +214,10 @@ ga('send', 'pageview');
     
 <nav id="article-nav">
   
-    <a href="/adicionando-projeto-repositorio-existente-git/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Mais Recente</strong>
-      <div class="article-nav-title">
-        
-          Como Adicionar Um Projeto a Um Novo Repositório Git
-        
-      </div>
-    </a>
   
-  
-    <a href="/validacao-class-css-angular/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/como-usar-crypto-randomUUID/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Mais Antigo</strong>
-      <div class="article-nav-title">Como Adicionar Classe Através De Uma Validação No Angular</div>
+      <div class="article-nav-title">Pare De Usar Index Em Seu Map E Use randomUUID!</div>
     </a>
   
 </nav>
@@ -260,7 +258,7 @@ ga('send', 'pageview');
 <script>
   var disqus_shortname = 'backefront';
   
-  var disqus_url = 'https://backefront.com.br/laco-repeticao-scss/';
+  var disqus_url = 'https://backefront.com.br/diferenca-axios-fetch/';
   
   (function(){
     var dsq = document.createElement('script');
