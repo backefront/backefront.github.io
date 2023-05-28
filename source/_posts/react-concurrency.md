@@ -20,7 +20,9 @@ Ele permite que os desenvolvedores escrevam componentes assíncronos de forma ma
 
 <!-- more -->
 
-1. Suspense: O React Concurrency introduz o conceito de "Suspense", que é uma forma de lidar com a renderização assíncrona de componentes. Com o Suspense, podemos adiar o carregamento de partes da interface do usuário que dependem de dados assíncronos, exibindo um indicador de carregamento ou uma tela de fallback enquanto os dados estão sendo buscados.
+**Suspense**
+
+O React Concurrency introduz o conceito de "Suspense", que é uma forma de lidar com a renderização assíncrona de componentes. Com o Suspense, podemos adiar o carregamento de partes da interface do usuário que dependem de dados assíncronos, exibindo um indicador de carregamento ou uma tela de fallback enquanto os dados estão sendo buscados.
 
 ```javascript
 import React, { Suspense } from 'react';
@@ -43,7 +45,9 @@ export default App;
 
 Neste exemplo, estamos usando o `React.lazy` juntamente com o Suspense para carregar assincronamente o componente `LazyComponent`. Enquanto o componente está sendo carregado, exibimos uma mensagem de "Carregando...". Isso permite que a interface do usuário continue respondendo enquanto aguarda o carregamento dos dados.
 
-2. Hooks assíncronos: O React Concurrency também traz consigo hooks assíncronos, como o useAsync, que facilitam a realização de operações assíncronas dentro dos componentes. Esses hooks fornecem uma maneira mais intuitiva e declarativa de lidar com fluxos assíncronos, permitindo que os desenvolvedores organizem seu código de maneira mais eficiente.
+**Hooks assíncronos**
+
+O React Concurrency também traz consigo hooks assíncronos, como o useAsync, que facilitam a realização de operações assíncronas dentro dos componentes. Esses hooks fornecem uma maneira mais intuitiva e declarativa de lidar com fluxos assíncronos, permitindo que os desenvolvedores organizem seu código de maneira mais eficiente.
 
 ```javascript
 import React, { useState, useEffect } from 'react';
@@ -104,7 +108,9 @@ Neste exemplo, criamos o hook `useAsync` que recebe uma função assíncrona com
 
 Em seguida, utilizamos o hook `useAsync` no componente App. Nele, definimos a função fetchData que faz uma requisição assíncrona para buscar os dados da API. Ao utilizar o `useAsync(fetchData)`, o hook lida automaticamente com o carregamento, exibindo a mensagem "Carregando..." enquanto os dados estão sendo buscados. Além disso, também trata possíveis erros e exibe uma mensagem de erro caso ocorra algum problema. Quando os dados são recebidos com sucesso, eles são exibidos na tela.
 
-3. Concurrent Mode: O Concurrent Mode é uma melhoria significativa no algoritmo de reconciliação do React, que permite que as atualizações de componentes ocorram de maneira mais eficiente e priorizada. Com o `Concurrent Mode`, é possível evitar bloqueios de interface do usuário durante operações intensivas e permitir que a aplicação continue respondendo de forma suave e fluida.
+**Concurrent Mode**
+
+O Concurrent Mode é uma melhoria significativa no algoritmo de reconciliação do React, que permite que as atualizações de componentes ocorram de maneira mais eficiente e priorizada. Com o `Concurrent Mode`, é possível evitar bloqueios de interface do usuário durante operações intensivas e permitir que a aplicação continue respondendo de forma suave e fluida.
 
 ```javascript
 import React from 'react';
@@ -138,7 +144,9 @@ O Concurrent Mode permite que o React priorize e agende as atualizações de com
 
 Lembre-se também de importar as bibliotecas corretas (react e react-dom) e configurar seu ambiente de desenvolvimento adequadamente para suportar o Concurrent Mode.
 
-4. Resolução de promessas: O React Concurrency também oferece uma sintaxe mais limpa e simples para a resolução de promessas. Agora, podemos usar a palavra-chave await diretamente em nossos componentes para esperar a conclusão de uma operação assíncrona, eliminando a necessidade de usar then e catch repetidamente.
+**Resolução de promessas**
+
+O React Concurrency também oferece uma sintaxe mais limpa e simples para a resolução de promessas. Agora, podemos usar a palavra-chave await diretamente em nossos componentes para esperar a conclusão de uma operação assíncrona, eliminando a necessidade de usar then e catch repetidamente.
 
 ```javascript
 import React, { useState } from 'react';
