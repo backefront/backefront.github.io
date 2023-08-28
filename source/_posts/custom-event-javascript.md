@@ -1,6 +1,6 @@
 ---
 title: Aproveitando o Poder do CustomEvent no React: Comunicação entre Componentes Aprimorada
-date: 2023-08-23 09:00:00
+date: 2023-08-15 8:33:49
 tags: 
 - Frontend
 - JavaScript
