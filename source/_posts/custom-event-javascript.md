@@ -1,5 +1,5 @@
 ---
-title: Aproveitando o Poder do CustomEvent no React: Comunicação entre Componentes Aprimorada
+title: Aproveitando o Poder do CustomEvent no React - Comunicação entre Componentes Aprimorada
 date: 2023-08-15 8:33:49
 tags: 
 - Frontend
