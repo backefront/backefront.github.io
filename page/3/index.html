@@ -99,6 +99,75 @@ ga('send', 'pageview');
                 <section id="main">
                     
   
+    <article id="post-mover-item-array-para-ultima-posicao" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-meta">
+        <a href="/mover-item-array-para-ultima-posicao/" class="article-date">
+  <time datetime="2022-05-27T11:26:06.000Z" itemprop="datePublished">27-05-2022</time>
+</a>
+        
+    </div>
+    <div class="article-inner">
+        
+        
+        <header class="article-header">
+            
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/mover-item-array-para-ultima-posicao/">Como Mover Um Item No Array Para a Última Posição</a>
+    </h1>
+  
+
+        </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+            <p>Para mover um elemento (que você sabe o Index) para o final do array, basta fazer isso:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> index = <span class="number">2</span>;</span><br><span class="line">array.<span class="title function_">push</span>(array.<span class="title function_">splice</span>(index, <span class="number">1</span>)[<span class="number">0</span>]);</span><br></pre></td></tr></table></figure>
+
+<p>Agora, se você não sabe o index, pode fazer o seguinte:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> index = array.<span class="title function_">findIndex</span>(<span class="function"><span class="params">element</span> =&gt;</span> element));</span><br><span class="line">array.<span class="title function_">push</span>(array.<span class="title function_">splice</span>(index, <span class="number">1</span>)[<span class="number">0</span>]);</span><br></pre></td></tr></table></figure>
+
+<p>Exemplo:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const arr = [1, 2, 6, 3, 4, 5];</span><br><span class="line">arr.push(arr.splice(arr.indexOf(6), 1)[0]);</span><br><span class="line">console.log(arr); // [1, 2, 3, 4, 5, 6]</span><br></pre></td></tr></table></figure>
+
+            
+        </div>
+        
+        <!-- <div class="article__ad-course">
+            <p class="article__ad-course--title">Você quer aprender a criar aplicativos web dinâmicos e atrativos com ReactJS?</p>
+            <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">
+              <img src="/author/curso-react-direto-ao-ponto.png">
+            </a>
+            <p>
+                Estamos lançando um curso perfeito para você! 
+                Com nosso treinamento prático e de fácil compreensão, você estará criando aplicativos incríveis, preparado para qualquer desafio do mercado. 
+                Não importa se você é um iniciante completo ou já possui conhecimento básico de desenvolvimento web, nosso curso é adaptável para atender a todos os níveis de habilidade.
+            </p>
+            <br />
+            <p>
+                Se interessou? Não perca esta oportunidade de aprender uma das ferramentas de desenvolvimento web mais populares e poderosas do mercado. 
+                <br />
+                <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">Inscreva-se agora</a> e junte-se à lista de espera para nosso curso "React direto ao ponto", autor do blog Back&Front!</p>
+            </p>
+        </div> -->
+        
+        <footer class="article-footer">
+            <a data-url="https://backefront.com.br/mover-item-array-para-ultima-posicao/" data-id="clluzfi9q007mj1p324c22s3s" class="article-share-link">
+                Compartilhar</a>
+            
+            <a href="https://backefront.com.br/mover-item-array-para-ultima-posicao/#disqus_thread" class="article-comment-link">
+                Comentários</a>
+            
+            
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Front-end/" rel="tag">Front-end</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li></ul>
+
+        </footer>
+    </div>
+    
+</article>
+
+
+  
     <article id="post-testar-imagem-react-testing" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-meta">
         <a href="/testar-imagem-react-testing/" class="article-date">
@@ -151,7 +220,7 @@ ga('send', 'pageview');
         </div> -->
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/testar-imagem-react-testing/" data-id="clluvr07h009tixnb3wc4509z" class="article-share-link">
+            <a data-url="https://backefront.com.br/testar-imagem-react-testing/" data-id="clluzfiau009wj1p33ms402zn" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/testar-imagem-react-testing/#disqus_thread" class="article-comment-link">
@@ -219,7 +288,7 @@ ga('send', 'pageview');
         </div> -->
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/conexao-privada-chromium/" data-id="clluvr05s004nixnb2xa85m2l" class="article-share-link">
+            <a data-url="https://backefront.com.br/conexao-privada-chromium/" data-id="clluzfi8h004nj1p39uoteut9" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/conexao-privada-chromium/#disqus_thread" class="article-comment-link">
@@ -287,7 +356,7 @@ ga('send', 'pageview');
         </div> -->
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/remover-estilos-padrao-input-mobile/" data-id="clluvr07b009aixnb9w69br15" class="article-share-link">
+            <a data-url="https://backefront.com.br/remover-estilos-padrao-input-mobile/" data-id="clluzfiak009dj1p3af29d8cn" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/remover-estilos-padrao-input-mobile/#disqus_thread" class="article-comment-link">
@@ -353,7 +422,7 @@ ga('send', 'pageview');
         </div> -->
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/remover-decimais-javascript/" data-id="clluvr0790094ixnb17vb3xgw" class="article-share-link">
+            <a data-url="https://backefront.com.br/remover-decimais-javascript/" data-id="clluzfiag0097j1p3gzj5g79s" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/remover-decimais-javascript/#disqus_thread" class="article-comment-link">
@@ -424,7 +493,7 @@ ga('send', 'pageview');
         </div> -->
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/adicionar-fonte-firacoda-vscode/" data-id="clluvr03s0005ixnb22wdaibn" class="article-share-link">
+            <a data-url="https://backefront.com.br/adicionar-fonte-firacoda-vscode/" data-id="clluzfi650005j1p3gr1v2i1p" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/adicionar-fonte-firacoda-vscode/#disqus_thread" class="article-comment-link">
@@ -490,7 +559,7 @@ ga('send', 'pageview');
         </div> -->
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/include-multiplas-opcoes/" data-id="clluvr06l006zixnbeb6f99py" class="article-share-link">
+            <a data-url="https://backefront.com.br/include-multiplas-opcoes/" data-id="clluzfi9i0072j1p36mwge2t2" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/include-multiplas-opcoes/#disqus_thread" class="article-comment-link">
@@ -556,7 +625,7 @@ ga('send', 'pageview');
         </div> -->
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/proptypes-permitir-diferentes-tipos-uma-prop/" data-id="clluvr075008sixnbf91y9d0p" class="article-share-link">
+            <a data-url="https://backefront.com.br/proptypes-permitir-diferentes-tipos-uma-prop/" data-id="clluzfiab008vj1p32b68ci5k" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/proptypes-permitir-diferentes-tipos-uma-prop/#disqus_thread" class="article-comment-link">
@@ -625,7 +694,7 @@ ga('send', 'pageview');
         </div> -->
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/bloquear-redirecionamento-href-link/" data-id="clluvr044000sixnbgos883x7" class="article-share-link">
+            <a data-url="https://backefront.com.br/bloquear-redirecionamento-href-link/" data-id="clluzfi6k000sj1p3auk30eqk" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/bloquear-redirecionamento-href-link/#disqus_thread" class="article-comment-link">
@@ -694,7 +763,7 @@ ga('send', 'pageview');
         </div> -->
         
         <footer class="article-footer">
-            <a data-url="https://backefront.com.br/verificar-numero-quadrado-perfeito-js/" data-id="clluvr07s00asixnbc8lidimh" class="article-share-link">
+            <a data-url="https://backefront.com.br/verificar-numero-quadrado-perfeito-js/" data-id="clluzfib900avj1p33yc4fk2w" class="article-share-link">
                 Compartilhar</a>
             
             <a href="https://backefront.com.br/verificar-numero-quadrado-perfeito-js/#disqus_thread" class="article-comment-link">
@@ -702,74 +771,6 @@ ga('send', 'pageview');
             
             
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Front-end/" rel="tag">Front-end</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li></ul>
-
-        </footer>
-    </div>
-    
-</article>
-
-
-  
-    <article id="post-atualizar-versao-android-react-native" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-meta">
-        <a href="/atualizar-versao-android-react-native/" class="article-date">
-  <time datetime="2021-11-10T11:58:21.000Z" itemprop="datePublished">10-11-2021</time>
-</a>
-        
-    </div>
-    <div class="article-inner">
-        
-        
-        <header class="article-header">
-            
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/atualizar-versao-android-react-native/">Como Atualizar Nova Versão Do App Android - React Native</a>
-    </h1>
-  
-
-        </header>
-        
-        <div class="article-entry" itemprop="articleBody">
-            
-            <p>Trabalhar com desenvolvimento mobile envolve algumas preocupações, como dispositivos que usarão, tamanhos, modelo, se é iOS ou Android<br>E durante nosso trabalho, frequentemente precisamos atualizar versões e subir novas para as lojas, com novas features e melhorias<br>Enquanto estava atualizando a versão para <code>Android</code> notei que algumas vezes não atualizava o código certo, parecia manter uma espécie de cache</p>
-<p>Pesquisando, encontrei uma forma e um porque!</p>
-            
-            <p class="article-more-link">
-                <a href="/atualizar-versao-android-react-native/#more">
-                    Ler mais</a>
-            </p>
-            
-            
-        </div>
-        
-        <!-- <div class="article__ad-course">
-            <p class="article__ad-course--title">Você quer aprender a criar aplicativos web dinâmicos e atrativos com ReactJS?</p>
-            <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">
-              <img src="/author/curso-react-direto-ao-ponto.png">
-            </a>
-            <p>
-                Estamos lançando um curso perfeito para você! 
-                Com nosso treinamento prático e de fácil compreensão, você estará criando aplicativos incríveis, preparado para qualquer desafio do mercado. 
-                Não importa se você é um iniciante completo ou já possui conhecimento básico de desenvolvimento web, nosso curso é adaptável para atender a todos os níveis de habilidade.
-            </p>
-            <br />
-            <p>
-                Se interessou? Não perca esta oportunidade de aprender uma das ferramentas de desenvolvimento web mais populares e poderosas do mercado. 
-                <br />
-                <a target="_blank" rel="noopener" href="https://forms.gle/bjQr5kkPrV1SNm1k8">Inscreva-se agora</a> e junte-se à lista de espera para nosso curso "React direto ao ponto", autor do blog Back&Front!</p>
-            </p>
-        </div> -->
-        
-        <footer class="article-footer">
-            <a data-url="https://backefront.com.br/atualizar-versao-android-react-native/" data-id="clluvr042000nixnb1ah41gcm" class="article-share-link">
-                Compartilhar</a>
-            
-            <a href="https://backefront.com.br/atualizar-versao-android-react-native/#disqus_thread" class="article-comment-link">
-                Comentários</a>
-            
-            
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Front-end/" rel="tag">Front-end</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/React-Native/" rel="tag">React Native</a></li></ul>
 
         </footer>
     </div>
